@@ -1,8 +1,7 @@
-import { A } from "solid-start";
-import Counter from "~/components/Counter";
+import { type JSX } from 'solid-js'
 
-export default function Home() {
+export default function Home (): JSX.Element {
   return (
-
-  );
+    <p>Bonjour</p>
+  )
 }
