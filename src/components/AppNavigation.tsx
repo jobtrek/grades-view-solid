@@ -1,4 +1,5 @@
 import { type Component } from 'solid-js'
+import { A } from 'solid-start'
 
 export const AppNavigation: Component = () => {
   return (
@@ -6,7 +7,7 @@ export const AppNavigation: Component = () => {
       <div class="container mx-auto sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-center py-5 lg:justify-between">
           <div class="absolute left-0 flex-shrink-0 lg:static">
-            <a class="text-sky-100" href="#">
+            <A class="text-sky-100" href="/">
               <span class="sr-only">Grades calculator</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +22,7 @@ export const AppNavigation: Component = () => {
                 <path
                   d="M4.462 19.462c.42-.419.753-.89 1-1.394.453.213.902.434 1.347.661a6.743 6.743 0 01-1.286 1.794.75.75 0 11-1.06-1.06z"/>
               </svg>
-            </a>
+            </A>
           </div>
 
           <div class="hidden lg:ml-4 lg:flex lg:items-center lg:pr-0.5">
@@ -51,36 +52,46 @@ export const AppNavigation: Component = () => {
           <div class="grid grid-cols-3 items-center gap-8">
             <div class="col-span-2">
               <nav class="flex space-x-4">
-                <a
-                  href="#"
-                  class="text-white font-bold rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
+                <A
+                  href="/maths"
+                  activeClass="text-white font-bold"
+                  inactiveClass="text-sky-100 font-medium"
+                  class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
                 >
                   Math
-                </a>
-                <a
-                  href="#"
-                  class="text-sky-100 rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm font-medium hover:bg-opacity-10"
+                </A>
+                <A
+                  href="/soci"
+                  activeClass="text-white font-bold"
+                  inactiveClass="text-sky-100 font-medium"
+                  class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
                 >
                   Société
-                </a>
-                <a
-                  href="#"
-                  class="text-sky-100 rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm font-medium hover:bg-opacity-10"
+                </A>
+                <A
+                  href="/english"
+                  activeClass="text-white font-bold"
+                  inactiveClass="text-sky-100 font-medium"
+                  class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
                 >
                   Anglais
-                </a>
-                <a
-                  href="#"
-                  class="text-sky-100 rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm font-medium hover:bg-opacity-10"
+                </A>
+                <A
+                  href="/epsic"
+                  activeClass="text-white font-bold"
+                  inactiveClass="text-sky-100 font-medium"
+                  class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
                 >
                   Modules EPSIC
-                </a>
-                <a
-                  href="#"
-                  class="text-sky-100 rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm font-medium hover:bg-opacity-10"
+                </A>
+                <A
+                  href="/cie"
+                  activeClass="text-white font-bold"
+                  inactiveClass="text-sky-100 font-medium"
+                  class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
                 >
                   CIE
-                </a>
+                </A>
               </nav>
             </div>
           </div>

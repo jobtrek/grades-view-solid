@@ -32,7 +32,7 @@ export const Root: Component = () => {
               <AppNavigation/>
               <main class="-mt-24 pb-8">
                 <div class="container mx-auto sm:px-6 lg:px-8">
-                  <h1 class="sr-only">Averages</h1>
+                  <h1 class="sr-only">Grades calculator</h1>
                   <div class="grid grid-cols-1 items-start gap-4 lg:grid-cols-3 lg:gap-8">
                     <Routes>
                       <FileRoutes/>
