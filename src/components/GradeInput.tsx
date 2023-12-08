@@ -1,6 +1,12 @@
-import { type Component } from 'solid-js'
+import { type Component, createSignal } from 'solid-js'
 
-export const GradeInput: Component = () => {
+export const GradeInput: Component<{ onNewGrade: CallableFunction }> = (props) => {
+  const [newGrade, setGrade] = createSignal('')
+  const addGrade = (): void => {
+    props.onNewGrade(parseFloat(newGrade()))
+    setGrade('')
+  }
+
   return (
     <div class="mr-1.5">
       <label for="sem1" class="sr-only">
@@ -12,12 +18,15 @@ export const GradeInput: Component = () => {
             type="email"
             name="email"
             id="sem1"
+            value={newGrade()}
+            onInput={(e) => setGrade(e.currentTarget.value)}
             class="block w-14 rounded-none rounded-l-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
             placeholder="4"
           />
         </div>
         <button
           type="button"
+          onClick={addGrade}
           class="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
         >
           <svg

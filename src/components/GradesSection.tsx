@@ -1,9 +1,17 @@
-import { type Component } from 'solid-js'
+import { type Component, createSignal, For, Index } from 'solid-js'
 import { GradeElement } from '~/components/GradeElement'
 import { Semester } from '~/components/Semester'
 import { AddSemesterButton } from '~/components/AddSemesterButton'
+import { createStore } from 'solid-js/store'
 
 export const GradesSection: Component<{ name: string }> = (props) => {
+  const [semesters, setSemester] = createStore<Array<number | null>>([])
+  const addSemester = (): void => {
+    setSemester(s => [...s, null])
+  }
+  const updateSemester = (index: number, average: number): void => {
+    setSemester(index, average)
+  }
   return (
     <div class="grid grid-cols-1 gap-4 lg:col-span-2">
         <section aria-labelledby="section-1-title">
@@ -24,9 +32,13 @@ export const GradesSection: Component<{ name: string }> = (props) => {
                     </div>
                     <div class="mt-6 border-t border-gray-100">
                         <dl class="divide-y divide-gray-100">
-                            <Semester/>
-                            <Semester/>
-                            <AddSemesterButton/>
+                            <Index each={semesters}>
+                                {
+                                  (semester, index) =>
+                                    <Semester semesterGrade={semester()} updateSemesterGrade={(g: number) => { updateSemester(index, g) }}/>
+                                }
+                            </Index>
+                            <AddSemesterButton addSemester={addSemester}/>
                         </dl>
                     </div>
                 </div>
