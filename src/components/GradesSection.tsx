@@ -1,10 +1,14 @@
-import { type Component, createSignal, For, Index } from 'solid-js'
+import { batch, type Component, createEffect, createSignal, For, Index, Show } from 'solid-js'
 import { GradeElement } from '~/components/GradeElement'
 import { Semester } from '~/components/Semester'
 import { AddSemesterButton } from '~/components/AddSemesterButton'
 import { createStore } from 'solid-js/store'
+import { roundTo } from '~/utils/roundTo'
+import { average } from '~/utils/average'
+import { setGlobalGrade } from '~/globalGradesStore'
 
 export const GradesSection: Component<{ name: string }> = (props) => {
+  const [semesterGrade, setSemesterGrade] = createSignal(null)
   const [semesters, setSemester] = createStore<Array<number | null>>([])
   const addSemester = (): void => {
     setSemester(s => [...s, null])
@@ -12,6 +16,19 @@ export const GradesSection: Component<{ name: string }> = (props) => {
   const updateSemester = (index: number, average: number): void => {
     setSemester(index, average)
   }
+
+  createEffect(() => {
+    const grades = semesters.filter(v => v !== null)
+    batch(() => {
+      setSemesterGrade(grades.length > 0 ? roundTo(average(grades)) : null)
+      setGlobalGrade('maths', semesterGrade())
+    })
+  })
+
+  /** const semesterGrade = () => {
+    const grades = semesters.filter(v => v !== null)
+    return grades.length > 0 ? roundTo(average(grades)) : null
+  }**/
   return (
     <div class="grid grid-cols-1 gap-4 lg:col-span-2">
         <section aria-labelledby="section-1-title">
@@ -27,7 +44,9 @@ export const GradesSection: Component<{ name: string }> = (props) => {
                             </h2>
                         </div>
                         <div class="mt-4 flex md:ml-4 md:mt-0">
-                            <GradeElement grade={5.5} class="font-bold text-lg px-3 py-1"/>
+                          <Show when={semesterGrade()}>
+                            {g => <GradeElement grade={g()} class="font-bold text-lg px-3 py-1"/>}
+                          </Show>
                         </div>
                     </div>
                     <div class="mt-6 border-t border-gray-100">

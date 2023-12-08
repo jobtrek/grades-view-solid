@@ -1,4 +1,5 @@
 import { type Component } from 'solid-js'
+import { allGrades } from '~/globalGradesStore'
 
 export const AveragesSection: Component = () => {
   return (
@@ -61,7 +62,7 @@ export const AveragesSection: Component = () => {
               <dd class="text-xs font-medium text-green-600">+10.18%</dd>
               <dd
                 class="w-full flex-none text-3xl font-medium leading-10 tracking-tight text-gray-900">
-                4.5
+                {allGrades().info}
               </dd>
             </div>
             <div
