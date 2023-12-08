@@ -3,13 +3,18 @@ import { GradeContainer } from '~/components/GradeContainer'
 import { GradeInput } from '~/components/GradeInput'
 import { GradeElement } from '~/components/GradeElement'
 import { createStore } from 'solid-js/store'
+import { average } from '~/utils/average'
+import { roundTo } from '~/utils/roundTo'
 
-export const Semester: Component<{ semesterGrade: number | null, updateSemesterGrade: CallableFunction }> = (props) => {
+export const Semester: Component<{
+  semesterGrade: number | null
+  updateSemesterGrade: (g: number) => void
+}> = (props) => {
   const [grades, gradesSetter] = createStore<number[]>([])
 
   createEffect(() => {
     if (grades.length < 1) return
-    props.updateSemesterGrade(grades.reduce((v, a) => a + v) / grades.length)
+    props.updateSemesterGrade(roundTo(average(grades), 2))
   })
   const addGrade = (g: number): void => {
     gradesSetter(grades => [...grades, g])
@@ -22,7 +27,7 @@ export const Semester: Component<{ semesterGrade: number | null, updateSemesterG
         <div class="flex">
           <GradeInput onNewGrade={addGrade} />
           <Show when={props.semesterGrade}>
-            <GradeElement grade={props.semesterGrade} class="font-bold text-sm px-2 py-2" />
+            {grade => <GradeElement grade={grade()} class="font-bold text-sm px-2 py-2" />}
           </Show>
         </div>
       </dd>
