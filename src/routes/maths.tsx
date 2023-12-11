@@ -3,7 +3,7 @@ import { GradesSection } from '~/components/GradesSection'
 
 export const Maths: Component = () => {
   return (
-    <GradesSection name="Maths" />
+    <GradesSection name="maths" />
   )
 }
 
