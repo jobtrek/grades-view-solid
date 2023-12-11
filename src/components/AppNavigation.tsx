@@ -69,7 +69,7 @@ export const AppNavigation: Component = () => {
                   Société
                 </A>
                 <A
-                  href="/english"
+                  href="/English"
                   activeClass="text-white font-bold"
                   inactiveClass="text-sky-100 font-medium"
                   class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"

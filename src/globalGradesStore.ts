@@ -1,6 +1,7 @@
 import { createStore, type Part } from 'solid-js/store'
 import { createMemo } from 'solid-js'
 import { average, weightedAverage, weightedAverageFlat } from '~/utils/average'
+import { roundTo } from '~/utils/roundTo'
 
 export interface Grades {
   tpi: number | null
@@ -27,7 +28,7 @@ export const addGlobalGrade = (branch: Part<Grades>, newGrade: number): void => 
 export const allGrades = createMemo(() => {
   let info = null
   if (grades.epsic !== null && grades.cie !== null) {
-    info = weightedAverageFlat([grades.epsic, grades.cie], [80, 20])
+    info = roundTo(weightedAverageFlat([grades.epsic, grades.cie], [80, 20]))
   } else if (grades.epsic !== null) {
     info = grades.epsic
   } else if (grades.cie !== null) {
@@ -36,7 +37,7 @@ export const allGrades = createMemo(() => {
 
   let mathEng = null
   if (grades.maths !== null && grades.eng !== null) {
-    mathEng = average([grades.maths, grades.eng])
+    mathEng = roundTo(average([grades.maths, grades.eng]))
   } else if (grades.maths !== null) {
     mathEng = grades.maths
   } else if (grades.eng !== null) {
@@ -51,7 +52,7 @@ export const allGrades = createMemo(() => {
   ].filter(([grade]) => grade !== null) as Array<[number, number]>
 
   return {
-    global: forAverageCalc.length > 0 ? weightedAverage(forAverageCalc) : null,
+    global: forAverageCalc.length > 0 ? roundTo(weightedAverage(forAverageCalc)) : null,
     maths: grades.maths,
     info,
     mathEng,

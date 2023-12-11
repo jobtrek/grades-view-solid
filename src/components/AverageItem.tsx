@@ -1,10 +1,18 @@
-import { type Component, createMemo, Show } from 'solid-js'
+import { type Component, createMemo, mergeProps, Show } from 'solid-js'
 import { AveragePercentDiff } from '~/components/AveragePercentDiff'
 import { roundTo } from '~/utils/roundTo'
 
-interface CurrentAndLastGrade { current: number | null, previous: number | null }
+interface CurrentAndLastGrade {
+  current: number | null
+  previous: number | null
+}
 
-export const AverageItem: Component<{ title: string, grade: number | null }> = (props) => {
+export const AverageItem: Component<{
+  title: string
+  grade: number | null
+  large?: boolean
+}> = (innerProps) => {
+  const props = mergeProps({ large: false }, innerProps)
   const currentAndLastGrade = createMemo<CurrentAndLastGrade>((prev) => {
     return { current: props.grade, previous: prev?.current ?? null }
   })
@@ -19,12 +27,16 @@ export const AverageItem: Component<{ title: string, grade: number | null }> = (
 
   return (
     <div
-      class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 bg-white px-6 py-6">
+      class="flex flex-wrap items-baseline justify-between gap-y-2 bg-white px-6 py-6"
+      classList={{
+        'col-span-2 gap-x-2': props.large,
+        'gap-x-4': !props.large
+      }}>
       <dt class="text-sm font-medium leading-6 text-gray-500">
         {props.title}
       </dt>
       <Show when={percentDiff()}>
-        {diff => <AveragePercentDiff percentDiff={diff()} />}
+        {diff => <AveragePercentDiff percentDiff={diff()}/>}
       </Show>
       <dd
         class="w-full flex-none text-3xl font-medium leading-10 tracking-tight text-gray-900">
