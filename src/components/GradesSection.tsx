@@ -1,4 +1,4 @@
-import { type Component, createEffect, createSignal, Index, Show } from 'solid-js'
+import { type Component, createEffect, createMemo, createSignal, Index, Show } from 'solid-js'
 import { GradeElement } from '~/components/GradeElement'
 import { Semester } from '~/components/Semester'
 import { AddSemesterButton } from '~/components/AddSemesterButton'
@@ -13,7 +13,6 @@ interface Props {
 }
 
 export const GradesSection: Component<Props> = (props) => {
-  const [branchGrade, setBranchGrade] = createSignal<number | null>(null)
   const [semesters, setSemester] = createStore<Array<number | null>>([])
   const addSemester = (): void => {
     setSemester(s => [...s, null])
@@ -22,11 +21,9 @@ export const GradesSection: Component<Props> = (props) => {
     setSemester(index, average)
   }
 
-  // FIXME: Convert to computed to avoid side effects
-  // Recompute branch grade on semesters changes
-  createEffect(() => {
+  const branchGrade = createMemo(() => {
     const grades = semesters.filter(v => v !== null) as number[]
-    setBranchGrade(grades.length > 0 ? roundTo(average(grades)) : null)
+    return grades.length > 0 ? roundTo(average(grades)) : null
   })
 
   // Add branch grade to global grades store on change
