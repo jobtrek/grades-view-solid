@@ -6,7 +6,7 @@ interface Props {
 
 export const AddSemesterButton: Component<Props> = (props) => {
   return (
-    <div class="px-4 py-6 sm:gap-4 sm:px-0">
+    <div class="px-4 pt-6 sm:gap-4 sm:px-0">
       <button
           onClick={() => { props.addSemester() }}
         type="button"

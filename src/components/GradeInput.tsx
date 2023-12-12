@@ -69,9 +69,6 @@ export const GradeInput: Component<Props> = (props) => {
                 </svg>
               </button>
             </div>
-            <Show when={field.error}>
-              {error => <p class="mt-2 text-sm text-red-600" id="email-error">{error()}</p>}
-            </Show>
           </div>
         }
       </AddGrade.Field>
