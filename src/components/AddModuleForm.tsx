@@ -5,8 +5,8 @@ import { createForm, FormError, type SubmitHandler, valiForm } from '@modular-fo
 
 const AddModuleGradeSchema = object({
   grade: number([
-    maxValue(6),
-    minValue(1)
+    maxValue(6, 'La note ne peut pas être supérieure à 6'),
+    minValue(1, 'La note ne peut pas être inférieure à 1')
   ]),
   module: number()
 })
@@ -72,12 +72,12 @@ export const AddModuleForm: Component<Props> = (props) => {
           <AddGrade.Field name="grade" type="number">
             {(field, props) =>
               <div class="sm:col-span-2">
-                <label for="email" class="block text-sm font-medium leading-6 text-gray-900">
+                <label for={field.name} class="block text-sm font-medium leading-6 text-gray-900">
                   Note
                 </label>
                 <div class="mt-2 flex rounded-md shadow-sm">
                   <div class="relative flex flex-grow items-stretch focus-within:z-10">
-                    <input {...props} type="number" min="1" max="6" step="0.5" name="grade" id="grade" required
+                    <input {...props} type="number" min="1" max="6" step="0.5" id={field.name} required
                        class="block w-full rounded-none rounded-l-md border-0 py-1.5 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                        classList={{
                          'text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500': field.error !== '',

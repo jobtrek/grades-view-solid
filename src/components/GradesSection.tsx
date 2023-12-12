@@ -26,7 +26,6 @@ export const GradesSection: Component<Props> = (props) => {
     return grades.length > 0 ? roundTo(average(grades)) : null
   })
 
-  // Add branch grade to global grades store on change
   createEffect(() => {
     const grade = branchGrade()
     if (grade !== null) {

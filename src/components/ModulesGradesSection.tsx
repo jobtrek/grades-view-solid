@@ -1,6 +1,6 @@
-import { type Component, For, Show } from 'solid-js'
+import { type Component, createEffect, createMemo, For, Show } from 'solid-js'
 import { createStore, type Part } from 'solid-js/store'
-import type { Grades } from '~/globalGradesStore'
+import { addGlobalGrade, type Grades } from '~/globalGradesStore'
 import { type Module, type ModuleGrade } from '~/types/Module'
 import { GradeElement } from '~/components/GradeElement'
 import { AddModuleForm } from '~/components/AddModuleForm'
@@ -23,10 +23,17 @@ export const ModulesGradesSection: Component<Props> = (props) => {
     }
   }
 
-  const branchGrade = (): number | null => {
-    const grades = modulesGrades.map(m => m.grade).filter(v => v !== null)
+  const branchGrade = createMemo(() => {
+    const grades = modulesGrades.map(m => m.grade)
     return grades.length > 0 ? roundTo(average(grades)) : null
-  }
+  })
+
+  createEffect(() => {
+    const grade = branchGrade()
+    if (grade !== null) {
+      addGlobalGrade(props.name, grade)
+    }
+  })
 
   return (
     <div class="grid grid-cols-1 gap-4 lg:col-span-2">
