@@ -43,7 +43,7 @@ export const AddModuleForm: Component<Props> = (props) => {
   }
 
   return (
-    <div class="px-4 py-6 sm:gap-4 sm:px-0">
+    <div class="px-4 pt-6 sm:gap-4 sm:px-0">
       <AddGrade.Form onSubmit={handleSubmit}>
         <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
           <AddGrade.Field name="module" type="number">
@@ -106,7 +106,9 @@ export const AddModuleForm: Component<Props> = (props) => {
         </div>
       </AddGrade.Form>
       <Show when={addModuleGradeForm.invalid}>
-        <Alert content="Le formulaire n'est pas valide" details={getErrors(addModuleGradeForm)} />
+        <div class="pt-4">
+          <Alert content="Le formulaire n'est pas valide" details={getErrors(addModuleGradeForm)} />
+        </div>
       </Show>
     </div>
   )

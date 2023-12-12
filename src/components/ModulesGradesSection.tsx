@@ -1,4 +1,4 @@
-import { type Component, createEffect, createMemo, For, Show } from 'solid-js'
+import { type Component, createEffect, createMemo, Index, Show } from 'solid-js'
 import { createStore, type Part } from 'solid-js/store'
 import { addGlobalGrade, type Grades } from '~/globalGradesStore'
 import { type Module, type ModuleGrade } from '~/types/Module'
@@ -59,9 +59,9 @@ export const ModulesGradesSection: Component<Props> = (props) => {
             <div class="mt-6 border-t border-gray-100">
               <dl class="divide-y divide-gray-100">
                 <div class="px-4 py-6 gap-2 sm:px-0 flex flex-row flex-wrap">
-                  <For each={modulesGrades} fallback={<p class="text-gray-500">Aucun module</p>}>
-                    {grade => <GradeElement grade={grade.grade} class="font-medium text-sm px-2 py-2" />}
-                  </For>
+                  <Index each={modulesGrades} fallback={<p class="text-gray-500">Aucun module</p>}>
+                    {grade => <GradeElement grade={grade().grade} class="font-medium text-sm px-2 py-2" />}
+                  </Index>
                 </div>
                 <AddModuleForm addModule={addModule} availableModules={props.modules} />
               </dl>
