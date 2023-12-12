@@ -1,6 +1,10 @@
 import { type Component, Match, Switch } from 'solid-js'
 
-export const AveragePercentDiff: Component<{ percentDiff: number }> = props => {
+interface Props {
+  percentDiff: number
+}
+
+export const AveragePercentDiff: Component<Props> = props => {
   return (
     <Switch>
       <Match when={props.percentDiff > 0 }>

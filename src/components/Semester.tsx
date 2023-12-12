@@ -6,10 +6,12 @@ import { createStore } from 'solid-js/store'
 import { average } from '~/utils/average'
 import { roundTo } from '~/utils/roundTo'
 
-export const Semester: Component<{
+interface Props {
   semesterGrade: number | null
   updateSemesterGrade: (g: number) => void
-}> = (props) => {
+}
+
+export const Semester: Component<Props> = (props) => {
   const [grades, gradesSetter] = createStore<number[]>([])
 
   createEffect(() => {

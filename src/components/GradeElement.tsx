@@ -1,6 +1,11 @@
 import { type Component } from 'solid-js'
 
-export const GradeElement: Component<{ grade: number, class: string }> = (props) => {
+interface Props {
+  grade: number
+  class: string
+}
+
+export const GradeElement: Component<Props> = (props) => {
   return (
     <span
       class={`inline-flex items-center gap-x-1.5 rounded-md text-gray-900 ring-1 ring-inset ring-gray-200 ${props.class}`}

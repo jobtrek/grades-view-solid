@@ -1,6 +1,10 @@
 import { type Component, createSignal } from 'solid-js'
 
-export const GradeInput: Component<{ onNewGrade: (g: number) => void }> = (props) => {
+interface Props {
+  onNewGrade: (g: number) => void
+}
+
+export const GradeInput: Component<Props> = (props) => {
   const [newGrade, setGrade] = createSignal('')
   const addGrade = (): void => {
     props.onNewGrade(parseFloat(newGrade()))

@@ -7,11 +7,13 @@ interface CurrentAndLastGrade {
   previous: number | null
 }
 
-export const AverageItem: Component<{
+interface Props {
   title: string
   grade: number | null
   large?: boolean
-}> = (innerProps) => {
+}
+
+export const AverageItem: Component<Props> = (innerProps) => {
   const props = mergeProps({ large: false }, innerProps)
   const currentAndLastGrade = createMemo<CurrentAndLastGrade>((prev) => {
     return { current: props.grade, previous: prev?.current ?? null }

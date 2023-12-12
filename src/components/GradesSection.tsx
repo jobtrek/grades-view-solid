@@ -7,7 +7,12 @@ import { roundTo } from '~/utils/roundTo'
 import { average } from '~/utils/average'
 import { addGlobalGrade, type Grades } from '~/globalGradesStore'
 
-export const GradesSection: Component<{ name: Part<Grades>, title: string }> = (props) => {
+interface Props {
+  name: Part<Grades>
+  title: string
+}
+
+export const GradesSection: Component<Props> = (props) => {
   const [branchGrade, setBranchGrade] = createSignal<number | null>(null)
   const [semesters, setSemester] = createStore<Array<number | null>>([])
   const addSemester = (): void => {

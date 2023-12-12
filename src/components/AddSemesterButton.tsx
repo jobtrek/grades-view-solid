@@ -1,6 +1,10 @@
 import { type Component } from 'solid-js'
 
-export const AddSemesterButton: Component<{ addSemester: () => void }> = (props) => {
+interface Props {
+  addSemester: () => void
+}
+
+export const AddSemesterButton: Component<Props> = (props) => {
   return (
     <div class="px-4 py-6 sm:gap-4 sm:px-0">
       <button

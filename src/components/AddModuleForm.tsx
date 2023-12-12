@@ -13,10 +13,12 @@ const AddModuleGradeSchema = object({
 
 type AddModuleGradeForm = Input<typeof AddModuleGradeSchema>
 
-export const AddModuleForm: Component<{
+interface Props {
   addModule: (m: ModuleGrade) => void
   availableModules: Module[]
-}> = (props) => {
+}
+
+export const AddModuleForm: Component<Props> = (props) => {
   const [addModuleGradeForm, AddGrade] = createForm<AddModuleGradeForm>(
     {
       validate: valiForm(AddModuleGradeSchema)
