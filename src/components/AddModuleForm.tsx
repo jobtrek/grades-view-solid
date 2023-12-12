@@ -1,7 +1,14 @@
 import { type Component, Show } from 'solid-js'
 import { type Module, type ModuleGrade } from '~/types/Module'
 import { type Input, maxValue, minValue, number, object } from 'valibot'
-import { createForm, FormError, type SubmitHandler, valiForm } from '@modular-forms/solid'
+import {
+  createForm,
+  FormError,
+  getErrors,
+  type SubmitHandler,
+  valiForm
+} from '@modular-forms/solid'
+import { Alert } from '~/components/Alert'
 
 const AddModuleGradeSchema = object({
   grade: number([
@@ -63,9 +70,6 @@ export const AddModuleForm: Component<Props> = (props) => {
                          placeholder="117"/>
 
                 </div>
-                <Show when={field.error}>
-                  {error => <p class="mt-2 text-sm text-red-600" id="email-error">{error()}</p>}
-                </Show>
               </div>
             }
           </AddGrade.Field>
@@ -96,14 +100,14 @@ export const AddModuleForm: Component<Props> = (props) => {
                     Ajouter
                   </button>
                 </div>
-                <Show when={field.error}>
-                  {error => <p class="mt-2 text-sm text-red-600" id="email-error">{error()}</p>}
-                </Show>
               </div>
             }
           </AddGrade.Field>
         </div>
       </AddGrade.Form>
+      <Show when={addModuleGradeForm.invalid}>
+        <Alert content="Le formulaire n'est pas valide" details={getErrors(addModuleGradeForm)} />
+      </Show>
     </div>
   )
 }
