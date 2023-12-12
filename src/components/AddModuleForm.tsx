@@ -1,5 +1,5 @@
 import { type Component, Show } from 'solid-js'
-import { type Module } from '~/types/Module'
+import { type Module, type ModuleGrade } from '~/types/Module'
 import { type Input, maxValue, minValue, number, object } from 'valibot'
 import { createForm, FormError, type SubmitHandler, valiForm } from '@modular-forms/solid'
 
@@ -14,7 +14,7 @@ const AddModuleGradeSchema = object({
 type AddModuleGradeForm = Input<typeof AddModuleGradeSchema>
 
 export const AddModuleForm: Component<{
-  addModule: (m: Module) => void
+  addModule: (m: ModuleGrade) => void
   availableModules: Module[]
 }> = (props) => {
   const [addModuleGradeForm, AddGrade] = createForm<AddModuleGradeForm>(

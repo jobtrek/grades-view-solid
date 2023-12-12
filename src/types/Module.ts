@@ -1,5 +1,8 @@
 export interface Module {
   name: string
   no: number
-  grade?: number
+}
+
+export interface ModuleGrade extends Module {
+  grade: number
 }

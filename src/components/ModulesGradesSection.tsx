@@ -1,7 +1,7 @@
 import { type Component, For, Show } from 'solid-js'
 import { createStore, type Part } from 'solid-js/store'
 import type { Grades } from '~/globalGradesStore'
-import { type Module } from '~/types/Module'
+import { type Module, type ModuleGrade } from '~/types/Module'
 import { GradeElement } from '~/components/GradeElement'
 import { AddModuleForm } from '~/components/AddModuleForm'
 import { roundTo } from '~/utils/roundTo'
@@ -13,9 +13,9 @@ interface Props {
   modules: Module[]
 }
 export const ModulesGradesSection: Component<Props> = (props) => {
-  const [modulesGrades, setModulesGrades] = createStore<Module[]>([])
+  const [modulesGrades, setModulesGrades] = createStore<ModuleGrade[]>([])
 
-  const addModule = (module: Module): void => {
+  const addModule = (module: ModuleGrade): void => {
     if (modulesGrades.find(m => m.no === module.no) === undefined) {
       setModulesGrades(m => [...m, module])
     } else {
@@ -24,7 +24,7 @@ export const ModulesGradesSection: Component<Props> = (props) => {
   }
 
   const branchGrade = (): number | null => {
-    const grades = modulesGrades.map(m => m.grade).filter(v => v !== null) as number[]
+    const grades = modulesGrades.map(m => m.grade).filter(v => v !== null)
     return grades.length > 0 ? roundTo(average(grades)) : null
   }
 
