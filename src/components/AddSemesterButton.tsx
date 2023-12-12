@@ -1,10 +1,10 @@
 import { type Component } from 'solid-js'
 
-export const AddSemesterButton: Component<{ addSemester: CallableFunction }> = (props) => {
+export const AddSemesterButton: Component<{ addSemester: () => void }> = (props) => {
   return (
     <div class="px-4 py-6 sm:gap-4 sm:px-0">
       <button
-          onClick={() => props.addSemester()}
+          onClick={() => { props.addSemester() }}
         type="button"
         class="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-4 text-center hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
       >

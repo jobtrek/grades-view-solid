@@ -77,7 +77,7 @@ export const AppNavigation: Component = () => {
                   Anglais
                 </A>
                 <A
-                  href="/epsic"
+                  href="/Epsic"
                   activeClass="text-white font-bold"
                   inactiveClass="text-sky-100 font-medium"
                   class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"

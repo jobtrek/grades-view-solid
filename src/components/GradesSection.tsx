@@ -17,6 +17,7 @@ export const GradesSection: Component<{ name: Part<Grades>, title: string }> = (
     setSemester(index, average)
   }
 
+  // FIXME: Convert to computed to avoid side effects
   // Recompute branch grade on semesters changes
   createEffect(() => {
     const grades = semesters.filter(v => v !== null) as number[]
