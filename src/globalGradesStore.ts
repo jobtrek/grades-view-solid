@@ -1,5 +1,5 @@
 import { createStore, type Part } from 'solid-js/store'
-import { createEffect, createMemo } from 'solid-js'
+import { createMemo } from 'solid-js'
 import { average, weightedAverage, weightedAverageFlat } from '~/utils/average'
 import { roundTo } from '~/utils/roundTo'
 
