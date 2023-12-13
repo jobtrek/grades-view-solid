@@ -65,7 +65,7 @@ export const AddModuleForm: Component<Props> = (props) => {
                          class="block w-full rounded-md border-0 py-1.5 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                          classList={{
                            'text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500': field.error !== '',
-                           'text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-indigo-600': field.error === ''
+                           'text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-sky-600': field.error === ''
                          }}
                          placeholder="117"/>
 
@@ -85,7 +85,7 @@ export const AddModuleForm: Component<Props> = (props) => {
                        class="block w-full rounded-none rounded-l-md border-0 py-1.5 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                        classList={{
                          'text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500': field.error !== '',
-                         'text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-indigo-600': field.error === ''
+                         'text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-sky-600': field.error === ''
                        }}
                        placeholder="4"/>
                   </div>
