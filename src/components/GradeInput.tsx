@@ -1,6 +1,6 @@
 import { type Component } from 'solid-js'
 import { type Input, maxValue, minValue, number, object } from 'valibot'
-import { createForm, type SubmitHandler, valiForm } from '@modular-forms/solid'
+import { createForm, reset, type SubmitHandler, valiForm } from '@modular-forms/solid'
 
 const AddGradeSchema = object({
   grade: number([
@@ -22,6 +22,8 @@ export const GradeInput: Component<Props> = (props) => {
 
   const handleSubmit: SubmitHandler<AddGradeForm> = (values, event) => {
     props.onNewGrade(values.grade)
+
+    reset(addGradeForm)
   }
 
   return (
@@ -41,6 +43,7 @@ export const GradeInput: Component<Props> = (props) => {
                   step="0.5"
                   min="1"
                   max="6"
+                  value={field.value}
                   class="block w-16 rounded-none rounded-l-md border-0 py-1.5 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                   classList={{
                     'text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500': field.error !== '',

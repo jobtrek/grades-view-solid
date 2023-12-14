@@ -4,7 +4,7 @@ import { type Input, maxValue, minValue, number, object } from 'valibot'
 import {
   createForm,
   FormError,
-  getErrors,
+  getErrors, reset,
   type SubmitHandler,
   valiForm
 } from '@modular-forms/solid'
@@ -40,6 +40,8 @@ export const AddModuleForm: Component<Props> = (props) => {
     }
 
     props.addModule({ no: module.no, name: module.name, grade: values.grade })
+
+    reset(addModuleGradeForm)
   }
 
   return (
@@ -62,6 +64,7 @@ export const AddModuleForm: Component<Props> = (props) => {
                     </svg>
                   </div>
                   <input {...props} type="number" id={field.name} required
+                         value={field.value}
                          class="block w-full rounded-md border-0 py-1.5 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                          classList={{
                            'text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500': field.error !== '',
@@ -83,6 +86,7 @@ export const AddModuleForm: Component<Props> = (props) => {
                   <div class="relative flex flex-grow items-stretch focus-within:z-10">
                     <input {...props} type="number" min="1" max="6" step="0.5" id={field.name} required
                        class="block w-full rounded-none rounded-l-md border-0 py-1.5 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                       value={field.value}
                        classList={{
                          'text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500': field.error !== '',
                          'text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-sky-600': field.error === ''
