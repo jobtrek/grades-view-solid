@@ -1,6 +1,6 @@
 import { type Component } from 'solid-js'
 
-export const Home: Component = () => {
+export default function Home () {
   return (
     <div class="grid grid-cols-1 gap-4 lg:col-span-2">
         <section aria-labelledby="section-1-title">
@@ -22,5 +22,3 @@ export const Home: Component = () => {
     </div>
   )
 }
-
-export default Home

@@ -1,6 +1,6 @@
 import { type Component } from 'solid-js'
-import { A } from 'solid-start'
 import { SelectMenu } from '~/components/SelectMenu'
+import {A} from "@solidjs/router";
 
 export const AppNavigation: Component = () => {
   return (

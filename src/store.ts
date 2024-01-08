@@ -9,5 +9,5 @@ const [gradesStore, setStore] = createStore({
 })
 
 const addSemester = (domain: string) => {
-  setStore('domains')
+  // setStore('domains')
 }

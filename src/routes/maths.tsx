@@ -1,10 +1,8 @@
 import { type Component } from 'solid-js'
 import { GradesSection } from '~/components/GradesSection'
 
-export const Maths: Component = () => {
+export default function Maths() {
   return (
     <GradesSection name="maths" title="Mathématiques" />
   )
 }
-
-export default Maths
