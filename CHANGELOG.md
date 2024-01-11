@@ -1,6 +1,31 @@
 # Changelog
 
 
+## v0.0.2
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.1...v0.0.2)
+
+### 🚀 Enhancements
+
+- **grades-store:** Add types for new global grade store ([31beadb](https://github.com/jobtrek/grades-view-solid/commit/31beadb))
+- **grades-store:** Change user name type to avoid null ([36006af](https://github.com/jobtrek/grades-view-solid/commit/36006af))
+- **grades-store:** Form to update student name ([56825a5](https://github.com/jobtrek/grades-view-solid/commit/56825a5))
+- **grades-store:** Module grades now stored in gradesStore ([e62d1ae](https://github.com/jobtrek/grades-view-solid/commit/e62d1ae))
+- **grades-store:** General branch semester now stored in gradesStore ([ee5a7e5](https://github.com/jobtrek/grades-view-solid/commit/ee5a7e5))
+- **grades-store:** All averages are now calculated from grades store ([d631662](https://github.com/jobtrek/grades-view-solid/commit/d631662))
+
+### 🏡 Chore
+
+- **grades-store:** Add solid primitive time ([b30e956](https://github.com/jobtrek/grades-view-solid/commit/b30e956))
+
+### 🎨 Styles
+
+- **grades:** Add minus prefix to negative notes ([32b8750](https://github.com/jobtrek/grades-view-solid/commit/32b8750))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v0.0.1
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.0...v0.0.1)
