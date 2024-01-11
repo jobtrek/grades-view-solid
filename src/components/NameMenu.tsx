@@ -1,7 +1,7 @@
-import { type Component, Show } from 'solid-js'
+import { type Component, createEffect, Show } from 'solid-js'
 import { gradesStore, updateStudentName } from '~/store/gradeStore'
 import { object, string, maxLength, minLength, type Input } from 'valibot'
-import { createForm, getErrors, type SubmitHandler, valiForm } from '@modular-forms/solid'
+import { createForm, getErrors, setValue, type SubmitHandler, valiForm } from '@modular-forms/solid'
 import { Alert } from '~/components/Alert'
 import DisappearingNotification from '~/components/DisappearingNotification'
 
@@ -17,6 +17,10 @@ type StudentGradeForm = Input<typeof StudentNameSchema>
 export const NameMenu: Component = () => {
   const [updateStudentForm, UpdateStudent] = createForm<StudentGradeForm>({
     validate: valiForm(StudentNameSchema)
+  })
+
+  createEffect(() => {
+    setValue(updateStudentForm, 'studentName', gradesStore.name, { shouldValidate: false })
   })
 
   const handleSubmit: SubmitHandler<StudentGradeForm> = (values) => {

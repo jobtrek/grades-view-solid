@@ -1,5 +1,5 @@
-import { type Component, Show } from 'solid-js'
-import { createForm, getErrors, type SubmitHandler, valiForm } from '@modular-forms/solid'
+import { type Component, createEffect, Show } from 'solid-js'
+import { createForm, getErrors, setValue, type SubmitHandler, valiForm } from '@modular-forms/solid'
 import { type AddGradeForm, AddGradeSchema } from '~/utils/gradeFormSchema'
 import { gradesStore, updateStudentTpiGrade } from '~/store/gradeStore'
 import DisappearingNotification from '~/components/DisappearingNotification'
@@ -8,6 +8,10 @@ import { Alert } from '~/components/Alert'
 export const TpiGradeItem: Component = () => {
   const [addGradeForm, AddGrade] = createForm<AddGradeForm>({
     validate: valiForm(AddGradeSchema)
+  })
+
+  createEffect(() => {
+    setValue(addGradeForm, 'grade', gradesStore.tpi!, { shouldValidate: false })
   })
 
   const handleSubmit: SubmitHandler<AddGradeForm> = (values) => {

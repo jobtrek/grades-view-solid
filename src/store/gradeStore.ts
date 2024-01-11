@@ -5,37 +5,29 @@ import {
   type StudentGrades,
   type TechnicalDomains
 } from '~/store/GradeStoreModels'
-import { type Accessor, createMemo } from 'solid-js'
+import { type Accessor, batch, createMemo } from 'solid-js'
 import { makePersisted } from '@solid-primitives/storage'
 import { roundTo } from '~/utils/roundTo'
 import { average, weightedAverage, weightedAverageFlat } from '~/utils/average'
+import { initialStoreData } from '~/store/initialStoreData'
 
 // Global store
 const [gradesStore, setGradesStore] = makePersisted(
-  createStore<StudentGrades>({
-    name: '',
-    tpi: null,
-    info: {
-      epsic: [],
-      cie: []
-    },
-    generalKnowledge: {
-      math: {
-        maxSemesters: 3,
-        semesters: []
-      },
-      eng: {
-        maxSemesters: 5,
-        semesters: []
-      },
-      overallCulture: {
-        maxSemesters: 8,
-        semesters: []
-      }
-    }
-  }),
+  createStore<StudentGrades>(initialStoreData),
   { name: 'grade-store' }
 )
+
+const resetStore = (grade: number): void => {
+  batch(() => {
+    setGradesStore('tpi', null)
+    setGradesStore('name', '')
+    setGradesStore('info', 'cie', [])
+    setGradesStore('info', 'epsic', [])
+    setGradesStore('generalKnowledge', 'eng', { semesters: [] })
+    setGradesStore('generalKnowledge', 'math', { semesters: [] })
+    setGradesStore('generalKnowledge', 'overallCulture', { semesters: [] })
+  })
+}
 
 const createStudentModuleAverageMemo = (moduleListName: keyof TechnicalDomains) => {
   return createMemo<number | null>(() => {
@@ -132,6 +124,7 @@ const addGradeToGeneralKnowledgeSemester = (branch: keyof GeneralKnowledge, seme
 
 export {
   gradesStore,
+  resetStore,
   createStudentModuleAverageMemo,
   createStudentGeneralBranchAverageMemo,
   createStudentGeneralBranchSemesterAverageMemo,
