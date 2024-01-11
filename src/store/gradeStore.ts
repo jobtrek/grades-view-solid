@@ -1,5 +1,6 @@
 import { createStore } from 'solid-js/store'
 import {
+  type GeneralKnowledge,
   type ModuleGrade,
   type StudentGrades,
   type TechnicalDomains
@@ -36,21 +37,11 @@ const [gradesStore, setGradesStore] = makePersisted(
   { name: 'grade-store' }
 )
 
-/** const studentNameMemo = createMemo<string>(() => {
-  return gradesStore.name
-}) */
-
 const studentTpiGradeMemo = createMemo<number | null>(() => {
   return gradesStore.tpi ?? null
 })
 
-/** const createStudentModuleGradeMemo = (moduleNumber: number, moduleListName: keyof TechnicalDomains): Accessor<number | null> => {
-  return createMemo<number | null>(() => {
-    return gradesStore.info[moduleListName].filter(module => module.no === moduleNumber)[0]?.grade ?? null
-  })
-} */
-
-const createStudentModuleAverageMemo = (moduleListName: keyof TechnicalDomains): Accessor<number | null> => {
+const createStudentModuleAverageMemo = (moduleListName: keyof TechnicalDomains) => {
   return createMemo<number | null>(() => {
     const moduleList = gradesStore.info[moduleListName]
     const moduleGrades = moduleList.map(module => module.grade)
@@ -66,20 +57,21 @@ const createStudentModuleAverageMemo = (moduleListName: keyof TechnicalDomains):
   })
 } */
 
-/** const createStudentGeneralBranchAverageMemo = (branchName: keyof GeneralKnowledge): Accessor<number[]> => {
+const createStudentGeneralBranchAverageMemo = (branchName: keyof GeneralKnowledge): Accessor<number | null> => {
   return createMemo<number | null>(() => {
     const branch = gradesStore.generalKnowledge[branchName]
-    const moduleGrades = branch.semesters.reduce((acc, semester) => {
-      const semesterAverage = average(semester)
-      if (semesterAverage !== null) {
-        acc.push(semesterAverage)
-      }
-      return acc
-    })
-    const moduleGradesFiltered = moduleGrades.filter(grade => grade !== null)
-    return moduleGradesFiltered.length > 0 ? roundTo(average(moduleGradesFiltered), 10) : null
+    const semesterAverages = branch.semesters.map(semester => semester.length > 0 ? roundTo(average(semester), 10) : null)
+    const filteredAverages = semesterAverages.filter(average => average !== null) as number[]
+    return filteredAverages.length > 0 ? roundTo(average(filteredAverages), 10) : null
   })
-} */
+}
+
+const createStudentGeneralBranchSemesterAverageMemo = (branchName: keyof GeneralKnowledge, semesterNumber: number): Accessor<number | null> => {
+  return createMemo<number | null>(() => {
+    const semesterGrades = gradesStore.generalKnowledge[branchName].semesters[semesterNumber]
+    return semesterGrades.length > 0 ? roundTo(average(semesterGrades), 10) : null
+  })
+}
 
 const updateStudentName = (name: string): void => {
   setGradesStore('name', n => name)
@@ -93,11 +85,23 @@ const updateTechnicalModuleGrade = (domain: keyof TechnicalDomains, module: Modu
   setGradesStore('info', domain, m => m.no === module.no, { grade: module.grade })
 }
 
+const addGeneralKnowledgeSemester = (branch: keyof GeneralKnowledge): void => {
+  setGradesStore('generalKnowledge', branch, 'semesters', b => [...b, []])
+}
+
+const addGradeToGeneralKnowledgeSemester = (branch: keyof GeneralKnowledge, semesterNumber: number, grade: number): void => {
+  setGradesStore('generalKnowledge', branch, 'semesters', semesterNumber, s => [...s, grade])
+}
+
 export {
   gradesStore,
   studentTpiGradeMemo,
   createStudentModuleAverageMemo,
+  createStudentGeneralBranchAverageMemo,
+  createStudentGeneralBranchSemesterAverageMemo,
   updateStudentName,
   addTechnicalModuleGrade,
-  updateTechnicalModuleGrade
+  updateTechnicalModuleGrade,
+  addGeneralKnowledgeSemester,
+  addGradeToGeneralKnowledgeSemester
 }

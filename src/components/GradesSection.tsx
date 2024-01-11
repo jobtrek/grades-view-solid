@@ -6,33 +6,19 @@ import { createStore, type Part } from 'solid-js/store'
 import { roundTo } from '~/utils/roundTo'
 import { average } from '~/utils/average'
 import { addGlobalGrade, type Grades } from '~/globalGradesStore'
+import { type GeneralKnowledge } from '~/store/GradeStoreModels'
+import {
+  addGeneralKnowledgeSemester,
+  createStudentGeneralBranchAverageMemo,
+  gradesStore
+} from '~/store/gradeStore'
 
 interface Props {
-  name: Part<Grades>
+  name: keyof GeneralKnowledge
   title: string
 }
 
 export const GradesSection: Component<Props> = (props) => {
-  const [semesters, setSemester] = createStore<Array<number | null>>([])
-  const addSemester = (): void => {
-    setSemester(s => [...s, null])
-  }
-  const updateSemester = (index: number, average: number): void => {
-    setSemester(index, average)
-  }
-
-  const branchGrade = createMemo(() => {
-    const grades = semesters.filter(v => v !== null) as number[]
-    return grades.length > 0 ? roundTo(average(grades)) : null
-  })
-
-  createEffect(() => {
-    const grade = branchGrade()
-    if (grade !== null) {
-      addGlobalGrade(props.name, grade)
-    }
-  })
-
   return (
     <div class="grid grid-cols-1 gap-4 lg:col-span-2">
       <section aria-labelledby="section-1-title">
@@ -49,22 +35,20 @@ export const GradesSection: Component<Props> = (props) => {
                 </h2>
               </div>
               <div class="mt-4 flex md:ml-4 md:mt-0">
-                <Show when={branchGrade()}>
+                <Show when={createStudentGeneralBranchAverageMemo(props.name)()}>
                   {grade => <GradeElement grade={grade()} class="font-bold text-lg px-3 py-1"/>}
                 </Show>
               </div>
             </div>
             <div class="mt-6 border-t border-gray-100">
               <dl class="divide-y divide-gray-100">
-                <Index each={semesters}>
+                <Index each={gradesStore.generalKnowledge[props.name].semesters}>
                   {
                     (semester, index) =>
-                      <Semester semesterGrade={semester()} updateSemesterGrade={(g: number) => {
-                        updateSemester(index, g)
-                      }}/>
+                      <Semester branchName={props.name} semesterIndex={index}/>
                   }
                 </Index>
-                <AddSemesterButton addSemester={addSemester}/>
+                <AddSemesterButton addSemester={() => { addGeneralKnowledgeSemester(props.name) }}/>
               </dl>
             </div>
           </div>

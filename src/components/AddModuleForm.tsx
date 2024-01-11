@@ -1,5 +1,4 @@
 import { type Component, Show } from 'solid-js'
-import { type Module, type ModuleGrade } from '~/types/Module'
 import { type Input, maxValue, minValue, number, object } from 'valibot'
 import {
   createForm,
@@ -9,6 +8,7 @@ import {
   valiForm
 } from '@modular-forms/solid'
 import { Alert } from '~/components/Alert'
+import { type Module, type ModuleGrade } from '~/store/GradeStoreModels'
 
 const AddModuleGradeSchema = object({
   grade: number([
@@ -39,7 +39,7 @@ export const AddModuleForm: Component<Props> = (props) => {
       throw new FormError<AddModuleGradeForm>('Impossible d\'ajouter la note', { module: 'Le module n\'existe pas' })
     }
 
-    props.addModule({ no: module.no, name: module.name, grade: values.grade })
+    props.addModule({ no: module.no, description: module.description, grade: values.grade })
 
     reset(addModuleGradeForm)
   }
