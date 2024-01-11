@@ -15,6 +15,7 @@ interface Props {
 
 export const AverageItem: Component<Props> = (innerProps) => {
   const props = mergeProps({ large: false }, innerProps)
+
   const currentAndLastGrade = createMemo<CurrentAndLastGrade>((prev) => {
     return { current: props.grade, previous: prev?.current ?? null }
   })
