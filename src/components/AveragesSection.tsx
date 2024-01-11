@@ -1,6 +1,7 @@
 import { type Component } from 'solid-js'
 import { AverageItem } from '~/components/AverageItem'
 import { allGradesMemo } from '~/store/gradeStore'
+import { TpiGradeItem } from '~/components/TpiGradeItem'
 
 export const AveragesSection: Component = () => {
   return (
@@ -12,7 +13,7 @@ export const AveragesSection: Component = () => {
         <div class="overflow-hidden rounded-lg bg-white shadow">
           <dl class="mx-auto grid grid-cols-1 gap-px bg-gray-900/5 sm:grid-cols-2 lg:grid-cols-2">
             <AverageItem title="Moyenne générale" grade={allGradesMemo().global} large={true} />
-            <AverageItem title="TPI" grade={allGradesMemo().tpi} />
+            <TpiGradeItem />
             <AverageItem title="Compétences générales" grade={allGradesMemo().mathEng} />
             <AverageItem grade={allGradesMemo().maths} title="Mathématiques" />
             <AverageItem grade={allGradesMemo().eng} title="Anglais" />

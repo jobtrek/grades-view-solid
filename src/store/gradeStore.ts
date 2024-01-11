@@ -110,6 +110,10 @@ const updateStudentName = (name: string): void => {
   setGradesStore('name', n => name)
 }
 
+const updateStudentTpiGrade = (grade: number): void => {
+  setGradesStore('tpi', g => grade)
+}
+
 const addTechnicalModuleGrade = (domain: keyof TechnicalDomains, module: ModuleGrade): void => {
   setGradesStore('info', domain, m => [...m, module])
 }
@@ -133,6 +137,7 @@ export {
   createStudentGeneralBranchSemesterAverageMemo,
   allGradesMemo,
   updateStudentName,
+  updateStudentTpiGrade,
   addTechnicalModuleGrade,
   updateTechnicalModuleGrade,
   addGeneralKnowledgeSemester,

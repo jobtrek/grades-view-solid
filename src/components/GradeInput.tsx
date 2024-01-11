@@ -1,15 +1,6 @@
 import { type Component } from 'solid-js'
-import { type Input, maxValue, minValue, number, object } from 'valibot'
 import { createForm, reset, type SubmitHandler, valiForm } from '@modular-forms/solid'
-
-const AddGradeSchema = object({
-  grade: number([
-    maxValue(6, 'La note ne peut pas être supérieure à 6'),
-    minValue(1, 'La note ne peut pas être inférieure à 1')
-  ])
-})
-
-type AddGradeForm = Input<typeof AddGradeSchema>
+import { type AddGradeForm, AddGradeSchema } from '~/utils/gradeFormSchema'
 
 interface Props {
   onNewGrade: (g: number) => void
