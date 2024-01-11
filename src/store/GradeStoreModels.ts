@@ -26,7 +26,7 @@ interface Branch {
 }
 
 interface StudentGrades {
-  name: string | null
+  name: string
   tpi: NullableGrade
   info: TechnicalDomains
   generalKnowledge: GeneralKnowledge

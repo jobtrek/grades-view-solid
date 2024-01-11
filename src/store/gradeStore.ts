@@ -6,7 +6,7 @@ import { makePersisted } from '@solid-primitives/storage'
 // Global store
 const [gradesStore, setGradesStore] = makePersisted(
   createStore<StudentGrades>({
-    name: null,
+    name: '',
     tpi: null,
     info: {
       episc: [],
@@ -30,7 +30,7 @@ const [gradesStore, setGradesStore] = makePersisted(
   { name: 'grade-store' }
 )
 
-const studentNameMemo = createMemo<string | null>(() => {
+const studentNameMemo = createMemo<string>(() => {
   return gradesStore.name
 })
 
