@@ -2,10 +2,6 @@ import { type Component, createEffect, createMemo, createSignal, Index, Show } f
 import { GradeElement } from '~/components/GradeElement'
 import { Semester } from '~/components/Semester'
 import { AddSemesterButton } from '~/components/AddSemesterButton'
-import { createStore, type Part } from 'solid-js/store'
-import { roundTo } from '~/utils/roundTo'
-import { average } from '~/utils/average'
-import { addGlobalGrade, type Grades } from '~/globalGradesStore'
 import { type GeneralKnowledge } from '~/store/GradeStoreModels'
 import {
   addGeneralKnowledgeSemester,
