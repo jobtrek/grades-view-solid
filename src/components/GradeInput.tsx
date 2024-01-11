@@ -20,7 +20,7 @@ export const GradeInput: Component<Props> = (props) => {
     validate: valiForm(AddGradeSchema)
   })
 
-  const handleSubmit: SubmitHandler<AddGradeForm> = (values, event) => {
+  const handleSubmit: SubmitHandler<AddGradeForm> = (values) => {
     props.onNewGrade(values.grade)
 
     reset(addGradeForm)

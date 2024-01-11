@@ -1,4 +1,4 @@
-import { createHandler, StartServer } from "@solidjs/start/server";
+import { createHandler, StartServer } from '@solidjs/start/server'
 
 export default createHandler(() => (
   <StartServer
@@ -13,9 +13,10 @@ export default createHandler(() => (
         </head>
         <body class="h-full">
           <div id="app">{children}</div>
+          <div id="modal" />
           {scripts}
         </body>
       </html>
     )}
   />
-));
+))
