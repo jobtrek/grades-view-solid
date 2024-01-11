@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.2...v0.0.3)
+
+### 🚀 Enhancements
+
+- **tpi-grade:** Add input to update tpi grade ([2140258](https://github.com/jobtrek/grades-view-solid/commit/2140258))
+- **grades-store:** Add possibility to reset the store ([d740648](https://github.com/jobtrek/grades-view-solid/commit/d740648))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v0.0.2
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.1...v0.0.2)
