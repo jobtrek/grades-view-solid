@@ -1,5 +1,3 @@
-import { type Component } from 'solid-js'
-
 export default function Home () {
   return (
     <div class="grid grid-cols-1 gap-4 lg:col-span-2">

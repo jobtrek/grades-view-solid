@@ -3,24 +3,28 @@ type NullableGrade = Grade | null
 type Semester = number[]
 type SemesterList = Semester[]
 
-interface ModuleGrade {
-  no: number
-  grade: Grade
+export interface Module {
   description: string
+  no: number
+}
+
+export interface ModuleGrade extends Module {
+  grade: number
 }
 
 type ModulesList = ModuleGrade[]
 interface TechnicalDomains {
-  episc: ModulesList
+  epsic: ModulesList
   cie: ModulesList
 }
 
-interface GeneralKnowledge {
+export interface GeneralKnowledge {
   math: Branch
   eng: Branch
+  overallCulture: Branch
 }
 
-interface Branch {
+export interface Branch {
   maxSemesters: number
   semesters: SemesterList
 }
@@ -30,9 +34,9 @@ interface StudentGrades {
   tpi: NullableGrade
   info: TechnicalDomains
   generalKnowledge: GeneralKnowledge
-  overallCulture: Branch
 }
 
 export type {
-  StudentGrades
+  StudentGrades,
+  TechnicalDomains
 }

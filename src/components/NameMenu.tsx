@@ -1,5 +1,5 @@
 import { type Component, Show } from 'solid-js'
-import { studentNameMemo, updateStudentName } from '~/store/gradeStore'
+import { gradesStore, updateStudentName } from '~/store/gradeStore'
 import { object, string, maxLength, minLength, type Input } from 'valibot'
 import { createForm, getErrors, type SubmitHandler, valiForm } from '@modular-forms/solid'
 import { Alert } from '~/components/Alert'
@@ -44,7 +44,7 @@ export const NameMenu: Component = () => {
                     type="text"
                     name={field.name}
                     id={field.name}
-                    value={field.value ?? studentNameMemo()}
+                    value={field.value ?? gradesStore.name}
                     class="block w-full rounded-md border-0 py-1.5 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                     classList={{
                       'text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500': field.error !== '',

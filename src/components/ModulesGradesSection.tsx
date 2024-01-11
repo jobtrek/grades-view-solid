@@ -1,38 +1,28 @@
-import { type Component, createEffect, createMemo, Index, Show } from 'solid-js'
-import { createStore, type Part } from 'solid-js/store'
-import { addGlobalGrade, type Grades } from '~/globalGradesStore'
-import { type Module, type ModuleGrade } from '~/types/Module'
+import { type Component, createMemo, For, Show } from 'solid-js'
 import { GradeElement } from '~/components/GradeElement'
 import { AddModuleForm } from '~/components/AddModuleForm'
 import { roundTo } from '~/utils/roundTo'
 import { average } from '~/utils/average'
+import { type Module, type ModuleGrade, type TechnicalDomains } from '~/store/GradeStoreModels'
+import { addTechnicalModuleGrade, gradesStore, updateTechnicalModuleGrade } from '~/store/gradeStore'
 
 interface Props {
-  name: Part<Grades>
+  name: keyof TechnicalDomains
   title: string
   modules: Module[]
 }
 export const ModulesGradesSection: Component<Props> = (props) => {
-  const [modulesGrades, setModulesGrades] = createStore<ModuleGrade[]>([])
-
   const addModule = (module: ModuleGrade): void => {
-    if (modulesGrades.find(m => m.no === module.no) === undefined) {
-      setModulesGrades(m => [...m, module])
+    if (gradesStore.info[props.name].find(m => m.no === module.no) === undefined) {
+      addTechnicalModuleGrade(props.name, module)
     } else {
-      setModulesGrades(m => m.no === module.no, { grade: module.grade })
+      updateTechnicalModuleGrade(props.name, module)
     }
   }
 
   const branchGrade = createMemo(() => {
-    const grades = modulesGrades.map(m => m.grade)
-    return grades.length > 0 ? roundTo(average(grades)) : null
-  })
-
-  createEffect(() => {
-    const grade = branchGrade()
-    if (grade !== null) {
-      addGlobalGrade(props.name, grade)
-    }
+    const grades = gradesStore.info[props.name].map(m => m.grade)
+    return grades.length > 0 ? roundTo(average(grades), 10) : null
   })
 
   return (
@@ -59,9 +49,9 @@ export const ModulesGradesSection: Component<Props> = (props) => {
             <div class="mt-6 border-t border-gray-100">
               <dl class="divide-y divide-gray-100">
                 <div class="px-4 py-6 gap-2 sm:px-0 flex flex-row flex-wrap">
-                  <Index each={modulesGrades} fallback={<p class="text-gray-500">Aucun module</p>}>
-                    {grade => <GradeElement grade={grade().grade} class="font-medium text-sm px-2 py-2" />}
-                  </Index>
+                  <For each={gradesStore.info[props.name]} fallback={<p class="text-gray-500">Aucun module</p>}>
+                    {grade => <GradeElement grade={grade.grade} class="font-medium text-sm px-2 py-2" />}
+                  </For>
                 </div>
                 <AddModuleForm addModule={addModule} availableModules={props.modules} />
               </dl>
