@@ -120,6 +120,10 @@ const addGradeToGeneralKnowledgeSemester = (branch: keyof GeneralKnowledge, seme
   setGradesStore('generalKnowledge', branch, 'semesters', semesterNumber, s => [...s, grade])
 }
 
+const removeGradeToGeneralKnowledgeSemester = (branch: keyof GeneralKnowledge, semesterNumber: number, gradeIndex: number): void => {
+  setGradesStore('generalKnowledge', branch, 'semesters', semesterNumber, s => s.filter((_, i) => i !== gradeIndex))
+}
+
 export {
   gradesStore,
   resetStore,
@@ -131,5 +135,6 @@ export {
   addTechnicalModuleGrade,
   updateTechnicalModuleGrade,
   addGeneralKnowledgeSemester,
-  addGradeToGeneralKnowledgeSemester
+  addGradeToGeneralKnowledgeSemester,
+  removeGradeToGeneralKnowledgeSemester
 }

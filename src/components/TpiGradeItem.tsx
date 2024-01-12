@@ -11,7 +11,7 @@ export const TpiGradeItem: Component = () => {
   })
 
   createEffect(() => {
-    setValue(addGradeForm, 'grade', gradesStore.tpi!, { shouldValidate: false })
+    setValue(addGradeForm, 'grade', gradesStore.tpi, { shouldValidate: false })
   })
 
   const handleSubmit: SubmitHandler<AddGradeForm> = (values) => {
