@@ -1,7 +1,13 @@
 import { type Component } from 'solid-js'
 import { AverageItem } from '~/components/AverageItem'
-import { allGradesMemo } from '~/store/gradeStore'
 import { TpiGradeItem } from '~/components/TpiGradeItem'
+import {
+  cieAverageMemo,
+  engAverageMemo, epsicAverageMemo,
+  generalAverageMemo, infoAverageMemo,
+  mathAverageMemo,
+  mathEngAverageMemo, sociAverageMemo
+} from '~/store/gradeStore'
 
 export const AveragesSection: Component = () => {
   return (
@@ -12,15 +18,15 @@ export const AveragesSection: Component = () => {
         </h2>
         <div class="overflow-hidden rounded-lg bg-white shadow">
           <dl class="mx-auto grid grid-cols-1 gap-px bg-gray-900/5 sm:grid-cols-2 lg:grid-cols-2">
-            <AverageItem title="Moyenne générale" grade={allGradesMemo().global} large={true} />
+            <AverageItem title="Moyenne générale" grade={generalAverageMemo()} large={true} />
             <TpiGradeItem />
-            <AverageItem title="Compétences générales" grade={allGradesMemo().mathEng} />
-            <AverageItem grade={allGradesMemo().maths} title="Mathématiques" />
-            <AverageItem grade={allGradesMemo().eng} title="Anglais" />
-            <AverageItem grade={allGradesMemo().soci} title="Société et langues" />
-            <AverageItem grade={allGradesMemo().info} title="Informatique" />
-            <AverageItem grade={allGradesMemo().epsic} title="EPSIC" />
-            <AverageItem grade={allGradesMemo().cie} title="CIE" />
+            <AverageItem title="Compétences générales" grade={mathEngAverageMemo()} />
+            <AverageItem grade={mathAverageMemo()} title="Mathématiques" />
+            <AverageItem grade={engAverageMemo()} title="Anglais" />
+            <AverageItem grade={sociAverageMemo()} title="Société et langues" />
+            <AverageItem grade={infoAverageMemo()} title="Informatique" />
+            <AverageItem grade={epsicAverageMemo()} title="EPSIC" />
+            <AverageItem grade={cieAverageMemo()} title="CIE" />
           </dl>
         </div>
       </section>

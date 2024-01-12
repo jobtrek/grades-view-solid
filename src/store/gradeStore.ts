@@ -29,19 +29,19 @@ const resetStore = (grade: number): void => {
   })
 }
 
-const createStudentModuleAverageMemo = (moduleListName: keyof TechnicalDomains) => {
+const createStudentModuleAverageMemo = (moduleListName: keyof TechnicalDomains): Accessor<number | null> => {
   return createMemo<number | null>(() => {
     const moduleList = gradesStore.info[moduleListName]
     const moduleGrades = moduleList.map(module => module.grade)
     const moduleGradesFiltered = moduleGrades.filter(grade => grade !== null)
-    return moduleGradesFiltered.length > 0 ? roundTo(average(moduleGradesFiltered), 10) : null
+    return moduleGradesFiltered.length > 0 ? roundTo(average(moduleGradesFiltered), 2) : null
   })
 }
 
 const createStudentGeneralBranchAverageMemo = (branchName: keyof GeneralKnowledge): Accessor<number | null> => {
   return createMemo<number | null>(() => {
     const branch = gradesStore.generalKnowledge[branchName]
-    const semesterAverages = branch.semesters.map(semester => semester.length > 0 ? roundTo(average(semester), 10) : null)
+    const semesterAverages = branch.semesters.map(semester => semester.length > 0 ? roundTo(average(semester), 2) : null)
     const filteredAverages = semesterAverages.filter(average => average !== null) as number[]
     return filteredAverages.length > 0 ? roundTo(average(filteredAverages), 10) : null
   })
@@ -50,52 +50,50 @@ const createStudentGeneralBranchAverageMemo = (branchName: keyof GeneralKnowledg
 const createStudentGeneralBranchSemesterAverageMemo = (branchName: keyof GeneralKnowledge, semesterNumber: number): Accessor<number | null> => {
   return createMemo<number | null>(() => {
     const semesterGrades = gradesStore.generalKnowledge[branchName].semesters[semesterNumber]
-    return semesterGrades.length > 0 ? roundTo(average(semesterGrades), 10) : null
+    return semesterGrades.length > 0 ? roundTo(average(semesterGrades), 2) : null
   })
 }
 
-const allGradesMemo = createMemo(() => {
-  const epsicGrade = createStudentModuleAverageMemo('epsic')
-  const cieGrade = createStudentModuleAverageMemo('cie')
+export const epsicAverageMemo = createStudentModuleAverageMemo('epsic')
+export const cieAverageMemo = createStudentModuleAverageMemo('cie')
+
+export const mathAverageMemo = createStudentGeneralBranchAverageMemo('math')
+export const engAverageMemo = createStudentGeneralBranchAverageMemo('eng')
+
+export const sociAverageMemo = createStudentGeneralBranchAverageMemo('overallCulture')
+
+export const infoAverageMemo = createMemo(() => {
   let info = null
-  if (epsicGrade() !== null && cieGrade() !== null) {
-    info = roundTo(weightedAverageFlat([epsicGrade(), cieGrade()], [80, 20]))
-  } else if (epsicGrade() !== null) {
-    info = epsicGrade()
-  } else if (cieGrade() !== null) {
-    info = cieGrade()
+  if (epsicAverageMemo() !== null && cieAverageMemo() !== null) {
+    info = roundTo(weightedAverageFlat([epsicAverageMemo(), cieAverageMemo()], [80, 20]))
+  } else if (epsicAverageMemo() !== null) {
+    info = epsicAverageMemo()
+  } else if (cieAverageMemo() !== null) {
+    info = cieAverageMemo()
   }
+  return info
+})
 
-  const mathGrade = createStudentGeneralBranchAverageMemo('math')
-  const engGrade = createStudentGeneralBranchAverageMemo('eng')
+export const mathEngAverageMemo = createMemo(() => {
   let mathEng = null
-  if (mathGrade() !== null && engGrade() !== null) {
-    mathEng = roundTo(average([mathGrade(), engGrade()]))
-  } else if (mathGrade() !== null) {
-    mathEng = mathGrade()
-  } else if (engGrade() !== null) {
-    mathEng = engGrade()
+  if (mathAverageMemo() !== null && engAverageMemo() !== null) {
+    mathEng = roundTo(average([mathAverageMemo(), engAverageMemo()]), 2)
+  } else if (mathAverageMemo() !== null) {
+    mathEng = mathAverageMemo()
+  } else if (engAverageMemo() !== null) {
+    mathEng = engAverageMemo()
   }
+  return mathEng
+})
 
-  const sociGrade = createStudentGeneralBranchAverageMemo('overallCulture')
+export const generalAverageMemo = createMemo(() => {
   const forAverageCalc = [
-    [gradesStore.tpi, 40],
-    [sociGrade(), 20],
-    [mathEng, 10],
-    [info, 30]
+    [gradesStore.tpi, 30],
+    [sociAverageMemo(), 20],
+    [mathEngAverageMemo(), 20],
+    [infoAverageMemo(), 30]
   ].filter(([grade]) => grade !== null) as Array<[number, number]>
-
-  return {
-    global: forAverageCalc.length > 0 ? roundTo(weightedAverage(forAverageCalc)) : null,
-    maths: mathGrade(),
-    info,
-    mathEng,
-    tpi: gradesStore.tpi,
-    soci: sociGrade(),
-    eng: engGrade(),
-    epsic: epsicGrade(),
-    cie: cieGrade()
-  }
+  return forAverageCalc.length > 0 ? roundTo(weightedAverage(forAverageCalc)) : null
 })
 
 const updateStudentName = (name: string): void => {
@@ -128,7 +126,6 @@ export {
   createStudentModuleAverageMemo,
   createStudentGeneralBranchAverageMemo,
   createStudentGeneralBranchSemesterAverageMemo,
-  allGradesMemo,
   updateStudentName,
   updateStudentTpiGrade,
   addTechnicalModuleGrade,
