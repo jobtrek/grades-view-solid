@@ -4,7 +4,12 @@ import { AddModuleForm } from '~/components/AddModuleForm'
 import { roundTo } from '~/utils/roundTo'
 import { average } from '~/utils/average'
 import { type Module, type ModuleGrade, type TechnicalDomains } from '~/store/GradeStoreModels'
-import { addTechnicalModuleGrade, gradesStore, updateTechnicalModuleGrade } from '~/store/gradeStore'
+import {
+  addTechnicalModuleGrade,
+  gradesStore,
+  removeTechnicalModuleGrade,
+  updateTechnicalModuleGrade
+} from '~/store/gradeStore'
 import { TooltipContainer } from '~/components/TooltipContainer'
 
 interface Props {
@@ -20,6 +25,8 @@ export const ModulesGradesSection: Component<Props> = (props) => {
       updateTechnicalModuleGrade(props.name, module)
     }
   }
+
+  const removeModule = (module: ModuleGrade): void => { removeTechnicalModuleGrade(props.name, module) }
 
   const branchGrade = createMemo(() => {
     const grades = gradesStore.info[props.name].map(m => m.grade)
@@ -53,7 +60,11 @@ export const ModulesGradesSection: Component<Props> = (props) => {
                   <For each={gradesStore.info[props.name]} fallback={<p class="text-gray-500">Aucun module</p>}>
                     {grade =>
                       <TooltipContainer description={`${grade.no} - ${grade.description}`}>
-                        <GradeElement grade={grade.grade} class="font-medium text-sm px-2 py-2" />
+                        <GradeElement
+                          grade={grade.grade}
+                          class="font-medium text-sm px-2 py-2"
+                          action={() => { removeModule(grade) }}
+                        />
                       </TooltipContainer>
                     }
                   </For>

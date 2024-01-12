@@ -108,6 +108,10 @@ const addTechnicalModuleGrade = (domain: keyof TechnicalDomains, module: ModuleG
   setGradesStore('info', domain, m => [...m, module])
 }
 
+const removeTechnicalModuleGrade = (domain: keyof TechnicalDomains, module: ModuleGrade): void => {
+  setGradesStore('info', domain, m => m.filter(m => m.no !== module.no))
+}
+
 const updateTechnicalModuleGrade = (domain: keyof TechnicalDomains, module: ModuleGrade): void => {
   setGradesStore('info', domain, m => m.no === module.no, { grade: module.grade })
 }
@@ -131,6 +135,7 @@ export {
   createStudentGeneralBranchAverageMemo,
   createStudentGeneralBranchSemesterAverageMemo,
   updateStudentName,
+  removeTechnicalModuleGrade,
   updateStudentTpiGrade,
   addTechnicalModuleGrade,
   updateTechnicalModuleGrade,
