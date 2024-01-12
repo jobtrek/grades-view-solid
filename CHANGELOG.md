@@ -1,6 +1,30 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.3...v0.0.4)
+
+### 🚀 Enhancements
+
+- **module-autocomplete:** Add combobox component ([ddbdb30](https://github.com/jobtrek/grades-view-solid/commit/ddbdb30))
+- **grades:** Add tooltip component ([fc118dc](https://github.com/jobtrek/grades-view-solid/commit/fc118dc))
+- **grades:** Add button to remove grade ([4e8207c](https://github.com/jobtrek/grades-view-solid/commit/4e8207c))
+- **grades:** Add tooltip to module grades ([b511089](https://github.com/jobtrek/grades-view-solid/commit/b511089))
+- **grades:** Add delete action on module grades ([7889aa6](https://github.com/jobtrek/grades-view-solid/commit/7889aa6))
+
+### 🩹 Fixes
+
+- **tooling:** Add eslint ignore file ([e113ba4](https://github.com/jobtrek/grades-view-solid/commit/e113ba4))
+
+### 💅 Refactors
+
+- **reactivity:** Move averages computations to individual memos ([85d183a](https://github.com/jobtrek/grades-view-solid/commit/85d183a))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v0.0.3
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.2...v0.0.3)
