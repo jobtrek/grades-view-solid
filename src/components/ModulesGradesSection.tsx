@@ -5,6 +5,7 @@ import { roundTo } from '~/utils/roundTo'
 import { average } from '~/utils/average'
 import { type Module, type ModuleGrade, type TechnicalDomains } from '~/store/GradeStoreModels'
 import { addTechnicalModuleGrade, gradesStore, updateTechnicalModuleGrade } from '~/store/gradeStore'
+import { TooltipContainer } from '~/components/TooltipContainer'
 
 interface Props {
   name: keyof TechnicalDomains
@@ -50,7 +51,11 @@ export const ModulesGradesSection: Component<Props> = (props) => {
               <dl class="divide-y divide-gray-100">
                 <div class="px-4 py-6 gap-2 sm:px-0 flex flex-row flex-wrap">
                   <For each={gradesStore.info[props.name]} fallback={<p class="text-gray-500">Aucun module</p>}>
-                    {grade => <GradeElement grade={grade.grade} class="font-medium text-sm px-2 py-2" />}
+                    {grade =>
+                      <TooltipContainer description={`${grade.no} - ${grade.description}`}>
+                        <GradeElement grade={grade.grade} class="font-medium text-sm px-2 py-2" />
+                      </TooltipContainer>
+                    }
                   </For>
                 </div>
                 <AddModuleForm addModule={addModule} availableModules={props.modules} />
