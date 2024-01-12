@@ -9,6 +9,7 @@ import {
 } from '@modular-forms/solid'
 import { Alert } from '~/components/Alert'
 import { type Module, type ModuleGrade } from '~/store/GradeStoreModels'
+import { AutocompleteComboBox } from '~/components/forms/fields/AutocompleteComboBox'
 
 const AddModuleGradeSchema = object({
   grade: number([
