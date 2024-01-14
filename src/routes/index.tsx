@@ -16,6 +16,11 @@ export default function Home(): JSX.Element {
                 </h2>
               </div>
             </div>
+            <div class="mt-6 border-t border-gray-100">
+              Bienvenue sur le calculateur de moyenne du CFC informatique en dev
+              d'application. Cliquez sur les onglets pour commencer à calculer
+              vos moyennes.
+            </div>
           </div>
         </div>
       </section>
