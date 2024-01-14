@@ -1,0 +1,7 @@
+/node_modules
+
+.solid
+.output
+.vercel
+.netlify
+netlify
