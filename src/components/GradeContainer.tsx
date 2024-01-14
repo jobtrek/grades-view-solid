@@ -12,7 +12,9 @@ export const GradeContainer: Component<Props> = (props) => {
     <div class="flex flex-row flex-nowrap overflow-y-scroll gap-x-1.5">
       <Index each={props.grades}>
         {(grade, index) => (
-          <TooltipContainer description="Super note">
+          <TooltipContainer
+            description={grade() > 4.5 ? "Super note" : "Note à améliorer"}
+          >
             <GradeElement
               grade={grade()}
               class="font-medium text-sm px-2 py-2"
