@@ -1,6 +1,11 @@
-import { type Component } from 'solid-js'
-import { createForm, reset, type SubmitHandler, valiForm } from '@modular-forms/solid'
-import { type AddGradeForm, AddGradeSchema } from '~/utils/gradeFormSchema'
+import { type Component } from "solid-js"
+import {
+  createForm,
+  reset,
+  type SubmitHandler,
+  valiForm,
+} from "@modular-forms/solid"
+import { type AddGradeForm, AddGradeSchema } from "~/utils/gradeFormSchema"
 
 interface Props {
   onNewGrade: (g: number) => void
@@ -8,7 +13,7 @@ interface Props {
 
 export const GradeInput: Component<Props> = (props) => {
   const [addGradeForm, AddGrade] = createForm<AddGradeForm>({
-    validate: valiForm(AddGradeSchema)
+    validate: valiForm(AddGradeSchema),
   })
 
   const handleSubmit: SubmitHandler<AddGradeForm> = (values) => {
@@ -20,7 +25,7 @@ export const GradeInput: Component<Props> = (props) => {
   return (
     <AddGrade.Form onSubmit={handleSubmit}>
       <AddGrade.Field name="grade" type="number">
-        {(field, props) =>
+        {(field, props) => (
           <div class="mr-1.5">
             <label for={field.name} class="sr-only">
               Add grade
@@ -37,8 +42,10 @@ export const GradeInput: Component<Props> = (props) => {
                   value={field.value}
                   class="block w-16 rounded-none rounded-l-md border-0 py-1.5 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                   classList={{
-                    'text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500': field.error !== '',
-                    'text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-sky-600': field.error === ''
+                    "text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500":
+                      field.error !== "",
+                    "text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-sky-600":
+                      field.error === "",
                   }}
                   placeholder="4"
                 />
@@ -63,7 +70,7 @@ export const GradeInput: Component<Props> = (props) => {
               </button>
             </div>
           </div>
-        }
+        )}
       </AddGrade.Field>
     </AddGrade.Form>
   )

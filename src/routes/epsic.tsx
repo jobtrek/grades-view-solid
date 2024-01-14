@@ -1,8 +1,13 @@
-import { ModulesGradesSection } from '~/components/ModulesGradesSection'
-import { epsicModules } from '~/data/epsicModules'
+import { ModulesGradesSection } from "~/components/ModulesGradesSection"
+import { epsicModules } from "~/data/epsicModules"
+import type { JSX } from "solid-js"
 
-export default function Epsic () {
+export default function Epsic(): JSX.Element {
   return (
-    <ModulesGradesSection name="epsic" title="Modules EPSIC" modules={epsicModules}/>
+    <ModulesGradesSection
+      name="epsic"
+      title="Modules EPSIC"
+      modules={epsicModules}
+    />
   )
 }

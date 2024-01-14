@@ -1,22 +1,22 @@
 export const initialStoreData = {
-  name: '',
+  name: "",
   tpi: null,
   info: {
     epsic: [],
-    cie: []
+    cie: [],
   },
   generalKnowledge: {
     math: {
       maxSemesters: 3,
-      semesters: []
+      semesters: [],
     },
     eng: {
       maxSemesters: 5,
-      semesters: []
+      semesters: [],
     },
     overallCulture: {
       maxSemesters: 8,
-      semesters: []
-    }
-  }
+      semesters: [],
+    },
+  },
 }

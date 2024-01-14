@@ -13,6 +13,7 @@ export interface ModuleGrade extends Module {
 }
 
 type ModulesList = ModuleGrade[]
+
 interface TechnicalDomains {
   epsic: ModulesList
   cie: ModulesList
@@ -36,7 +37,4 @@ interface StudentGrades {
   generalKnowledge: GeneralKnowledge
 }
 
-export type {
-  StudentGrades,
-  TechnicalDomains
-}
+export type { StudentGrades, TechnicalDomains }
