@@ -1,4 +1,4 @@
-import { type Component, Show } from "solid-js"
+import { type Component, createMemo, Show } from "solid-js"
 import { type Input, maxValue, minValue, number, object } from "valibot"
 import {
   createForm,
@@ -10,6 +10,7 @@ import {
 } from "@modular-forms/solid"
 import { Alert } from "~/components/Alert"
 import { type Module, type ModuleGrade } from "~/store/GradeStoreModels"
+import { AutocompleteComboBox } from "~/components/forms/fields/AutocompleteComboBox"
 
 const AddModuleGradeSchema = object({
   grade: number([
@@ -31,7 +32,14 @@ export const AddModuleForm: Component<Props> = (props) => {
     validate: valiForm(AddModuleGradeSchema),
   })
 
-  const handleSubmit: SubmitHandler<AddModuleGradeForm> = (values, event) => {
+  const autocompleteList = createMemo(() => {
+    return props.availableModules.map((m) => ({
+      label: m.description,
+      value: m.no,
+    }))
+  })
+
+  const handleSubmit: SubmitHandler<AddModuleGradeForm> = (values) => {
     // Check if the submitted module exists
     const module = props.availableModules.find((m) => m.no === values.module)
     if (module === undefined) {
@@ -52,45 +60,18 @@ export const AddModuleForm: Component<Props> = (props) => {
   return (
     <div class="px-4 pt-6 sm:gap-4 sm:px-0">
       <AddGrade.Form onSubmit={handleSubmit}>
-        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 lg:grid-cols-8">
           <AddGrade.Field name="module" type="number">
             {(field, props) => (
-              <div class="sm:col-span-4">
-                <label
-                  for={field.name}
-                  class="block text-sm font-medium leading-6 text-gray-900"
-                >
-                  Numéro du module
-                </label>
-                <div class="relative mt-2 rounded-md shadow-sm">
-                  <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
-                    <svg
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      class="h-5 w-5 text-gray-400"
-                      aria-hidden="true"
-                    >
-                      <path d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
-                    </svg>
-                  </div>
-                  <input
-                    {...props}
-                    type="number"
-                    id={field.name}
-                    required
-                    value={field.value}
-                    class="block w-full rounded-md border-0 py-1.5 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
-                    classList={{
-                      "text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500":
-                        field.error !== "",
-                      "text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-sky-600":
-                        field.error === "",
-                    }}
-                    placeholder="117"
-                  />
-                </div>
-              </div>
+              <AutocompleteComboBox
+                {...props}
+                type="number"
+                label="Choissisez votre note de module"
+                error={field.error}
+                required
+                placeholder="Recherchez un module"
+                items={autocompleteList()}
+              />
             )}
           </AddGrade.Field>
           <AddGrade.Field name="grade" type="number">

@@ -1,6 +1,7 @@
 import { createStore } from "solid-js/store"
 import {
   type GeneralKnowledge,
+  type Module,
   type ModuleGrade,
   type StudentGrades,
   type TechnicalDomains,
@@ -39,6 +40,18 @@ const createStudentModuleAverageMemo = (
     return moduleGradesFiltered.length > 0
       ? roundTo(average(moduleGradesFiltered), 2)
       : null
+  })
+}
+
+export const createAvailableModuleMemo = (
+  moduleListName: keyof TechnicalDomains,
+  moduleList: Module[],
+): Accessor<Module[]> => {
+  return createMemo<Module[]>(() => {
+    const actualModules = gradesStore.info[moduleListName]
+    return moduleList.filter(
+      (module) => !actualModules.map((m) => m.no).includes(module.no),
+    )
   })
 }
 
