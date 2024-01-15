@@ -36,8 +36,8 @@ dependencies:
     specifier: ^0.25.0
     version: 0.25.0
   vinxi:
-    specifier: 0.1.2
-    version: 0.1.2(preact@10.19.3)
+    specifier: 0.1.4
+    version: 0.1.4(preact@10.19.3)
 
 devDependencies:
   '@tailwindcss/forms':
