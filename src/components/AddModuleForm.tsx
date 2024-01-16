@@ -1,4 +1,4 @@
-import { type Component, createMemo, Show } from "solid-js"
+import { type Component, createEffect, createMemo, Show } from "solid-js"
 import { type Input, maxValue, minValue, number, object } from "valibot"
 import {
   createForm,
@@ -11,6 +11,7 @@ import {
 import { Alert } from "~/components/Alert"
 import { type Module, type ModuleGrade } from "~/store/GradeStoreModels"
 import { AutocompleteComboBox } from "~/components/forms/fields/AutocompleteComboBox"
+import { createApp } from "vinxi"
 
 const AddModuleGradeSchema = object({
   grade: number([
@@ -37,6 +38,10 @@ export const AddModuleForm: Component<Props> = (props) => {
       label: m.description,
       value: m.no,
     }))
+  })
+  createEffect(() => {
+    console.log(addModuleGradeForm.dirty)
+    console.log(addModuleGradeForm.touched)
   })
 
   const handleSubmit: SubmitHandler<AddModuleGradeForm> = (values) => {
