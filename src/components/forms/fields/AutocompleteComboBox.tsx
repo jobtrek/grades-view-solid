@@ -1,4 +1,5 @@
 import {
+  batch,
   type Component,
   createEffect,
   createMemo,
@@ -38,11 +39,13 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
   const [mouseIsOverOptions, setMouseIsOverOptions] = createSignal(false)
 
   createEffect(() => {
-    console.log(selectedItem())
+    console.log("active", activeItem())
+    console.log("active", displayableItems()[activeItem()])
   })
   createEffect(() => {
-    console.log(mouseIsOverOptions())
+    console.log("selected", selectedItem())
   })
+
   const displayableItems = createMemo(() => {
     return props.items.filter((item) =>
       item.label.toLowerCase().includes(inputValue().toLowerCase()),
@@ -54,8 +57,10 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
   }
 
   const handleBlur: JSX.EventHandler<HTMLInputElement, FocusEvent> = (e) => {
-    console.log("blur")
-    if (mouseIsOverOptions() || !isComboboxOpen()) return
+    // Do not react to blur in these situations
+    if (mouseIsOverOptions() || !isComboboxOpen() || e.relatedTarget !== null) {
+      return
+    }
     toggleCombobox(false)
     setActiveItem(0)
   }
@@ -79,22 +84,34 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
       )
       e.preventDefault()
     }
+    if (e.key === "Enter") {
+      if (displayableItems().length > 0) {
+        handleItemSelection(displayableItems()[activeItem()])
+        setActiveItem(0)
+      }
+      e.preventDefault()
+    }
   }
 
   const handleButtonClick: JSX.EventHandler<HTMLButtonElement, MouseEvent> = (
     e,
   ) => {
     console.log("click")
-    // Fix combobox behaviour on button click
-    if (isComboboxOpen())
+    if (!isComboboxOpen()) {
       e.currentTarget.parentElement.querySelector("input")?.focus()
+    } else {
+      toggleCombobox(false)
+    }
   }
 
   const handleItemSelection = (item: Item): void => {
     console.log("hello")
-    setSelectedItem(item)
-    setInputValue(item.label)
-    toggleCombobox(false)
+    batch(() => {
+      setSelectedItem(item)
+      setInputValue(item.label)
+      toggleCombobox(false)
+      setMouseIsOverOptions(false)
+    })
   }
 
   return (
