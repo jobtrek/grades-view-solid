@@ -27,14 +27,19 @@ export const AveragesSection: Component = () => {
               large={true}
             />
             <TpiGradeItem />
+            <AverageItem grade={sociAverageMemo()} title="Société et langues" />
             <AverageItem
               title="Compétences générales"
               grade={mathEngAverageMemo()}
+              large={true}
             />
             <AverageItem grade={mathAverageMemo()} title="Mathématiques" />
             <AverageItem grade={engAverageMemo()} title="Anglais" />
-            <AverageItem grade={sociAverageMemo()} title="Société et langues" />
-            <AverageItem grade={infoAverageMemo()} title="Informatique" />
+            <AverageItem
+              grade={infoAverageMemo()}
+              title="Informatique"
+              large={true}
+            />
             <AverageItem grade={epsicAverageMemo()} title="EPSIC" />
             <AverageItem grade={cieAverageMemo()} title="CIE" />
           </dl>
