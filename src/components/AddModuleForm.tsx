@@ -4,6 +4,7 @@ import {
   createForm,
   FormError,
   getErrors,
+  getValues,
   reset,
   type SubmitHandler,
   valiForm,
@@ -11,7 +12,6 @@ import {
 import { Alert } from "~/components/Alert"
 import { type Module, type ModuleGrade } from "~/store/GradeStoreModels"
 import { AutocompleteComboBox } from "~/components/forms/fields/AutocompleteComboBox"
-import { createApp } from "vinxi"
 
 const AddModuleGradeSchema = object({
   grade: number([
@@ -42,6 +42,7 @@ export const AddModuleForm: Component<Props> = (props) => {
   createEffect(() => {
     console.log(addModuleGradeForm.dirty)
     console.log(addModuleGradeForm.touched)
+    console.log(getValues(addModuleGradeForm))
   })
 
   const handleSubmit: SubmitHandler<AddModuleGradeForm> = (values) => {

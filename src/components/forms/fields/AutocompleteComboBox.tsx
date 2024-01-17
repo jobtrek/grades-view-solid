@@ -17,7 +17,6 @@ interface Item {
 interface AutocompleteComboBoxProps {
   items: Item[]
   name: string
-  type: "string" | "number"
   label: string
   placeholder?: string
   error: string | undefined
@@ -31,7 +30,6 @@ interface AutocompleteComboBoxProps {
 export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
   props,
 ) => {
-  // const [, inputProps] = splitProps(props, ["label", "error", "items"])
   const [inputValue, setInputValue] = createSignal("")
   const [isComboboxOpen, toggleCombobox] = createSignal(false)
   const [activeItem, setActiveItem] = createSignal(0)
@@ -54,6 +52,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
 
   const handleInput: JSX.EventHandler<HTMLInputElement, InputEvent> = (e) => {
     setInputValue(e.currentTarget.value)
+    props.onInput(e) // Forward the event to the parent
   }
 
   const handleBlur: JSX.EventHandler<HTMLInputElement, FocusEvent> = (e) => {
@@ -61,6 +60,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
     if (mouseIsOverOptions() || !isComboboxOpen() || e.relatedTarget !== null) {
       return
     }
+    props.onBlur(e) // Forward the event to the parent
     toggleCombobox(false)
     setActiveItem(0)
   }
@@ -108,7 +108,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
     console.log("hello")
     batch(() => {
       setSelectedItem(item)
-      setInputValue(item.label)
+      setInputValue(`${item.value} - ${item.label}`)
       toggleCombobox(false)
       setMouseIsOverOptions(false)
     })
@@ -129,12 +129,21 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
           onFocus={handleFocus}
           value={inputValue()}
           onKeyDown={handleKeyDown}
-          id="combobox"
+          name={props.name}
+          id={props.name}
+          placeholder={props.placeholder}
           type="text"
-          class="w-full rounded-md border-0 bg-white py-1.5 pl-3 pr-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+          class="w-full rounded-md border-0 bg-white py-1.5 pl-3 pr-12 shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+          classList={{
+            "text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500":
+              props.error !== "",
+            "text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-blue-600":
+              props.error === "",
+          }}
           role="combobox"
           aria-controls="options"
           aria-expanded="false"
+          ref={props.ref}
         />
         <button
           onClick={handleButtonClick}
@@ -175,20 +184,20 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
                   onClick={() => {
                     handleItemSelection(item)
                   }}
-                  class="group relative cursor-default select-none py-2 pl-3 pr-9 text-gray-900 hover:text-white hover:bg-blue-600"
+                  onMouseEnter={() => setActiveItem(index())}
+                  class="group relative cursor-default select-none py-2 pl-3 pr-9 text-gray-900"
                   classList={{
                     "text-white bg-blue-600": index() === activeItem(),
                   }}
-                  id="option-0"
+                  id={`option-${index()}`}
                   role="option"
-                  tabIndex="-1"
                 >
                   <div class="flex gap-2">
                     {/* <!-- Active: "text-blue-200", Not Active: "text-gray-500" --> */}
                     <span
-                      class="ml-2 text-gray-500 group-hover:text-white"
+                      class="ml-2 text-gray-500"
                       classList={{
-                        "text-white bg-blue-600": index() === activeItem(),
+                        "text-white": index() === activeItem(),
                       }}
                     >
                       #{item.value}
@@ -203,7 +212,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
           Active: "text-white", Not Active: "text-blue-600"
         --> */}
                   <span
-                    class="absolute inset-y-0 right-0 flex items-center pr-4 group-hover:text-white"
+                    class="absolute inset-y-0 right-0 flex items-center pr-4"
                     classList={{
                       "text-blue-600": index() !== activeItem(),
                       "text-white": index() === activeItem(),
@@ -225,6 +234,15 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
                 </li>
               )}
             </For>
+            <Show when={displayableItems().length === 0}>
+              <li class="group relative cursor-default select-none py-2 pl-3 pr-9 text-gray-600">
+                <div class="flex gap-2">
+                  <span class="truncate">
+                    Aucunnes autres options disponibles.
+                  </span>
+                </div>
+              </li>
+            </Show>
           </ul>
         </Show>
       </div>
