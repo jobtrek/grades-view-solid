@@ -1,6 +1,7 @@
 import {
   batch,
   type Component,
+  createComputed,
   createEffect,
   createMemo,
   createSignal,
@@ -8,6 +9,7 @@ import {
   type JSX,
   Show,
 } from "solid-js"
+import { type Maybe } from "@modular-forms/solid"
 
 interface Item {
   label: string
@@ -23,8 +25,10 @@ interface AutocompleteComboBoxProps {
   required?: boolean
   ref: (el: HTMLInputElement) => void
   onInput: JSX.EventHandler<HTMLInputElement, InputEvent>
-  onChange: JSX.EventHandler<HTMLInputElement, Event>
+  value: Maybe<string> // To be able to use the component as a controlled component
+  // onChange: JSX.EventHandler<HTMLInputElement, Event>
   onBlur: JSX.EventHandler<HTMLInputElement, FocusEvent>
+  setValue: (value: string) => void // A callback to forward the new value to the parent
 }
 
 export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
@@ -36,20 +40,22 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
   const [selectedItem, setSelectedItem] = createSignal<Item | null>(null)
   const [mouseIsOverOptions, setMouseIsOverOptions] = createSignal(false)
 
-  createEffect(() => {
-    console.log("active", activeItem())
-    console.log("active", displayableItems()[activeItem()])
-  })
-  createEffect(() => {
-    console.log("selected", selectedItem())
+  // Reset internal signals on value changes from parent
+  createComputed(() => {
+    setInputValue(props.value ?? "")
+    setSelectedItem(null)
   })
 
+  // Filter items to display depending on the user input
   const displayableItems = createMemo(() => {
-    return props.items.filter((item) =>
-      item.label.toLowerCase().includes(inputValue().toLowerCase()),
+    return props.items.filter((item): boolean =>
+      `${item.value} - ${item.label}`
+        .toLowerCase()
+        .includes(inputValue().toLowerCase()),
     )
   })
 
+  // On user input, update value in signal
   const handleInput: JSX.EventHandler<HTMLInputElement, InputEvent> = (e) => {
     setInputValue(e.currentTarget.value)
     props.onInput(e) // Forward the event to the parent
@@ -65,10 +71,12 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
     setActiveItem(0)
   }
 
+  // Open combobox on focus
   const handleFocus: JSX.EventHandler<HTMLInputElement, FocusEvent> = (e) => {
     toggleCombobox(true)
   }
 
+  // Manage different key behaviors
   const handleKeyDown: JSX.EventHandler<HTMLInputElement, KeyboardEvent> = (
     e,
   ) => {
@@ -91,12 +99,19 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
       }
       e.preventDefault()
     }
+    if (e.key === "Escape") {
+      if (displayableItems().length > 0) {
+        setActiveItem(0)
+        toggleCombobox(false)
+      }
+      e.preventDefault()
+    }
   }
 
+  // Open or close combobox when click on side button
   const handleButtonClick: JSX.EventHandler<HTMLButtonElement, MouseEvent> = (
     e,
   ) => {
-    console.log("click")
     if (!isComboboxOpen()) {
       e.currentTarget.parentElement.querySelector("input")?.focus()
     } else {
@@ -105,13 +120,15 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
   }
 
   const handleItemSelection = (item: Item): void => {
-    console.log("hello")
+    // Perform combobox state updates
     batch(() => {
       setSelectedItem(item)
       setInputValue(`${item.value} - ${item.label}`)
       toggleCombobox(false)
       setMouseIsOverOptions(false)
     })
+    // Update parent value
+    props.setValue(inputValue())
   }
 
   return (
@@ -173,11 +190,6 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
             id="options"
             role="listbox"
           >
-            {/* <!--
-        Combobox option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
-
-        Active: "text-white bg-blue-600", Not Active: "text-gray-900"
-      --> */}
             <For each={displayableItems()}>
               {(item, index) => (
                 <li
@@ -193,7 +205,6 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
                   role="option"
                 >
                   <div class="flex gap-2">
-                    {/* <!-- Active: "text-blue-200", Not Active: "text-gray-500" --> */}
                     <span
                       class="ml-2 text-gray-500"
                       classList={{
@@ -202,35 +213,30 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
                     >
                       #{item.value}
                     </span>
-                    {/* <!-- Selected: "font-semibold" --> */}
                     <span class="truncate">{item.label}</span>
                   </div>
-
-                  {/* <!--
-          Checkmark, only display for selected option.
-
-          Active: "text-white", Not Active: "text-blue-600"
-        --> */}
-                  <span
-                    class="absolute inset-y-0 right-0 flex items-center pr-4"
-                    classList={{
-                      "text-blue-600": index() !== activeItem(),
-                      "text-white": index() === activeItem(),
-                    }}
-                  >
-                    <svg
-                      class="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
+                  <Show when={selectedItem()?.value === item.value}>
+                    <span
+                      class="absolute inset-y-0 right-0 flex items-center pr-4"
+                      classList={{
+                        "text-blue-600": index() !== activeItem(),
+                        "text-white": index() === activeItem(),
+                      }}
                     >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </span>
+                      <svg
+                        class="h-5 w-5"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </span>
+                  </Show>
                 </li>
               )}
             </For>

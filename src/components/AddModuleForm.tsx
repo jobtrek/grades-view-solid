@@ -1,11 +1,11 @@
-import { type Component, createEffect, createMemo, Show } from "solid-js"
-import { type Input, maxValue, minValue, number, object } from "valibot"
+import { type Component, createMemo, Show } from "solid-js"
+import { type Input, maxValue, minValue, number, object, string } from "valibot"
 import {
   createForm,
   FormError,
   getErrors,
-  getValues,
   reset,
+  setValue,
   type SubmitHandler,
   valiForm,
 } from "@modular-forms/solid"
@@ -18,7 +18,7 @@ const AddModuleGradeSchema = object({
     maxValue(6, "La note ne peut pas être supérieure à 6"),
     minValue(1, "La note ne peut pas être inférieure à 1"),
   ]),
-  module: number(),
+  module: string(),
 })
 
 type AddModuleGradeForm = Input<typeof AddModuleGradeSchema>
@@ -39,15 +39,12 @@ export const AddModuleForm: Component<Props> = (props) => {
       value: m.no,
     }))
   })
-  createEffect(() => {
-    console.log(addModuleGradeForm.dirty)
-    console.log(addModuleGradeForm.touched)
-    console.log(getValues(addModuleGradeForm))
-  })
 
   const handleSubmit: SubmitHandler<AddModuleGradeForm> = (values) => {
     // Check if the submitted module exists
-    const module = props.availableModules.find((m) => m.no === values.module)
+    const module = props.availableModules.find((m) => {
+      return `${m.no} - ${m.description}` === values.module
+    })
     if (module === undefined) {
       throw new FormError<AddModuleGradeForm>("Impossible d'ajouter la note", {
         module: "Le module n'existe pas",
@@ -63,20 +60,25 @@ export const AddModuleForm: Component<Props> = (props) => {
     reset(addModuleGradeForm)
   }
 
+  const setFormComboboxValue = (value: string): void => {
+    setValue(addModuleGradeForm, "module", value)
+  }
+
   return (
     <div class="px-4 pt-6 sm:gap-4 sm:px-0">
       <AddGrade.Form onSubmit={handleSubmit}>
         <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 lg:grid-cols-8">
-          <AddGrade.Field name="module" type="number">
+          <AddGrade.Field name="module" type="string">
             {(field, props) => (
               <AutocompleteComboBox
                 {...props}
-                type="number"
                 label="Choissisez votre note de module"
                 error={field.error}
                 required
+                value={field.value}
                 placeholder="Recherchez un module"
                 items={autocompleteList()}
+                setValue={setFormComboboxValue}
               />
             )}
           </AddGrade.Field>
