@@ -1,6 +1,34 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.4...v0.0.5)
+
+### 🚀 Enhancements
+
+- **home-page:** Add welcome message ([a6f47bc](https://github.com/jobtrek/grades-view-solid/commit/a6f47bc))
+- **tooltips:** Change tooltip default delays ([4ddbe8a](https://github.com/jobtrek/grades-view-solid/commit/4ddbe8a))
+- **module-autocomplete:** Add zag js state machine ([800e2aa](https://github.com/jobtrek/grades-view-solid/commit/800e2aa))
+- **module-autocomplete:** First combobox experiments ([6f7ed42](https://github.com/jobtrek/grades-view-solid/commit/6f7ed42))
+- **module-autocomplete:** Experimentation's with custom combobox ([a935e57](https://github.com/jobtrek/grades-view-solid/commit/a935e57))
+- **module-autocomplete:** Fine-tune combobox behaviour. ([e43be4d](https://github.com/jobtrek/grades-view-solid/commit/e43be4d))
+- **module-autocomplete:** Fix selection behaviour ([24fdb3a](https://github.com/jobtrek/grades-view-solid/commit/24fdb3a))
+- **module-autocomplete:** Fix value transfers between combobox and form ([d59f006](https://github.com/jobtrek/grades-view-solid/commit/d59f006))
+- **averages-view:** Change sub averages width ([dc94117](https://github.com/jobtrek/grades-view-solid/commit/dc94117))
+
+### 🩹 Fixes
+
+- **grades-store:** Module averages now calculated with same rounding ([9739cc3](https://github.com/jobtrek/grades-view-solid/commit/9739cc3))
+
+### 🏡 Chore
+
+- **tooling:** Install prettier with eslint integration ([312cd5b](https://github.com/jobtrek/grades-view-solid/commit/312cd5b))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v0.0.4
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.3...v0.0.4)
