@@ -10,6 +10,7 @@ import {
 } from "~/store/GradeStoreModels"
 import {
   addTechnicalModuleGrade,
+  createStudentModuleAverageMemo,
   gradesStore,
   removeTechnicalModuleGrade,
   updateTechnicalModuleGrade,
@@ -37,11 +38,6 @@ export const ModulesGradesSection: Component<Props> = (props) => {
     removeTechnicalModuleGrade(props.name, module)
   }
 
-  const branchGrade = createMemo(() => {
-    const grades = gradesStore.info[props.name].map((m) => m.grade)
-    return grades.length > 0 ? roundTo(average(grades), 10) : null
-  })
-
   return (
     <div class="grid grid-cols-1 gap-4 lg:col-span-2">
       <section aria-labelledby="section-1-title">
@@ -57,7 +53,7 @@ export const ModulesGradesSection: Component<Props> = (props) => {
                 </h2>
               </div>
               <div class="mt-4 flex md:ml-4 md:mt-0">
-                <Show when={branchGrade()}>
+                <Show when={createStudentModuleAverageMemo(props.name)()}>
                   {(grade) => (
                     <GradeElement
                       grade={grade()}
