@@ -5,7 +5,7 @@ export const NavigationMenu: Component = () => {
   return (
     <nav class="flex space-x-4">
       <A
-        href="/maths"
+        href="/math"
         activeClass="text-white font-bold"
         inactiveClass="text-sky-100 font-medium"
         class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
@@ -21,7 +21,7 @@ export const NavigationMenu: Component = () => {
         Société
       </A>
       <A
-        href="/English"
+        href="/english"
         activeClass="text-white font-bold"
         inactiveClass="text-sky-100 font-medium"
         class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
@@ -29,7 +29,7 @@ export const NavigationMenu: Component = () => {
         Anglais
       </A>
       <A
-        href="/Epsic"
+        href="/epsic"
         activeClass="text-white font-bold"
         inactiveClass="text-sky-100 font-medium"
         class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
@@ -37,7 +37,7 @@ export const NavigationMenu: Component = () => {
         Modules EPSIC
       </A>
       <A
-        href="/Cie"
+        href="/cie"
         activeClass="text-white font-bold"
         inactiveClass="text-sky-100 font-medium"
         class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"

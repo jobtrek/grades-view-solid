@@ -9,6 +9,7 @@ import { AppNavigation } from "~/components/AppNavigation"
 export default function App(): JSX.Element {
   return (
     <Router
+      base="/grades-view-solid"
       root={(props) => (
         <>
           <div class="min-h-full">
