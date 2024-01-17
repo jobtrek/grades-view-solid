@@ -2,8 +2,8 @@ import {
   batch,
   type Component,
   createComputed,
-  createEffect,
   createMemo,
+  createSelector,
   createSignal,
   For,
   type JSX,
@@ -39,6 +39,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
   const [activeItem, setActiveItem] = createSignal(0)
   const [selectedItem, setSelectedItem] = createSignal<Item | null>(null)
   const [mouseIsOverOptions, setMouseIsOverOptions] = createSignal(false)
+  const isItemActive = createSelector(activeItem)
 
   // Reset internal signals on value changes from parent
   createComputed(() => {
@@ -199,7 +200,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
                   onMouseEnter={() => setActiveItem(index())}
                   class="group relative cursor-default select-none py-2 pl-3 pr-9 text-gray-900"
                   classList={{
-                    "text-white bg-blue-600": index() === activeItem(),
+                    "text-white bg-blue-600": isItemActive(index()),
                   }}
                   id={`option-${index()}`}
                   role="option"
@@ -208,19 +209,18 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
                     <span
                       class="ml-2 text-gray-500"
                       classList={{
-                        "text-white": index() === activeItem(),
+                        "text-white": isItemActive(index()),
                       }}
                     >
-                      #{item.value}
+                      {item.value}
                     </span>
                     <span class="truncate">{item.label}</span>
                   </div>
                   <Show when={selectedItem()?.value === item.value}>
                     <span
-                      class="absolute inset-y-0 right-0 flex items-center pr-4"
+                      class="absolute inset-y-0 right-0 flex items-center pr-4 text-blue-600"
                       classList={{
-                        "text-blue-600": index() !== activeItem(),
-                        "text-white": index() === activeItem(),
+                        "text-white": isItemActive(index()),
                       }}
                     >
                       <svg
