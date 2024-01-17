@@ -1,8 +1,6 @@
-import { type Component, createEffect, createMemo, For, Show } from "solid-js"
+import { type Component, For, Show } from "solid-js"
 import { GradeElement } from "~/components/GradeElement"
 import { AddModuleForm } from "~/components/AddModuleForm"
-import { roundTo } from "~/utils/roundTo"
-import { average } from "~/utils/average"
 import {
   type Module,
   type ModuleGrade,
