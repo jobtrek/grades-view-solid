@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.0.6
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.5...v0.0.6)
+
+### 🚀 Enhancements
+
+- **module-autocomplete:** Use createSelector to avoid unneeded signal update on For loop ([59b47b8](https://github.com/jobtrek/grades-view-solid/commit/59b47b8))
+
+### 🏡 Chore
+
+- Formatting ([35d2eaa](https://github.com/jobtrek/grades-view-solid/commit/35d2eaa))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v0.0.5
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.4...v0.0.5)
