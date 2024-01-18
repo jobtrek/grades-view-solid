@@ -1,4 +1,5 @@
 import { type Component, createEffect, Show } from "solid-js"
+import { clientOnly } from "@solidjs/start"
 import {
   createForm,
   getErrors,
@@ -10,10 +11,13 @@ import {
   type AddGradeForm,
   AddGradeSchema,
 } from "~/types/schemas/gradeFormSchema"
-import DisappearingNotification from "~/components/DisappearingNotification"
 import { Alert } from "~/components/Alert"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { updateStudentTpi } from "~/contexts/gradesContext/setterUtils/updateStudentTpi"
+
+const ClientOnlyDisappearingNotification = clientOnly(
+  async () => await import("~/components/DisappearingNotification"),
+)
 
 export const TpiGradeItem: Component = () => {
   const [gradesStore] = useGradesContext()
@@ -59,12 +63,12 @@ export const TpiGradeItem: Component = () => {
         </AddGrade.Field>
       </dd>
       <Show when={addGradeForm.invalid}>
-        <DisappearingNotification>
+        <ClientOnlyDisappearingNotification>
           <Alert
             content="Le formulaire n'est pas valide"
             details={getErrors(addGradeForm)}
           />
-        </DisappearingNotification>
+        </ClientOnlyDisappearingNotification>
       </Show>
     </AddGrade.Form>
   )

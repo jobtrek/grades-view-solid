@@ -8,9 +8,13 @@ import {
   valiForm,
 } from "@modular-forms/solid"
 import { Alert } from "~/components/Alert"
-import DisappearingNotification from "~/components/DisappearingNotification"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { updateStudentName } from "~/contexts/gradesContext/setterUtils/updateStudentName"
+import { clientOnly } from "@solidjs/start"
+
+const ClientOnlyDisappearingNotification = clientOnly(
+  async () => await import("~/components/DisappearingNotification"),
+)
 
 const StudentNameSchema = object({
   studentName: string([
@@ -78,12 +82,12 @@ export const NameMenu: Component = () => {
         )}
       </UpdateStudent.Field>
       <Show when={updateStudentForm.invalid}>
-        <DisappearingNotification>
+        <ClientOnlyDisappearingNotification>
           <Alert
             content="Le formulaire n'est pas valide"
             details={getErrors(updateStudentForm)}
           />
-        </DisappearingNotification>
+        </ClientOnlyDisappearingNotification>
       </Show>
     </UpdateStudent.Form>
   )
