@@ -5,7 +5,7 @@ import { type JSX, Suspense } from "solid-js"
 import "./app.css"
 import { AveragesSection } from "~/components/AveragesSection"
 import { AppNavigation } from "~/components/AppNavigation"
-import { GradesProvider } from "~/contexts/GradesContext"
+import { GradesProvider } from "~/contexts/gradesContext/GradesContext"
 
 export default function App(): JSX.Element {
   return (

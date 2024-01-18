@@ -2,9 +2,11 @@ import { type Component } from "solid-js"
 import { NameMenu } from "~/components/NameMenu"
 import { A } from "@solidjs/router"
 import { NavigationMenu } from "~/components/NavigationMenu"
-import { resetStore } from "~/store/gradeStore"
+import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
+import { resetGradesContext } from "~/contexts/gradesContext/utils/resetGradesContext"
 
 export const AppNavigation: Component = () => {
+  const [, setGradesContext] = useGradesContext()
   return (
     <header class="bg-sky-600 pb-24">
       <div class="container mx-auto sm:px-6 lg:px-8">
@@ -28,7 +30,7 @@ export const AppNavigation: Component = () => {
           <div class="hidden lg:ml-4 lg:flex lg:items-center lg:pr-0.5">
             <button
               onClick={() => {
-                resetStore(5)
+                resetGradesContext(setGradesContext)
               }}
               type="button"
               class="relative flex-shrink-0 rounded-full p-1 text-sky-100 hover:bg-white hover:bg-opacity-10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"

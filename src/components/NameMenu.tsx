@@ -1,5 +1,4 @@
 import { type Component, createEffect, Show } from "solid-js"
-import { gradesStore, updateStudentName } from "~/store/gradeStore"
 import { type Input, maxLength, minLength, object, string } from "valibot"
 import {
   createForm,
@@ -10,10 +9,12 @@ import {
 } from "@modular-forms/solid"
 import { Alert } from "~/components/Alert"
 import DisappearingNotification from "~/components/DisappearingNotification"
+import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
+import { updateStudentNameInGradesContext } from "~/contexts/gradesContext/utils/updateStudentNameInGradesContext"
 
 const StudentNameSchema = object({
   studentName: string([
-    maxLength(40, "Le nom ne peut pas être plus long."),
+    maxLength(40, "Le nom ne peut pas faire plus de 40 caractères."),
     minLength(1, "Le nom doit contenir au minimum un caractère."),
   ]),
 })
@@ -21,18 +22,19 @@ const StudentNameSchema = object({
 type StudentGradeForm = Input<typeof StudentNameSchema>
 
 export const NameMenu: Component = () => {
+  const [gradesContext, setGradesContext] = useGradesContext()
   const [updateStudentForm, UpdateStudent] = createForm<StudentGradeForm>({
     validate: valiForm(StudentNameSchema),
   })
 
   createEffect(() => {
-    setValue(updateStudentForm, "studentName", gradesStore.name, {
+    setValue(updateStudentForm, "studentName", gradesContext.name, {
       shouldValidate: false,
     })
   })
 
   const handleSubmit: SubmitHandler<StudentGradeForm> = (values) => {
-    updateStudentName(values.studentName)
+    updateStudentNameInGradesContext(setGradesContext, values.studentName)
   }
 
   return (
@@ -60,7 +62,7 @@ export const NameMenu: Component = () => {
                   type="text"
                   name={field.name}
                   id={field.name}
-                  value={field.value ?? gradesStore.name}
+                  value={field.value ?? gradesContext.name}
                   class="block w-full rounded-md border-0 py-1.5 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
                   classList={{
                     "text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500":
