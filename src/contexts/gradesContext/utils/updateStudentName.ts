@@ -1,7 +1,7 @@
 import type { SetStoreFunction } from "solid-js/store"
 import type { StudentGrades } from "~/data/GradeStoreModels"
 
-export const updateStudentNameInGradesContext = (
+export const updateStudentName = (
   setGradesStore: SetStoreFunction<StudentGrades>,
   name: string,
 ): void => {

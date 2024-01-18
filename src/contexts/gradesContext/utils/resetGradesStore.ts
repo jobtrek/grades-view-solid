@@ -2,7 +2,7 @@ import { batch } from "solid-js"
 import { type SetStoreFunction } from "solid-js/store"
 import { type StudentGrades } from "~/data/GradeStoreModels"
 
-export const resetGradesContext = (
+export const resetGradesStore = (
   setGradesStore: SetStoreFunction<StudentGrades>,
 ): void => {
   batch(() => {

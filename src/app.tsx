@@ -1,9 +1,8 @@
 // @refresh reload
 import { Router } from "@solidjs/router"
 import { FileRoutes } from "@solidjs/start"
-import { type JSX, Suspense } from "solid-js"
+import { type JSX } from "solid-js"
 import "./app.css"
-import { AveragesSection } from "~/components/AveragesSection"
 import { AppNavigation } from "~/components/AppNavigation"
 import { GradesProvider } from "~/contexts/gradesContext/GradesContext"
 

@@ -3,7 +3,7 @@ import { NameMenu } from "~/components/NameMenu"
 import { A } from "@solidjs/router"
 import { NavigationMenu } from "~/components/NavigationMenu"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
-import { resetGradesContext } from "~/contexts/gradesContext/utils/resetGradesContext"
+import { resetGradesStore } from "~/contexts/gradesContext/utils/resetGradesStore"
 
 export const AppNavigation: Component = () => {
   const [, setGradesContext] = useGradesContext()
@@ -30,7 +30,7 @@ export const AppNavigation: Component = () => {
           <div class="hidden lg:ml-4 lg:flex lg:items-center lg:pr-0.5">
             <button
               onClick={() => {
-                resetGradesContext(setGradesContext)
+                resetGradesStore(setGradesContext)
               }}
               type="button"
               class="relative flex-shrink-0 rounded-full p-1 text-sky-100 hover:bg-white hover:bg-opacity-10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"

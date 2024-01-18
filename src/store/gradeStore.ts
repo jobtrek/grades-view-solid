@@ -13,22 +13,6 @@ import { average, weightedAverage, weightedAverageFlat } from "~/utils/average"
 import { initialGradesStoreData } from "~/data/initialGradesStoreData"
 
 // Global store
-const [gradesStore, setGradesStore] = makePersisted(
-  createStore<StudentGrades>(initialGradesStoreData),
-  { name: "grade-store" },
-)
-
-const resetStore = (grade: number): void => {
-  batch(() => {
-    setGradesStore("tpi", null)
-    setGradesStore("name", "")
-    setGradesStore("info", "cie", [])
-    setGradesStore("info", "epsic", [])
-    setGradesStore("generalKnowledge", "eng", { semesters: [] })
-    setGradesStore("generalKnowledge", "math", { semesters: [] })
-    setGradesStore("generalKnowledge", "overallCulture", { semesters: [] })
-  })
-}
 
 const createStudentModuleAverageMemo = (
   moduleListName: keyof TechnicalDomains,
@@ -132,77 +116,10 @@ export const generalAverageMemo = createMemo(() => {
     : null
 })
 
-const updateStudentName = (name: string): void => {
-  setGradesStore("name", (n) => name)
-}
-
-const updateStudentTpiGrade = (grade: number): void => {
-  setGradesStore("tpi", (g) => grade)
-}
-
-const addTechnicalModuleGrade = (
-  domain: keyof TechnicalDomains,
-  module: ModuleGrade,
-): void => {
-  setGradesStore("info", domain, (m) => [...m, module])
-}
-
-const removeTechnicalModuleGrade = (
-  domain: keyof TechnicalDomains,
-  module: ModuleGrade,
-): void => {
-  setGradesStore("info", domain, (m) => m.filter((m) => m.no !== module.no))
-}
-
-const updateTechnicalModuleGrade = (
-  domain: keyof TechnicalDomains,
-  module: ModuleGrade,
-): void => {
-  setGradesStore("info", domain, (m) => m.no === module.no, {
-    grade: module.grade,
-  })
-}
-
-const addGeneralKnowledgeSemester = (branch: keyof GeneralKnowledge): void => {
-  setGradesStore("generalKnowledge", branch, "semesters", (b) => [...b, []])
-}
-
-const addGradeToGeneralKnowledgeSemester = (
-  branch: keyof GeneralKnowledge,
-  semesterNumber: number,
-  grade: number,
-): void => {
-  setGradesStore(
-    "generalKnowledge",
-    branch,
-    "semesters",
-    semesterNumber,
-    (s) => [...s, grade],
-  )
-}
-
-const removeGradeToGeneralKnowledgeSemester = (
-  branch: keyof GeneralKnowledge,
-  semesterNumber: number,
-  gradeIndex: number,
-): void => {
-  setGradesStore("generalKnowledge", branch, "semesters", semesterNumber, (s) =>
-    s.filter((_, i) => i !== gradeIndex),
-  )
-}
-
 export {
   gradesStore,
   resetStore,
   createStudentModuleAverageMemo,
   createStudentGeneralBranchAverageMemo,
   createStudentGeneralBranchSemesterAverageMemo,
-  updateStudentName,
-  removeTechnicalModuleGrade,
-  updateStudentTpiGrade,
-  addTechnicalModuleGrade,
-  updateTechnicalModuleGrade,
-  addGeneralKnowledgeSemester,
-  addGradeToGeneralKnowledgeSemester,
-  removeGradeToGeneralKnowledgeSemester,
 }

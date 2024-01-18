@@ -10,7 +10,7 @@ import {
 import { Alert } from "~/components/Alert"
 import DisappearingNotification from "~/components/DisappearingNotification"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
-import { updateStudentNameInGradesContext } from "~/contexts/gradesContext/utils/updateStudentNameInGradesContext"
+import { updateStudentName } from "~/contexts/gradesContext/utils/updateStudentName"
 
 const StudentNameSchema = object({
   studentName: string([
@@ -34,7 +34,7 @@ export const NameMenu: Component = () => {
   })
 
   const handleSubmit: SubmitHandler<StudentGradeForm> = (values) => {
-    updateStudentNameInGradesContext(setGradesContext, values.studentName)
+    updateStudentName(setGradesContext, values.studentName)
   }
 
   return (
