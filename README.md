@@ -1,6 +1,12 @@
 # Grades view
 > Implemented with [SolidJS](https://www.solidjs.com/)
 
+## Test it
+
+[Grades view solid demo](https://jobtrek.github.io/grades-view-solid/)
+
+Dont hesitate to report any issue or suggestion on the github [issues page](https://github.com/jobtrek/grades-view-solid/issues).
+
 ## Start project development
 
 ```bash
