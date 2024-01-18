@@ -1,5 +1,3 @@
-import { Tooltip } from "@ark-ui/solid"
-import { Portal } from "solid-js/web"
 import {
   type Component,
   createEffect,
