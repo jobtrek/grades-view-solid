@@ -10,7 +10,7 @@ import {
   valiForm,
 } from "@modular-forms/solid"
 import { Alert } from "~/components/Alert"
-import { type Module, type ModuleGrade } from "~/data/GradeStoreModels"
+import { type Module, type ModuleGrade } from "~/types/models/GradeStoreModels"
 import { AutocompleteComboBox } from "~/components/forms/fields/AutocompleteComboBox"
 
 const AddModuleGradeSchema = object({

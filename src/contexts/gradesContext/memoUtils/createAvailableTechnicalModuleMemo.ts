@@ -1,4 +1,4 @@
-import type { Module, TechnicalDomains } from "~/data/GradeStoreModels"
+import type { Module, TechnicalDomains } from "~/types/models/GradeStoreModels"
 import { type Accessor, createMemo } from "solid-js"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 

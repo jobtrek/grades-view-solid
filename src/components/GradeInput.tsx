@@ -5,7 +5,10 @@ import {
   type SubmitHandler,
   valiForm,
 } from "@modular-forms/solid"
-import { type AddGradeForm, AddGradeSchema } from "~/utils/gradeFormSchema"
+import {
+  type AddGradeForm,
+  AddGradeSchema,
+} from "~/types/schemas/gradeFormSchema"
 
 interface Props {
   onNewGrade: (g: number) => void

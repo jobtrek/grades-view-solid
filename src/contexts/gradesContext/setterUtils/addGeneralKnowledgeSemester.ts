@@ -1,4 +1,4 @@
-import type { GeneralKnowledge } from "~/data/GradeStoreModels"
+import type { GeneralKnowledge } from "~/types/models/GradeStoreModels"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 
 const [, setGradesStore] = useGradesContext()

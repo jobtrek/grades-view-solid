@@ -1,16 +1,18 @@
 import { type Component } from "solid-js"
 import { AverageItem } from "~/components/AverageItem"
 import { TpiGradeItem } from "~/components/TpiGradeItem"
+import { generalAverageMemo } from "~/contexts/gradesContext/memos/generalAverageMemo"
 import {
-  cieAverageMemo,
   engAverageMemo,
-  epsicAverageMemo,
-  generalAverageMemo,
-  infoAverageMemo,
   mathAverageMemo,
   mathEngAverageMemo,
   sociAverageMemo,
-} from "~/store/gradeStore"
+} from "~/contexts/gradesContext/memos/generalKnowledgeMemo"
+import {
+  cieAverageMemo,
+  epsicAverageMemo,
+  infoAverageMemo,
+} from "~/contexts/gradesContext/memos/technicalDomainMemos"
 
 export const AveragesSection: Component = () => {
   return (

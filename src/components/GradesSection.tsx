@@ -2,12 +2,10 @@ import { type Component, Index, Show } from "solid-js"
 import { GradeElement } from "~/components/GradeElement"
 import { Semester } from "~/components/Semester"
 import { AddSemesterButton } from "~/components/AddSemesterButton"
-import { type GeneralKnowledge } from "~/data/GradeStoreModels"
-import {
-  addGeneralKnowledgeSemester,
-  createStudentGeneralBranchAverageMemo,
-  gradesStore,
-} from "~/store/gradeStore"
+import { type GeneralKnowledge } from "~/types/models/GradeStoreModels"
+import { createGeneralKnowledgeBranchAverageMemo } from "~/contexts/gradesContext/memoUtils/createGeneralKnowledgeBranchAverageMemo"
+import { addGeneralKnowledgeSemester } from "~/contexts/gradesContext/setterUtils/addGeneralKnowledgeSemester"
+import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 
 interface Props {
   name: keyof GeneralKnowledge
@@ -15,6 +13,7 @@ interface Props {
 }
 
 export const GradesSection: Component<Props> = (props) => {
+  const [gradesStore] = useGradesContext()
   return (
     <div class="grid grid-cols-1 gap-4 lg:col-span-2">
       <section aria-labelledby="section-1-title">
@@ -31,7 +30,7 @@ export const GradesSection: Component<Props> = (props) => {
               </div>
               <div class="mt-4 flex md:ml-4 md:mt-0">
                 <Show
-                  when={createStudentGeneralBranchAverageMemo(props.name)()}
+                  when={createGeneralKnowledgeBranchAverageMemo(props.name)()}
                 >
                   {(grade) => (
                     <GradeElement

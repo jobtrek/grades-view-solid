@@ -1,4 +1,4 @@
-import type { TechnicalDomains } from "~/data/GradeStoreModels"
+import type { TechnicalDomains } from "~/types/models/GradeStoreModels"
 import { type Accessor, createMemo } from "solid-js"
 import { roundTo } from "~/utils/roundTo"
 import { average } from "~/utils/average"

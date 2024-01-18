@@ -2,13 +2,11 @@ import { type Component, Show } from "solid-js"
 import { GradeContainer } from "~/components/GradeContainer"
 import { GradeInput } from "~/components/GradeInput"
 import { GradeElement } from "~/components/GradeElement"
-import type { GeneralKnowledge } from "~/data/GradeStoreModels"
-import {
-  addGradeToGeneralKnowledgeSemester,
-  createStudentGeneralBranchSemesterAverageMemo,
-  gradesStore,
-  removeGradeToGeneralKnowledgeSemester,
-} from "~/store/gradeStore"
+import type { GeneralKnowledge } from "~/types/models/GradeStoreModels"
+import { addGradeToGeneralKnowledgeSemester } from "~/contexts/gradesContext/setterUtils/addGradeToGeneralKnowledgeSemester"
+import { removeGradeToGeneralKnowledgeSemester } from "~/contexts/gradesContext/setterUtils/removeGradeToGeneralKnowledgeSemester"
+import { createGeneralKnowledgeSemesterAverageMemo } from "~/contexts/gradesContext/memoUtils/createGeneralKnowledgeSemesterAverageMemo"
+import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 
 interface Props {
   branchName: keyof GeneralKnowledge
@@ -16,6 +14,7 @@ interface Props {
 }
 
 export const Semester: Component<Props> = (props) => {
+  const [gradesStore] = useGradesContext()
   const addGrade = (grade: number): void => {
     addGradeToGeneralKnowledgeSemester(
       props.branchName,
@@ -48,7 +47,7 @@ export const Semester: Component<Props> = (props) => {
         <div class="flex">
           <GradeInput onNewGrade={addGrade} />
           <Show
-            when={createStudentGeneralBranchSemesterAverageMemo(
+            when={createGeneralKnowledgeSemesterAverageMemo(
               props.branchName,
               props.semesterIndex,
             )()}

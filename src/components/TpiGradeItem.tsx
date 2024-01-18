@@ -6,12 +6,17 @@ import {
   type SubmitHandler,
   valiForm,
 } from "@modular-forms/solid"
-import { type AddGradeForm, AddGradeSchema } from "~/utils/gradeFormSchema"
-import { gradesStore, updateStudentTpiGrade } from "~/store/gradeStore"
+import {
+  type AddGradeForm,
+  AddGradeSchema,
+} from "~/types/schemas/gradeFormSchema"
 import DisappearingNotification from "~/components/DisappearingNotification"
 import { Alert } from "~/components/Alert"
+import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
+import { updateStudentTpi } from "~/contexts/gradesContext/setterUtils/updateStudentTpi"
 
 export const TpiGradeItem: Component = () => {
+  const [gradesStore] = useGradesContext()
   const [addGradeForm, AddGrade] = createForm<AddGradeForm>({
     validate: valiForm(AddGradeSchema),
   })
@@ -21,7 +26,7 @@ export const TpiGradeItem: Component = () => {
   })
 
   const handleSubmit: SubmitHandler<AddGradeForm> = (values) => {
-    updateStudentTpiGrade(values.grade)
+    updateStudentTpi(values.grade)
   }
 
   return (

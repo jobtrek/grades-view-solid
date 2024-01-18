@@ -22,7 +22,7 @@ const StudentNameSchema = object({
 type StudentGradeForm = Input<typeof StudentNameSchema>
 
 export const NameMenu: Component = () => {
-  const [gradesContext, setGradesContext] = useGradesContext()
+  const [gradesContext] = useGradesContext()
   const [updateStudentForm, UpdateStudent] = createForm<StudentGradeForm>({
     validate: valiForm(StudentNameSchema),
   })
@@ -34,7 +34,7 @@ export const NameMenu: Component = () => {
   })
 
   const handleSubmit: SubmitHandler<StudentGradeForm> = (values) => {
-    updateStudentName(setGradesContext, values.studentName)
+    updateStudentName(values.studentName)
   }
 
   return (

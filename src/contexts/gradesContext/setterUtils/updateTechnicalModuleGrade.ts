@@ -1,4 +1,7 @@
-import type { ModuleGrade, TechnicalDomains } from "~/data/GradeStoreModels"
+import type {
+  ModuleGrade,
+  TechnicalDomains,
+} from "~/types/models/GradeStoreModels"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 
 const [, setGradesStore] = useGradesContext()

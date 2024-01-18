@@ -1,5 +1,5 @@
 import { createContext, type ParentComponent, useContext } from "solid-js"
-import { type StudentGrades } from "~/data/GradeStoreModels"
+import { type StudentGrades } from "~/types/models/GradeStoreModels"
 import { initialGradesStoreData } from "~/data/initialGradesStoreData"
 import { createStore, type SetStoreFunction } from "solid-js/store"
 import { makePersisted } from "@solid-primitives/storage"

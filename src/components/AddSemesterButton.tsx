@@ -29,7 +29,7 @@ export const AddSemesterButton: Component<Props> = (props) => {
           />
         </svg>
         <span class="mt-2 block text-sm font-semibold text-gray-900">
-          Add semseter
+          Ajouter un semestre
         </span>
       </button>
     </div>

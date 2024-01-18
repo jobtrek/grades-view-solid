@@ -5,15 +5,13 @@ import {
   type Module,
   type ModuleGrade,
   type TechnicalDomains,
-} from "~/data/GradeStoreModels"
-import {
-  addTechnicalModuleGrade,
-  createStudentModuleAverageMemo,
-  gradesStore,
-  removeTechnicalModuleGrade,
-  updateTechnicalModuleGrade,
-} from "~/store/gradeStore"
+} from "~/types/models/GradeStoreModels"
 import { TooltipContainer } from "~/components/TooltipContainer"
+import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
+import { addTechnicalModuleGrade } from "~/contexts/gradesContext/setterUtils/addTechnicalModuleGrade"
+import { updateTechnicalModuleGrade } from "~/contexts/gradesContext/setterUtils/updateTechnicalModuleGrade"
+import { removeTechnicalModuleGrade } from "~/contexts/gradesContext/setterUtils/removeTechnicalModuleGrade"
+import { createTechnicalDomainAverageMemo } from "~/contexts/gradesContext/memoUtils/createTechnicalDomainAverageMemo"
 
 interface Props {
   name: keyof TechnicalDomains
@@ -22,6 +20,7 @@ interface Props {
 }
 
 export const ModulesGradesSection: Component<Props> = (props) => {
+  const [gradesStore] = useGradesContext()
   const addModule = (module: ModuleGrade): void => {
     if (
       gradesStore.info[props.name].find((m) => m.no === module.no) === undefined
@@ -51,7 +50,7 @@ export const ModulesGradesSection: Component<Props> = (props) => {
                 </h2>
               </div>
               <div class="mt-4 flex md:ml-4 md:mt-0">
-                <Show when={createStudentModuleAverageMemo(props.name)()}>
+                <Show when={createTechnicalDomainAverageMemo(props.name)()}>
                   {(grade) => (
                     <GradeElement
                       grade={grade()}
