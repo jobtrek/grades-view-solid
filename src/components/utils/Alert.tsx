@@ -1,11 +1,14 @@
-import { type Component, Index, Show } from "solid-js"
+import { Index, type JSX, Show } from "solid-js"
 
-interface Props {
+interface Props<T extends Record<string, string>> {
   content: string
-  details?: Record<string, string>
+  details?: T
+  transformFunction?: (content: keyof T) => string
 }
 
-export const Alert: Component<Props> = (props) => {
+export const Alert = <T extends Record<string, string>>(
+  props: Props<T>,
+): JSX.Element => {
   return (
     <div class="rounded-md bg-red-50 p-4">
       <div class="flex">
@@ -32,7 +35,15 @@ export const Alert: Component<Props> = (props) => {
                   <Index each={Object.entries(details())}>
                     {(detail) => (
                       <li>
-                        <strong>{detail()[0]}</strong> - {detail()[1]}
+                        <strong>
+                          <Show
+                            when={props.transformFunction}
+                            fallback={detail()[0]}
+                          >
+                            {(trasform) => trasform()(detail()[0])}
+                          </Show>
+                        </strong>{" "}
+                        - {detail()[1]}
                       </li>
                     )}
                   </Index>

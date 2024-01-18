@@ -5,7 +5,7 @@ export const gradeSchemaLabels = {
 }
 
 const AddGradeSchema = object({
-  grade: number([
+  grade: number("La note doit être un nombre entre 1 et 6", [
     maxValue(6, "La note ne peut pas être supérieure à 6"),
     minValue(1, "La note ne peut pas être inférieure à 1"),
   ]),

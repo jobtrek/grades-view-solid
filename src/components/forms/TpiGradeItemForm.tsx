@@ -10,10 +10,12 @@ import {
 import {
   type AddGradeForm,
   AddGradeSchema,
+  gradeSchemaLabels,
 } from "~/types/schemas/gradeFormSchema"
 import { Alert } from "~/components/utils/Alert"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { updateStudentTpi } from "~/contexts/gradesContext/setterUtils/updateStudentTpi"
+import { transformKeyToLabel } from "~/utils/transformKeyToLabel"
 
 const ClientOnlyDisappearingNotification = clientOnly(
   async () => await import("~/components/utils/DisappearingNotification"),
@@ -67,6 +69,9 @@ export const TpiGradeItemForm: Component = () => {
           <Alert
             content="Le formulaire n'est pas valide"
             details={getErrors(addGradeForm)}
+            transformFunction={(key) =>
+              transformKeyToLabel(key, gradeSchemaLabels)
+            }
           />
         </ClientOnlyDisappearingNotification>
       </Show>
