@@ -1,10 +1,10 @@
 import { ModulesGradesSection } from "~/components/ModulesGradesSection"
 import { cieModules } from "~/data/cieModules"
 import type { JSX } from "solid-js"
-import { createAvailableModuleMemo } from "~/store/gradeStore"
+import { createAvailableTechnicalModuleMemo } from "~/contexts/gradesContext/memoUtils/createAvailableTechnicalModuleMemo"
 
 export default function (): JSX.Element {
-  const availableModules = createAvailableModuleMemo("cie", cieModules)
+  const availableModules = createAvailableTechnicalModuleMemo("cie", cieModules)
   return (
     <ModulesGradesSection
       name="cie"
