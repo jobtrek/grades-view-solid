@@ -1,12 +1,12 @@
 import { type Component, For, Show } from "solid-js"
-import { GradeElement } from "~/components/GradeElement"
-import { AddModuleForm } from "~/components/AddModuleForm"
+import { GradeElement } from "~/components/grades/GradeElement"
+import { AddModuleForm } from "~/components/forms/AddModuleForm"
 import {
   type Module,
   type ModuleGrade,
   type TechnicalDomains,
 } from "~/types/models/GradeStoreModels"
-import { TooltipContainer } from "~/components/TooltipContainer"
+import { TooltipContainer } from "~/components/utils/TooltipContainer"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { addTechnicalModuleGrade } from "~/contexts/gradesContext/setterUtils/addTechnicalModuleGrade"
 import { updateTechnicalModuleGrade } from "~/contexts/gradesContext/setterUtils/updateTechnicalModuleGrade"

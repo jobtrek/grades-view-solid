@@ -1,5 +1,5 @@
 import { type Component, Index, Show } from "solid-js"
-import { GradeElement } from "~/components/GradeElement"
+import { GradeElement } from "~/components/grades/GradeElement"
 import { Semester } from "~/components/Semester"
 import { AddSemesterButton } from "~/components/AddSemesterButton"
 import { type GeneralKnowledge } from "~/types/models/GradeStoreModels"

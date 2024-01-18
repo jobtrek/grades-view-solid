@@ -7,13 +7,13 @@ import {
   type SubmitHandler,
   valiForm,
 } from "@modular-forms/solid"
-import { Alert } from "~/components/Alert"
+import { Alert } from "~/components/utils/Alert"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { updateStudentName } from "~/contexts/gradesContext/setterUtils/updateStudentName"
 import { clientOnly } from "@solidjs/start"
 
 const ClientOnlyDisappearingNotification = clientOnly(
-  async () => await import("~/components/DisappearingNotification"),
+  async () => await import("~/components/utils/DisappearingNotification"),
 )
 
 const StudentNameSchema = object({
@@ -25,7 +25,7 @@ const StudentNameSchema = object({
 
 type StudentGradeForm = Input<typeof StudentNameSchema>
 
-export const NameMenu: Component = () => {
+export const NameForm: Component = () => {
   const [gradesContext] = useGradesContext()
   const [updateStudentForm, UpdateStudent] = createForm<StudentGradeForm>({
     validate: valiForm(StudentNameSchema),

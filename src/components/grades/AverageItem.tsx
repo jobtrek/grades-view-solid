@@ -1,5 +1,5 @@
 import { type Component, createMemo, mergeProps, Show } from "solid-js"
-import { AveragePercentDiff } from "~/components/AveragePercentDiff"
+import { AveragePercentDiff } from "~/components/grades/AveragePercentDiff"
 import { roundTo } from "~/utils/roundTo"
 
 interface CurrentAndLastGrade {

@@ -11,15 +11,15 @@ import {
   type AddGradeForm,
   AddGradeSchema,
 } from "~/types/schemas/gradeFormSchema"
-import { Alert } from "~/components/Alert"
+import { Alert } from "~/components/utils/Alert"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { updateStudentTpi } from "~/contexts/gradesContext/setterUtils/updateStudentTpi"
 
 const ClientOnlyDisappearingNotification = clientOnly(
-  async () => await import("~/components/DisappearingNotification"),
+  async () => await import("~/components/utils/DisappearingNotification"),
 )
 
-export const TpiGradeItem: Component = () => {
+export const TpiGradeItemForm: Component = () => {
   const [gradesStore] = useGradesContext()
   const [addGradeForm, AddGrade] = createForm<AddGradeForm>({
     validate: valiForm(AddGradeSchema),

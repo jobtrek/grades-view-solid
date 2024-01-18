@@ -1,7 +1,7 @@
 import { type Component } from "solid-js"
-import { NameMenu } from "~/components/NameMenu"
+import { NameForm } from "~/components/forms/NameForm"
 import { A } from "@solidjs/router"
-import { NavigationMenu } from "~/components/NavigationMenu"
+import { NavigationMenu } from "~/components/navigation/NavigationMenu"
 import { resetGradesStore } from "~/contexts/gradesContext/setterUtils/resetGradesStore"
 
 export const AppNavigation: Component = () => {
@@ -10,7 +10,7 @@ export const AppNavigation: Component = () => {
       <div class="container mx-auto sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-center py-5 lg:justify-between">
           <div class="absolute left-0 flex-shrink-0 lg:static">
-            <A class="text-sky-100" href="/">
+            <A class="text-sky-100" href="/public">
               <span class="sr-only">Grades calculator</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export const AppNavigation: Component = () => {
             <div class="col-span-2">
               <NavigationMenu />
             </div>
-            <NameMenu />
+            <NameForm />
           </div>
         </div>
       </div>

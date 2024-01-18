@@ -9,7 +9,7 @@ import {
   type SubmitHandler,
   valiForm,
 } from "@modular-forms/solid"
-import { Alert } from "~/components/Alert"
+import { Alert } from "~/components/utils/Alert"
 import { type Module, type ModuleGrade } from "~/types/models/GradeStoreModels"
 import { AutocompleteComboBox } from "~/components/forms/fields/AutocompleteComboBox"
 

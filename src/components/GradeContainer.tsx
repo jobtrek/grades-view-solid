@@ -1,6 +1,6 @@
 import { type Component, Index } from "solid-js"
-import { GradeElement } from "~/components/GradeElement"
-import { TooltipContainer } from "~/components/TooltipContainer"
+import { GradeElement } from "~/components/grades/GradeElement"
+import { TooltipContainer } from "~/components/utils/TooltipContainer"
 
 interface Props {
   grades: number[]

@@ -1,6 +1,6 @@
 import { type Component } from "solid-js"
-import { AverageItem } from "~/components/AverageItem"
-import { TpiGradeItem } from "~/components/TpiGradeItem"
+import { AverageItem } from "~/components/grades/AverageItem"
+import { TpiGradeItemForm } from "~/components/forms/TpiGradeItemForm"
 import { generalAverageMemo } from "~/contexts/gradesContext/memos/generalAverageMemo"
 import {
   engAverageMemo,
@@ -28,7 +28,7 @@ export const AveragesSection: Component = () => {
               grade={generalAverageMemo()}
               large={true}
             />
-            <TpiGradeItem />
+            <TpiGradeItemForm />
             <AverageItem grade={sociAverageMemo()} title="Société et langues" />
             <AverageItem
               title="Compétences générales"
