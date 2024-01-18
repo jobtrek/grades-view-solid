@@ -12,6 +12,12 @@ import {
 import { Alert } from "~/components/utils/Alert"
 import { type Module, type ModuleGrade } from "~/types/models/GradeStoreModels"
 import { AutocompleteComboBox } from "~/components/forms/fields/AutocompleteComboBox"
+import { transformKeyToLabel } from "~/utils/transformKeyToLabel"
+
+export const addModuleSchemaLabels = {
+  grade: "Note",
+  module: "Module",
+}
 
 const AddModuleGradeSchema = object({
   grade: number([
@@ -19,7 +25,7 @@ const AddModuleGradeSchema = object({
     minValue(1, "La note ne peut pas être inférieure à 1"),
   ]),
   module: string(),
-})
+} satisfies Record<keyof typeof addModuleSchemaLabels, any>)
 
 type AddModuleGradeForm = Input<typeof AddModuleGradeSchema>
 
@@ -142,6 +148,9 @@ export const AddModuleForm: Component<Props> = (props) => {
           <Alert
             content="Le formulaire n'est pas valide"
             details={getErrors(addModuleGradeForm)}
+            transformFunction={(key) =>
+              transformKeyToLabel(key, addModuleSchemaLabels)
+            }
           />
         </div>
       </Show>

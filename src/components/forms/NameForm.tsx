@@ -11,17 +11,22 @@ import { Alert } from "~/components/utils/Alert"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { updateStudentName } from "~/contexts/gradesContext/setterUtils/updateStudentName"
 import { clientOnly } from "@solidjs/start"
+import { transformKeyToLabel } from "~/utils/transformKeyToLabel"
 
 const ClientOnlyDisappearingNotification = clientOnly(
   async () => await import("~/components/utils/DisappearingNotification"),
 )
+
+export const studentSchemaLabels = {
+  studentName: "Nom de l'étudiant",
+}
 
 const StudentNameSchema = object({
   studentName: string([
     maxLength(40, "Le nom ne peut pas faire plus de 40 caractères."),
     minLength(1, "Le nom doit contenir au minimum un caractère."),
   ]),
-})
+} satisfies Record<keyof typeof studentSchemaLabels, any>)
 
 type StudentGradeForm = Input<typeof StudentNameSchema>
 
@@ -86,6 +91,9 @@ export const NameForm: Component = () => {
           <Alert
             content="Le formulaire n'est pas valide"
             details={getErrors(updateStudentForm)}
+            transformFunction={(key) =>
+              transformKeyToLabel(key, studentSchemaLabels)
+            }
           />
         </ClientOnlyDisappearingNotification>
       </Show>

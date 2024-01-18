@@ -1,6 +1,7 @@
-import { type Component } from "solid-js"
+import { type Component, Show } from "solid-js"
 import {
   createForm,
+  getErrors,
   reset,
   type SubmitHandler,
   valiForm,
@@ -8,7 +9,11 @@ import {
 import {
   type AddGradeForm,
   AddGradeSchema,
+  gradeSchemaLabels,
 } from "~/types/schemas/gradeFormSchema"
+import { Alert } from "~/components/utils/Alert"
+import { transformKeyToLabel } from "~/utils/transformKeyToLabel"
+import DisappearingNotification from "~/components/utils/DisappearingNotification"
 
 interface Props {
   onNewGrade: (g: number) => void
@@ -75,6 +80,17 @@ export const GradeInput: Component<Props> = (props) => {
           </div>
         )}
       </AddGrade.Field>
+      <Show when={addGradeForm.invalid}>
+        <DisappearingNotification>
+          <Alert
+            content="Le formulaire n'est pas valide"
+            details={getErrors(addGradeForm)}
+            transformFunction={(key) =>
+              transformKeyToLabel(key, gradeSchemaLabels)
+            }
+          />
+        </DisappearingNotification>
+      </Show>
     </AddGrade.Form>
   )
 }
