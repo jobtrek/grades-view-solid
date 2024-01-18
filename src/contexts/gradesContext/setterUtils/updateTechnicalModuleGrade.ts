@@ -1,12 +1,8 @@
-import type { SetStoreFunction } from "solid-js/store"
-import type {
-  ModuleGrade,
-  StudentGrades,
-  TechnicalDomains,
-} from "~/data/GradeStoreModels"
+import type { ModuleGrade, TechnicalDomains } from "~/data/GradeStoreModels"
+import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 
+const [, setGradesStore] = useGradesContext()
 export const updateTechnicalModuleGrade = (
-  setGradesStore: SetStoreFunction<StudentGrades>,
   domain: keyof TechnicalDomains,
   module: ModuleGrade,
 ): void => {

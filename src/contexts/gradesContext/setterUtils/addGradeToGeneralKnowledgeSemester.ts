@@ -1,8 +1,8 @@
-import type { SetStoreFunction } from "solid-js/store"
-import type { GeneralKnowledge, StudentGrades } from "~/data/GradeStoreModels"
+import type { GeneralKnowledge } from "~/data/GradeStoreModels"
+import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 
+const [, setGradesStore] = useGradesContext()
 export const addGradeToGeneralKnowledgeSemester = (
-  setGradesStore: SetStoreFunction<StudentGrades>,
   branch: keyof GeneralKnowledge,
   semesterNumber: number,
   grade: number,

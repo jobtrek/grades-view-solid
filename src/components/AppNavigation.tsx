@@ -3,7 +3,7 @@ import { NameMenu } from "~/components/NameMenu"
 import { A } from "@solidjs/router"
 import { NavigationMenu } from "~/components/NavigationMenu"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
-import { resetGradesStore } from "~/contexts/gradesContext/utils/resetGradesStore"
+import { resetGradesStore } from "~/contexts/gradesContext/setterUtils/resetGradesStore"
 
 export const AppNavigation: Component = () => {
   const [, setGradesContext] = useGradesContext()

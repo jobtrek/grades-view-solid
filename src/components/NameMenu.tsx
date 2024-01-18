@@ -10,7 +10,7 @@ import {
 import { Alert } from "~/components/Alert"
 import DisappearingNotification from "~/components/DisappearingNotification"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
-import { updateStudentName } from "~/contexts/gradesContext/utils/updateStudentName"
+import { updateStudentName } from "~/contexts/gradesContext/setterUtils/updateStudentName"
 
 const StudentNameSchema = object({
   studentName: string([
