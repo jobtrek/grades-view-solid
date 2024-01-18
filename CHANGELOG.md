@@ -1,6 +1,46 @@
 # Changelog
 
 
+## v0.0.7
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.6...v0.0.7)
+
+### 🚀 Enhancements
+
+- **grades-context:** Create new context provider for grades ([b18b985](https://github.com/jobtrek/grades-view-solid/commit/b18b985))
+- **grades-context:** Use gradesContext for name ([506399d](https://github.com/jobtrek/grades-view-solid/commit/506399d))
+- **grades-context:** Move store functions to context ([d543795](https://github.com/jobtrek/grades-view-solid/commit/d543795))
+- **grades-context:** Move store memos to context ([c0e70d9](https://github.com/jobtrek/grades-view-solid/commit/c0e70d9))
+- **grades-context:** Access new context on technical module page ([9ecc17e](https://github.com/jobtrek/grades-view-solid/commit/9ecc17e))
+- **grades-context:** Convert pages from store to context access ([dd82252](https://github.com/jobtrek/grades-view-solid/commit/dd82252))
+- **forms:** System to get translated labels for forms ([413c22a](https://github.com/jobtrek/grades-view-solid/commit/413c22a))
+- **forms:** Add labels map to each forms ([5d132c2](https://github.com/jobtrek/grades-view-solid/commit/5d132c2))
+
+### 🩹 Fixes
+
+- Github workflow branch name ([0234439](https://github.com/jobtrek/grades-view-solid/commit/0234439))
+- Create working 404 page ([2b597ae](https://github.com/jobtrek/grades-view-solid/commit/2b597ae))
+- **grades-context:** Fix context create memo parameters mismatch ([8c91dc0](https://github.com/jobtrek/grades-view-solid/commit/8c91dc0))
+- **reactivity:** Client only notifications ([5d90419](https://github.com/jobtrek/grades-view-solid/commit/5d90419))
+
+### 💅 Refactors
+
+- Reorganise components in folders ([d3a3bdf](https://github.com/jobtrek/grades-view-solid/commit/d3a3bdf))
+- Create more lightweight tooltip, to avoid using ark-ui ([3d6b5f4](https://github.com/jobtrek/grades-view-solid/commit/3d6b5f4))
+- Remove ark ui dependency ([7c6afdc](https://github.com/jobtrek/grades-view-solid/commit/7c6afdc))
+- Add labels translation ([d95c175](https://github.com/jobtrek/grades-view-solid/commit/d95c175))
+
+### 📦 Build
+
+- Configure to static generation with base url for github pages ([456e186](https://github.com/jobtrek/grades-view-solid/commit/456e186))
+- Add github action to build and deploy to pages ([5ad4c3b](https://github.com/jobtrek/grades-view-solid/commit/5ad4c3b))
+- Configure prerenderer to generate all pages at build time ([8d69436](https://github.com/jobtrek/grades-view-solid/commit/8d69436))
+- Run build only on new git tags (will deploy only on new version) ([a592668](https://github.com/jobtrek/grades-view-solid/commit/a592668))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v0.0.6
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.5...v0.0.6)
