@@ -1,4 +1,4 @@
-export const initialStoreData = {
+export const initialGradesStoreData = {
   name: "",
   tpi: null,
   info: {

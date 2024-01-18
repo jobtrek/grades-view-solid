@@ -5,16 +5,16 @@ import {
   type ModuleGrade,
   type StudentGrades,
   type TechnicalDomains,
-} from "~/store/GradeStoreModels"
+} from "~/data/GradeStoreModels"
 import { type Accessor, batch, createMemo } from "solid-js"
 import { makePersisted } from "@solid-primitives/storage"
 import { roundTo } from "~/utils/roundTo"
 import { average, weightedAverage, weightedAverageFlat } from "~/utils/average"
-import { initialStoreData } from "~/store/initialStoreData"
+import { initialGradesStoreData } from "~/data/initialGradesStoreData"
 
 // Global store
 const [gradesStore, setGradesStore] = makePersisted(
-  createStore<StudentGrades>(initialStoreData),
+  createStore<StudentGrades>(initialGradesStoreData),
   { name: "grade-store" },
 )
 

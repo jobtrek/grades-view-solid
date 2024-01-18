@@ -1,4 +1,4 @@
-import { type Module } from "~/store/GradeStoreModels"
+import { type Module } from "~/data/GradeStoreModels"
 
 export const cieModules: Module[] = [
   {

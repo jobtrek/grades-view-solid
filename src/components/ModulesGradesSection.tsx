@@ -5,7 +5,7 @@ import {
   type Module,
   type ModuleGrade,
   type TechnicalDomains,
-} from "~/store/GradeStoreModels"
+} from "~/data/GradeStoreModels"
 import {
   addTechnicalModuleGrade,
   createStudentModuleAverageMemo,

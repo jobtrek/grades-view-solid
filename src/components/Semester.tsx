@@ -2,7 +2,7 @@ import { type Component, Show } from "solid-js"
 import { GradeContainer } from "~/components/GradeContainer"
 import { GradeInput } from "~/components/GradeInput"
 import { GradeElement } from "~/components/GradeElement"
-import type { GeneralKnowledge } from "~/store/GradeStoreModels"
+import type { GeneralKnowledge } from "~/data/GradeStoreModels"
 import {
   addGradeToGeneralKnowledgeSemester,
   createStudentGeneralBranchSemesterAverageMemo,
