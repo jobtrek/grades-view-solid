@@ -6,7 +6,7 @@
 
 [Grades view solid demo](https://jobtrek.github.io/grades-view-solid/)
 
-Dont hesitate to report any issue or suggestion on the github [issues page](https://github.com/jobtrek/grades-view-solid/issues).
+Don't hesitate to report any issue or suggestion on the github [issues page](https://github.com/jobtrek/grades-view-solid/issues).
 
 ## Start project development
 
@@ -17,4 +17,10 @@ pnpm i # or npm install or yarn
 
 # start dev server
 pnpm dev # or npm run dev or yarn dev
+```
+
+## Build for production
+
+```bash
+pnpm build
 ```

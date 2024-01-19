@@ -1,6 +1,6 @@
 import { type JSX } from "solid-js"
 
-export default function Home(): JSX.Element {
+export default function (): JSX.Element {
   return (
     <div class="grid grid-cols-1 items-start">
       <div class="grid grid-cols-1 gap-4">
