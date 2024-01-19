@@ -6,11 +6,11 @@ import { resetGradesStore } from "~/contexts/gradesContext/setterUtils/resetGrad
 
 export const AppNavigation: Component = () => {
   return (
-    <header class="bg-sky-600 pb-24">
+    <header class="bg-blue-600 pb-24">
       <div class="container mx-auto sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-center py-5 lg:justify-between">
           <div class="absolute left-0 flex-shrink-0 lg:static">
-            <A class="text-sky-100" href="/public">
+            <A class="text-blue-100" href="/public">
               <span class="sr-only">Grades calculator</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ export const AppNavigation: Component = () => {
                 resetGradesStore()
               }}
               type="button"
-              class="relative flex-shrink-0 rounded-full p-1 text-sky-100 hover:bg-white hover:bg-opacity-10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+              class="relative flex-shrink-0 rounded-full p-1 text-blue-100 hover:bg-white hover:bg-opacity-10 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
             >
               <span class="absolute -inset-1.5" />
               <span class="sr-only">Reload</span>

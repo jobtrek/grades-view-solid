@@ -76,7 +76,7 @@ export const NameForm: Component = () => {
                   classList={{
                     "text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500":
                       field.error !== "",
-                    "text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-sky-600":
+                    "text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-blue-600":
                       field.error === "",
                   }}
                   placeholder="Nom de l'apprenti"

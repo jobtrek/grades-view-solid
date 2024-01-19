@@ -12,7 +12,7 @@ export const DisappearingNotification: Component<Props> = (props) => {
   makeTimer(() => setVisible(false), 5000, setTimeout)
 
   return (
-    <Portal mount={document.getElementById("modal") ?? undefined}>
+    <Portal>
       <Show when={visible()}>
         <div class="pointer-events-none fixed inset-x-0 bottom-0 px-6 pb-6">
           <div class="pointer-events-auto ml-auto max-w-xl rounded-xl shadow-lg">
