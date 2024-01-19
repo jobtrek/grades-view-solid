@@ -1,5 +1,6 @@
 # Grades view
 > Implemented with [SolidJS](https://www.solidjs.com/)
+> [See changelog](./CHANGELOG.md)
 
 ## Test it
 
