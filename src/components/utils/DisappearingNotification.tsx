@@ -4,12 +4,20 @@ import { makeTimer } from "@solid-primitives/timer"
 
 interface Props {
   children: JSX.Element
+  onReset?: () => void
 }
 
 export const DisappearingNotification: Component<Props> = (props) => {
   const [visible, setVisible] = createSignal(true)
 
-  makeTimer(() => setVisible(false), 5000, setTimeout)
+  makeTimer(
+    (): void => {
+      setVisible(false)
+      if (props.onReset != null) props.onReset()
+    },
+    5000,
+    setTimeout,
+  )
 
   return (
     <Portal>

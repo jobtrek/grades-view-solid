@@ -83,6 +83,7 @@ export const GradeInput: Component<Props> = (props) => {
       <Show when={addGradeForm.invalid}>
         <DisappearingNotification>
           <Alert
+            type="error"
             content="Le formulaire n'est pas valide"
             details={getErrors(addGradeForm)}
             transformFunction={(key) =>

@@ -51,9 +51,9 @@ export const Alert = <T extends Record<string, string>>(
         </div>
         <div class="ml-3">
           <h3 class={`text-sm font-medium ${colors()[3]}`}>{props.content}</h3>
-          <div class={`mt-2 text-sm ${colors()[2]}`}>
-            <Show when={props.details}>
-              {(details) => (
+          <Show when={props.details}>
+            {(details) => (
+              <div class={`mt-2 text-sm ${colors()[2]}`}>
                 <ul role="list" class="list-disc space-y-1 pl-5">
                   <Index each={Object.entries(details())}>
                     {(detail) => (
@@ -71,9 +71,9 @@ export const Alert = <T extends Record<string, string>>(
                     )}
                   </Index>
                 </ul>
-              )}
-            </Show>
-          </div>
+              </div>
+            )}
+          </Show>
         </div>
       </div>
     </div>

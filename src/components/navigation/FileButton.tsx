@@ -4,12 +4,17 @@ import { parse } from "valibot"
 import { StudentGradesSchema } from "~/types/models/GradeStoreModels"
 import { importDataToStore } from "~/contexts/gradesContext/setterUtils/importDataToStore"
 import DisappearingNotification from "~/components/utils/DisappearingNotification"
-import { Alert } from "~/components/utils/Alert"
+import { Alert, type AlertTypes } from "~/components/utils/Alert"
 
 /**
  * A special component to simulate a file input, but only with a button.
  */
 export const FileButton: Component = (props) => {
+  const [notification, setNotification] = createSignal<{
+    name: string
+    type: AlertTypes
+    messages: Record<any, any>
+  } | null>(null)
   let fileInput: HTMLInputElement | undefined
 
   const handleClick = (): void => {
@@ -17,23 +22,43 @@ export const FileButton: Component = (props) => {
     fileInput.click()
   }
 
+  const handleReset = (): void => {
+    setNotification(null)
+  }
+
   const handleFileChange = async (): Promise<void> => {
     if (fileInput == null) return
-    console.log(fileInput.files)
     if (fileInput.files?.length === 1) {
       const file = await fileInput.files[0].text()
       const json = JSON.parse(file)
       try {
         const validatedSchema = parse(StudentGradesSchema, json)
         importDataToStore(validatedSchema)
+        setNotification({
+          name: "L'importation a réussi",
+          type: "success",
+          messages: {},
+        })
       } catch (error) {
-        console.log("Nope", error)
+        setNotification({
+          name: "L'importation a échoué, les données n'ont pas le bon format",
+          type: "error",
+          messages: error.issues.reduce((acc, issue) => {
+            return {
+              ...acc,
+              [issue.path[0].key]: issue.message,
+            }
+          }, {}),
+        })
       }
-    } else if (fileInput.files?.length === 0) {
-      console.log("No file selected")
     } else {
-      console.log("No file selected")
+      setNotification({
+        name: "Aucun fichier sélectionné",
+        type: "warning",
+        messages: {},
+      })
     }
+    fileInput.value = ""
   }
 
   return (
@@ -61,6 +86,17 @@ export const FileButton: Component = (props) => {
           <path d="M14.25 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Z" />
         </svg>
       </NavButton>
+      <Show when={notification()}>
+        {(notification) => (
+          <DisappearingNotification onReset={handleReset}>
+            <Alert
+              content={notification().name}
+              type={notification().type}
+              details={notification().messages}
+            />
+          </DisappearingNotification>
+        )}
+      </Show>
     </>
   )
 }

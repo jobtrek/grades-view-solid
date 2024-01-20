@@ -138,6 +138,7 @@ export const AddModuleForm: Component<Props> = (props) => {
       <Show when={addModuleGradeForm.invalid}>
         <div class="pt-4">
           <Alert
+            type="error"
             content="Le formulaire n'est pas valide"
             details={getErrors(addModuleGradeForm)}
             transformFunction={(key) =>
