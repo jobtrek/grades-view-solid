@@ -1,6 +1,9 @@
-import { Index, type JSX, Show } from "solid-js"
+import { createMemo, Index, type JSX, Show } from "solid-js"
+
+export type AlertTypes = "error" | "warning" | "success"
 
 interface Props<T extends Record<string, string>> {
+  type?: AlertTypes
   content: string
   details?: T
   transformFunction?: (content: keyof T) => string
@@ -9,12 +12,32 @@ interface Props<T extends Record<string, string>> {
 export const Alert = <T extends Record<string, string>>(
   props: Props<T>,
 ): JSX.Element => {
+  const colors = createMemo(() => {
+    switch (props.type) {
+      case "error":
+        return ["bg-red-50", "text-red-400", "text-red-700", "text-red-800"]
+      case "success":
+        return [
+          "bg-green-50",
+          "text-green-400",
+          "text-green-700",
+          "text-green-800",
+        ]
+      default:
+        return [
+          "bg-amber-50",
+          "text-amber-400",
+          "text-amber-700",
+          "text-amber-800",
+        ]
+    }
+  })
   return (
-    <div class="rounded-md bg-red-50 p-4">
+    <div class={`rounded-md p-4 ${colors()[0]}`}>
       <div class="flex">
         <div class="flex-shrink-0">
           <svg
-            class="h-5 w-5 text-red-400"
+            class={`h-5 w-5 ${colors()[1]}`}
             viewBox="0 0 20 20"
             fill="currentColor"
             aria-hidden="true"
@@ -27,8 +50,8 @@ export const Alert = <T extends Record<string, string>>(
           </svg>
         </div>
         <div class="ml-3">
-          <h3 class="text-sm font-medium text-red-800">{props.content}</h3>
-          <div class="mt-2 text-sm text-red-700">
+          <h3 class={`text-sm font-medium ${colors()[3]}`}>{props.content}</h3>
+          <div class={`mt-2 text-sm ${colors()[2]}`}>
             <Show when={props.details}>
               {(details) => (
                 <ul role="list" class="list-disc space-y-1 pl-5">

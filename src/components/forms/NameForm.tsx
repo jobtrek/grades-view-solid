@@ -76,6 +76,7 @@ export const NameForm: VoidComponent = () => {
       <Show when={updateStudentForm.invalid}>
         <DisappearingNotification>
           <Alert
+            type="error"
             content="Le formulaire n'est pas valide"
             details={getErrors(updateStudentForm)}
             transformFunction={(key) =>
