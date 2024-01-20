@@ -3,7 +3,7 @@ import { GradeElement } from "~/components/grades/GradeElement"
 import { AddModuleForm } from "~/components/forms/AddModuleForm"
 import {
   type Module,
-  type ModuleGrade,
+  type ModuleWithGrade,
   type TechnicalDomains,
 } from "~/types/models/GradeStoreModels"
 import { TooltipContainer } from "~/components/utils/TooltipContainer"
@@ -21,7 +21,7 @@ interface Props {
 
 export const ModulesGradesSection: Component<Props> = (props) => {
   const [gradesStore] = useGradesContext()
-  const addModule = (module: ModuleGrade): void => {
+  const addModule = (module: ModuleWithGrade): void => {
     if (
       gradesStore.info[props.name].find((m) => m.no === module.no) === undefined
     ) {
@@ -31,7 +31,7 @@ export const ModulesGradesSection: Component<Props> = (props) => {
     }
   }
 
-  const removeModule = (module: ModuleGrade): void => {
+  const removeModule = (module: ModuleWithGrade): void => {
     removeTechnicalModuleGrade(props.name, module)
   }
 

@@ -1,4 +1,4 @@
-import { type Component, onMount } from "solid-js"
+import { type Component } from "solid-js"
 import { NavButton } from "~/components/navigation/NavButton"
 
 /**

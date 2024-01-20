@@ -114,6 +114,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
     e,
   ) => {
     if (!isComboboxOpen()) {
+      // @ts-expect-error Impossible to guarantee parent element presence
       e.currentTarget.parentElement.querySelector("input")?.focus()
     } else {
       toggleCombobox(false)
