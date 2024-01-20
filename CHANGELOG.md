@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.0.0-rc.1
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v1.0.0-rc.0...v1.0.0-rc.1)
+
+### 🩹 Fixes
+
+- Name form now client only to avoid pre-rendering hydration mismatch ([688d20e](https://github.com/jobtrek/grades-view-solid/commit/688d20e))
+
+### 💅 Refactors
+
+- **forms:** Extract name form schema to dedicated file ([ae28b5c](https://github.com/jobtrek/grades-view-solid/commit/ae28b5c))
+- **forms:** Export consistency on grades form schema ([29c0e27](https://github.com/jobtrek/grades-view-solid/commit/29c0e27))
+- **forms:** Extract modules form schema to dedicated file ([c77db72](https://github.com/jobtrek/grades-view-solid/commit/c77db72))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v1.0.0-rc.0
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.7...v1.0.0-rc.0)
