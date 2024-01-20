@@ -100,3 +100,5 @@ export const NameForm: VoidComponent = () => {
     </UpdateStudent.Form>
   )
 }
+
+export default NameForm

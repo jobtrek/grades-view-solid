@@ -1,5 +1,4 @@
 import { type Component, createEffect, Show } from "solid-js"
-import { clientOnly } from "@solidjs/start"
 import {
   createForm,
   getErrors,
@@ -16,10 +15,7 @@ import { Alert } from "~/components/utils/Alert"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { updateStudentTpi } from "~/contexts/gradesContext/setterUtils/updateStudentTpi"
 import { transformKeyToLabel } from "~/utils/transformKeyToLabel"
-
-const ClientOnlyDisappearingNotification = clientOnly(
-  async () => await import("~/components/utils/DisappearingNotification"),
-)
+import DisappearingNotification from "~/components/utils/DisappearingNotification"
 
 export const TpiGradeItemForm: Component = () => {
   const [gradesStore] = useGradesContext()
@@ -65,7 +61,7 @@ export const TpiGradeItemForm: Component = () => {
         </AddGrade.Field>
       </dd>
       <Show when={addGradeForm.invalid}>
-        <ClientOnlyDisappearingNotification>
+        <DisappearingNotification>
           <Alert
             content="Le formulaire n'est pas valide"
             details={getErrors(addGradeForm)}
@@ -73,7 +69,7 @@ export const TpiGradeItemForm: Component = () => {
               transformKeyToLabel(key, gradeSchemaLabels)
             }
           />
-        </ClientOnlyDisappearingNotification>
+        </DisappearingNotification>
       </Show>
     </AddGrade.Form>
   )

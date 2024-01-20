@@ -1,9 +1,12 @@
 import { type Component } from "solid-js"
-import { NameForm } from "~/components/forms/NameForm"
 import { A } from "@solidjs/router"
 import { NavigationMenu } from "~/components/navigation/NavigationMenu"
 import { resetGradesStore } from "~/contexts/gradesContext/setterUtils/resetGradesStore"
+import { clientOnly } from "@solidjs/start"
 
+const NameFormClient = clientOnly(
+  async () => await import("~/components/forms/NameForm"),
+)
 export const AppNavigation: Component = () => {
   return (
     <header class="bg-blue-600 pb-24">
@@ -56,7 +59,7 @@ export const AppNavigation: Component = () => {
             <div class="col-span-2">
               <NavigationMenu />
             </div>
-            <NameForm />
+            <NameFormClient />
           </div>
         </div>
       </div>
