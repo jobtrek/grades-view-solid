@@ -1,6 +1,10 @@
-import { GradesSection } from "~/components/GradesSection"
 import type { JSX } from "solid-js"
+import { clientOnly } from "@solidjs/start"
 
-export default function English(): JSX.Element {
-  return <GradesSection name="eng" title="Anglais" />
+const GradesSectionClientOnly = clientOnly(
+  async () => await import("~/components/GradesSection"),
+)
+
+export default function (): JSX.Element {
+  return <GradesSectionClientOnly name="eng" title="Anglais" />
 }

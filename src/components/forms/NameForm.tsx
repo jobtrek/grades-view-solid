@@ -1,4 +1,4 @@
-import { type Component, createEffect, Show } from "solid-js"
+import { createEffect, Show, type VoidComponent } from "solid-js"
 import { type Input, maxLength, minLength, object, string } from "valibot"
 import {
   createForm,
@@ -30,7 +30,7 @@ const StudentNameSchema = object({
 
 type StudentGradeForm = Input<typeof StudentNameSchema>
 
-export const NameForm: Component = () => {
+export const NameForm: VoidComponent = () => {
   const [gradesContext] = useGradesContext()
   const [updateStudentForm, UpdateStudent] = createForm<StudentGradeForm>({
     validate: valiForm(StudentNameSchema),

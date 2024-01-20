@@ -1,6 +1,12 @@
-import { GradesSection } from "~/components/GradesSection"
 import type { JSX } from "solid-js"
+import { clientOnly } from "@solidjs/start"
 
-export default function Soci(): JSX.Element {
-  return <GradesSection name="overallCulture" title="Société et langues" />
+const GradesSectionClientOnly = clientOnly(
+  async () => await import("~/components/GradesSection"),
+)
+
+export default function (): JSX.Element {
+  return (
+    <GradesSectionClientOnly name="overallCulture" title="Société et langues" />
+  )
 }

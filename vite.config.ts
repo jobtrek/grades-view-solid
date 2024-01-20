@@ -9,7 +9,7 @@ export default defineConfig({
       preset: "github-pages",
       baseURL: "/grades-view-solid",
       prerender: {
-        // routes: ["/grades-view-solid"],
+        routes: ["/grades-view-solid"],
         crawlLinks: true,
       },
     },
