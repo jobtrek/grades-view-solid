@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.0
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v1.0.0-rc.2...v1.0.0)
+
+### 📖 Documentation
+
+- Fix typos ([a7cad32](https://github.com/jobtrek/grades-view-solid/commit/a7cad32))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v1.0.0-rc.2
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v1.0.0-rc.1...v1.0.0-rc.2)
