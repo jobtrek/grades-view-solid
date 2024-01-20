@@ -1,4 +1,4 @@
-import { type Component } from "solid-js"
+import { type VoidComponent } from "solid-js"
 import { AverageItem } from "~/components/grades/AverageItem"
 import { TpiGradeItemForm } from "~/components/forms/TpiGradeItemForm"
 import { generalAverageMemo } from "~/contexts/gradesContext/memos/generalAverageMemo"
@@ -14,7 +14,7 @@ import {
   infoAverageMemo,
 } from "~/contexts/gradesContext/memos/technicalDomainMemos"
 
-export const AveragesSection: Component = () => {
+export const AveragesSection: VoidComponent = () => {
   return (
     <div class="grid grid-cols-1 gap-4">
       <section aria-labelledby="section-2-title">
@@ -50,3 +50,5 @@ export const AveragesSection: Component = () => {
     </div>
   )
 }
+
+export default AveragesSection

@@ -13,6 +13,6 @@ export default defineConfig({
         crawlLinks: true,
       },
     },
-    ssr: false,
+    ssr: true,
   },
 })

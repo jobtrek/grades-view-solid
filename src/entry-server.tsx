@@ -15,6 +15,7 @@ export default createHandler(() => (
         <body class="h-full">
           <div id="app">{children}</div>
           <div id="modal" />
+          <div />
           {scripts}
         </body>
       </html>

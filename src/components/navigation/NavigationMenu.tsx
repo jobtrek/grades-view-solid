@@ -7,7 +7,7 @@ export const NavigationMenu: Component = () => {
       <A
         href="/grades/math"
         activeClass="text-white font-bold"
-        inactiveClass="text-sky-100 font-medium"
+        inactiveClass="text-blue-100 font-medium"
         class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
       >
         Math
@@ -15,7 +15,7 @@ export const NavigationMenu: Component = () => {
       <A
         href="/grades/soci"
         activeClass="text-white font-bold"
-        inactiveClass="text-sky-100 font-medium"
+        inactiveClass="text-blue-100 font-medium"
         class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
       >
         Société
@@ -23,7 +23,7 @@ export const NavigationMenu: Component = () => {
       <A
         href="/grades/english"
         activeClass="text-white font-bold"
-        inactiveClass="text-sky-100 font-medium"
+        inactiveClass="text-blue-100 font-medium"
         class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
       >
         Anglais
@@ -31,7 +31,7 @@ export const NavigationMenu: Component = () => {
       <A
         href="/grades/epsic"
         activeClass="text-white font-bold"
-        inactiveClass="text-sky-100 font-medium"
+        inactiveClass="text-blue-100 font-medium"
         class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
       >
         Modules EPSIC
@@ -39,7 +39,7 @@ export const NavigationMenu: Component = () => {
       <A
         href="/grades/cie"
         activeClass="text-white font-bold"
-        inactiveClass="text-sky-100 font-medium"
+        inactiveClass="text-blue-100 font-medium"
         class="rounded-md bg-white bg-opacity-0 px-3 py-2 text-sm hover:bg-opacity-10"
       >
         CIE

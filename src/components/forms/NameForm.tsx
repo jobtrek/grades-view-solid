@@ -1,4 +1,4 @@
-import { type Component, createEffect, Show } from "solid-js"
+import { createEffect, Show, type VoidComponent } from "solid-js"
 import { type Input, maxLength, minLength, object, string } from "valibot"
 import {
   createForm,
@@ -30,7 +30,7 @@ const StudentNameSchema = object({
 
 type StudentGradeForm = Input<typeof StudentNameSchema>
 
-export const NameForm: Component = () => {
+export const NameForm: VoidComponent = () => {
   const [gradesContext] = useGradesContext()
   const [updateStudentForm, UpdateStudent] = createForm<StudentGradeForm>({
     validate: valiForm(StudentNameSchema),
@@ -76,7 +76,7 @@ export const NameForm: Component = () => {
                   classList={{
                     "text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500":
                       field.error !== "",
-                    "text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-sky-600":
+                    "text-gray-900 ring-gray-300 placeholder:text-gray-400 focus:ring-blue-600":
                       field.error === "",
                   }}
                   placeholder="Nom de l'apprenti"
