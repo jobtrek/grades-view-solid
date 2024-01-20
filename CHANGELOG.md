@@ -1,6 +1,35 @@
 # Changelog
 
 
+## v1.0.0-rc.2
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v1.0.0-rc.1...v1.0.0-rc.2)
+
+### 🚀 Enhancements
+
+- **import-export:** Add buttons in navbar with icons ([7888bc6](https://github.com/jobtrek/grades-view-solid/commit/7888bc6))
+- **import-export:** Add util to export and download JS object in json ([01e3e43](https://github.com/jobtrek/grades-view-solid/commit/01e3e43))
+- **import-export:** Create a dedicated component for file import ([6bbbb7c](https://github.com/jobtrek/grades-view-solid/commit/6bbbb7c))
+- **import-export:** Json grades can now be imported in calculator ([4568698](https://github.com/jobtrek/grades-view-solid/commit/4568698))
+- **import-export:** File button can now import grades ([8daa5e0](https://github.com/jobtrek/grades-view-solid/commit/8daa5e0))
+
+### 🩹 Fixes
+
+- **import-export:** File button placed in client only ([c593826](https://github.com/jobtrek/grades-view-solid/commit/c593826))
+
+### 💅 Refactors
+
+- **navigation:** Extract reset button in dedicated component ([5e266b8](https://github.com/jobtrek/grades-view-solid/commit/5e266b8))
+- **navigation:** Generalise Nav button for reuse ([11fa2f3](https://github.com/jobtrek/grades-view-solid/commit/11fa2f3))
+- **grades-store:** Renovate store to use valibod schemas ([d1dabc9](https://github.com/jobtrek/grades-view-solid/commit/d1dabc9))
+- **grades-store:** Complete gradeStore schema conversion to valibot ([b102ce9](https://github.com/jobtrek/grades-view-solid/commit/b102ce9))
+- **grades-store:** Update project to support valibot schemas store ([34bc7ae](https://github.com/jobtrek/grades-view-solid/commit/34bc7ae))
+- Alert component now support multiple colors ([30dcc11](https://github.com/jobtrek/grades-view-solid/commit/30dcc11))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v1.0.0-rc.1
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v1.0.0-rc.0...v1.0.0-rc.1)
