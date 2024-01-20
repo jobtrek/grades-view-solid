@@ -4,11 +4,14 @@ import { NavigationMenu } from "~/components/navigation/NavigationMenu"
 import { clientOnly } from "@solidjs/start"
 import { NavButton } from "~/components/navigation/NavButton"
 import { resetGradesStore } from "~/contexts/gradesContext/setterUtils/resetGradesStore"
+import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
+import { downloadObjectAsJson } from "~/utils/downloadObjectAsJson"
 
 const NameFormClient = clientOnly(
   async () => await import("~/components/forms/NameForm"),
 )
 export const AppNavigation: Component = () => {
+  const [gradesStore] = useGradesContext()
   return (
     <header class="bg-blue-600 pb-24">
       <div class="container mx-auto sm:px-6 lg:px-8">
@@ -45,7 +48,12 @@ export const AppNavigation: Component = () => {
                 <path d="M14.25 5.25a5.23 5.23 0 0 0-1.279-3.434 9.768 9.768 0 0 1 6.963 6.963A5.23 5.23 0 0 0 16.5 7.5h-1.875a.375.375 0 0 1-.375-.375V5.25Z" />
               </svg>
             </NavButton>
-            <NavButton name="Export" actionOnClick={() => {}}>
+            <NavButton
+              name="Export"
+              actionOnClick={() => {
+                downloadObjectAsJson(gradesStore, "my-grades.json")
+              }}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
