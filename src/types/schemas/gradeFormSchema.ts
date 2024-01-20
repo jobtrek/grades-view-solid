@@ -1,6 +1,6 @@
 import { type Input, maxValue, minValue, number, object } from "valibot"
 
-export const gradeSchemaLabels = {
+const gradeSchemaLabels = {
   grade: "Note",
 }
 
@@ -13,4 +13,4 @@ const AddGradeSchema = object({
 
 type AddGradeForm = Input<typeof AddGradeSchema>
 
-export { AddGradeSchema, type AddGradeForm }
+export { AddGradeSchema, type AddGradeForm, gradeSchemaLabels }
