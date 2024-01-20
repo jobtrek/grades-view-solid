@@ -1,5 +1,4 @@
 import { createEffect, Show, type VoidComponent } from "solid-js"
-import { type Input, maxLength, minLength, object, string } from "valibot"
 import {
   createForm,
   getErrors,
@@ -12,23 +11,15 @@ import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { updateStudentName } from "~/contexts/gradesContext/setterUtils/updateStudentName"
 import { clientOnly } from "@solidjs/start"
 import { transformKeyToLabel } from "~/utils/transformKeyToLabel"
+import {
+  type StudentGradeForm,
+  StudentNameSchema,
+  studentSchemaLabels,
+} from "~/types/schemas/nameFormSchema"
 
 const ClientOnlyDisappearingNotification = clientOnly(
   async () => await import("~/components/utils/DisappearingNotification"),
 )
-
-export const studentSchemaLabels = {
-  studentName: "Nom de l'étudiant",
-}
-
-const StudentNameSchema = object({
-  studentName: string([
-    maxLength(40, "Le nom ne peut pas faire plus de 40 caractères."),
-    minLength(1, "Le nom doit contenir au minimum un caractère."),
-  ]),
-} satisfies Record<keyof typeof studentSchemaLabels, any>)
-
-type StudentGradeForm = Input<typeof StudentNameSchema>
 
 export const NameForm: VoidComponent = () => {
   const [gradesContext] = useGradesContext()
