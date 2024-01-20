@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v1.0.0-rc.0
+
+[compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.7...v1.0.0-rc.0)
+
+### 🩹 Fixes
+
+- Routes missing nodes on 404 and index template ([f356612](https://github.com/jobtrek/grades-view-solid/commit/f356612))
+- Hydration mismatches, fixes #2 ([#2](https://github.com/jobtrek/grades-view-solid/issues/2))
+
+### 💅 Refactors
+
+- **style:** Change from sky to blue to be consistent ([e66b534](https://github.com/jobtrek/grades-view-solid/commit/e66b534))
+
+### 📖 Documentation
+
+- Add github pages link to readme ([73a2cb0](https://github.com/jobtrek/grades-view-solid/commit/73a2cb0))
+- Add link to changelog ([b3e7950](https://github.com/jobtrek/grades-view-solid/commit/b3e7950))
+
+### ❤️ Contributors
+
+- Fuzoh <info@bastiennicoud.ch>
+
 ## v0.0.7
 
 [compare changes](https://github.com/jobtrek/grades-view-solid/compare/v0.0.6...v0.0.7)
