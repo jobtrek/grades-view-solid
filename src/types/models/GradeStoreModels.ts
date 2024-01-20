@@ -44,29 +44,36 @@ export const ModuleWithGradeSchema = merge([
 ])
 export type ModuleWithGrade = Input<typeof ModuleWithGradeSchema>
 
-type ModulesList = ModuleWithGrade[]
+export const ModulesListSchema = array(ModuleWithGradeSchema)
+export type ModulesList = Input<typeof ModulesListSchema>
 
-interface TechnicalDomains {
-  epsic: ModulesList
-  cie: ModulesList
-}
+export const TechnicalDomainsSchema = object({
+  epsic: ModulesListSchema,
+  cie: ModulesListSchema,
+})
+export type TechnicalDomains = Input<typeof TechnicalDomainsSchema>
 
-export interface GeneralKnowledge {
-  math: Branch
-  eng: Branch
-  overallCulture: Branch
-}
+export const BranchSchema = object({
+  maxSemesters: number([
+    maxValue(8, "Il est impossible d'avoir plus de 8 semestres."),
+  ]),
+  semesters: SemesterListSchema,
+})
+export type Branch = Input<typeof BranchSchema>
 
-export interface Branch {
-  maxSemesters: number
-  semesters: SemesterList
-}
+export const GeneralKnowledgeSchema = object({
+  math: BranchSchema,
+  eng: BranchSchema,
+  overallCulture: BranchSchema,
+})
+export type GeneralKnowledge = Input<typeof GeneralKnowledgeSchema>
 
-interface StudentGrades {
-  name: string
-  tpi: NullableGrade
-  info: TechnicalDomains
-  generalKnowledge: GeneralKnowledge
-}
-
-export type { StudentGrades, TechnicalDomains }
+export const StudentGradesSchema = object({
+  name: string([
+    maxLength(40, "Le nom ne peut pas faire plus de 40 caractères."),
+  ]),
+  tpi: NullableGradeSchema,
+  info: TechnicalDomainsSchema,
+  generalKnowledge: GeneralKnowledgeSchema,
+})
+export type StudentGrades = Input<typeof StudentGradesSchema>
