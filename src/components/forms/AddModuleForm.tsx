@@ -9,7 +9,10 @@ import {
   valiForm,
 } from "@modular-forms/solid"
 import { Alert } from "~/components/utils/Alert"
-import { type Module, type ModuleGrade } from "~/types/models/GradeStoreModels"
+import {
+  type Module,
+  type ModuleWithGrade,
+} from "~/types/models/GradeStoreModels"
 import { AutocompleteComboBox } from "~/components/forms/fields/AutocompleteComboBox"
 import { transformKeyToLabel } from "~/utils/transformKeyToLabel"
 import {
@@ -19,7 +22,7 @@ import {
 } from "~/types/schemas/moduleFormSchema"
 
 interface Props {
-  addModule: (m: ModuleGrade) => void
+  addModule: (m: ModuleWithGrade) => void
   availableModules: Module[]
 }
 
