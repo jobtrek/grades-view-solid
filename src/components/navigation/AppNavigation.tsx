@@ -6,10 +6,13 @@ import { NavButton } from "~/components/navigation/NavButton"
 import { resetGradesStore } from "~/contexts/gradesContext/setterUtils/resetGradesStore"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { downloadObjectAsJson } from "~/utils/downloadObjectAsJson"
-import { FileButton } from "~/components/navigation/FileButton"
 
 const NameFormClient = clientOnly(
   async () => await import("~/components/forms/NameForm"),
+)
+
+const FileButtonClient = clientOnly(
+  async () => await import("~/components/navigation/FileButton"),
 )
 export const AppNavigation: Component = () => {
   const [gradesStore] = useGradesContext()
@@ -34,7 +37,7 @@ export const AppNavigation: Component = () => {
           </div>
 
           <div class="hidden lg:ml-4 lg:flex lg:items-center lg:pr-0.5">
-            <FileButton />
+            <FileButtonClient />
             <NavButton
               name="Export"
               actionOnClick={() => {

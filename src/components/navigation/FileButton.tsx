@@ -100,3 +100,5 @@ export const FileButton: Component = (props) => {
     </>
   )
 }
+
+export default FileButton
