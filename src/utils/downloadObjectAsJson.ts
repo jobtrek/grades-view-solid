@@ -7,7 +7,7 @@ export const downloadObjectAsJson = (
     encodeURIComponent(JSON.stringify(objectToExport))
   const downloadAnchorNode = document.createElement("a")
   downloadAnchorNode.setAttribute("href", dataStr)
-  downloadAnchorNode.setAttribute("download", fileName + ".json")
+  downloadAnchorNode.setAttribute("download", fileName)
   document.body.appendChild(downloadAnchorNode) // required for firefox
   downloadAnchorNode.click()
   downloadAnchorNode.remove()

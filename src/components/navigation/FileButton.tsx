@@ -1,18 +1,39 @@
-import { type Component } from "solid-js"
+import { type Component, createSignal, Show } from "solid-js"
 import { NavButton } from "~/components/navigation/NavButton"
+import { parse } from "valibot"
+import { StudentGradesSchema } from "~/types/models/GradeStoreModels"
+import { importDataToStore } from "~/contexts/gradesContext/setterUtils/importDataToStore"
+import DisappearingNotification from "~/components/utils/DisappearingNotification"
+import { Alert } from "~/components/utils/Alert"
 
 /**
  * A special component to simulate a file input, but only with a button.
  */
 export const FileButton: Component = (props) => {
-  let fileInput: HTMLInputElement
+  let fileInput: HTMLInputElement | undefined
 
   const handleClick = (): void => {
+    if (fileInput == null) return
     fileInput.click()
   }
 
-  const handleFileChange = (): void => {
+  const handleFileChange = async (): Promise<void> => {
+    if (fileInput == null) return
     console.log(fileInput.files)
+    if (fileInput.files?.length === 1) {
+      const file = await fileInput.files[0].text()
+      const json = JSON.parse(file)
+      try {
+        const validatedSchema = parse(StudentGradesSchema, json)
+        importDataToStore(validatedSchema)
+      } catch (error) {
+        console.log("Nope", error)
+      }
+    } else if (fileInput.files?.length === 0) {
+      console.log("No file selected")
+    } else {
+      console.log("No file selected")
+    }
   }
 
   return (

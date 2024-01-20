@@ -9,17 +9,13 @@ import {
 import { Alert } from "~/components/utils/Alert"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
 import { updateStudentName } from "~/contexts/gradesContext/setterUtils/updateStudentName"
-import { clientOnly } from "@solidjs/start"
 import { transformKeyToLabel } from "~/utils/transformKeyToLabel"
 import {
   type StudentGradeForm,
   StudentNameSchema,
   studentSchemaLabels,
 } from "~/types/schemas/nameFormSchema"
-
-const ClientOnlyDisappearingNotification = clientOnly(
-  async () => await import("~/components/utils/DisappearingNotification"),
-)
+import DisappearingNotification from "~/components/utils/DisappearingNotification"
 
 export const NameForm: VoidComponent = () => {
   const [gradesContext] = useGradesContext()
@@ -78,7 +74,7 @@ export const NameForm: VoidComponent = () => {
         )}
       </UpdateStudent.Field>
       <Show when={updateStudentForm.invalid}>
-        <ClientOnlyDisappearingNotification>
+        <DisappearingNotification>
           <Alert
             content="Le formulaire n'est pas valide"
             details={getErrors(updateStudentForm)}
@@ -86,7 +82,7 @@ export const NameForm: VoidComponent = () => {
               transformKeyToLabel(key, studentSchemaLabels)
             }
           />
-        </ClientOnlyDisappearingNotification>
+        </DisappearingNotification>
       </Show>
     </UpdateStudent.Form>
   )
