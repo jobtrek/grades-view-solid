@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [1.1.1](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.1.0...grades-view-solid-v1.1.1) (2024-01-22)
+
+
+### Bug Fixes
+
+* Grades can now only be multiple of 0.5 ([3922321](https://github.com/jobtrek/grades-view-solid/commit/3922321cbc7aa2c54e87da806317da621a61c1f9)), closes [#13](https://github.com/jobtrek/grades-view-solid/issues/13)
+
 ## [1.1.0](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.0.0...grades-view-solid-v1.1.0) (2024-01-22)
 
 
