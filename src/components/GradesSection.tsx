@@ -6,6 +6,7 @@ import { type GeneralKnowledge } from "~/types/models/GradeStoreModels"
 import { createGeneralKnowledgeBranchAverageMemo } from "~/contexts/gradesContext/memoUtils/createGeneralKnowledgeBranchAverageMemo"
 import { addGeneralKnowledgeSemester } from "~/contexts/gradesContext/setterUtils/addGeneralKnowledgeSemester"
 import { useGradesContext } from "~/contexts/gradesContext/GradesContext"
+import { createGeneralKnowledgeBranchIsAvailableSemester } from "~/contexts/gradesContext/memoUtils/createGeneralKnowledgeBranchIsAvailableSemester"
 
 interface Props {
   name: keyof GeneralKnowledge
@@ -51,7 +52,13 @@ export const GradesSection: VoidComponent<Props> = (props) => {
                   <Semester branchName={props.name} semesterIndex={index} />
                 )}
               </Index>
-              <AddSemesterButton addSemester={addSemester} />
+              <Show
+                when={createGeneralKnowledgeBranchIsAvailableSemester(
+                  props.name,
+                )()}
+              >
+                <AddSemesterButton addSemester={addSemester} />
+              </Show>
             </dl>
           </div>
         </div>
