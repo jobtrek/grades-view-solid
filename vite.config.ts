@@ -7,9 +7,9 @@ export default defineConfig({
   start: {
     server: {
       preset: "github-pages",
-      baseURL: "/grades-view-solid",
+      baseURL: "/grades-view-solid/",
       prerender: {
-        routes: ["/grades-view-solid"],
+        routes: ["/"],
         crawlLinks: true,
       },
     },
