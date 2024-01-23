@@ -6,6 +6,7 @@ import {
   merge,
   minLength,
   minValue,
+  multipleOf,
   nullable,
   number,
   object,
@@ -15,6 +16,7 @@ import {
 export const GradeSchema = number([
   maxValue(6, "La note ne peut pas être supérieure à 6"),
   minValue(1, "La note ne peut pas être inférieure à 1"),
+  multipleOf(0.5, "La note ne peut être qu'un multiple de 0.5"),
 ])
 export type Grade = Input<typeof GradeSchema>
 

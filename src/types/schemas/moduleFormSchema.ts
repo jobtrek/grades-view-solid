@@ -1,4 +1,5 @@
-import { type Input, maxValue, minValue, number, object, string } from "valibot"
+import { type Input, object, string } from "valibot"
+import { GradeSchema } from "~/types/models/GradeStoreModels"
 
 const addModuleSchemaLabels = {
   grade: "Note",
@@ -6,10 +7,7 @@ const addModuleSchemaLabels = {
 }
 
 const AddModuleGradeSchema = object({
-  grade: number([
-    maxValue(6, "La note ne peut pas être supérieure à 6"),
-    minValue(1, "La note ne peut pas être inférieure à 1"),
-  ]),
+  grade: GradeSchema,
   module: string(),
 } satisfies Record<keyof typeof addModuleSchemaLabels, any>)
 
