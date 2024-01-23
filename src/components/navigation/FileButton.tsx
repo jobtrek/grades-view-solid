@@ -1,10 +1,11 @@
 import { type Component, createSignal, Show } from "solid-js"
 import { NavButton } from "~/components/navigation/NavButton"
-import { parse } from "valibot"
+import { parse, ValiError } from "valibot"
 import { StudentGradesSchema } from "~/types/models/GradeStoreModels"
 import { importDataToStore } from "~/contexts/gradesContext/setterUtils/importDataToStore"
 import DisappearingNotification from "~/components/utils/DisappearingNotification"
 import { Alert, type AlertTypes } from "~/components/utils/Alert"
+import { initialGradesStoreData } from "~/data/initialGradesStoreData"
 
 /**
  * A special component to simulate a file input, but only with a button.
@@ -32,7 +33,22 @@ export const FileButton: Component = (props) => {
       const file = await fileInput.files[0].text()
       const json = JSON.parse(file)
       try {
+        // Check if json structure satisfies the schema
         const validatedSchema = parse(StudentGradesSchema, json)
+        // Check that semester is correct length
+        Object.entries(validatedSchema.generalKnowledge).forEach(
+          ([key, value]) => {
+            if (
+              value.semesters.length >
+              initialGradesStoreData.generalKnowledge[key].maxSemesters
+            ) {
+              throw new Error(
+                "Un ou plusieurs semestres contiennent trop de notes",
+              )
+            }
+          },
+        )
+        // Check that modules exists
         importDataToStore(validatedSchema)
         setNotification({
           name: "L'importation a réussi",
@@ -40,16 +56,24 @@ export const FileButton: Component = (props) => {
           messages: {},
         })
       } catch (error) {
-        setNotification({
-          name: "L'importation a échoué, les données n'ont pas le bon format",
-          type: "error",
-          messages: error.issues.reduce((acc, issue) => {
-            return {
-              ...acc,
-              [issue.path[0].key]: issue.message,
-            }
-          }, {}),
-        })
+        if (error instanceof ValiError) {
+          setNotification({
+            name: "L'importation a échoué, les données n'ont pas le bon format",
+            type: "error",
+            messages: error.issues.reduce((acc, issue) => {
+              return {
+                ...acc,
+                [issue.path[0].key]: issue.message,
+              }
+            }, {}),
+          })
+        } else {
+          setNotification({
+            name: error.message,
+            type: "error",
+            messages: {},
+          })
+        }
       }
     } else {
       setNotification({
