@@ -6,6 +6,8 @@ import { importDataToStore } from "~/contexts/gradesContext/setterUtils/importDa
 import DisappearingNotification from "~/components/utils/DisappearingNotification"
 import { Alert, type AlertTypes } from "~/components/utils/Alert"
 import { initialGradesStoreData } from "~/data/initialGradesStoreData"
+import { cieModules } from "~/data/cieModules"
+import { epsicModules } from "~/data/epsicModules"
 
 /**
  * A special component to simulate a file input, but only with a button.
@@ -33,6 +35,7 @@ export const FileButton: Component = (props) => {
       const file = await fileInput.files[0].text()
       const json = JSON.parse(file)
       try {
+        // TODO : Refactor these check to be more readable (extract to schema validation ?)
         // Check if json structure satisfies the schema
         const validatedSchema = parse(StudentGradesSchema, json)
         // Check that semester is correct length
@@ -49,6 +52,24 @@ export const FileButton: Component = (props) => {
           },
         )
         // Check that modules exists
+        validatedSchema.info.cie.forEach((module) => {
+          if (
+            !cieModules.some(
+              (m) => m.no === module.no && m.description === module.description,
+            )
+          ) {
+            throw new Error("Un ou plusieurs modules cie ne sont pas valides")
+          }
+        })
+        validatedSchema.info.epsic.forEach((module) => {
+          if (
+            !epsicModules.some(
+              (m) => m.no === module.no && m.description === module.description,
+            )
+          ) {
+            throw new Error("Un ou plusieurs modules epsic ne sont pas valides")
+          }
+        })
         importDataToStore(validatedSchema)
         setNotification({
           name: "L'importation a réussi",
