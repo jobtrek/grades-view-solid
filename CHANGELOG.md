@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [1.2.0](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.1.3...grades-view-solid-v1.2.0) (2024-01-23)
+
+
+### Features
+
+* Add link to github repo and to federal prescription for IT CFC ([05c51d0](https://github.com/jobtrek/grades-view-solid/commit/05c51d0525a03f6fcc8a36f80e37907a41c2936d))
+
 ## [1.1.3](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.1.2...grades-view-solid-v1.1.3) (2024-01-23)
 
 
