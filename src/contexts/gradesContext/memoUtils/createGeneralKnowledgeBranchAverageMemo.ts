@@ -17,7 +17,7 @@ export const createGeneralKnowledgeBranchAverageMemo = (
       (average) => average !== null,
     ) as number[]
     return filteredAverages.length > 0
-      ? roundTo(average(filteredAverages), 10)
+      ? roundTo(average(filteredAverages), 2)
       : null
   })
 }
