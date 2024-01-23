@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [1.1.2](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.1.1...grades-view-solid-v1.1.2) (2024-01-23)
+
+
+### Bug Fixes
+
+* Add cie and epsic modules existence check ([2d8bbc7](https://github.com/jobtrek/grades-view-solid/commit/2d8bbc76e978c6eae03d8db032bf7b03c1cc3ed6)), closes [#7](https://github.com/jobtrek/grades-view-solid/issues/7)
+* Add semester length check ([d0d1f5d](https://github.com/jobtrek/grades-view-solid/commit/d0d1f5dc5b1b9634fc20cd1bd05f2f8b41926021)), closes [#11](https://github.com/jobtrek/grades-view-solid/issues/11)
+* Type the initial store with the schema ([c4003f4](https://github.com/jobtrek/grades-view-solid/commit/c4003f4cead7e2a262788ca7bfa7f105e284f3ab))
+* Use same schema to validate grades on all app ([d5e8195](https://github.com/jobtrek/grades-view-solid/commit/d5e81957264e33fa8e2b08b7137be6a2a3c4ca17))
+
 ## [1.1.1](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.1.0...grades-view-solid-v1.1.1) (2024-01-22)
 
 
