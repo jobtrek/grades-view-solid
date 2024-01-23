@@ -1,3 +1,5 @@
+import { type StudentGrades } from "~/types/models/GradeStoreModels"
+
 export const initialGradesStoreData = {
   name: "",
   tpi: null,
@@ -19,4 +21,4 @@ export const initialGradesStoreData = {
       semesters: [],
     },
   },
-}
+} satisfies StudentGrades
