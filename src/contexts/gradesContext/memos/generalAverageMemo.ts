@@ -11,9 +11,9 @@ import { infoAverageMemo } from "~/contexts/gradesContext/memos/technicalDomainM
 const [gradesContext] = useGradesContext()
 export const generalAverageMemo = createMemo(() => {
   const forAverageCalc = [
-    [gradesContext.tpi, 30],
+    [gradesContext.tpi, 40],
     [sociAverageMemo(), 20],
-    [mathEngAverageMemo(), 20],
+    [mathEngAverageMemo(), 10],
     [infoAverageMemo(), 30],
   ].filter(([grade]) => grade !== null) as Array<[number, number]>
   return forAverageCalc.length > 0
