@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [1.1.3](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.1.2...grades-view-solid-v1.1.3) (2024-01-23)
+
+
+### Bug Fixes
+
+* Round on general knowledge branches ([e084cd1](https://github.com/jobtrek/grades-view-solid/commit/e084cd1f88fa5727e063d2c1fc7a561e22f2eb62))
+* Weights on general average ([acaa7b1](https://github.com/jobtrek/grades-view-solid/commit/acaa7b1f540387d371285a6ce22a72d1a4cde26d))
+
 ## [1.1.2](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.1.1...grades-view-solid-v1.1.2) (2024-01-23)
 
 
