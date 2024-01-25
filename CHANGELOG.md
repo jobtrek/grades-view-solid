@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [1.3.0](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.2.0...grades-view-solid-v1.3.0) (2024-01-25)
+
+
+### Features
+
+* Display module no on module grades list ([ceb74af](https://github.com/jobtrek/grades-view-solid/commit/ceb74af124f1cfa55218c0ccfe8985dd29b120bf)), closes [#21](https://github.com/jobtrek/grades-view-solid/issues/21)
+
+
+### Bug Fixes
+
+* Typings in cie modules names ([fc51f50](https://github.com/jobtrek/grades-view-solid/commit/fc51f507a6be5ef0931cf5af347a307fea4aceff))
+
 ## [1.2.0](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.1.3...grades-view-solid-v1.2.0) (2024-01-23)
 
 
