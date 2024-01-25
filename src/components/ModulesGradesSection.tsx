@@ -71,6 +71,7 @@ export const ModulesGradesSection: Component<Props> = (props) => {
                       description={`${grade.no} - ${grade.description}`}
                     >
                       <GradeElement
+                        infos={`#${grade.no}`}
                         grade={grade.grade}
                         class="font-medium text-sm px-2 py-2"
                         action={() => {

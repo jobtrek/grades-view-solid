@@ -1,9 +1,10 @@
-import { type Component, mergeProps } from "solid-js"
+import { type Component, mergeProps, Show } from "solid-js"
 
 interface Props {
   grade: number
   class: string
   action?: () => void
+  infos?: string
 }
 
 export const GradeElement: Component<Props> = (originalProps) => {
@@ -32,6 +33,11 @@ export const GradeElement: Component<Props> = (originalProps) => {
       >
         <circle cx="3" cy="3" r="3" />
       </svg>
+      <Show when={props.infos}>
+        {(i) => {
+          return <span>{i()} - </span>
+        }}
+      </Show>
       {props.grade}
     </span>
   )
