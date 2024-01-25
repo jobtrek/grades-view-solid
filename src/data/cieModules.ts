@@ -17,30 +17,30 @@ export const cieModules: Module[] = [
   },
   {
     no: 110,
-    description: "Analyser et repré-senter des données avec des outils",
+    description: "Analyser et représenter des données avec des outils",
   },
   {
     no: 185,
     description:
-      "Analyser et implé-menter des mesures visant à assurer la sécurité informa-tique des PME",
+      "Analyser et implémenter des mesures visant à assurer la sécurité informatique des PME",
   },
   {
     no: 187,
     description:
-      "Mettre en service un Poste de tra-vail ICTavec le système d’exploitation",
+      "Mettre en service un Poste de tra-vail ICT avec le système d’exploitation",
   },
   {
     no: 190,
     description:
-      "Mettre en place et exploiter une plate-forme de virtualisa-tion",
+      "Mettre en place et exploiter une plateforme de virtualisation",
   },
   {
     no: 210,
-    description: "Utiliser un cloud public pour des appli-cations",
+    description: "Utiliser un cloud public pour des applications",
   },
   {
     no: 216,
-    description: "Intégrer les ter-minaux IoE dans une plateforme existante",
+    description: "Intégrer les terminaux IoE dans une plateforme existante",
   },
   {
     no: 217,
@@ -49,15 +49,15 @@ export const cieModules: Module[] = [
   {
     no: 223,
     description:
-      "Réaliser des applica-tions multi-utilisateurs orien-tées objets",
+      "Réaliser des applications multiutilisateurs orien-tées objets",
   },
   {
     no: 248,
-    description: "Réaliser des solutions ICT avec des techno-logies actuelles",
+    description: "Réaliser des solutions ICT avec des technologies actuelles",
   },
   {
     no: 259,
-    description: "Développer des solu-tions ICT avec le Ma-chine Learning",
+    description: "Développer des solutions ICT avec le Ma-chine Learning",
   },
   {
     no: 294,
@@ -69,6 +69,6 @@ export const cieModules: Module[] = [
   },
   {
     no: 335,
-    description: "Réaliser une appli-cation pour mobile",
+    description: "Réaliser une application pour mobile",
   },
 ]
