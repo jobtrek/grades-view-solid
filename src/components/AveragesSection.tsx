@@ -13,6 +13,8 @@ import {
   epsicAverageMemo,
   infoAverageMemo,
 } from "~/contexts/gradesContext/memos/technicalDomainMemos"
+import { SuccessItem } from "~/components/grades/SuccessItem"
+import { isApprenticeshipSuccessfulMemo } from "~/contexts/gradesContext/memos/isApprenticeshipSuccessfulMemo"
 
 export const AveragesSection: VoidComponent = () => {
   return (
@@ -23,6 +25,11 @@ export const AveragesSection: VoidComponent = () => {
         </h2>
         <div class="overflow-hidden rounded-lg bg-white shadow">
           <dl class="mx-auto grid grid-cols-1 gap-px bg-gray-900/5 sm:grid-cols-2 lg:grid-cols-2">
+            <SuccessItem
+              large={true}
+              title="toto"
+              success={isApprenticeshipSuccessfulMemo()}
+            />
             <AverageItem
               title="Moyenne générale"
               grade={generalAverageMemo()}
