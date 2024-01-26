@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [1.4.1](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.4.0...grades-view-solid-v1.4.1) (2024-01-26)
+
+
+### Bug Fixes
+
+* Color for success badge ([579b4b8](https://github.com/jobtrek/grades-view-solid/commit/579b4b8a05c8234851a5836219fead989330c13a))
+
 ## [1.4.0](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.3.0...grades-view-solid-v1.4.0) (2024-01-26)
 
 
