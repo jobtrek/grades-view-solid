@@ -17,10 +17,10 @@ export const SuccessItem: Component<Props> = (baseProps) => {
       }}
     >
       <dd
-        class="w-full flex-none text-2xl font-bold tracking-tight text-gray-900"
+        class="w-full flex-none text-2xl font-bold tracking-tight"
         classList={{
-          "text-emerald-600": props.success,
-          "text-red-800": !props.success,
+          "text-green-600": props.success,
+          "text-red-600": !props.success,
         }}
       >
         {props.success ? "Réussi" : "Échoué"}
