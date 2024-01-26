@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [1.4.0](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.3.0...grades-view-solid-v1.4.0) (2024-01-26)
+
+
+### Features
+
+* Add component to display if apprenticeship is successful ([fad179c](https://github.com/jobtrek/grades-view-solid/commit/fad179c94291a5dff5501151a5e80c422f1d48ce))
+
 ## [1.3.0](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.2.0...grades-view-solid-v1.3.0) (2024-01-25)
 
 
