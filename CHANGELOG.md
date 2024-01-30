@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [1.4.2](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.4.1...grades-view-solid-v1.4.2) (2024-01-30)
+
+
+### Bug Fixes
+
+* Disallow form submission if form is invalid ([61c9fc1](https://github.com/jobtrek/grades-view-solid/commit/61c9fc112f65a9ac3c5a2a382fe2273baa912a73)), closes [#28](https://github.com/jobtrek/grades-view-solid/issues/28)
+* Module form size on md/lg ([773085f](https://github.com/jobtrek/grades-view-solid/commit/773085f32d8ebf5478a9cf6fa81d802a18894dbc)), closes [#29](https://github.com/jobtrek/grades-view-solid/issues/29)
+* Vertical spacing when multiline grades ([#33](https://github.com/jobtrek/grades-view-solid/issues/33)) ([34b95aa](https://github.com/jobtrek/grades-view-solid/commit/34b95aa1e8e5abec1c5884f4d81da4f683b4c58e)), closes [#32](https://github.com/jobtrek/grades-view-solid/issues/32)
+
 ## [1.4.1](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.4.0...grades-view-solid-v1.4.1) (2024-01-26)
 
 
