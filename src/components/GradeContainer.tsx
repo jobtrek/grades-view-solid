@@ -9,7 +9,7 @@ interface Props {
 
 export const GradeContainer: Component<Props> = (props) => {
   return (
-    <div class="flex flex-row flex-wrap gap-x-1.5">
+    <div class="flex flex-row flex-wrap gap-x-1.5 gap-y-1.5">
       <Index each={props.grades}>
         {(grade, index) => (
           <TooltipContainer
