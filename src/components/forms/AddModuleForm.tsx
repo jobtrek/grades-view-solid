@@ -112,7 +112,10 @@ export const AddModuleForm: Component<Props> = (props) => {
                   </div>
                   <button
                     type="submit"
-                    disabled={addModuleGradeForm.submitting}
+                    disabled={
+                      addModuleGradeForm.submitting ||
+                      addModuleGradeForm.invalid
+                    }
                     class="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
                   >
                     <svg
