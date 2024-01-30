@@ -60,7 +60,7 @@ export const GradeInput: Component<Props> = (props) => {
               </div>
               <button
                 type="submit"
-                disabled={addGradeForm.submitting}
+                disabled={addGradeForm.submitting || addGradeForm.invalid}
                 class="relative -ml-px inline-flex items-center gap-x-1.5 rounded-r-md px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
               >
                 <svg
