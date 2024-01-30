@@ -24,4 +24,13 @@ pnpm dev # or npm run dev or yarn dev
 
 ```bash
 pnpm build
+
+# Build docker image
+docker build -t grades-view-solid .
+```
+
+## Use de provided docker image
+
+```
+docker run -p 8080:80 -d ghcr.io/jobtrek/grades-view-solid
 ```
