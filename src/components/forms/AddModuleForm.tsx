@@ -65,7 +65,7 @@ export const AddModuleForm: Component<Props> = (props) => {
   return (
     <div class="px-4 pt-6 sm:gap-4 sm:px-0">
       <AddGrade.Form onSubmit={handleSubmit}>
-        <div class="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 lg:grid-cols-8">
+        <div class="grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-6 lg:grid-cols-8">
           <AddGrade.Field name="module" type="string">
             {(field, props) => (
               <AutocompleteComboBox
@@ -82,7 +82,7 @@ export const AddModuleForm: Component<Props> = (props) => {
           </AddGrade.Field>
           <AddGrade.Field name="grade" type="number">
             {(field, props) => (
-              <div class="sm:col-span-2">
+              <div class="md:col-span-3 lg:col-span-3">
                 <label
                   for={field.name}
                   class="block text-sm font-medium leading-6 text-gray-900"
