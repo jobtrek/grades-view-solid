@@ -134,7 +134,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
   }
 
   return (
-    <div class="sm:col-span-4 lg:col-span-6">
+    <div class="md:col-span-3 lg:col-span-5">
       <label
         for="combobox"
         class="block text-sm font-medium leading-6 text-gray-900"
