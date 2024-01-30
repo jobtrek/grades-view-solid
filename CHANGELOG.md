@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [1.4.3](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.4.2...grades-view-solid-v1.4.3) (2024-01-30)
+
+
+### Bug Fixes
+
+* **build:** Add correct packages user name ([e5ca95b](https://github.com/jobtrek/grades-view-solid/commit/e5ca95b7fbb4443e084a8533079fbe94bff8632e))
+* **build:** Image name not working on action ([84b2b72](https://github.com/jobtrek/grades-view-solid/commit/84b2b727779366de4b2fbe02d59b45783690f169))
+
 ## [1.4.2](https://github.com/jobtrek/grades-view-solid/compare/grades-view-solid-v1.4.1...grades-view-solid-v1.4.2) (2024-01-30)
 
 
