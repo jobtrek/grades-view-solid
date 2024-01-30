@@ -23,14 +23,18 @@ pnpm dev # or npm run dev or yarn dev
 ## Build for production
 
 ```bash
+# Test build on your computer
 pnpm build
+npx serve .output/public
 
-# Build docker image
+# Build and run with docker
 docker build -t grades-view-solid .
+docker run -p 8080:80 -d grades-view-solid
 ```
 
-## Use de provided docker image
+## Use de prebuilt docker image
 
 ```
+# You must connect your docker install to github packages [see documentation](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
 docker run -p 8080:80 -d ghcr.io/jobtrek/grades-view-solid
 ```
