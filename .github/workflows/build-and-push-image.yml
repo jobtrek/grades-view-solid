@@ -33,6 +33,7 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          # Generates tags for image (like `latest`, `1.2.3`, `1.2`, `1`)
           tags: |
             type=ref,event=branch
             type=ref,event=pr
