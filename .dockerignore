@@ -7,3 +7,9 @@ npm-debug.log
 .coverage.*
 .env
 .aws
+.github
+.editorconfig
+.release-please-manifest.json
+release-please-config.json
+CHANGELOG.md
+README.md
