@@ -4,9 +4,9 @@ name: Build and publish container image
 on:
   push:
     tags:
-      - 'v*'
+      - 'v*' # Build package on every new release
   pull_request:
-    branches: ['main']
+    types: ['labeled']
 
 env:
   REGISTRY: ghcr.io
@@ -14,6 +14,7 @@ env:
 
 jobs:
   build-and-push-image:
+    if: ${{ github.event_name == 'push' || github.event.label.name == 'build' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -21,6 +22,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Load local Docker cache
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
@@ -50,3 +58,5 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
