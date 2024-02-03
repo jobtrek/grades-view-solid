@@ -1,11 +1,4 @@
-import {
-  type Input,
-  maxValue,
-  minValue,
-  multipleOf,
-  number,
-  object,
-} from "valibot"
+import { type Input, object } from "valibot"
 import { GradeSchema } from "~/types/models/GradeStoreModels"
 
 const gradeSchemaLabels = {

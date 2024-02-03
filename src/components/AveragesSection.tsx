@@ -27,7 +27,6 @@ export const AveragesSection: VoidComponent = () => {
           <dl class="mx-auto grid grid-cols-1 gap-px bg-gray-900/5 sm:grid-cols-2 lg:grid-cols-2">
             <SuccessItem
               large={true}
-              title="toto"
               success={isApprenticeshipSuccessfulMemo()}
             />
             <AverageItem
