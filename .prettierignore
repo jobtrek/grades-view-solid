@@ -6,3 +6,6 @@
 .netlify
 netlify
 .vinxi
+.github
+CHANGELOG.md
+pnpm-lock.yaml

@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start"
+    "start": "vinxi start",
+    "is-pretty": "prettier . --check",
+    "prettier": "prettier . --write"
   },
   "dependencies": {
     "@modular-forms/solid": "^0.20.0",
