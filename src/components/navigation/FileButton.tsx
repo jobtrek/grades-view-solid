@@ -43,6 +43,7 @@ export const FileButton: Component = (props) => {
           ([key, value]) => {
             if (
               value.semesters.length >
+              // @ts-expect-error : semester exist because schema is validated on line 40
               initialGradesStoreData.generalKnowledge[key].maxSemesters
             ) {
               throw new Error(
@@ -83,13 +84,14 @@ export const FileButton: Component = (props) => {
             type: "error",
             messages: error.issues.reduce((acc, issue) => {
               return {
-                ...acc,
+                ...acc, // @ts-expect-error we know that is a string see valibot doc
                 [issue.path[0].key]: issue.message,
               }
             }, {}),
           })
         } else {
           setNotification({
+            // @ts-expect-error : error is an instance of Error
             name: error.message,
             type: "error",
             messages: {},
@@ -113,7 +115,7 @@ export const FileButton: Component = (props) => {
           ref={fileInput}
           type="file"
           accept=".json"
-          onChange={handleFileChange}
+          onChange={() => handleFileChange}
         />
       </div>
       <NavButton name="Import" actionOnClick={handleClick}>
