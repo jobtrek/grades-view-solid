@@ -22,5 +22,5 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install -D
-      - name: Check code style with Prettier
+      - name: Lint code with Eslint
         run: pnpm run lint
