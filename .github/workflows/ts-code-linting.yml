@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  prettier:
+  eslint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -21,6 +21,6 @@ jobs:
           node-version: 20
           cache: 'pnpm'
       - name: Install dependencies
-        run: pnpm install -D
+        run: pnpm install
       - name: Lint code with Eslint
         run: pnpm run lint
