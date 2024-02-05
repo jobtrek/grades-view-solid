@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [1.6.3](https://github.com/jobtrek/grades-view-solid/compare/v1.6.2...v1.6.3) (2024-02-05)
+
+
+### Bug Fixes
+
+* remove trailing slash to avoid double slash on Uri ([#64](https://github.com/jobtrek/grades-view-solid/issues/64)) ([c556568](https://github.com/jobtrek/grades-view-solid/commit/c5565687cbc828d3eec4b9c2c74c12026f41d20f))
+
 ## [1.6.2](https://github.com/jobtrek/grades-view-solid/compare/v1.6.1...v1.6.2) (2024-02-05)
 
 
