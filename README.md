@@ -30,8 +30,8 @@ pnpm build
 npx serve .output/public
 
 # Build and run with docker
-docker build -t grades-view-solid .
-docker run -p 8080:80 -d grades-view-solid
+docker build -t grades-view-solid -f ./docker/Dockerfile .
+docker run -p 8080:80 grades-view-solid
 ```
 
 ## Use de prebuilt docker image
