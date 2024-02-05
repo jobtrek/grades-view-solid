@@ -161,6 +161,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
           }}
           role="combobox"
           aria-controls="options"
+          autocomplete="off"
           aria-expanded="false"
           ref={props.ref}
         />

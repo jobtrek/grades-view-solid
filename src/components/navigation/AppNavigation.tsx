@@ -22,7 +22,7 @@ export const AppNavigation: Component = () => {
       <div class="container mx-auto sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-center py-5 lg:justify-between">
           <div class="absolute left-0 flex-shrink-0 lg:static">
-            <A class="text-blue-100" href="/public">
+            <A class="text-blue-100" href="/">
               <span class="sr-only">Grades calculator</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
