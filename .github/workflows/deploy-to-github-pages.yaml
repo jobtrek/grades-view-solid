@@ -3,7 +3,7 @@ name: Deploy to github pages
 on:
   push:
     tags:
-      - '*'
+      - 'v*' # Deploy on new release tag
   workflow_dispatch:
 
 jobs:

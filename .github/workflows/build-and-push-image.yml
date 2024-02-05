@@ -6,7 +6,7 @@ on:
     tags:
       - 'v*' # Build package on every new release
   pull_request:
-    types: ['labeled']
+    types: ['labeled'] # Put build label on PR to test build
 
 env:
   REGISTRY: ghcr.io

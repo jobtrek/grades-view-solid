@@ -1,13 +1,13 @@
 on:
   push:
     branches:
-      - main
+      - main # Prepare new release on new changes to main
 
 permissions:
   contents: write
   pull-requests: write
 
-name: release-please
+name: Prepare new release
 
 jobs:
   release-please:
