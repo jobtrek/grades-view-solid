@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [1.6.2](https://github.com/jobtrek/grades-view-solid/compare/v1.6.1...v1.6.2) (2024-02-05)
+
+
+### Bug Fixes
+
+* all pages now pre rendered ([6346c0f](https://github.com/jobtrek/grades-view-solid/commit/6346c0fca92b8156643e8ccd3bea3a014af7337e))
+* **build:** duplicate mime type on nginx configuration ([6346c0f](https://github.com/jobtrek/grades-view-solid/commit/6346c0fca92b8156643e8ccd3bea3a014af7337e))
+* correct link to home on 404 page ([6346c0f](https://github.com/jobtrek/grades-view-solid/commit/6346c0fca92b8156643e8ccd3bea3a014af7337e))
+
 ## [1.6.1](https://github.com/jobtrek/grades-view-solid/compare/v1.6.0...v1.6.1) (2024-02-05)
 
 
