@@ -10,7 +10,7 @@ import { MetaProvider, Title } from "@solidjs/meta"
 export default function App(): JSX.Element {
   return (
     <Router
-      base="/grades-view-solid"
+      base="/grades-view-solid/"
       root={(props) => (
         <MetaProvider>
           <Title>Calculateur de notes</Title>
