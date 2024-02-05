@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [1.6.1](https://github.com/jobtrek/grades-view-solid/compare/v1.6.0...v1.6.1) (2024-02-05)
+
+
+### Bug Fixes
+
+* no more 404 on home page ([#57](https://github.com/jobtrek/grades-view-solid/issues/57)) ([075e10b](https://github.com/jobtrek/grades-view-solid/commit/075e10bb2e9e01a29527356f33823eed14170378))
+
 ## [1.6.0](https://github.com/jobtrek/grades-view-solid/compare/v1.5.0...v1.6.0) (2024-02-05)
 
 
