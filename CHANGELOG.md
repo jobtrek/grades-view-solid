@@ -1,6 +1,20 @@
 # Changelog
 
 
+## [1.6.0](https://github.com/jobtrek/grades-view-solid/compare/v1.5.0...v1.6.0) (2024-02-05)
+
+
+### Features
+
+* matrix image build ([#49](https://github.com/jobtrek/grades-view-solid/issues/49)) ([a54c2e8](https://github.com/jobtrek/grades-view-solid/commit/a54c2e81ea23d881e538fd6a3693e3270ae4f900))
+
+
+### Bug Fixes
+
+* **build:** Add upload images step ([8b9b75a](https://github.com/jobtrek/grades-view-solid/commit/8b9b75a489697cf2c4492ce58a93944736cc84b5))
+* **build:** Add upload images step ([#55](https://github.com/jobtrek/grades-view-solid/issues/55)) ([8b9b75a](https://github.com/jobtrek/grades-view-solid/commit/8b9b75a489697cf2c4492ce58a93944736cc84b5))
+* **build:** use correct image name env variable ([8b9b75a](https://github.com/jobtrek/grades-view-solid/commit/8b9b75a489697cf2c4492ce58a93944736cc84b5))
+
 ## [1.5.0](https://github.com/jobtrek/grades-view-solid/compare/v1.4.3...v1.5.0) (2024-01-30)
 
 
