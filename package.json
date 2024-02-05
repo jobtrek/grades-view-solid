@@ -41,7 +41,7 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0"
   },
-  "version": "1.6.1",
+  "version": "1.6.2",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
