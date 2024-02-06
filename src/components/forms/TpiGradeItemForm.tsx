@@ -24,6 +24,7 @@ export const TpiGradeItemForm: Component = () => {
   })
 
   createEffect(() => {
+    // @ts-expect-error Not a problem to set null value here
     setValue(addGradeForm, "grade", gradesStore.tpi, { shouldValidate: false })
   })
 

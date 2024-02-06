@@ -9,6 +9,7 @@ export const updateTechnicalModuleGrade = (
   domain: keyof TechnicalDomains,
   module: ModuleWithGrade,
 ): void => {
+  // @ts-expect-error Too deep type instantiation
   setGradesStore("info", domain, (m) => m.no === module.no, {
     grade: module.grade,
   })

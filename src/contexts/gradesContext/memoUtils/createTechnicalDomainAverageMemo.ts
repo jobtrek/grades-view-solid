@@ -8,6 +8,7 @@ const [gradesStore] = useGradesContext()
 export const createTechnicalDomainAverageMemo = (
   moduleListName: keyof TechnicalDomains,
 ): Accessor<number | null> => {
+  // eslint-disable-next-line solid/reactivity
   return createMemo<number | null>(() => {
     const moduleList = gradesStore.info[moduleListName]
     const moduleGrades = moduleList.map((module) => module.grade)

@@ -9,6 +9,7 @@ export const createGeneralKnowledgeSemesterAverageMemo = (
   branchName: keyof GeneralKnowledge,
   semesterNumber: number,
 ): Accessor<number | null> => {
+  // eslint-disable-next-line solid/reactivity
   return createMemo<number | null>(() => {
     const semesterGrades =
       gradesStore.generalKnowledge[branchName].semesters[semesterNumber]

@@ -71,6 +71,7 @@ export const GeneralKnowledgeSchema = object({
 export type GeneralKnowledge = Input<typeof GeneralKnowledgeSchema>
 
 export const StudentGradesSchema = object({
+  version: string(),
   name: string([
     maxLength(40, "Le nom ne peut pas faire plus de 40 caractères."),
   ]),
