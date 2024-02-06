@@ -24,9 +24,15 @@ export default function (): JSX.Element {
                   calculer vos moyennes.
                 </p>
                 <p class="mt-2">
-                  Ce site est une expérimentation, réalisée avec
-                  [solidjs](https://www.solidjs.com). N'hésitez pas à faire
-                  remonter les bugs sur Github.&nbsp;
+                  Ce site est une expérimentation, réalisée avec{" "}
+                  <a
+                    class="italic text-blue-600"
+                    target="_blank"
+                    href="https://www.solidjs.com"
+                  >
+                    solidjs
+                  </a>
+                  . N'hésitez pas à faire remonter les bugs sur Github.&nbsp;
                   <a
                     class="italic text-blue-600"
                     target="_blank"
