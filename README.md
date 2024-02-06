@@ -2,6 +2,8 @@
 
 > Implemented with [SolidJS](https://www.solidjs.com/)
 >
+> **v1.6.3** <!-- x-release-please-version -->
+>
 > [See changelog](./CHANGELOG.md)
 
 ## Test it
