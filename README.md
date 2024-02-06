@@ -1,7 +1,8 @@
 # Grades view
 
 > Implemented with [SolidJS](https://www.solidjs.com/)
->
+> 
+> **v0.1.1** <!-- x-release-please-version -->
 > [See changelog](./CHANGELOG.md)
 
 ## Test it
