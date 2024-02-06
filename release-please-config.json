@@ -11,8 +11,7 @@
   "bump-patch-for-minor-pre-major": true,
   "pull-request-header": "Auto generated release",
   "extra-files": [
-    "README.md",
-    ".env"
+    "README.md"
   ],
   "changelog-sections": [
     {
