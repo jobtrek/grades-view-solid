@@ -6,6 +6,7 @@ const [gradesStore] = useGradesContext()
 export const createGeneralKnowledgeBranchIsAvailableSemester = (
   branchName: keyof GeneralKnowledge,
 ): Accessor<boolean> => {
+  // eslint-disable-next-line solid/reactivity
   return createMemo<boolean>(() => {
     return (
       gradesStore.generalKnowledge[branchName].semesters.length <

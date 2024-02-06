@@ -9,6 +9,7 @@ export const infoAverageMemo = createMemo(() => {
   let info = null
   if (epsicAverageMemo() !== null && cieAverageMemo() !== null) {
     info = roundTo(
+      // @ts-expect-error null are handled by the if statement
       weightedAverageFlat([epsicAverageMemo(), cieAverageMemo()], [80, 20]),
     )
   } else if (epsicAverageMemo() !== null) {

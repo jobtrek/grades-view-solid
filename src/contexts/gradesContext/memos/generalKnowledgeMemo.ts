@@ -12,6 +12,7 @@ export const sociAverageMemo =
 export const mathEngAverageMemo = createMemo(() => {
   let mathEng = null
   if (mathAverageMemo() !== null && engAverageMemo() !== null) {
+    // @ts-expect-error null are handled by the if statement
     mathEng = roundTo(average([mathAverageMemo(), engAverageMemo()]), 2)
   } else if (mathAverageMemo() !== null) {
     mathEng = mathAverageMemo()

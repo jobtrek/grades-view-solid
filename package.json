@@ -5,7 +5,7 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "start": "vinxi start",
-    "lint": "eslint --quiet --ext .ts,.tsx ./src",
+    "lint": "eslint --ext .ts,.tsx ./src",
     "prettier:check": "prettier . --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml}\"",
     "prettier:format": "prettier . --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml}\""
   },

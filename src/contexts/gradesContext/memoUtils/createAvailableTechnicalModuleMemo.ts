@@ -8,6 +8,7 @@ export const createAvailableTechnicalModuleMemo = (
   moduleListName: keyof TechnicalDomains,
   moduleList: Module[],
 ): Accessor<Module[]> => {
+  // eslint-disable-next-line solid/reactivity
   return createMemo<Module[]>(() => {
     const actualModules = gradesStore.info[moduleListName]
     return moduleList.filter(

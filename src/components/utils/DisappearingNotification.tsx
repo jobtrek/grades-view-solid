@@ -11,6 +11,7 @@ export const DisappearingNotification: Component<Props> = (props) => {
   const [visible, setVisible] = createSignal(true)
 
   makeTimer(
+    // eslint-disable-next-line solid/reactivity
     (): void => {
       setVisible(false)
       if (props.onReset != null) props.onReset()
