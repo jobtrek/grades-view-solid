@@ -10,7 +10,7 @@
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
   "pull-request-header": "Auto generated release",
-  "extra-files": ["README.md"],
+  "extra-files": ["README.md", "src/data/initialGradesStoreData.ts"],
   "changelog-sections": [
     {
       "type": "feat",
