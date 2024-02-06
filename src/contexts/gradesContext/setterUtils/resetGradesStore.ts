@@ -10,8 +10,18 @@ export const resetGradesStore = (): void => {
     setGradesStore("name", initialGradesStoreData.name)
     setGradesStore("info", "cie", [])
     setGradesStore("info", "epsic", [])
-    setGradesStore("generalKnowledge", "eng", { semesters: [] })
-    setGradesStore("generalKnowledge", "math", { semesters: [] })
-    setGradesStore("generalKnowledge", "overallCulture", { semesters: [] })
+    setGradesStore("generalKnowledge", "eng", {
+      semesters: [],
+      maxSemesters: initialGradesStoreData.generalKnowledge.eng.maxSemesters,
+    })
+    setGradesStore("generalKnowledge", "math", {
+      semesters: [],
+      maxSemesters: initialGradesStoreData.generalKnowledge.math.maxSemesters,
+    })
+    setGradesStore("generalKnowledge", "overallCulture", {
+      semesters: [],
+      maxSemesters:
+        initialGradesStoreData.generalKnowledge.overallCulture.maxSemesters,
+    })
   })
 }
