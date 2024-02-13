@@ -21,8 +21,8 @@ dependencies:
     specifier: ^0.12.0
     version: 0.12.0(solid-js@1.8.14)
   '@solidjs/start':
-    specifier: ^0.5.1
-    version: 0.5.1(solid-js@1.8.14)(vinxi@0.2.1)(vite@5.0.12)
+    specifier: ^0.5.5
+    version: 0.5.5(solid-js@1.8.14)(vinxi@0.2.1)(vite@5.0.12)
   autoprefixer:
     specifier: ^10.4.17
     version: 10.4.17(postcss@8.4.35)
@@ -1528,8 +1528,8 @@ packages:
       solid-js: 1.8.14
     dev: false
 
-  /@solidjs/start@0.5.1(solid-js@1.8.14)(vinxi@0.2.1)(vite@5.0.12):
-    resolution: {integrity: sha512-5LJoI3+kRr3Uuxik+5YAuNwEUWsk1/+LBD3cDK2LQIPk3uKyNRoZM8ZU1WTyNQmaoBDXe6Z4Sldbo+DXoZL+9g==}
+  /@solidjs/start@0.5.5(solid-js@1.8.14)(vinxi@0.2.1)(vite@5.0.12):
+    resolution: {integrity: sha512-vslFy1uv2pilhEtGZSFuhFpFzxa0Tus9kJCXh7GmBPvq0hMiwRtrn//BwG/dVgcvY3jrQ/49VnDcO0wrpo/vAA==}
     dependencies:
       '@vinxi/plugin-directives': 0.2.0(vinxi@0.2.1)
       '@vinxi/server-components': 0.2.0(vinxi@0.2.1)
