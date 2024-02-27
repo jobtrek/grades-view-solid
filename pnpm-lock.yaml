@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.8.15
     version: 1.8.15
   valibot:
-    specifier: ^0.28.1
-    version: 0.28.1
+    specifier: ^0.29.0
+    version: 0.29.0
   vinxi:
     specifier: 0.2.1
     version: 0.2.1(@types/node@20.11.16)(preact@10.19.3)
@@ -6979,8 +6979,8 @@ packages:
       which-typed-array: 1.1.14
     dev: false
 
-  /valibot@0.28.1:
-    resolution: {integrity: sha512-zQnjwNJuXk6362Leu0+4eFa/SMwRom3/hEvH6s1EGf3oXIPbo2WFKDra9ymnbVh3clLRvd8hw4sKF5ruI2Lyvw==}
+  /valibot@0.29.0:
+    resolution: {integrity: sha512-JhZn08lwZPhAamOCfBwBkv/btQt4KeQhekULPH8crH053zUCLSOGEF2zKExu3bFf245tsj6J1dY0ysd/jUiMIQ==}
     dev: false
 
   /validate-html-nesting@1.2.2:
