@@ -21,8 +21,8 @@ dependencies:
     specifier: ^0.12.4
     version: 0.12.4(solid-js@1.8.15)
   '@solidjs/start':
-    specifier: ^0.5.10
-    version: 0.5.10(solid-js@1.8.15)(vinxi@0.2.1)(vite@5.0.12)
+    specifier: ^0.6.0
+    version: 0.6.0(solid-js@1.8.15)(vinxi@0.2.1)(vite@5.0.12)
   autoprefixer:
     specifier: ^10.4.17
     version: 10.4.17(postcss@8.4.35)
@@ -165,7 +165,7 @@ packages:
     dependencies:
       '@babel/compat-data': 7.23.5
       '@babel/helper-validator-option': 7.23.5
-      browserslist: 4.22.3
+      browserslist: 4.23.0
       lru-cache: 5.1.1
       semver: 6.3.1
     dev: false
@@ -1528,12 +1528,12 @@ packages:
       solid-js: 1.8.15
     dev: false
 
-  /@solidjs/start@0.5.10(solid-js@1.8.15)(vinxi@0.2.1)(vite@5.0.12):
-    resolution: {integrity: sha512-hAZ5V9gwo6YBrfk6dzOTKTFyx3KebK2a5nZNcQ3HAUSeRs89cEPxvATnMe0Qh2Vea/PCssqodb0jWbPAnlUp3Q==}
+  /@solidjs/start@0.6.0(solid-js@1.8.15)(vinxi@0.2.1)(vite@5.0.12):
+    resolution: {integrity: sha512-djHVrUCv7AH8q5HOXX+EZ3zdXOibMCQmCG8xNRkOgEbyhB/vp+MtbhCpvoLROgnHm/5pHDLwVKVkYiTsDBUsOA==}
     dependencies:
-      '@vinxi/plugin-directives': 0.2.0(vinxi@0.2.1)
-      '@vinxi/server-components': 0.2.0(vinxi@0.2.1)
-      '@vinxi/server-functions': 0.2.1(vinxi@0.2.1)
+      '@vinxi/plugin-directives': 0.3.0(vinxi@0.2.1)
+      '@vinxi/server-components': 0.3.2(vinxi@0.2.1)
+      '@vinxi/server-functions': 0.3.1(vinxi@0.2.1)
       defu: 6.1.4
       error-stack-parser: 2.1.4
       html-to-image: 1.11.11
@@ -1863,10 +1863,10 @@ packages:
       uqr: 0.1.2
     dev: false
 
-  /@vinxi/plugin-directives@0.2.0(vinxi@0.2.1):
-    resolution: {integrity: sha512-DoYuIuvdylU+0XNOipvcbw08XDBBbEksc3euCsbApNVpmQ/mC+2CjoErHtjb4zX1RqNwe1sJ8awMK6fKUMLGRA==}
+  /@vinxi/plugin-directives@0.3.0(vinxi@0.2.1):
+    resolution: {integrity: sha512-diwK2D6mZGffF5z+CgG7DcRnpKrOgqyv8SfxdbOTLGQcxtrQ9IpuHfX+mbOttaIJFvoZ3pHGUKe7Gfgd0BuQ1A==}
     peerDependencies:
-      vinxi: ^0.2.0
+      vinxi: ^0.3.0
     dependencies:
       '@babel/parser': 7.23.9
       acorn: 8.11.3
@@ -1880,12 +1880,12 @@ packages:
       vinxi: 0.2.1(@types/node@20.11.16)(preact@10.19.3)
     dev: false
 
-  /@vinxi/server-components@0.2.0(vinxi@0.2.1):
-    resolution: {integrity: sha512-U3z6pxK5CWBxaUmyg7zdDMTl1AMa47MpYCUcs0QVOz/C8kKlT6C9Ozh5pZWuzAO0cTeueNpQumDWhQ4YTXTsZw==}
+  /@vinxi/server-components@0.3.2(vinxi@0.2.1):
+    resolution: {integrity: sha512-DE8+IFN5K3p7A+bMJzdih8F8n8RF3x4DB2+QPBLo0zsD2lA8QdaXqm4FqTribcvgC7rKtu7y4zpjgiG4hMwG5Q==}
     peerDependencies:
-      vinxi: ^0.2.0
+      vinxi: ^0.3.9
     dependencies:
-      '@vinxi/plugin-directives': 0.2.0(vinxi@0.2.1)
+      '@vinxi/plugin-directives': 0.3.0(vinxi@0.2.1)
       acorn: 8.11.3
       acorn-loose: 8.4.0
       acorn-typescript: 1.4.13(acorn@8.11.3)
@@ -1895,12 +1895,12 @@ packages:
       vinxi: 0.2.1(@types/node@20.11.16)(preact@10.19.3)
     dev: false
 
-  /@vinxi/server-functions@0.2.1(vinxi@0.2.1):
-    resolution: {integrity: sha512-ir06Q6nEpJFU1uXqHdKE2OXqZFjChAIgAHpCJzMunHiutRNyYTJ7ZhbFCUk5xOx+StMpWKtqOv72TDeP/xTLtA==}
+  /@vinxi/server-functions@0.3.1(vinxi@0.2.1):
+    resolution: {integrity: sha512-FsGskj97cWKytaU7OPK4fIW5x6F2i3Hks4wTCZOofiWz/O0GJkT2oDhNV5t6Agj07PGAjrRPwfcHnLoB9IGyHg==}
     peerDependencies:
-      vinxi: ^0.2.1
+      vinxi: ^0.3.7
     dependencies:
-      '@vinxi/plugin-directives': 0.2.0(vinxi@0.2.1)
+      '@vinxi/plugin-directives': 0.3.0(vinxi@0.2.1)
       acorn: 8.11.3
       acorn-loose: 8.4.0
       acorn-typescript: 1.4.13(acorn@8.11.3)
@@ -2331,7 +2331,6 @@ packages:
       electron-to-chromium: 1.4.682
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.23.0)
-    dev: true
 
   /buffer-crc32@0.2.13:
     resolution: {integrity: sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==}
@@ -2414,17 +2413,17 @@ packages:
     resolution: {integrity: sha512-bsTwuIg/BZZK/vreVTYYbSWoe2F+71P7K5QGEX+pT250DZbfU1MQ5prOKpPR+LL6uWKK3KMwMCAS74QB3Um1uw==}
     dependencies:
       browserslist: 4.23.0
-      caniuse-lite: 1.0.30001584
+      caniuse-lite: 1.0.30001591
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
     dev: true
 
   /caniuse-lite@1.0.30001584:
     resolution: {integrity: sha512-LOz7CCQ9M1G7OjJOF9/mzmqmj3jE/7VOmrfw6Mgs0E8cjOsbRXQJHsPBfmBOXDskXKrHLyyW3n7kpDW/4BsfpQ==}
+    dev: false
 
   /caniuse-lite@1.0.30001591:
     resolution: {integrity: sha512-PCzRMei/vXjJyL5mJtzNiUCKP59dm8Apqc3PH8gJkMnMXZGox93RbE76jHsmLwmIo6/3nsYIpJtx0O7u5PqFuQ==}
-    dev: true
 
   /chalk@2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -3064,7 +3063,6 @@ packages:
 
   /electron-to-chromium@1.4.682:
     resolution: {integrity: sha512-oCglfs8yYKs9RQjJFOHonSnhikPK3y+0SvSYc/YpYJV//6rqc0/hbwd0c7vgK4vrl6y2gJAwjkhkSGWK+z4KRA==}
-    dev: true
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -6950,7 +6948,6 @@ packages:
       browserslist: 4.23.0
       escalade: 3.1.2
       picocolors: 1.0.0
-    dev: true
 
   /uqr@0.1.2:
     resolution: {integrity: sha512-MJu7ypHq6QasgF5YRTjqscSzQp/W11zoUk6kvmlH+fmWEs63Y0Eib13hYFwAzagRJcVY8WVnlV+eBDUGMJ5IbA==}
