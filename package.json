@@ -16,7 +16,7 @@
     "@solidjs/meta": "^0.29.3",
     "@solidjs/router": "^0.12.4",
     "@solidjs/start": "^0.5.10",
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.18",
     "postcss": "^8.4.35",
     "solid-js": "^1.8.15",
     "valibot": "^0.29.0",
