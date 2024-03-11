@@ -21,8 +21,8 @@ dependencies:
     specifier: ^0.12.4
     version: 0.12.4(solid-js@1.8.15)
   '@solidjs/start':
-    specifier: ^0.5.10
-    version: 0.5.10(solid-js@1.8.15)(vinxi@0.2.1)(vite@5.0.12)
+    specifier: ^0.7.4
+    version: 0.7.4(solid-js@1.8.15)(vinxi@0.2.1)(vite@5.0.12)
   autoprefixer:
     specifier: ^10.4.18
     version: 10.4.18(postcss@8.4.35)
@@ -907,7 +907,6 @@ packages:
       strip-ansi-cjs: /strip-ansi@6.0.1
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: /wrap-ansi@7.0.0
-    dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
@@ -1161,7 +1160,6 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
     requiresBuild: true
-    dev: true
     optional: true
 
   /@polka/url@1.0.0-next.24:
@@ -1528,14 +1526,15 @@ packages:
       solid-js: 1.8.15
     dev: false
 
-  /@solidjs/start@0.5.10(solid-js@1.8.15)(vinxi@0.2.1)(vite@5.0.12):
-    resolution: {integrity: sha512-hAZ5V9gwo6YBrfk6dzOTKTFyx3KebK2a5nZNcQ3HAUSeRs89cEPxvATnMe0Qh2Vea/PCssqodb0jWbPAnlUp3Q==}
+  /@solidjs/start@0.7.4(solid-js@1.8.15)(vinxi@0.2.1)(vite@5.0.12):
+    resolution: {integrity: sha512-SBFCpLo0yGUFPKNyneZ7g8cHchQKm0+G/Gr19SEtGzCn0KE4/YmDCtuDUk4ANxm6XTFrdcDPjdLgYXHDrWxVLA==}
     dependencies:
-      '@vinxi/plugin-directives': 0.2.0(vinxi@0.2.1)
-      '@vinxi/server-components': 0.2.0(vinxi@0.2.1)
-      '@vinxi/server-functions': 0.2.1(vinxi@0.2.1)
+      '@vinxi/plugin-directives': 0.3.1(vinxi@0.2.1)
+      '@vinxi/server-components': 0.3.3(vinxi@0.2.1)
+      '@vinxi/server-functions': 0.3.2(vinxi@0.2.1)
       defu: 6.1.4
       error-stack-parser: 2.1.4
+      glob: 10.3.10
       html-to-image: 1.11.11
       radix3: 1.1.0
       seroval: 1.0.4
@@ -1863,10 +1862,10 @@ packages:
       uqr: 0.1.2
     dev: false
 
-  /@vinxi/plugin-directives@0.2.0(vinxi@0.2.1):
-    resolution: {integrity: sha512-DoYuIuvdylU+0XNOipvcbw08XDBBbEksc3euCsbApNVpmQ/mC+2CjoErHtjb4zX1RqNwe1sJ8awMK6fKUMLGRA==}
+  /@vinxi/plugin-directives@0.3.1(vinxi@0.2.1):
+    resolution: {integrity: sha512-4qz5WifjmJ864VS8Ik9nUG0wAkt/xIcxFpP29RXogGLgccRnceBpWQi+ghw5rm0F6LP/YMAhhO5iFORXclWd0Q==}
     peerDependencies:
-      vinxi: ^0.2.0
+      vinxi: ^0.3.10
     dependencies:
       '@babel/parser': 7.23.9
       acorn: 8.11.3
@@ -1880,12 +1879,12 @@ packages:
       vinxi: 0.2.1(@types/node@20.11.16)(preact@10.19.3)
     dev: false
 
-  /@vinxi/server-components@0.2.0(vinxi@0.2.1):
-    resolution: {integrity: sha512-U3z6pxK5CWBxaUmyg7zdDMTl1AMa47MpYCUcs0QVOz/C8kKlT6C9Ozh5pZWuzAO0cTeueNpQumDWhQ4YTXTsZw==}
+  /@vinxi/server-components@0.3.3(vinxi@0.2.1):
+    resolution: {integrity: sha512-xaW92nj9HUMLyswPcCmsIXOsS3TJll0m9u3WEjWjLrtZWheHggina6+kTCSeltp/Qe8WlUfNU5G02Xy8L4xQxA==}
     peerDependencies:
-      vinxi: ^0.2.0
+      vinxi: ^0.3.10
     dependencies:
-      '@vinxi/plugin-directives': 0.2.0(vinxi@0.2.1)
+      '@vinxi/plugin-directives': 0.3.1(vinxi@0.2.1)
       acorn: 8.11.3
       acorn-loose: 8.4.0
       acorn-typescript: 1.4.13(acorn@8.11.3)
@@ -1895,12 +1894,12 @@ packages:
       vinxi: 0.2.1(@types/node@20.11.16)(preact@10.19.3)
     dev: false
 
-  /@vinxi/server-functions@0.2.1(vinxi@0.2.1):
-    resolution: {integrity: sha512-ir06Q6nEpJFU1uXqHdKE2OXqZFjChAIgAHpCJzMunHiutRNyYTJ7ZhbFCUk5xOx+StMpWKtqOv72TDeP/xTLtA==}
+  /@vinxi/server-functions@0.3.2(vinxi@0.2.1):
+    resolution: {integrity: sha512-PoARb1X480UE9jysPqltpzginBftna34GmZ3HyvRT+pnPfsGcuHOzZe/a18V/K04qk2yMRd7eeW42JF5O+wunw==}
     peerDependencies:
-      vinxi: ^0.2.1
+      vinxi: ^0.3.10
     dependencies:
-      '@vinxi/plugin-directives': 0.2.0(vinxi@0.2.1)
+      '@vinxi/plugin-directives': 0.3.1(vinxi@0.2.1)
       acorn: 8.11.3
       acorn-loose: 8.4.0
       acorn-typescript: 1.4.13(acorn@8.11.3)
@@ -3731,7 +3730,6 @@ packages:
     dependencies:
       cross-spawn: 7.0.3
       signal-exit: 4.1.0
-    dev: true
 
   /fraction.js@4.3.7:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
@@ -3900,7 +3898,6 @@ packages:
       minimatch: 9.0.3
       minipass: 7.0.4
       path-scurry: 1.10.1
-    dev: true
 
   /glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
@@ -4532,7 +4529,6 @@ packages:
       '@isaacs/cliui': 8.0.2
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
-    dev: true
 
   /jiti@1.21.0:
     resolution: {integrity: sha512-gFqAIbuKyyso/3G2qhiO2OM6shY6EPP/R0+mkDbyspxKazh8BXDC5FiFsUjlczgdNz/vfra0da2y+aHrusLG/Q==}
@@ -4884,7 +4880,6 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       brace-expansion: 2.0.1
-    dev: true
 
   /minimist@1.2.7:
     resolution: {integrity: sha512-bzfL1YUZsP41gmu/qjrEk0Q6i2ix/cVeAhbCbqH9u3zYutS1cLg00qhrD0M2MVdCcx4Sc0UpP2eBWo9rotpq6g==}
@@ -4909,7 +4904,6 @@ packages:
   /minipass@7.0.4:
     resolution: {integrity: sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==}
     engines: {node: '>=16 || 14 >=14.17'}
-    dev: true
 
   /minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
@@ -5395,7 +5389,6 @@ packages:
     dependencies:
       lru-cache: 10.2.0
       minipass: 7.0.4
-    dev: true
 
   /path-to-regexp@6.2.1:
     resolution: {integrity: sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==}
