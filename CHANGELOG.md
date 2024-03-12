@@ -1,6 +1,74 @@
 # Changelog
 
 
+## [2.0.0](https://github.com/jobtrek/grades-view-solid/compare/v1.6.3...v2.0.0) (2024-03-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* new key on the store
+
+### Features
+
+* store app version in grade store ([aed0e34](https://github.com/jobtrek/grades-view-solid/commit/aed0e34e58f2a539ee1b28bda6e741b1cb25faff)), closes [#46](https://github.com/jobtrek/grades-view-solid/issues/46)
+* version now saved in grades store ([#73](https://github.com/jobtrek/grades-view-solid/issues/73)) ([aed0e34](https://github.com/jobtrek/grades-view-solid/commit/aed0e34e58f2a539ee1b28bda6e741b1cb25faff))
+
+
+### Bug Fixes
+
+* correct link to solid js in home page ([aed0e34](https://github.com/jobtrek/grades-view-solid/commit/aed0e34e58f2a539ee1b28bda6e741b1cb25faff))
+* reset version and max semester on store reset ([aed0e34](https://github.com/jobtrek/grades-view-solid/commit/aed0e34e58f2a539ee1b28bda6e741b1cb25faff)), closes [#72](https://github.com/jobtrek/grades-view-solid/issues/72)
+
+
+### Miscellaneous Chores
+
+* add dependabot configuration ([#68](https://github.com/jobtrek/grades-view-solid/issues/68)) ([be8c887](https://github.com/jobtrek/grades-view-solid/commit/be8c887a7a108d73f783984c479bf3a423780fe0))
+* update to solid start 0.7 ([#97](https://github.com/jobtrek/grades-view-solid/issues/97)) ([cbbd9e1](https://github.com/jobtrek/grades-view-solid/commit/cbbd9e19f4920e08321717cdcaa1af8d22139714))
+
+
+### Documentation
+
+* fix docker commands in readme ([#67](https://github.com/jobtrek/grades-view-solid/issues/67)) ([362a111](https://github.com/jobtrek/grades-view-solid/commit/362a1115474ea7575e4ca79e2183f26e593a3db9))
+
+
+### Build System
+
+* add env file to store app version for future use ([2dbd252](https://github.com/jobtrek/grades-view-solid/commit/2dbd25241c4ad97e8fcdfbc28f709a066291ba40))
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([#69](https://github.com/jobtrek/grades-view-solid/issues/69)) ([b690b63](https://github.com/jobtrek/grades-view-solid/commit/b690b63d092d10074271819a7cd1608996338820))
+* **deps-dev:** bump cssnano from 6.0.3 to 6.0.5 ([#86](https://github.com/jobtrek/grades-view-solid/issues/86)) ([debe127](https://github.com/jobtrek/grades-view-solid/commit/debe127eb250600df3204b1e680db696e8b3031a))
+* **deps-dev:** bump eslint from 8.56.0 to 8.57.0 ([#87](https://github.com/jobtrek/grades-view-solid/issues/87)) ([988abc7](https://github.com/jobtrek/grades-view-solid/commit/988abc7483dde063ec914c9d2144de743c00724a))
+* **deps:** bump @solid-primitives/storage from 2.1.2 to 2.1.3 ([#90](https://github.com/jobtrek/grades-view-solid/issues/90)) ([afae688](https://github.com/jobtrek/grades-view-solid/commit/afae688a3369f5a0c88396dbbdd272d2cabacf85))
+* **deps:** bump @solid-primitives/storage from 2.1.3 to 2.1.4 ([#95](https://github.com/jobtrek/grades-view-solid/issues/95)) ([89b72b4](https://github.com/jobtrek/grades-view-solid/commit/89b72b43fc9d47c8c1f38ffa6c50d62981ce53cb))
+* **deps:** bump @solid-primitives/timer from 1.3.8 to 1.3.9 ([#93](https://github.com/jobtrek/grades-view-solid/issues/93)) ([6ee45fa](https://github.com/jobtrek/grades-view-solid/commit/6ee45fa6cc9aa110c6d3ef99e2afd1190fa66132))
+* **deps:** bump @solidjs/router from 0.11.3 to 0.12.0 ([#78](https://github.com/jobtrek/grades-view-solid/issues/78)) ([ee29e9d](https://github.com/jobtrek/grades-view-solid/commit/ee29e9d1cf4994fe8112a12f2062c60e32b1a791))
+* **deps:** bump @solidjs/router from 0.12.0 to 0.12.3 ([#80](https://github.com/jobtrek/grades-view-solid/issues/80)) ([aa8b61c](https://github.com/jobtrek/grades-view-solid/commit/aa8b61ca1a6584d2bf27b529f4b9db00a1975738))
+* **deps:** bump @solidjs/router from 0.12.3 to 0.12.4 ([#83](https://github.com/jobtrek/grades-view-solid/issues/83)) ([bb23c82](https://github.com/jobtrek/grades-view-solid/commit/bb23c82c39ca267851fdc393edb3ea79208f96fe))
+* **deps:** bump @solidjs/router from 0.12.4 to 0.13.0 ([#96](https://github.com/jobtrek/grades-view-solid/issues/96)) ([a6fe0d2](https://github.com/jobtrek/grades-view-solid/commit/a6fe0d2f571c70bde25586b4342fd73b07f43e59))
+* **deps:** bump @solidjs/start from 0.5.1 to 0.5.5 ([#79](https://github.com/jobtrek/grades-view-solid/issues/79)) ([308d06d](https://github.com/jobtrek/grades-view-solid/commit/308d06d423c86921b746f1f1320f8d9edbe231f7))
+* **deps:** bump @solidjs/start from 0.5.10 to 0.7.4 ([#91](https://github.com/jobtrek/grades-view-solid/issues/91)) ([b94ae09](https://github.com/jobtrek/grades-view-solid/commit/b94ae09c9406830f3e3935485f60e106499f74f6))
+* **deps:** bump @solidjs/start from 0.5.5 to 0.5.9 ([#81](https://github.com/jobtrek/grades-view-solid/issues/81)) ([2bac238](https://github.com/jobtrek/grades-view-solid/commit/2bac2381d802e756794e38a74a85044e6eaef95c))
+* **deps:** bump @solidjs/start from 0.5.9 to 0.5.10 ([#84](https://github.com/jobtrek/grades-view-solid/issues/84)) ([34676b2](https://github.com/jobtrek/grades-view-solid/commit/34676b2d8e6ff928961f900a9bc5b98e1bcdc483))
+* **deps:** bump autoprefixer from 10.4.17 to 10.4.18 ([#89](https://github.com/jobtrek/grades-view-solid/issues/89)) ([f862e2b](https://github.com/jobtrek/grades-view-solid/commit/f862e2b7e815be10308ffa42dc9b8dcf2f17e42d))
+* **deps:** bump postcss from 8.4.34 to 8.4.35 ([#76](https://github.com/jobtrek/grades-view-solid/issues/76)) ([f87b7ba](https://github.com/jobtrek/grades-view-solid/commit/f87b7bac4f5c5465b1d6a1dee2fe0a5fd9e46795))
+* **deps:** bump solid-js from 1.8.14 to 1.8.15 ([#82](https://github.com/jobtrek/grades-view-solid/issues/82)) ([7134afc](https://github.com/jobtrek/grades-view-solid/commit/7134afcf6cebadf54c304dfe68eab8966413d718))
+* **deps:** bump valibot from 0.27.1 to 0.28.1 ([#77](https://github.com/jobtrek/grades-view-solid/issues/77)) ([8edb0f2](https://github.com/jobtrek/grades-view-solid/commit/8edb0f265226be6db9e1a74cbd9562bbff73baf0))
+* **deps:** bump valibot from 0.28.1 to 0.29.0 ([#85](https://github.com/jobtrek/grades-view-solid/issues/85)) ([0dea90c](https://github.com/jobtrek/grades-view-solid/commit/0dea90c6060a29111bae7a834757575affd773cb))
+* **deps:** bump valibot from 0.29.0 to 0.30.0 ([#94](https://github.com/jobtrek/grades-view-solid/issues/94)) ([fb1bfa3](https://github.com/jobtrek/grades-view-solid/commit/fb1bfa336d33681ca162d0311a40f5b3876abb91))
+* **deps:** bump vinxi from 0.2.1 to 0.3.10 ([#92](https://github.com/jobtrek/grades-view-solid/issues/92)) ([908fa04](https://github.com/jobtrek/grades-view-solid/commit/908fa04ab2bf035bf6996820d403d9d7bd631831))
+
+
+### Continuous Integration
+
+* custom changelog generation ([#70](https://github.com/jobtrek/grades-view-solid/issues/70)) ([2dbd252](https://github.com/jobtrek/grades-view-solid/commit/2dbd25241c4ad97e8fcdfbc28f709a066291ba40))
+* hide style from generated changelog ([2dbd252](https://github.com/jobtrek/grades-view-solid/commit/2dbd25241c4ad97e8fcdfbc28f709a066291ba40))
+* new release please configuration ([2dbd252](https://github.com/jobtrek/grades-view-solid/commit/2dbd25241c4ad97e8fcdfbc28f709a066291ba40))
+* reorder changelog elements ([aed0e34](https://github.com/jobtrek/grades-view-solid/commit/aed0e34e58f2a539ee1b28bda6e741b1cb25faff))
+
+
+### Reverts
+
+* remove un-used .env for now ([2dbd252](https://github.com/jobtrek/grades-view-solid/commit/2dbd25241c4ad97e8fcdfbc28f709a066291ba40))
+
 ## [1.6.3](https://github.com/jobtrek/grades-view-solid/compare/v1.6.2...v1.6.3) (2024-02-05)
 
 
