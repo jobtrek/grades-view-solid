@@ -1,6 +1,6 @@
 // @refresh reload
 import { Router } from "@solidjs/router"
-import { FileRoutes } from "@solidjs/start"
+import { FileRoutes } from "@solidjs/start/router"
 import { type JSX, Suspense } from "solid-js"
 import "./app.css"
 import { AppNavigation } from "~/components/navigation/AppNavigation"

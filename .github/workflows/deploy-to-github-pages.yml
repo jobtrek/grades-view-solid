@@ -19,7 +19,6 @@ jobs:
 
       - run: pnpm install
       - run: pnpm build
-      - run: bash rename.bash # Temporary fix, until fix on library
 
       - name: Upload to GitHub Pages
         uses: actions/upload-pages-artifact@v3
