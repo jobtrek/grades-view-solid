@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [2.0.1](https://github.com/jobtrek/grades-view-solid/compare/v2.0.0...v2.0.1) (2024-03-28)
+
+
+### Build System
+
+* **deps-dev:** bump cssnano from 6.0.5 to 6.1.0 ([#101](https://github.com/jobtrek/grades-view-solid/issues/101)) ([8ea0de1](https://github.com/jobtrek/grades-view-solid/commit/8ea0de12edab6ba550c09f703bf25fdbae0d0ac7))
+* **deps-dev:** bump cssnano from 6.1.0 to 6.1.1 ([#105](https://github.com/jobtrek/grades-view-solid/issues/105)) ([5db4996](https://github.com/jobtrek/grades-view-solid/commit/5db4996b5322310d9bbf8747497fafe87e1c279b))
+* **deps-dev:** bump eslint-plugin-solid from 0.13.1 to 0.13.2 ([#106](https://github.com/jobtrek/grades-view-solid/issues/106)) ([6272840](https://github.com/jobtrek/grades-view-solid/commit/6272840c26ea578f7cea88182ebbbb815ee854dd))
+* **deps:** bump @solid-primitives/storage from 2.1.4 to 3.0.0 ([#107](https://github.com/jobtrek/grades-view-solid/issues/107)) ([eeb9582](https://github.com/jobtrek/grades-view-solid/commit/eeb9582ac0fd9b6dcb4d1dc240d0d29bf251e4d4))
+* **deps:** bump @solidjs/router from 0.13.0 to 0.13.1 ([#108](https://github.com/jobtrek/grades-view-solid/issues/108)) ([1cea3f4](https://github.com/jobtrek/grades-view-solid/commit/1cea3f458f2e63cf11cc7c4a342cdd38be99f981))
+* **deps:** bump @solidjs/start from 0.7.4 to 0.7.7 ([#104](https://github.com/jobtrek/grades-view-solid/issues/104)) ([6aa996d](https://github.com/jobtrek/grades-view-solid/commit/6aa996dfa730fedd4ce03d1acac5e34d34cb528f))
+* **deps:** bump autoprefixer from 10.4.18 to 10.4.19 ([#109](https://github.com/jobtrek/grades-view-solid/issues/109)) ([d107d52](https://github.com/jobtrek/grades-view-solid/commit/d107d52c8f405c96099c8ebb0a7211009b413b94))
+* **deps:** bump follow-redirects from 1.15.5 to 1.15.6 ([#98](https://github.com/jobtrek/grades-view-solid/issues/98)) ([2f16533](https://github.com/jobtrek/grades-view-solid/commit/2f165333d0068fc8dcd35030ddd2bc7ba9643c5e))
+* **deps:** bump postcss from 8.4.35 to 8.4.38 ([#103](https://github.com/jobtrek/grades-view-solid/issues/103)) ([2ba15fa](https://github.com/jobtrek/grades-view-solid/commit/2ba15fa39f26c40581d7d79d87fa32ab72c52486))
+
 ## [2.0.0](https://github.com/jobtrek/grades-view-solid/compare/v1.6.3...v2.0.0) (2024-03-12)
 
 
