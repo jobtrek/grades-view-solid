@@ -1,6 +1,27 @@
 # Changelog
 
 
+## [2.0.2](https://github.com/jobtrek/grades-view-solid/compare/v2.0.1...v2.0.2) (2024-04-08)
+
+
+### Miscellaneous Chores
+
+* **deps:** update .eslintrs to match new typescript config ([f19460b](https://github.com/jobtrek/grades-view-solid/commit/f19460bf041cca0429f511dec08e0343acc7ba08))
+* **deps:** update eslint config typescript ([f19460b](https://github.com/jobtrek/grades-view-solid/commit/f19460bf041cca0429f511dec08e0343acc7ba08))
+* **deps:** update to solid start 1.0.0 rc ([#119](https://github.com/jobtrek/grades-view-solid/issues/119)) ([f19460b](https://github.com/jobtrek/grades-view-solid/commit/f19460bf041cca0429f511dec08e0343acc7ba08))
+* **deps:** update to solid start 1.0.0 rc 0 ([f19460b](https://github.com/jobtrek/grades-view-solid/commit/f19460bf041cca0429f511dec08e0343acc7ba08))
+
+
+### Build System
+
+* **deps-dev:** bump cssnano from 6.1.1 to 6.1.2 ([#113](https://github.com/jobtrek/grades-view-solid/issues/113)) ([55a8242](https://github.com/jobtrek/grades-view-solid/commit/55a824202635932248f5cdd1d7eda3101431e837))
+* **deps-dev:** bump tailwindcss from 3.4.1 to 3.4.3 ([#111](https://github.com/jobtrek/grades-view-solid/issues/111)) ([dba446b](https://github.com/jobtrek/grades-view-solid/commit/dba446be1346f26531be9745277099ce17dec819))
+* **deps:** bump @solid-primitives/storage from 3.0.0 to 3.2.0 ([#118](https://github.com/jobtrek/grades-view-solid/issues/118)) ([179bad1](https://github.com/jobtrek/grades-view-solid/commit/179bad18532b9f7d9d861f1c810a8a9c7d2fdca3))
+* **deps:** bump solid-js from 1.8.15 to 1.8.16 ([#110](https://github.com/jobtrek/grades-view-solid/issues/110)) ([a9fc5bb](https://github.com/jobtrek/grades-view-solid/commit/a9fc5bb95f7255ad4c293d2faa514d3bcb5025b9))
+* **deps:** bump undici from 5.28.3 to 5.28.4 ([#116](https://github.com/jobtrek/grades-view-solid/issues/116)) ([a64bc16](https://github.com/jobtrek/grades-view-solid/commit/a64bc16419981e3852209f8015ba711001ccf679))
+* **deps:** bump vinxi from 0.3.10 to 0.3.11 ([#112](https://github.com/jobtrek/grades-view-solid/issues/112)) ([addef0f](https://github.com/jobtrek/grades-view-solid/commit/addef0f163ef398fea0e5fa9e5885000efb63436))
+* **deps:** bump vite from 5.1.6 to 5.2.8 ([#115](https://github.com/jobtrek/grades-view-solid/issues/115)) ([adc89c9](https://github.com/jobtrek/grades-view-solid/commit/adc89c976cd7e8a522d3bfd6ff5871ddddcfbf75))
+
 ## [2.0.1](https://github.com/jobtrek/grades-view-solid/compare/v2.0.0...v2.0.1) (2024-03-28)
 
 
