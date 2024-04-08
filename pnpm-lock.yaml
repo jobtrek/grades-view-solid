@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.20.0
     version: 0.20.0(solid-js@1.8.15)
   '@solid-primitives/storage':
-    specifier: ^3.0.0
-    version: 3.0.0(solid-js@1.8.15)
+    specifier: ^3.2.0
+    version: 3.2.0(solid-js@1.8.15)
   '@solid-primitives/timer':
     specifier: ^1.3.9
     version: 1.3.9(solid-js@1.8.15)
@@ -1835,8 +1835,8 @@ packages:
     engines: {node: '>=18'}
     dev: false
 
-  /@solid-primitives/storage@3.0.0(solid-js@1.8.15):
-    resolution: {integrity: sha512-7e9v2EW+Vs3dl9U6gmbsub+t8bFZu6tbZQz5fS2+knOu5ElZqhZqIKzO1M+Ii1ogeViaGU67B427qrM1vCruaw==}
+  /@solid-primitives/storage@3.2.0(solid-js@1.8.15):
+    resolution: {integrity: sha512-DitE1NpiN6sCoveLNiUS2pAQqS83ebRnBq9/hRamQcJY+RIvGGfaqY9UcWaAAnnyDX3jNGAhV+Sq7C168fGJ9A==}
     peerDependencies:
       solid-js: ^1.6.12
     dependencies:
