@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.0.3](https://github.com/jobtrek/grades-view-solid/compare/v2.0.2...v2.0.3) (2024-04-19)
+
+
+### Build System
+
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([#124](https://github.com/jobtrek/grades-view-solid/issues/124)) ([cdf12ab](https://github.com/jobtrek/grades-view-solid/commit/cdf12aba7a7112c50cf0f26d0d5d1c20ac6a32e1))
+* **deps-dev:** bump eslint-config-love from 46.0.0 to 47.0.0 ([#123](https://github.com/jobtrek/grades-view-solid/issues/123)) ([775c582](https://github.com/jobtrek/grades-view-solid/commit/775c582e7aae7fc304cb71ec9b3a16d16a045c87))
+* **deps:** bump @solid-primitives/storage from 3.2.0 to 3.3.0 ([#120](https://github.com/jobtrek/grades-view-solid/issues/120)) ([b0e9b1a](https://github.com/jobtrek/grades-view-solid/commit/b0e9b1aba643338323319491adcbb227649beea4))
+* **deps:** bump @solidjs/router from 0.13.1 to 0.13.2 ([#121](https://github.com/jobtrek/grades-view-solid/issues/121)) ([24cde54](https://github.com/jobtrek/grades-view-solid/commit/24cde54136c4f5a124da6cb9dbb659115d6b1ab8))
+
 ## [2.0.2](https://github.com/jobtrek/grades-view-solid/compare/v2.0.1...v2.0.2) (2024-04-08)
 
 
