@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [2.0.4](https://github.com/jobtrek/grades-view-solid/compare/v2.0.3...v2.0.4) (2024-04-29)
+
+
+### Miscellaneous Chores
+
+* update dependencies lock ([#133](https://github.com/jobtrek/grades-view-solid/issues/133)) ([8296abf](https://github.com/jobtrek/grades-view-solid/commit/8296abf0db37363cd616660411c4b5d3c9e00423))
+
+
+### Build System
+
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([#131](https://github.com/jobtrek/grades-view-solid/issues/131)) ([efa7bfb](https://github.com/jobtrek/grades-view-solid/commit/efa7bfbaa339ba89738a77efa7c6067f0a5fecaa))
+* **deps-dev:** bump cssnano from 6.1.2 to 7.0.1 ([#128](https://github.com/jobtrek/grades-view-solid/issues/128)) ([8508b03](https://github.com/jobtrek/grades-view-solid/commit/8508b03a8adef3c90d7f6421b15dac2498ece303))
+* **deps-dev:** bump eslint-plugin-solid from 0.13.2 to 0.14.0 ([#130](https://github.com/jobtrek/grades-view-solid/issues/130)) ([f9ceb24](https://github.com/jobtrek/grades-view-solid/commit/f9ceb2493341d6b5b19177f9e7db06c5423a78ee))
+* **deps:** bump @solid-primitives/storage from 3.3.0 to 3.5.0 ([#129](https://github.com/jobtrek/grades-view-solid/issues/129)) ([f59468f](https://github.com/jobtrek/grades-view-solid/commit/f59468f1be2301629e87b4209fee281f02e2a2e6))
+* **deps:** bump solid-js from 1.8.16 to 1.8.17 ([#127](https://github.com/jobtrek/grades-view-solid/issues/127)) ([5083638](https://github.com/jobtrek/grades-view-solid/commit/5083638d1bd78d438607afe0e8d1e7c9304f45a3))
+
 ## [2.0.3](https://github.com/jobtrek/grades-view-solid/compare/v2.0.2...v2.0.3) (2024-04-19)
 
 
