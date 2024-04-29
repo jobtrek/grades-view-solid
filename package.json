@@ -18,7 +18,7 @@
     "@solidjs/start": "1.0.0-rc.0",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
-    "solid-js": "^1.8.16",
+    "solid-js": "^1.8.17",
     "valibot": "^0.30.0",
     "vinxi": "0.3.11"
   },
