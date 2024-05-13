@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.5](https://github.com/jobtrek/grades-view-solid/compare/v2.0.4...v2.0.5) (2024-05-13)
+
+
+### Build System
+
+* **deps:** bump @solidjs/router from 0.13.2 to 0.13.3 ([#134](https://github.com/jobtrek/grades-view-solid/issues/134)) ([38bd24b](https://github.com/jobtrek/grades-view-solid/commit/38bd24bdb8d0158a23b3f0d4c29e19b086f36081))
+
 ## [2.0.4](https://github.com/jobtrek/grades-view-solid/compare/v2.0.3...v2.0.4) (2024-04-29)
 
 
