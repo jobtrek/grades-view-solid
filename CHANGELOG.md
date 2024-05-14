@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.6](https://github.com/jobtrek/grades-view-solid/compare/v2.0.5...v2.0.6) (2024-05-14)
+
+
+### Miscellaneous Chores
+
+* **deps:** update solid/start to 1.0.0-rc.1 ([#138](https://github.com/jobtrek/grades-view-solid/issues/138)) ([fcf58f8](https://github.com/jobtrek/grades-view-solid/commit/fcf58f86abc080d8199e6ec4847d132e653815d5))
+
 ## [2.0.5](https://github.com/jobtrek/grades-view-solid/compare/v2.0.4...v2.0.5) (2024-05-13)
 
 
