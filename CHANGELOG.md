@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.7](https://github.com/jobtrek/grades-view-solid/compare/v2.0.6...v2.0.7) (2024-05-17)
+
+
+### Miscellaneous Chores
+
+* **deps:** change release-please path to new repo ([#140](https://github.com/jobtrek/grades-view-solid/issues/140)) ([b006dc3](https://github.com/jobtrek/grades-view-solid/commit/b006dc3eeecbb41de701f18c7e9175b60d65edbb))
+
 ## [2.0.6](https://github.com/jobtrek/grades-view-solid/compare/v2.0.5...v2.0.6) (2024-05-14)
 
 
