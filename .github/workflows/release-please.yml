@@ -13,6 +13,7 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: google-github-actions/release-please-action@v4
+      - uses: googleapis/release-please-action@v4
         with:
           token: ${{ secrets.GRADES_VIEW_SOLID_RELEASE_PLEASE }}
+
