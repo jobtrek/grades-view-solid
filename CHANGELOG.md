@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.9](https://github.com/jobtrek/grades-view-solid/compare/v2.0.8...v2.0.9) (2024-05-21)
+
+
+### Miscellaneous Chores
+
+* **deps-dev:** update eslint typescript plugin ([#145](https://github.com/jobtrek/grades-view-solid/issues/145)) ([3d01ed7](https://github.com/jobtrek/grades-view-solid/commit/3d01ed7adb4acb9a547d3e6cbbefb736a230cd84))
+
 ## [2.0.8](https://github.com/jobtrek/grades-view-solid/compare/v2.0.7...v2.0.8) (2024-05-21)
 
 
