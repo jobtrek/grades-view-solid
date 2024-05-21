@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.8](https://github.com/jobtrek/grades-view-solid/compare/v2.0.7...v2.0.8) (2024-05-21)
+
+
+### Build System
+
+* **deps:** bump @solidjs/meta from 0.29.3 to 0.29.4 ([#143](https://github.com/jobtrek/grades-view-solid/issues/143)) ([a83ffb1](https://github.com/jobtrek/grades-view-solid/commit/a83ffb16b405e68665142d4a79ff87bcf878d65d))
+
 ## [2.0.7](https://github.com/jobtrek/grades-view-solid/compare/v2.0.6...v2.0.7) (2024-05-17)
 
 
