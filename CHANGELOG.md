@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.10](https://github.com/jobtrek/grades-view-solid/compare/v2.0.9...v2.0.10) (2024-05-28)
+
+
+### Build System
+
+* **deps:** bump @solidjs/start from 1.0.0-rc.1 to 1.0.0 ([#148](https://github.com/jobtrek/grades-view-solid/issues/148)) ([75bb61f](https://github.com/jobtrek/grades-view-solid/commit/75bb61f4fa19cff9cbd4fd4b414260535407ce5a))
+
 ## [2.0.9](https://github.com/jobtrek/grades-view-solid/compare/v2.0.8...v2.0.9) (2024-05-21)
 
 
