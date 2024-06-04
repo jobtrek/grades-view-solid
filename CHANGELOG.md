@@ -1,6 +1,25 @@
 # Changelog
 
 
+## [2.0.11](https://github.com/jobtrek/grades-view-solid/compare/v2.0.10...v2.0.11) (2024-06-04)
+
+
+### Miscellaneous Chores
+
+* minimal node runtime to 20 and package manager to pnpm 9 ([b31a84d](https://github.com/jobtrek/grades-view-solid/commit/b31a84dc56d90c438001d320fd42d8f1642365df))
+* update purge packages to v5 ([b31a84d](https://github.com/jobtrek/grades-view-solid/commit/b31a84dc56d90c438001d320fd42d8f1642365df))
+* update runtime versions ([#157](https://github.com/jobtrek/grades-view-solid/issues/157)) ([b31a84d](https://github.com/jobtrek/grades-view-solid/commit/b31a84dc56d90c438001d320fd42d8f1642365df))
+
+
+### Refactors
+
+* use pnpm setup action instead of corepack ([b31a84d](https://github.com/jobtrek/grades-view-solid/commit/b31a84dc56d90c438001d320fd42d8f1642365df))
+
+
+### Build System
+
+* **deps:** bump @solidjs/start from 1.0.0 to 1.0.1 ([#153](https://github.com/jobtrek/grades-view-solid/issues/153)) ([1899e8f](https://github.com/jobtrek/grades-view-solid/commit/1899e8f5e6840d5f0a76e93c3ba2b848cf351565))
+
 ## [2.0.10](https://github.com/jobtrek/grades-view-solid/compare/v2.0.9...v2.0.10) (2024-05-28)
 
 
