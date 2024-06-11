@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.0.12](https://github.com/jobtrek/grades-view-solid/compare/v2.0.11...v2.0.12) (2024-06-11)
+
+
+### Build System
+
+* **deps-dev:** bump cssnano from 7.0.1 to 7.0.2 ([#161](https://github.com/jobtrek/grades-view-solid/issues/161)) ([ff7c7f5](https://github.com/jobtrek/grades-view-solid/commit/ff7c7f5f48d1a95321bc4f13c3671004a3b66488))
+* **deps-dev:** bump prettier from 3.3.0 to 3.3.1 ([#163](https://github.com/jobtrek/grades-view-solid/issues/163)) ([b733ecc](https://github.com/jobtrek/grades-view-solid/commit/b733eccb7ce2e38878b780b8cf2bdec05f8376a2))
+* **deps-dev:** bump tailwindcss from 3.4.3 to 3.4.4 ([#160](https://github.com/jobtrek/grades-view-solid/issues/160)) ([026eaef](https://github.com/jobtrek/grades-view-solid/commit/026eaefce1195ec3ac7098796b97e356113ef3b4))
+* **deps:** bump @modular-forms/solid from 0.20.0 to 0.21.0 ([#162](https://github.com/jobtrek/grades-view-solid/issues/162)) ([595fbcb](https://github.com/jobtrek/grades-view-solid/commit/595fbcb9033d2cbad297ff6813d54e9f5a446ccd))
+
 ## [2.0.11](https://github.com/jobtrek/grades-view-solid/compare/v2.0.10...v2.0.11) (2024-06-04)
 
 
