@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.13](https://github.com/jobtrek/grades-view-solid/compare/v2.0.12...v2.0.13) (2024-06-11)
+
+
+### Build System
+
+* fix pnpm installation on deploy action ([#165](https://github.com/jobtrek/grades-view-solid/issues/165)) ([0c26640](https://github.com/jobtrek/grades-view-solid/commit/0c2664059da8d3d27578044cbaf99cac452c8881))
+
 ## [2.0.12](https://github.com/jobtrek/grades-view-solid/compare/v2.0.11...v2.0.12) (2024-06-11)
 
 
