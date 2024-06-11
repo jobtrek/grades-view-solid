@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@modular-forms/solid':
-    specifier: ^0.20.0
-    version: 0.20.0(solid-js@1.8.17)
+    specifier: ^0.21.0
+    version: 0.21.0(solid-js@1.8.17)
   '@solid-primitives/storage':
     specifier: ^3.5.0
     version: 3.5.0(solid-js@1.8.17)
@@ -932,12 +932,13 @@ packages:
       - supports-color
     dev: false
 
-  /@modular-forms/solid@0.20.0(solid-js@1.8.17):
-    resolution: {integrity: sha512-CyXoeo2cwNel2N753c+iDzA+4DgtBrLNAS87DY/aODFZG7QoY0A9YSxdUxRf0N5NDwkzmn1O0XqwMP+EAiOHbA==}
+  /@modular-forms/solid@0.21.0(solid-js@1.8.17):
+    resolution: {integrity: sha512-9QUykslNeVvn/gBj4iXoiNPV1UutS8sOCPGoqBxCNBwVQVjfeMljvXU3kZtctWEMy984q7JtKVVGSOXMDydW6A==}
     peerDependencies:
       solid-js: ^1.3.1
     dependencies:
       solid-js: 1.8.17
+      valibot: 0.31.1
     dev: false
 
   /@netlify/functions@2.7.0(@opentelemetry/api@1.8.0):
@@ -7018,6 +7019,10 @@ packages:
 
   /valibot@0.30.0:
     resolution: {integrity: sha512-5POBdbSkM+3nvJ6ZlyQHsggisfRtyT4tVTo1EIIShs6qCdXJnyWU5TJ68vr8iTg5zpOLjXLRiBqNx+9zwZz/rA==}
+    dev: false
+
+  /valibot@0.31.1:
+    resolution: {integrity: sha512-2YYIhPrnVSz/gfT2/iXVTrSj92HwchCt9Cga/6hX4B26iCz9zkIsGTS0HjDYTZfTi1Un0X6aRvhBi1cfqs/i0Q==}
     dev: false
 
   /validate-html-nesting@1.2.2:
