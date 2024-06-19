@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [2.0.14](https://github.com/jobtrek/grades-view-solid/compare/v2.0.13...v2.0.14) (2024-06-19)
+
+
+### Build System
+
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([#176](https://github.com/jobtrek/grades-view-solid/issues/176)) ([e8c3cf4](https://github.com/jobtrek/grades-view-solid/commit/e8c3cf4bf5e57c5b29ed8947adf76ebacbc62697))
+* **deps-dev:** bump prettier from 3.3.1 to 3.3.2 ([#171](https://github.com/jobtrek/grades-view-solid/issues/171)) ([3fb984f](https://github.com/jobtrek/grades-view-solid/commit/3fb984fd86fbc44475a77eeff967755ffc94beee))
+* **deps:** bump @solid-primitives/storage from 3.5.0 to 3.7.1 ([#169](https://github.com/jobtrek/grades-view-solid/issues/169)) ([d466008](https://github.com/jobtrek/grades-view-solid/commit/d4660086757ce2de21e29ed1ff2a91dec849b1c8))
+* **deps:** bump docker/build-push-action from 5 to 6 ([#174](https://github.com/jobtrek/grades-view-solid/issues/174)) ([41ca5e5](https://github.com/jobtrek/grades-view-solid/commit/41ca5e597316db54333a99819acb38aa711e2533))
+
+
+### Continuous Integration
+
+* add github action to package ecosystem ([#172](https://github.com/jobtrek/grades-view-solid/issues/172)) ([dcfdc11](https://github.com/jobtrek/grades-view-solid/commit/dcfdc1191377411d632dc17a8ffef0a4c0ed1313))
+
 ## [2.0.13](https://github.com/jobtrek/grades-view-solid/compare/v2.0.12...v2.0.13) (2024-06-11)
 
 
