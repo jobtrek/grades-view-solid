@@ -8,8 +8,9 @@ import {
   multipleOf,
   nullable,
   number,
-  object, pipe,
-  string
+  object,
+  pipe,
+  string,
 } from "valibot"
 
 export const GradeSchema = pipe(

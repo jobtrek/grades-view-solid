@@ -4,7 +4,7 @@ import {
   minLength,
   object,
   pipe,
-  string
+  string,
 } from "valibot"
 
 const studentSchemaLabels = {
