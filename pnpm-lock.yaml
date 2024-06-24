@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.8.17
     version: 1.8.17
   valibot:
-    specifier: ^0.30.0
-    version: 0.30.0
+    specifier: ^0.33.3
+    version: 0.33.3
   vinxi:
     specifier: 0.3.11
     version: 0.3.11(@opentelemetry/api@1.8.0)(@types/node@20.14.1)
@@ -938,7 +938,7 @@ packages:
       solid-js: ^1.3.1
     dependencies:
       solid-js: 1.8.17
-      valibot: 0.31.1
+      valibot: 0.33.3
     dev: false
 
   /@netlify/functions@2.7.0(@opentelemetry/api@1.8.0):
@@ -7116,12 +7116,8 @@ packages:
   /util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  /valibot@0.30.0:
-    resolution: {integrity: sha512-5POBdbSkM+3nvJ6ZlyQHsggisfRtyT4tVTo1EIIShs6qCdXJnyWU5TJ68vr8iTg5zpOLjXLRiBqNx+9zwZz/rA==}
-    dev: false
-
-  /valibot@0.31.1:
-    resolution: {integrity: sha512-2YYIhPrnVSz/gfT2/iXVTrSj92HwchCt9Cga/6hX4B26iCz9zkIsGTS0HjDYTZfTi1Un0X6aRvhBi1cfqs/i0Q==}
+  /valibot@0.33.3:
+    resolution: {integrity: sha512-/fuY1DlX8uiQ7aphlzrrI2DbG0YJk84JMgvz2qKpUIdXRNsS53varfo4voPjSrjUr5BSV2K0miSEJUOlA5fQFg==}
     dev: false
 
   /validate-html-nesting@1.2.2:
