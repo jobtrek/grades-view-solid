@@ -1,4 +1,4 @@
-import { type Input, object, string } from "valibot"
+import { type InferInput, object, string } from "valibot"
 import { GradeSchema } from "~/types/models/GradeStoreModels"
 
 const addModuleSchemaLabels = {
@@ -11,6 +11,6 @@ const AddModuleGradeSchema = object({
   module: string(),
 } satisfies Record<keyof typeof addModuleSchemaLabels, any>)
 
-type AddModuleGradeForm = Input<typeof AddModuleGradeSchema>
+type AddModuleGradeForm = InferInput<typeof AddModuleGradeSchema>
 
 export { AddModuleGradeSchema, type AddModuleGradeForm, addModuleSchemaLabels }

@@ -25,6 +25,7 @@ export const GradeInput: Component<Props> = (props) => {
   })
 
   const handleSubmit: SubmitHandler<AddGradeForm> = (values) => {
+
     props.onNewGrade(values.grade)
 
     reset(addGradeForm)
