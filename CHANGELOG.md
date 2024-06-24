@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.0.15](https://github.com/jobtrek/grades-view-solid/compare/v2.0.14...v2.0.15) (2024-06-24)
+
+
+### Build System
+
+* **deps-dev:** bump cssnano from 7.0.2 to 7.0.3 ([#180](https://github.com/jobtrek/grades-view-solid/issues/180)) ([424e488](https://github.com/jobtrek/grades-view-solid/commit/424e488fc8a9273ecc58e622717a9a3489ccf8ab))
+* **deps:** bump @solidjs/start from 1.0.1 to 1.0.2 ([#178](https://github.com/jobtrek/grades-view-solid/issues/178)) ([160b7ae](https://github.com/jobtrek/grades-view-solid/commit/160b7aef6ab5a2763a5b3f59212fd1ce8d3cd174))
+* **deps:** bump valibot from 0.30.0 to 0.34.0 ([#182](https://github.com/jobtrek/grades-view-solid/issues/182)) ([6d21062](https://github.com/jobtrek/grades-view-solid/commit/6d21062001c53dff775ed27c3e79f4be03686706))
+* **deps:** bump vinxi from 0.3.11 to 0.3.12 ([#177](https://github.com/jobtrek/grades-view-solid/issues/177)) ([368ccb9](https://github.com/jobtrek/grades-view-solid/commit/368ccb92595aa01e397689b8e72a599f54476411))
+
 ## [2.0.14](https://github.com/jobtrek/grades-view-solid/compare/v2.0.13...v2.0.14) (2024-06-19)
 
 
