@@ -12,11 +12,11 @@ import { epsicModules } from "~/data/epsicModules"
 /**
  * A special component to simulate a file input, but only with a button.
  */
-export const FileButton: Component = (props) => {
+export const FileButton: Component = () => {
   const [notification, setNotification] = createSignal<{
     name: string
     type: AlertTypes
-    messages: Record<any, any>
+    messages: Record<string, string>
   } | null>(null)
   let fileInput: HTMLInputElement | undefined
 
@@ -84,7 +84,7 @@ export const FileButton: Component = (props) => {
             type: "error",
             messages: error.issues.reduce((acc, issue) => {
               return {
-                ...acc, // @ts-expect-error we know that is a string see valibot doc
+                ...acc,
                 [issue.path[0].key]: issue.message,
               }
             }, {}),
