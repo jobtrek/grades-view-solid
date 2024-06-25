@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.16](https://github.com/jobtrek/grades-view-solid/compare/v2.0.15...v2.0.16) (2024-06-25)
+
+
+### Build System
+
+* **deps-dev:** bump eslint-config-love from 47.0.0 to 53.0.0 ([#170](https://github.com/jobtrek/grades-view-solid/issues/170)) ([1c6ae50](https://github.com/jobtrek/grades-view-solid/commit/1c6ae50ab1d5d0e8e51b630b1c0e57e89f72dee4))
+
 ## [2.0.15](https://github.com/jobtrek/grades-view-solid/compare/v2.0.14...v2.0.15) (2024-06-24)
 
 
