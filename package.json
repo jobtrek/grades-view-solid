@@ -5,7 +5,7 @@
     "dev": "vinxi dev",
     "build": "vinxi build",
     "start": "vinxi start",
-    "lint": "eslint --ext .ts,.tsx ./src",
+    "lint": "eslint .",
     "prettier:check": "prettier . --check \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml}\"",
     "prettier:format": "prettier . --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml}\""
   },
@@ -26,8 +26,12 @@
     "node": ">=20"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.5.0",
     "@tailwindcss/forms": "^0.5.7",
+    "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.14.1",
     "commitizen": "^4.3.0",
     "cssnano": "^7.0.3",
     "cz-conventional-changelog": "^3.3.0",
@@ -37,9 +41,12 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-solid": "^0.14.0",
+    "eslint-plugin-solid": "^0.14.1",
+    "globals": "^15.6.0",
     "prettier": "^3.3.2",
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.14.1"
   },
   "version": "2.0.15",
   "config": {
