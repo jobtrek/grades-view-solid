@@ -17,7 +17,7 @@ const StudentNameSchema = object({
     maxLength(40, "Le nom ne peut pas faire plus de 40 caractères."),
     minLength(1, "Le nom doit contenir au minimum un caractère."),
   ),
-} satisfies Record<keyof typeof studentSchemaLabels, any>)
+} satisfies Record<keyof typeof studentSchemaLabels, unknown>)
 
 type StudentGradeForm = InferInput<typeof StudentNameSchema>
 

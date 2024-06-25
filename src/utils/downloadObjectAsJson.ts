@@ -1,5 +1,5 @@
 export const downloadObjectAsJson = (
-  objectToExport: any,
+  objectToExport: object,
   fileName: string,
 ): void => {
   const dataStr =

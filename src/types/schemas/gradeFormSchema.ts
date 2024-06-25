@@ -7,7 +7,7 @@ const gradeSchemaLabels = {
 
 const AddGradeSchema = object({
   grade: GradeSchema,
-} satisfies Record<keyof typeof gradeSchemaLabels, any>)
+} satisfies Record<keyof typeof gradeSchemaLabels, unknown>)
 
 type AddGradeForm = InferInput<typeof AddGradeSchema>
 

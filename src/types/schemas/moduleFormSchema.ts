@@ -9,7 +9,7 @@ const addModuleSchemaLabels = {
 const AddModuleGradeSchema = object({
   grade: GradeSchema,
   module: string(),
-} satisfies Record<keyof typeof addModuleSchemaLabels, any>)
+} satisfies Record<keyof typeof addModuleSchemaLabels, unknown>)
 
 type AddModuleGradeForm = InferInput<typeof AddModuleGradeSchema>
 

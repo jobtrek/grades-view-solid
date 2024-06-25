@@ -73,7 +73,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
   }
 
   // Open combobox on focus
-  const handleFocus: JSX.EventHandler<HTMLInputElement, FocusEvent> = (e) => {
+  const handleFocus: JSX.EventHandler<HTMLInputElement, FocusEvent> = () => {
     toggleCombobox(true)
   }
 

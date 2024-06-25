@@ -16,7 +16,7 @@ export const createGeneralKnowledgeBranchAverageMemo = (
     )
     const filteredAverages = semesterAverages.filter(
       (average) => average !== null,
-    ) as number[]
+    )
     return filteredAverages.length > 0
       ? roundTo(average(filteredAverages), 2)
       : null
