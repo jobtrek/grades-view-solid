@@ -36,8 +36,8 @@ importers:
         specifier: ^1.8.17
         version: 1.8.17
       valibot:
-        specifier: ^0.34.0
-        version: 0.34.0
+        specifier: ^0.35.0
+        version: 0.35.0
       vinxi:
         specifier: 0.3.12
         version: 0.3.12(@opentelemetry/api@1.9.0)(@types/node@20.14.8)(ioredis@5.4.1)(terser@5.31.1)
@@ -4142,6 +4142,9 @@ packages:
 
   valibot@0.34.0:
     resolution: {integrity: sha512-TELvxO0hEB1/6XjTS5Jfi4dS0oyawA5flxs4/sK/tSUXnlLMiKTMYE6Atuu0a7kvtP3eqPv3yZ80msfM+qMDHA==}
+
+  valibot@0.35.0:
+    resolution: {integrity: sha512-+i2aCRkReTrd5KBN/dW2BrPOvFnU5LXTV2xjZnjnqUIO8YUx6P2+MgRrkwF2FhkexgyKq/NIZdPdknhHf5A/Ww==}
 
   validate-html-nesting@1.2.2:
     resolution: {integrity: sha512-hGdgQozCsQJMyfK5urgFcWEqsSSrK63Awe0t/IMR0bZ0QMtnuaiHzThW81guu3qx9abLi99NEuiaN6P9gVYsNg==}
@@ -8695,6 +8698,8 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   valibot@0.34.0: {}
+
+  valibot@0.35.0: {}
 
   validate-html-nesting@1.2.2: {}
 
