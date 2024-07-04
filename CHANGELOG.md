@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.0.17](https://github.com/jobtrek/grades-view-solid/compare/v2.0.16...v2.0.17) (2024-07-04)
+
+
+### Build System
+
+* **deps-dev:** bump globals from 15.6.0 to 15.8.0 ([#191](https://github.com/jobtrek/grades-view-solid/issues/191)) ([07849b0](https://github.com/jobtrek/grades-view-solid/commit/07849b0c04b69543aab279839766aca2e10dd0ef))
+* **deps:** bump @modular-forms/solid from 0.21.0 to 0.22.1 ([#184](https://github.com/jobtrek/grades-view-solid/issues/184)) ([7b4916f](https://github.com/jobtrek/grades-view-solid/commit/7b4916f9d5dc69af3330e6bc7a3ee7d8dd081902))
+* **deps:** bump postcss from 8.4.38 to 8.4.39 ([#187](https://github.com/jobtrek/grades-view-solid/issues/187)) ([e878e2c](https://github.com/jobtrek/grades-view-solid/commit/e878e2c0d24606eb4138ce88468f5e1b96c2029c))
+* **deps:** bump solid-js from 1.8.17 to 1.8.18 ([#186](https://github.com/jobtrek/grades-view-solid/issues/186)) ([5431171](https://github.com/jobtrek/grades-view-solid/commit/5431171b597b9590a2d541f7ee3ee961841bd3d5))
+* **deps:** bump valibot from 0.34.0 to 0.35.0 ([#188](https://github.com/jobtrek/grades-view-solid/issues/188)) ([953575f](https://github.com/jobtrek/grades-view-solid/commit/953575ffa3520163bedf4f05ab47094b2246bb98))
+
 ## [2.0.16](https://github.com/jobtrek/grades-view-solid/compare/v2.0.15...v2.0.16) (2024-06-25)
 
 
