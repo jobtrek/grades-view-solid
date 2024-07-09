@@ -19,7 +19,7 @@
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
     "solid-js": "^1.8.18",
-    "valibot": "^0.35.0",
+    "valibot": "^0.36.0",
     "vinxi": "0.3.12"
   },
   "engines": {
