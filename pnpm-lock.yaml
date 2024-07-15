@@ -24,8 +24,8 @@ importers:
         specifier: ^0.13.3
         version: 0.13.6(solid-js@1.8.18)
       '@solidjs/start':
-        specifier: 1.0.2
-        version: 1.0.2(rollup@4.18.0)(solid-js@1.8.18)(vinxi@0.3.12(@opentelemetry/api@1.9.0)(@types/node@20.14.8)(ioredis@5.4.1)(terser@5.31.1))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
+        specifier: 1.0.4
+        version: 1.0.4(rollup@4.18.0)(solid-js@1.8.18)(vinxi@0.3.12(@opentelemetry/api@1.9.0)(@types/node@20.14.8)(ioredis@5.4.1)(terser@5.31.1))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.39)
@@ -1085,8 +1085,8 @@ packages:
     peerDependencies:
       solid-js: ^1.8.6
 
-  '@solidjs/start@1.0.2':
-    resolution: {integrity: sha512-SRoFvSnL47O1hg4/Er2es2AVoOWRdGBm0C8h2KsHFjbiRe1r2AxsONHR9job+Hmzbl5icSaGmNoXoQ8qpTy4UA==}
+  '@solidjs/start@1.0.4':
+    resolution: {integrity: sha512-r+2gENJ+nIdbLR2QcFxw92PBYLBr8a7DBHc1Wy2/eAbW9uIddPz/ZHyHsWjFewrADcvfjLGG+bBGqM/vCTrpAw==}
 
   '@tailwindcss/forms@0.5.7':
     resolution: {integrity: sha512-QE7X69iQI+ZXwldE+rzasvbJiyV/ju1FGHH0Qn2W3FKbuYtqp8LKcy6iSw79fVUT5/Vvf+0XgLCeYVG+UV6hOw==}
@@ -5256,7 +5256,7 @@ snapshots:
     dependencies:
       solid-js: 1.8.18
 
-  '@solidjs/start@1.0.2(rollup@4.18.0)(solid-js@1.8.18)(vinxi@0.3.12(@opentelemetry/api@1.9.0)(@types/node@20.14.8)(ioredis@5.4.1)(terser@5.31.1))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
+  '@solidjs/start@1.0.4(rollup@4.18.0)(solid-js@1.8.18)(vinxi@0.3.12(@opentelemetry/api@1.9.0)(@types/node@20.14.8)(ioredis@5.4.1)(terser@5.31.1))(vite@5.3.1(@types/node@20.14.8)(terser@5.31.1))':
     dependencies:
       '@vinxi/plugin-directives': 0.3.1(vinxi@0.3.12(@opentelemetry/api@1.9.0)(@types/node@20.14.8)(ioredis@5.4.1)(terser@5.31.1))
       '@vinxi/server-components': 0.3.3(vinxi@0.3.12(@opentelemetry/api@1.9.0)(@types/node@20.14.8)(ioredis@5.4.1)(terser@5.31.1))
