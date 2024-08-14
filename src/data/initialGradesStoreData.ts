@@ -1,7 +1,7 @@
 import { type StudentGrades } from "~/types/models/GradeStoreModels"
 
 export const initialGradesStoreData = {
-  version: "2.0.18", // x-release-please-version
+  version: "2.0.19", // x-release-please-version
   name: "",
   tpi: null,
   info: {
