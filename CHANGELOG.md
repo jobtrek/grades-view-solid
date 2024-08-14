@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.0.19](https://github.com/jobtrek/grades-view-solid/compare/v2.0.18...v2.0.19) (2024-08-14)
+
+
+### Build System
+
+* **deps-dev:** bump @typescript-eslint/eslint-plugin ([#210](https://github.com/jobtrek/grades-view-solid/issues/210)) ([7746877](https://github.com/jobtrek/grades-view-solid/commit/7746877e0f8927c38c39ce294d62c3a0d82bbf7c))
+* **deps-dev:** bump prettier from 3.3.2 to 3.3.3 ([#203](https://github.com/jobtrek/grades-view-solid/issues/203)) ([741f0e7](https://github.com/jobtrek/grades-view-solid/commit/741f0e7950ae2e1c0184d527d188a5726967ed44))
+* **deps:** bump @solidjs/start from 1.0.2 to 1.0.6 ([#204](https://github.com/jobtrek/grades-view-solid/issues/204)) ([2e05cd6](https://github.com/jobtrek/grades-view-solid/commit/2e05cd69eb374c34271934cfb1228bc1704c4951))
+
 ## [2.0.18](https://github.com/jobtrek/grades-view-solid/compare/v2.0.17...v2.0.18) (2024-07-09)
 
 
