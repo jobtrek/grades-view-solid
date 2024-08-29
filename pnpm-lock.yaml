@@ -36,8 +36,8 @@ importers:
         specifier: ^1.8.18
         version: 1.8.18
       valibot:
-        specifier: ^0.36.0
-        version: 0.36.0
+        specifier: ^0.39.0
+        version: 0.39.0(typescript@5.5.2)
       vinxi:
         specifier: 0.3.12
         version: 0.3.12(@opentelemetry/api@1.9.0)(@types/node@20.14.8)(ioredis@5.4.1)(terser@5.31.1)
@@ -4206,11 +4206,16 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  valibot@0.35.0:
-    resolution: {integrity: sha512-+i2aCRkReTrd5KBN/dW2BrPOvFnU5LXTV2xjZnjnqUIO8YUx6P2+MgRrkwF2FhkexgyKq/NIZdPdknhHf5A/Ww==}
-
   valibot@0.36.0:
     resolution: {integrity: sha512-CjF1XN4sUce8sBK9TixrDqFM7RwNkuXdJu174/AwmQUB62QbCQADg5lLe8ldBalFgtj1uKj+pKwDJiNo4Mn+eQ==}
+
+  valibot@0.39.0:
+    resolution: {integrity: sha512-d+vE8SDRNy9zKg6No5MHz2tdz8H6CW8X3OdqYdmlhnoqQmEoM6Hu0hJUrZv3tPSVrzZkIIMCtdCQtMzcM6NCWw==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   validate-html-nesting@1.2.2:
     resolution: {integrity: sha512-hGdgQozCsQJMyfK5urgFcWEqsSSrK63Awe0t/IMR0bZ0QMtnuaiHzThW81guu3qx9abLi99NEuiaN6P9gVYsNg==}
@@ -4837,7 +4842,7 @@ snapshots:
   '@modular-forms/solid@0.22.1(solid-js@1.8.18)':
     dependencies:
       solid-js: 1.8.18
-      valibot: 0.35.0
+      valibot: 0.36.0
 
   '@netlify/functions@2.8.0(@opentelemetry/api@1.9.0)':
     dependencies:
@@ -8845,9 +8850,11 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  valibot@0.35.0: {}
-
   valibot@0.36.0: {}
+
+  valibot@0.39.0(typescript@5.5.2):
+    optionalDependencies:
+      typescript: 5.5.2
 
   validate-html-nesting@1.2.2: {}
 
