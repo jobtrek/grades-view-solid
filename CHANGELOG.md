@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [2.0.20](https://github.com/jobtrek/grades-view-solid/compare/v2.0.19...v2.0.20) (2024-08-29)
+
+
+### Build System
+
+* **deps-dev:** bump @eslint/js from 9.6.0 to 9.9.0 ([#215](https://github.com/jobtrek/grades-view-solid/issues/215)) ([bedba60](https://github.com/jobtrek/grades-view-solid/commit/bedba6042a6ff148dfb8198f6d4aeda404ebc03a))
+* **deps-dev:** bump eslint-plugin-promise from 6.4.0 to 7.1.0 ([#217](https://github.com/jobtrek/grades-view-solid/issues/217)) ([1ed0215](https://github.com/jobtrek/grades-view-solid/commit/1ed02153ca0eb49d31b9dcb357762ed0728aefa6))
+* **deps-dev:** bump globals from 15.8.0 to 15.9.0 ([#220](https://github.com/jobtrek/grades-view-solid/issues/220)) ([08329e3](https://github.com/jobtrek/grades-view-solid/commit/08329e35a553bea59ffd9e9f0faa1694f6512079))
+* **deps-dev:** bump typescript from 5.5.2 to 5.5.4 ([#221](https://github.com/jobtrek/grades-view-solid/issues/221)) ([49c4af3](https://github.com/jobtrek/grades-view-solid/commit/49c4af309768030da80d672f0ca044decdc8f6a3))
+* **deps:** bump @solid-primitives/storage from 3.7.1 to 4.0.0 ([#216](https://github.com/jobtrek/grades-view-solid/issues/216)) ([c2b3116](https://github.com/jobtrek/grades-view-solid/commit/c2b3116f153e6a29ad1bd604824a878ac50fb5a0))
+* **deps:** bump valibot from 0.36.0 to 0.39.0 ([#222](https://github.com/jobtrek/grades-view-solid/issues/222)) ([4773d19](https://github.com/jobtrek/grades-view-solid/commit/4773d1970d13d3240b2472686339957b8ec6633b))
+
 ## [2.0.19](https://github.com/jobtrek/grades-view-solid/compare/v2.0.18...v2.0.19) (2024-08-14)
 
 
