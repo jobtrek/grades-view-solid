@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.0.21](https://github.com/jobtrek/grades-view-solid/compare/v2.0.20...v2.0.21) (2024-09-03)
+
+
+### Build System
+
+* **deps-dev:** bump @tailwindcss/forms from 0.5.7 to 0.5.8 ([#225](https://github.com/jobtrek/grades-view-solid/issues/225)) ([f648c6b](https://github.com/jobtrek/grades-view-solid/commit/f648c6b74f1e2dc08234febd3f823b14527c0f3d))
+* **deps:** bump @solidjs/router from 0.13.6 to 0.14.3 ([#226](https://github.com/jobtrek/grades-view-solid/issues/226)) ([47e3389](https://github.com/jobtrek/grades-view-solid/commit/47e33899ff57a3245dee28fc340c5de23e6f5859))
+* **deps:** bump valibot from 0.39.0 to 0.41.0 ([#227](https://github.com/jobtrek/grades-view-solid/issues/227)) ([fedf1ef](https://github.com/jobtrek/grades-view-solid/commit/fedf1ef692d6dbd9dc5b34c6cd486782811fde5c))
+
 ## [2.0.20](https://github.com/jobtrek/grades-view-solid/compare/v2.0.19...v2.0.20) (2024-08-29)
 
 
