@@ -1,12 +1,11 @@
 import js from "@eslint/js"
-import solid from "eslint-plugin-solid/configs/typescript.js"
-import * as tsParser from "@typescript-eslint/parser"
+import solid from "eslint-plugin-solid/configs/recommended"
 import eslintConfigPrettier from "eslint-config-prettier"
-import eslintConfigLove from "eslint-config-love"
+// import eslintConfigLove from "eslint-config-love"
 import tseslint from "typescript-eslint"
 import globals from "globals"
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   {
     ignores: [
@@ -24,20 +23,20 @@ export default [
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
-  {
-    files: ["**/*.js", "**/*.ts"],
+  /*   {
+    files: ["**!/!*.js", "**!/!*.ts"],
     languageOptions: {
       globals: {
         ...globals.browser,
       },
     },
     ...eslintConfigLove,
-  },
+  }, */
   {
     files: ["**/*.{ts,tsx}"],
     ...solid,
     languageOptions: {
-      parser: tsParser,
+      parser: tseslint.parser,
       parserOptions: {
         project: "tsconfig.json",
       },
