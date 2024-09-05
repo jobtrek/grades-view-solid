@@ -1,5 +1,5 @@
 import js from "@eslint/js"
-import solid from "eslint-plugin-solid/configs/recommended";
+import solid from "eslint-plugin-solid/configs/recommended"
 import eslintConfigPrettier from "eslint-config-prettier"
 // import eslintConfigLove from "eslint-config-love"
 import tseslint from "typescript-eslint"
@@ -23,7 +23,7 @@ export default [
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
-/*   {
+  /*   {
     files: ["**!/!*.js", "**!/!*.ts"],
     languageOptions: {
       globals: {
