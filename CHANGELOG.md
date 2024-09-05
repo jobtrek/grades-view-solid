@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.22](https://github.com/jobtrek/grades-view-solid/compare/v2.0.21...v2.0.22) (2024-09-05)
+
+
+### Continuous Integration
+
+* update eslint to 9 ([#230](https://github.com/jobtrek/grades-view-solid/issues/230)) ([fdcddaf](https://github.com/jobtrek/grades-view-solid/commit/fdcddaf853785f2ce48a11b8386ff9d1b2df3b36))
+
 ## [2.0.21](https://github.com/jobtrek/grades-view-solid/compare/v2.0.20...v2.0.21) (2024-09-03)
 
 
