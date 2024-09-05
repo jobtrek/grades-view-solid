@@ -1,6 +1,5 @@
 import js from "@eslint/js"
 import solid from "eslint-plugin-solid/configs/typescript.js"
-import * as tsParser from "@typescript-eslint/parser"
 import eslintConfigPrettier from "eslint-config-prettier"
 import eslintConfigLove from "eslint-config-love"
 import tseslint from "typescript-eslint"
@@ -37,7 +36,7 @@ export default [
     files: ["**/*.{ts,tsx}"],
     ...solid,
     languageOptions: {
-      parser: tsParser,
+      parser: tseslint.parser,
       parserOptions: {
         project: "tsconfig.json",
       },
