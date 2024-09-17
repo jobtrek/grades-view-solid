@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@modular-forms/solid':
-        specifier: ^0.22.1
-        version: 0.22.1(solid-js@1.8.22)(typescript@5.5.4)
+        specifier: ^0.23.0
+        version: 0.23.0(solid-js@1.8.22)(typescript@5.5.4)
       '@solid-primitives/storage':
         specifier: ^4.2.0
         version: 4.2.0(solid-js@1.8.22)
@@ -574,8 +574,8 @@ packages:
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
     hasBin: true
 
-  '@modular-forms/solid@0.22.1':
-    resolution: {integrity: sha512-l6p/erp9k5bAFZDLVVLyyFTp+JQsp+wxsmuaT8n7BMllHDDVblkMlerB7PxmwXPnZbB5sTetVu2onzYq6rlMrQ==}
+  '@modular-forms/solid@0.23.0':
+    resolution: {integrity: sha512-6Nb0g01T275iszl96+JI/ozFZk9dD2TYxgFVTacVb9KXP/Yg4HgJnD94eMC70EYogbvcQU4O+XTi/wJhfNLPgg==}
     peerDependencies:
       solid-js: ^1.3.1
 
@@ -1875,6 +1875,7 @@ packages:
   follow-redirects@1.15.8:
     resolution: {integrity: sha512-xgrmBhBToVKay1q2Tao5LI26B83UhrB/vM1avwVSDzt8rx3rO6AizBAaF46EgksTVr+rFTQaqZZ9MVBfUe4nig==}
     engines: {node: '>=4.0'}
+    deprecated: Browser detection issues fixed in v1.15.9
     peerDependencies:
       debug: '*'
     peerDependenciesMeta:
@@ -4071,7 +4072,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@modular-forms/solid@0.22.1(solid-js@1.8.22)(typescript@5.5.4)':
+  '@modular-forms/solid@0.23.0(solid-js@1.8.22)(typescript@5.5.4)':
     dependencies:
       solid-js: 1.8.22
       valibot: 0.41.0(typescript@5.5.4)
