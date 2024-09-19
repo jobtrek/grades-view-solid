@@ -20,7 +20,7 @@
     "postcss": "^8.4.45",
     "solid-js": "^1.8.22",
     "valibot": "^0.42.0",
-    "vinxi": "0.4.2"
+    "vinxi": "0.4.3"
   },
   "engines": {
     "node": ">=20"
