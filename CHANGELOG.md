@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.0.23](https://github.com/jobtrek/grades-view-solid/compare/v2.0.22...v2.0.23) (2024-09-19)
+
+
+### Build System
+
+* **deps-dev:** bump typescript from 5.5.4 to 5.6.2 ([#234](https://github.com/jobtrek/grades-view-solid/issues/234)) ([f9196e7](https://github.com/jobtrek/grades-view-solid/commit/f9196e72cf95b94a217f268ab4e43be1d8913082))
+* **deps:** bump @modular-forms/solid from 0.22.1 to 0.23.0 ([#237](https://github.com/jobtrek/grades-view-solid/issues/237)) ([bff1dfc](https://github.com/jobtrek/grades-view-solid/commit/bff1dfc6298fefb1af10ac26e44fdb7f0c4be4e0))
+* **deps:** bump @solid-primitives/storage from 4.2.0 to 4.2.1 ([#235](https://github.com/jobtrek/grades-view-solid/issues/235)) ([5e665b6](https://github.com/jobtrek/grades-view-solid/commit/5e665b64920a30f5b21d2781e4e4d9e8bc02266c))
+* **deps:** bump valibot from 0.41.0 to 0.42.0 ([#236](https://github.com/jobtrek/grades-view-solid/issues/236)) ([5c42a96](https://github.com/jobtrek/grades-view-solid/commit/5c42a96059e59980c280bb2e3c0ad2110a7f2141))
+* **deps:** bump vinxi from 0.4.2 to 0.4.3 ([#233](https://github.com/jobtrek/grades-view-solid/issues/233)) ([bd1e33e](https://github.com/jobtrek/grades-view-solid/commit/bd1e33ebd9782aaf73892c986a0ebcf10533ec20))
+
 ## [2.0.22](https://github.com/jobtrek/grades-view-solid/compare/v2.0.21...v2.0.22) (2024-09-05)
 
 
