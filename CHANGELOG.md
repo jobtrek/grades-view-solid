@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.0.24](https://github.com/jobtrek/grades-view-solid/compare/v2.0.23...v2.0.24) (2024-09-26)
+
+
+### Build System
+
+* **deps-dev:** bump @tailwindcss/forms from 0.5.8 to 0.5.9 ([#239](https://github.com/jobtrek/grades-view-solid/issues/239)) ([ff89138](https://github.com/jobtrek/grades-view-solid/commit/ff8913855c3cc682ae288942cc078eb31715997e))
+* **deps-dev:** bump eslint from 9.9.1 to 9.11.1 ([#246](https://github.com/jobtrek/grades-view-solid/issues/246)) ([325054e](https://github.com/jobtrek/grades-view-solid/commit/325054e56f2ac24ae67b3ff141e7e2c3cf6a7f34))
+* **deps-dev:** bump typescript-eslint from 8.4.0 to 8.7.0 ([#245](https://github.com/jobtrek/grades-view-solid/issues/245)) ([39e2b8d](https://github.com/jobtrek/grades-view-solid/commit/39e2b8d69f9694ceee555ada0cad10ae24eb9fe3))
+* **deps:** bump @solid-primitives/timer from 1.3.9 to 1.3.10 ([#242](https://github.com/jobtrek/grades-view-solid/issues/242)) ([8b3d755](https://github.com/jobtrek/grades-view-solid/commit/8b3d755ade59f5cc20d87f77ac0c79122bf1706f))
+* **deps:** bump postcss from 8.4.45 to 8.4.47 ([#243](https://github.com/jobtrek/grades-view-solid/issues/243)) ([100b3a1](https://github.com/jobtrek/grades-view-solid/commit/100b3a1d7a8980a539bb6f6da49c3644691d69f1))
+
 ## [2.0.23](https://github.com/jobtrek/grades-view-solid/compare/v2.0.22...v2.0.23) (2024-09-19)
 
 
