@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.0.25](https://github.com/jobtrek/grades-view-solid/compare/v2.0.24...v2.0.25) (2024-10-02)
+
+
+### Build System
+
+* **deps-dev:** bump @eslint/js from 9.9.1 to 9.11.1 ([#247](https://github.com/jobtrek/grades-view-solid/issues/247)) ([cd195eb](https://github.com/jobtrek/grades-view-solid/commit/cd195eb3cd794c6100ec23f612d114e74147b2a5))
+* **deps-dev:** bump eslint-plugin-n from 17.10.2 to 17.10.3 ([#251](https://github.com/jobtrek/grades-view-solid/issues/251)) ([50b03f3](https://github.com/jobtrek/grades-view-solid/commit/50b03f3995c7d9d3ee1c7e43566954b6f25a9596))
+* **deps-dev:** bump tailwindcss from 3.4.10 to 3.4.13 ([#249](https://github.com/jobtrek/grades-view-solid/issues/249)) ([0ce6294](https://github.com/jobtrek/grades-view-solid/commit/0ce629443036fe4ddd68bcd566c8ab6e1dfce54d))
+* **deps:** bump @solidjs/router from 0.14.3 to 0.14.7 ([#248](https://github.com/jobtrek/grades-view-solid/issues/248)) ([91b526f](https://github.com/jobtrek/grades-view-solid/commit/91b526fc6dbaae410a78b2c461189ff9551882e5))
+* **deps:** bump valibot from 0.42.0 to 0.42.1 ([#250](https://github.com/jobtrek/grades-view-solid/issues/250)) ([d2910cb](https://github.com/jobtrek/grades-view-solid/commit/d2910cb03f10ccd261916b50ebc9b7bb3fdaa41c))
+
 ## [2.0.24](https://github.com/jobtrek/grades-view-solid/compare/v2.0.23...v2.0.24) (2024-09-26)
 
 
