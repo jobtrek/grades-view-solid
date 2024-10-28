@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@modular-forms/solid':
-        specifier: ^0.23.0
-        version: 0.23.0(solid-js@1.8.22)(typescript@5.6.2)
+        specifier: ^0.24.1
+        version: 0.24.1(solid-js@1.8.22)(typescript@5.6.2)
       '@solid-primitives/storage':
         specifier: ^4.2.1
         version: 4.2.1(solid-js@1.8.22)
@@ -587,8 +587,8 @@ packages:
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
     hasBin: true
 
-  '@modular-forms/solid@0.23.0':
-    resolution: {integrity: sha512-6Nb0g01T275iszl96+JI/ozFZk9dD2TYxgFVTacVb9KXP/Yg4HgJnD94eMC70EYogbvcQU4O+XTi/wJhfNLPgg==}
+  '@modular-forms/solid@0.24.1':
+    resolution: {integrity: sha512-xQKUoiRZKDjcJ6A+8aZcnRWePL0Ss8RWvlU0mxOggRtqswj8sqnZtXoKpKRxSWr/HODoWCjjze76FAH5jI0uwQ==}
     peerDependencies:
       solid-js: ^1.3.1
 
@@ -3484,6 +3484,14 @@ packages:
       typescript:
         optional: true
 
+  valibot@1.0.0-beta.0:
+    resolution: {integrity: sha512-Q/oine+NPMXdIy3vwluw0vidHLk0mTPUQBRHc+EHZXnEWF3KzLx1YLsVHPVrgHaMGRfV58P9eGOgxJvi0a059w==}
+    peerDependencies:
+      typescript: '>=5'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
   validate-html-nesting@1.2.2:
     resolution: {integrity: sha512-hGdgQozCsQJMyfK5urgFcWEqsSSrK63Awe0t/IMR0bZ0QMtnuaiHzThW81guu3qx9abLi99NEuiaN6P9gVYsNg==}
 
@@ -4054,10 +4062,10 @@ snapshots:
       - encoding
       - supports-color
 
-  '@modular-forms/solid@0.23.0(solid-js@1.8.22)(typescript@5.6.2)':
+  '@modular-forms/solid@0.24.1(solid-js@1.8.22)(typescript@5.6.2)':
     dependencies:
       solid-js: 1.8.22
-      valibot: 0.42.1(typescript@5.6.2)
+      valibot: 1.0.0-beta.0(typescript@5.6.2)
     transitivePeerDependencies:
       - typescript
 
@@ -7121,6 +7129,10 @@ snapshots:
   util-deprecate@1.0.2: {}
 
   valibot@0.42.1(typescript@5.6.2):
+    optionalDependencies:
+      typescript: 5.6.2
+
+  valibot@1.0.0-beta.0(typescript@5.6.2):
     optionalDependencies:
       typescript: 5.6.2
 
