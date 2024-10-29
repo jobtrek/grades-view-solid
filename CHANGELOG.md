@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.0.27](https://github.com/jobtrek/grades-view-solid/compare/v2.0.26...v2.0.27) (2024-10-29)
+
+
+### Build System
+
+* **deps-dev:** bump eslint-plugin-n from 17.10.3 to 17.11.1 ([#271](https://github.com/jobtrek/grades-view-solid/issues/271)) ([37f8037](https://github.com/jobtrek/grades-view-solid/commit/37f803714f3c4816be83a63a312526e5f240758b))
+* **deps-dev:** bump tailwindcss from 3.4.13 to 3.4.14 ([#269](https://github.com/jobtrek/grades-view-solid/issues/269)) ([997f5e1](https://github.com/jobtrek/grades-view-solid/commit/997f5e1a6693490e533b1df4237ebcf2a1796f4b))
+* **deps-dev:** bump typescript from 5.6.2 to 5.6.3 ([#270](https://github.com/jobtrek/grades-view-solid/issues/270)) ([d6ea51c](https://github.com/jobtrek/grades-view-solid/commit/d6ea51cc4a603b61e1e97adbd53b3dbdf57653f2))
+* **deps:** bump @modular-forms/solid from 0.23.0 to 0.24.1 ([#273](https://github.com/jobtrek/grades-view-solid/issues/273)) ([a7e0184](https://github.com/jobtrek/grades-view-solid/commit/a7e0184766c043cd129aba28ea2fec0f9f0ae84b))
+* **deps:** bump @solidjs/router from 0.14.7 to 0.14.10 ([#272](https://github.com/jobtrek/grades-view-solid/issues/272)) ([d24ab74](https://github.com/jobtrek/grades-view-solid/commit/d24ab743fc661c3ba222b4ec8449eddef334e5e4))
+
 ## [2.0.26](https://github.com/jobtrek/grades-view-solid/compare/v2.0.25...v2.0.26) (2024-10-22)
 
 
