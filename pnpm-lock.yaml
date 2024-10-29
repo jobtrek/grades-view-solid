@@ -21,8 +21,8 @@ importers:
         specifier: ^0.29.4
         version: 0.29.4(solid-js@1.8.22)
       '@solidjs/router':
-        specifier: ^0.14.7
-        version: 0.14.7(solid-js@1.8.22)
+        specifier: ^0.14.10
+        version: 0.14.10(solid-js@1.8.22)
       '@solidjs/start':
         specifier: 1.0.9
         version: 1.0.9(solid-js@1.8.22)(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))(vite@5.4.9(@types/node@22.5.4)(terser@5.31.6))
@@ -895,8 +895,8 @@ packages:
     peerDependencies:
       solid-js: '>=1.8.4'
 
-  '@solidjs/router@0.14.7':
-    resolution: {integrity: sha512-agLf8AUz5XnW6+F64a4Iq+QQQobI5zGHQ/gUYd/WHSwcbnFpavbsiwRLob3YhWMXVX3sQyn4ekUN+uchMCRupw==}
+  '@solidjs/router@0.14.10':
+    resolution: {integrity: sha512-5B8LVgvvXijfXyXWPVLUm7RQ05BhjIpAyRkYVDZtrR3OaSvftXobWc6qSEwk4ICLoGi/IE9CUp2LUdCBIs9AXg==}
     peerDependencies:
       solid-js: ^1.8.6
 
@@ -4298,7 +4298,7 @@ snapshots:
     dependencies:
       solid-js: 1.8.22
 
-  '@solidjs/router@0.14.7(solid-js@1.8.22)':
+  '@solidjs/router@0.14.10(solid-js@1.8.22)':
     dependencies:
       solid-js: 1.8.22
 
