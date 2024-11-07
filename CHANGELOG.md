@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.0.28](https://github.com/jobtrek/grades-view-solid/compare/v2.0.27...v2.0.28) (2024-11-07)
+
+
+### Build System
+
+* **deps-dev:** bump @eslint/js from 9.13.0 to 9.14.0 ([#278](https://github.com/jobtrek/grades-view-solid/issues/278)) ([cc8b6e8](https://github.com/jobtrek/grades-view-solid/commit/cc8b6e87e414cec7838d993437f50ef3b5d85dba))
+* **deps-dev:** bump eslint from 9.13.0 to 9.14.0 ([#279](https://github.com/jobtrek/grades-view-solid/issues/279)) ([09371ee](https://github.com/jobtrek/grades-view-solid/commit/09371eeb81c900c3f413948f78e7c859871ab706))
+* **deps-dev:** bump eslint-plugin-n from 17.11.1 to 17.13.0 ([#282](https://github.com/jobtrek/grades-view-solid/issues/282)) ([41069ce](https://github.com/jobtrek/grades-view-solid/commit/41069ce27912fa0fd3c079050d9cb1c1ceb4f5a7))
+* **deps-dev:** bump globals from 15.9.0 to 15.12.0 ([#275](https://github.com/jobtrek/grades-view-solid/issues/275)) ([d0415d8](https://github.com/jobtrek/grades-view-solid/commit/d0415d86e5607a0c2f3cfb69c4610c8935b12053))
+* **deps-dev:** bump typescript-eslint from 8.11.0 to 8.13.0 ([#281](https://github.com/jobtrek/grades-view-solid/issues/281)) ([e973ed5](https://github.com/jobtrek/grades-view-solid/commit/e973ed501627cbeb82752ac928bc4f6ef7cd8f3f))
+
 ## [2.0.27](https://github.com/jobtrek/grades-view-solid/compare/v2.0.26...v2.0.27) (2024-10-29)
 
 
