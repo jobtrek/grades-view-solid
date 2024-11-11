@@ -17,7 +17,7 @@
     "@solidjs/router": "^0.14.10",
     "@solidjs/start": "1.0.9",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
+    "postcss": "^8.4.48",
     "solid-js": "^1.8.22",
     "valibot": "^0.42.1",
     "vinxi": "0.4.3"
