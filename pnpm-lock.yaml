@@ -24,8 +24,8 @@ importers:
         specifier: ^0.14.10
         version: 0.14.10(solid-js@1.9.3)
       '@solidjs/start':
-        specifier: 1.0.9
-        version: 1.0.9(solid-js@1.9.3)(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))(vite@5.4.9(@types/node@22.5.4)(terser@5.31.6))
+        specifier: 1.0.10
+        version: 1.0.10(solid-js@1.9.3)(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))(vite@5.4.9(@types/node@22.5.4)(terser@5.31.6))
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
@@ -910,8 +910,8 @@ packages:
     peerDependencies:
       solid-js: ^1.8.6
 
-  '@solidjs/start@1.0.9':
-    resolution: {integrity: sha512-dZ1b4Oa5gXk95eVxHAj/W+sQIY3yevYeerrxKNWPqwTyzZYvwUwpnU7Ph3sMduo5LnL/USQ66AloLTs2FX94ZA==}
+  '@solidjs/start@1.0.10':
+    resolution: {integrity: sha512-3yg4KraSxc4rXs9dy/3kkqjDhU0JCPsZFLmDl5n6hHRPwtLLac6WUhs2k5VxGzitHaaJM/ZQCfT7i544Mf+4tw==}
 
   '@tailwindcss/forms@0.5.9':
     resolution: {integrity: sha512-tM4XVr2+UVTxXJzey9Twx48c1gcxFStqn1pQz0tRsX8o3DvxhN5oY5pvyAbUx7VTaZxpej4Zzvc6h+1RJBzpIg==}
@@ -4324,7 +4324,7 @@ snapshots:
     dependencies:
       solid-js: 1.9.3
 
-  '@solidjs/start@1.0.9(solid-js@1.9.3)(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))(vite@5.4.9(@types/node@22.5.4)(terser@5.31.6))':
+  '@solidjs/start@1.0.10(solid-js@1.9.3)(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))(vite@5.4.9(@types/node@22.5.4)(terser@5.31.6))':
     dependencies:
       '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))
       '@vinxi/server-components': 0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))
@@ -4534,8 +4534,8 @@ snapshots:
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.11
       '@rollup/pluginutils': 4.2.1
-      acorn: 8.12.1
-      acorn-import-attributes: 1.9.5(acorn@8.12.1)
+      acorn: 8.14.0
+      acorn-import-attributes: 1.9.5(acorn@8.14.0)
       async-sema: 3.1.1
       bindings: 1.5.0
       estree-walker: 2.0.2
@@ -4573,10 +4573,10 @@ snapshots:
   '@vinxi/plugin-directives@0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))':
     dependencies:
       '@babel/parser': 7.25.6
-      acorn: 8.12.1
-      acorn-jsx: 5.3.2(acorn@8.12.1)
+      acorn: 8.14.0
+      acorn-jsx: 5.3.2(acorn@8.14.0)
       acorn-loose: 8.4.0
-      acorn-typescript: 1.4.13(acorn@8.12.1)
+      acorn-typescript: 1.4.13(acorn@8.14.0)
       astring: 1.9.0
       magicast: 0.2.11
       recast: 0.23.9
@@ -4586,9 +4586,9 @@ snapshots:
   '@vinxi/server-components@0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))':
     dependencies:
       '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))
-      acorn: 8.12.1
+      acorn: 8.14.0
       acorn-loose: 8.4.0
-      acorn-typescript: 1.4.13(acorn@8.12.1)
+      acorn-typescript: 1.4.13(acorn@8.14.0)
       astring: 1.9.0
       magicast: 0.2.11
       recast: 0.23.9
@@ -4597,9 +4597,9 @@ snapshots:
   '@vinxi/server-functions@0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))':
     dependencies:
       '@vinxi/plugin-directives': 0.4.3(vinxi@0.4.3(@types/node@22.5.4)(ioredis@5.4.1)(terser@5.31.6)(webpack-sources@3.2.3))
-      acorn: 8.12.1
+      acorn: 8.14.0
       acorn-loose: 8.4.0
-      acorn-typescript: 1.4.13(acorn@8.12.1)
+      acorn-typescript: 1.4.13(acorn@8.14.0)
       astring: 1.9.0
       magicast: 0.2.11
       recast: 0.23.9
@@ -4611,9 +4611,9 @@ snapshots:
     dependencies:
       event-target-shim: 5.0.1
 
-  acorn-import-attributes@1.9.5(acorn@8.12.1):
+  acorn-import-attributes@1.9.5(acorn@8.14.0):
     dependencies:
-      acorn: 8.12.1
+      acorn: 8.14.0
 
   acorn-jsx@5.3.2(acorn@8.12.1):
     dependencies:
@@ -4625,11 +4625,11 @@ snapshots:
 
   acorn-loose@8.4.0:
     dependencies:
-      acorn: 8.12.1
+      acorn: 8.14.0
 
-  acorn-typescript@1.4.13(acorn@8.12.1):
+  acorn-typescript@1.4.13(acorn@8.14.0):
     dependencies:
-      acorn: 8.12.1
+      acorn: 8.14.0
 
   acorn@8.12.1: {}
 
@@ -6083,7 +6083,7 @@ snapshots:
 
   mlly@1.7.1:
     dependencies:
-      acorn: 8.12.1
+      acorn: 8.14.0
       pathe: 1.1.2
       pkg-types: 1.2.0
       ufo: 1.5.4
@@ -6975,7 +6975,7 @@ snapshots:
   terser@5.31.6:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.12.1
+      acorn: 8.14.0
       commander: 2.20.3
       source-map-support: 0.5.21
 
@@ -7081,7 +7081,7 @@ snapshots:
   unimport@3.11.1(rollup@4.24.0)(webpack-sources@3.2.3):
     dependencies:
       '@rollup/pluginutils': 5.1.0(rollup@4.24.0)
-      acorn: 8.12.1
+      acorn: 8.14.0
       escape-string-regexp: 5.0.0
       estree-walker: 3.0.3
       fast-glob: 3.3.2
@@ -7101,7 +7101,7 @@ snapshots:
 
   unplugin@1.13.1(webpack-sources@3.2.3):
     dependencies:
-      acorn: 8.12.1
+      acorn: 8.14.0
       webpack-virtual-modules: 0.6.2
     optionalDependencies:
       webpack-sources: 3.2.3
