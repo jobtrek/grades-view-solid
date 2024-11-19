@@ -1,6 +1,22 @@
 # Changelog
 
 
+## [2.0.30](https://github.com/jobtrek/grades-view-solid/compare/v2.0.29...v2.0.30) (2024-11-19)
+
+
+### Miscellaneous Chores
+
+* update eslint to v9.15.0 ([#298](https://github.com/jobtrek/grades-view-solid/issues/298)) ([5b1674e](https://github.com/jobtrek/grades-view-solid/commit/5b1674efa84eb3b34484ef71b978cb6ab12ffe1b))
+
+
+### Build System
+
+* **deps-dev:** bump eslint-plugin-n from 17.13.1 to 17.13.2 ([#294](https://github.com/jobtrek/grades-view-solid/issues/294)) ([ac3ebd4](https://github.com/jobtrek/grades-view-solid/commit/ac3ebd481474df56fe961aa09dce6da339c2f659))
+* **deps-dev:** bump eslint-plugin-solid from 0.14.3 to 0.14.4 ([#293](https://github.com/jobtrek/grades-view-solid/issues/293)) ([c7a23bf](https://github.com/jobtrek/grades-view-solid/commit/c7a23bfd9cf3389b273bbf1a398645954be0ef35))
+* **deps-dev:** bump typescript-eslint from 8.13.0 to 8.14.0 ([#296](https://github.com/jobtrek/grades-view-solid/issues/296)) ([9affbea](https://github.com/jobtrek/grades-view-solid/commit/9affbeac2b3308e6110483a546dec43e2d9df1a9))
+* **deps:** bump @eslint/plugin-kit from 0.2.0 to 0.2.3 ([#290](https://github.com/jobtrek/grades-view-solid/issues/290)) ([f99b170](https://github.com/jobtrek/grades-view-solid/commit/f99b17014d38dee9744575d896f1bc9bda580fc2))
+* **deps:** bump cross-spawn from 7.0.3 to 7.0.6 ([#297](https://github.com/jobtrek/grades-view-solid/issues/297)) ([fe4c18b](https://github.com/jobtrek/grades-view-solid/commit/fe4c18bb845fd66a00066c0d1d49e19e2fbeec46))
+
 ## [2.0.29](https://github.com/jobtrek/grades-view-solid/compare/v2.0.28...v2.0.29) (2024-11-14)
 
 
