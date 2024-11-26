@@ -35,7 +35,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.15.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-n": "^17.13.2",
+    "eslint-plugin-n": "^17.14.0",
     "eslint-plugin-promise": "^7.1.0",
     "eslint-plugin-solid": "^0.14.4",
     "globals": "^15.12.0",
