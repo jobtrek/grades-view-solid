@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.0.31](https://github.com/jobtrek/grades-view-solid/compare/v2.0.30...v2.0.31) (2024-11-26)
+
+
+### Build System
+
+* **deps-dev:** bump eslint-plugin-n from 17.13.2 to 17.14.0 ([#300](https://github.com/jobtrek/grades-view-solid/issues/300)) ([8f9634e](https://github.com/jobtrek/grades-view-solid/commit/8f9634e427bef4e182e501808714edb449a2bfb2))
+* **deps-dev:** bump typescript from 5.6.3 to 5.7.2 ([#299](https://github.com/jobtrek/grades-view-solid/issues/299)) ([a09e3d5](https://github.com/jobtrek/grades-view-solid/commit/a09e3d5690b95c0b98500802f71bc46acda8b34a))
+* **deps:** bump @modular-forms/solid from 0.24.1 to 0.25.0 ([#301](https://github.com/jobtrek/grades-view-solid/issues/301)) ([4da222f](https://github.com/jobtrek/grades-view-solid/commit/4da222f96560d7a91429b6a9972a4391ab32f610))
+
 ## [2.0.30](https://github.com/jobtrek/grades-view-solid/compare/v2.0.29...v2.0.30) (2024-11-19)
 
 
