@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.0.33](https://github.com/jobtrek/grades-view-solid/compare/v2.0.32...v2.0.33) (2024-12-12)
+
+
+### Build System
+
+* **deps-dev:** bump prettier from 3.3.3 to 3.4.2 ([#310](https://github.com/jobtrek/grades-view-solid/issues/310)) ([15ea4ff](https://github.com/jobtrek/grades-view-solid/commit/15ea4ff0f5101b92bec0fa99ecb7ae4ddfdf3ee1))
+* **deps-dev:** bump tailwindcss from 3.4.15 to 3.4.16 ([#311](https://github.com/jobtrek/grades-view-solid/issues/311)) ([619690b](https://github.com/jobtrek/grades-view-solid/commit/619690bd3e4593ac63bd75317a3e87afb4bd5401))
+* **deps:** bump nanoid from 3.3.7 to 3.3.8 ([#313](https://github.com/jobtrek/grades-view-solid/issues/313)) ([28eee3d](https://github.com/jobtrek/grades-view-solid/commit/28eee3d7c8ab66ac8e33d785ced1b415516f4e91))
+
 ## [2.0.32](https://github.com/jobtrek/grades-view-solid/compare/v2.0.31...v2.0.32) (2024-12-06)
 
 
