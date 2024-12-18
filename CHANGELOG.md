@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.0.34](https://github.com/jobtrek/grades-view-solid/compare/v2.0.33...v2.0.34) (2024-12-18)
+
+
+### Build System
+
+* **deps-dev:** bump @eslint/js from 9.16.0 to 9.17.0 ([#314](https://github.com/jobtrek/grades-view-solid/issues/314)) ([cdef9ec](https://github.com/jobtrek/grades-view-solid/commit/cdef9ec983b7e9f467e6f781f7568d019ee336da))
+* **deps-dev:** bump eslint from 9.16.0 to 9.17.0 ([#315](https://github.com/jobtrek/grades-view-solid/issues/315)) ([9171477](https://github.com/jobtrek/grades-view-solid/commit/9171477c12ff2478fd4c72f6e4267e9bb582489b))
+* **deps-dev:** bump eslint-plugin-n from 17.14.0 to 17.15.0 ([#317](https://github.com/jobtrek/grades-view-solid/issues/317)) ([bb4857a](https://github.com/jobtrek/grades-view-solid/commit/bb4857aefdd9fc041ed9e830ea5e863bd7570faa))
+* **deps-dev:** bump eslint-plugin-solid from 0.14.4 to 0.14.5 ([#316](https://github.com/jobtrek/grades-view-solid/issues/316)) ([1a3fc66](https://github.com/jobtrek/grades-view-solid/commit/1a3fc663105b58e60f93fb2f73b060d8e8d23b72))
+* **deps:** bump @solidjs/router from 0.15.1 to 0.15.2 ([#318](https://github.com/jobtrek/grades-view-solid/issues/318)) ([f7e8571](https://github.com/jobtrek/grades-view-solid/commit/f7e85716a25256d44986e0ffe46c5474baa52289))
+
 ## [2.0.33](https://github.com/jobtrek/grades-view-solid/compare/v2.0.32...v2.0.33) (2024-12-12)
 
 
