@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.0.35](https://github.com/jobtrek/grades-view-solid/compare/v2.0.34...v2.0.35) (2025-01-05)
+
+
+### Build System
+
+* **deps-dev:** bump eslint-plugin-n from 17.15.0 to 17.15.1 ([#320](https://github.com/jobtrek/grades-view-solid/issues/320)) ([3e66786](https://github.com/jobtrek/grades-view-solid/commit/3e667868b22846f472d1d7a22a167f033d9da3fc))
+* **deps-dev:** bump globals from 15.13.0 to 15.14.0 ([#321](https://github.com/jobtrek/grades-view-solid/issues/321)) ([b5ab7fc](https://github.com/jobtrek/grades-view-solid/commit/b5ab7fcbffa4be54d53304f4b329a2bf7c0e1221))
+* **deps-dev:** bump tailwindcss from 3.4.16 to 3.4.17 ([#323](https://github.com/jobtrek/grades-view-solid/issues/323)) ([c6ce22c](https://github.com/jobtrek/grades-view-solid/commit/c6ce22cb03e8d81914e6f481236e7bc32a673d79))
+* **deps-dev:** bump typescript-eslint from 8.17.0 to 8.18.2 ([#324](https://github.com/jobtrek/grades-view-solid/issues/324)) ([73ecc50](https://github.com/jobtrek/grades-view-solid/commit/73ecc5050d237ffb5f849140ab6fa14eaa8f5410))
+
 ## [2.0.34](https://github.com/jobtrek/grades-view-solid/compare/v2.0.33...v2.0.34) (2024-12-18)
 
 
