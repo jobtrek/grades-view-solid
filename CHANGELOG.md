@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.0.36](https://github.com/jobtrek/grades-view-solid/compare/v2.0.35...v2.0.36) (2025-01-06)
+
+
+### Build System
+
+* **deps-dev:** bump typescript-eslint from 8.18.2 to 8.19.0 ([#326](https://github.com/jobtrek/grades-view-solid/issues/326)) ([dd71f01](https://github.com/jobtrek/grades-view-solid/commit/dd71f0141d8690defd5a8440b2e98a79a5d0d405))
+
 ## [2.0.35](https://github.com/jobtrek/grades-view-solid/compare/v2.0.34...v2.0.35) (2025-01-05)
 
 
