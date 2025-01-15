@@ -49,8 +49,8 @@ importers:
         specifier: ^9.18.0
         version: 9.18.0
       '@tailwindcss/forms':
-        specifier: ^0.5.9
-        version: 0.5.9(tailwindcss@3.4.17)
+        specifier: ^0.5.10
+        version: 0.5.10(tailwindcss@3.4.17)
       '@types/eslint__js':
         specifier: ^8.42.3
         version: 8.42.3
@@ -1069,10 +1069,10 @@ packages:
   '@solidjs/start@1.0.10':
     resolution: {integrity: sha512-3yg4KraSxc4rXs9dy/3kkqjDhU0JCPsZFLmDl5n6hHRPwtLLac6WUhs2k5VxGzitHaaJM/ZQCfT7i544Mf+4tw==}
 
-  '@tailwindcss/forms@0.5.9':
-    resolution: {integrity: sha512-tM4XVr2+UVTxXJzey9Twx48c1gcxFStqn1pQz0tRsX8o3DvxhN5oY5pvyAbUx7VTaZxpej4Zzvc6h+1RJBzpIg==}
+  '@tailwindcss/forms@0.5.10':
+    resolution: {integrity: sha512-utI1ONF6uf/pPNO68kmN1b8rEwNXv3czukalo8VtJH8ksIkZXr3Q3VYudZLkCsDd4Wku120uF02hYK25XGPorw==}
     peerDependencies:
-      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || >= 4.0.0-alpha.20'
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || >= 4.0.0-alpha.20 || >= 4.0.0-beta.1'
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -4615,7 +4615,7 @@ snapshots:
       - vinxi
       - vite
 
-  '@tailwindcss/forms@0.5.9(tailwindcss@3.4.17)':
+  '@tailwindcss/forms@0.5.10(tailwindcss@3.4.17)':
     dependencies:
       mini-svg-data-uri: 1.4.4
       tailwindcss: 3.4.17
