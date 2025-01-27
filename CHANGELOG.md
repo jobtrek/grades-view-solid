@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.0.38](https://github.com/jobtrek/grades-view-solid/compare/v2.0.37...v2.0.38) (2025-01-27)
+
+
+### Build System
+
+* **deps-dev:** bump eslint-config-prettier from 9.1.0 to 10.0.1 ([#339](https://github.com/jobtrek/grades-view-solid/issues/339)) ([ab02654](https://github.com/jobtrek/grades-view-solid/commit/ab02654c496f1f088164c8285637b21ee6cec2ff))
+* **deps:** bump @solidjs/router from 0.15.2 to 0.15.3 ([#337](https://github.com/jobtrek/grades-view-solid/issues/337)) ([7361a4e](https://github.com/jobtrek/grades-view-solid/commit/7361a4e8d73f3d300c5571b4dd760a1ecc888c77))
+* **deps:** bump @solidjs/start from 1.0.10 to 1.0.11 ([#336](https://github.com/jobtrek/grades-view-solid/issues/336)) ([f13d8c1](https://github.com/jobtrek/grades-view-solid/commit/f13d8c1e44a67f4fc1402c1658d42c3f39608ea0))
+* **deps:** bump postcss from 8.4.49 to 8.5.1 ([#338](https://github.com/jobtrek/grades-view-solid/issues/338)) ([847a378](https://github.com/jobtrek/grades-view-solid/commit/847a37870db4343fd6f7137a57b75e25d17df750))
+* **deps:** bump solid-js from 1.9.3 to 1.9.4 ([#335](https://github.com/jobtrek/grades-view-solid/issues/335)) ([efb9b55](https://github.com/jobtrek/grades-view-solid/commit/efb9b5527617cd5a44ea168e6bddad9fcc31ba2f))
+
 ## [2.0.37](https://github.com/jobtrek/grades-view-solid/compare/v2.0.36...v2.0.37) (2025-01-15)
 
 
