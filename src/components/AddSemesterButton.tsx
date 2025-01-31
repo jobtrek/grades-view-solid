@@ -13,7 +13,7 @@ export const AddSemesterButton: Component<Props> = (props) => {
       <button
         onClick={handleClick}
         type="button"
-        class="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-4 text-center hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        class="relative block w-full rounded-lg border-2 border-dashed border-gray-300 p-4 text-center hover:border-gray-400 focus:outline-hidden focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
       >
         <svg
           class="mx-auto h-8 w-8 text-gray-400"

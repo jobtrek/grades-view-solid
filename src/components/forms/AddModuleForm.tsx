@@ -89,8 +89,8 @@ export const AddModuleForm: Component<Props> = (props) => {
                 >
                   Note
                 </label>
-                <div class="mt-2 flex rounded-md shadow-sm">
-                  <div class="relative flex flex-grow items-stretch focus-within:z-10">
+                <div class="mt-2 flex rounded-md shadow-xs">
+                  <div class="relative flex grow items-stretch focus-within:z-10">
                     <input
                       {...props}
                       type="number"

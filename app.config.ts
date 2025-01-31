@@ -4,6 +4,7 @@ export default defineConfig({
   server: {
     preset: "github-pages",
     baseURL: "/grades-view-solid/",
+    compatibilityDate: "2024-11-01",
     compressPublicAssets: {
       brotli: false,
       gzip: false,

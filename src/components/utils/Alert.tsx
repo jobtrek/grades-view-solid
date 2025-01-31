@@ -35,7 +35,7 @@ export const Alert = <T extends Record<string, string>>(
   return (
     <div class={`rounded-md p-4 ${colors()[0]}`}>
       <div class="flex">
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <svg
             class={`h-5 w-5 ${colors()[1]}`}
             viewBox="0 0 20 20"

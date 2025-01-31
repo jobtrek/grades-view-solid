@@ -23,7 +23,7 @@ export const AveragesSection: VoidComponent = () => {
         <h2 class="sr-only" id="section-2-title">
           Averages
         </h2>
-        <div class="overflow-hidden rounded-lg bg-white shadow">
+        <div class="overflow-hidden rounded-lg bg-white shadow-sm">
           <dl class="mx-auto grid grid-cols-1 gap-px bg-gray-900/5 sm:grid-cols-2 lg:grid-cols-2">
             <SuccessItem
               large={true}
