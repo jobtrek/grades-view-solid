@@ -38,8 +38,8 @@ export const GradeInput: Component<Props> = (props) => {
             <label for={field.name} class="sr-only">
               Add grade
             </label>
-            <div class="flex rounded-md shadow-sm">
-              <div class="relative flex flex-grow items-stretch focus-within:z-10">
+            <div class="flex rounded-md shadow-xs">
+              <div class="relative flex grow items-stretch focus-within:z-10">
                 <input
                   {...props}
                   type="number"

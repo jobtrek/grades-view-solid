@@ -152,7 +152,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
           id={props.name}
           placeholder={props.placeholder}
           type="text"
-          class="w-full rounded-md border-0 bg-white py-1.5 pl-3 pr-12 shadow-sm ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+          class="w-full rounded-md border-0 bg-white py-1.5 pl-3 pr-12 shadow-xs ring-1 ring-inset focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
           classList={{
             "text-red-900 ring-red-300 placeholder:text-red-300 focus:ring-red-500":
               props.error !== "",
@@ -169,7 +169,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
           onClick={handleButtonClick}
           onBlur={() => toggleCombobox(false)}
           type="button"
-          class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-none"
+          class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-2 focus:outline-hidden"
         >
           <svg
             class="h-5 w-5 text-gray-400"
@@ -189,7 +189,7 @@ export const AutocompleteComboBox: Component<AutocompleteComboBoxProps> = (
           <ul
             onMouseEnter={() => setMouseIsOverOptions(true)}
             onMouseLeave={() => setMouseIsOverOptions(false)}
-            class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm"
+            class="absolute z-10 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden sm:text-sm"
             id="options"
             role="listbox"
           >

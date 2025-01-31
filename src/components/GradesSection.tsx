@@ -24,7 +24,7 @@ export const GradesSection: VoidComponent<Props> = (props) => {
       <h2 class="sr-only" id="section-1-title">
         {props.title}
       </h2>
-      <div class="overflow-hidden rounded-lg bg-white shadow">
+      <div class="overflow-hidden rounded-lg bg-white shadow-sm">
         <div class="p-6">
           <div class="md:flex md:items-center md:justify-between">
             <div class="min-w-0 flex-1">

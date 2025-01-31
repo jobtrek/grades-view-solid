@@ -7,7 +7,7 @@ export default function (): JSX.Element {
     <div class="grid grid-cols-1 items-start">
       <div class="grid grid-cols-1 gap-4">
         <section aria-labelledby="section-1-title">
-          <div class="overflow-hidden rounded-lg bg-white shadow">
+          <div class="overflow-hidden rounded-lg bg-white shadow-sm">
             <div class="px-6 py-12 text-center">
               <Title>404 - Not found</Title>
               <p class="text-base font-semibold text-blue-600">404</p>
@@ -20,7 +20,7 @@ export default function (): JSX.Element {
               <div class="mt-10 flex items-center justify-center gap-x-6">
                 <A
                   href="/"
-                  class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Page d'accueil
                 </A>
