@@ -47,7 +47,7 @@ importers:
         version: 9.19.0
       '@tailwindcss/forms':
         specifier: ^0.5.10
-        version: 0.5.10(tailwindcss@4.0.3)
+        version: 0.5.10(tailwindcss@4.0.5)
       '@tailwindcss/postcss':
         specifier: ^4.0.3
         version: 4.0.3
@@ -85,8 +85,8 @@ importers:
         specifier: ^3.4.2
         version: 3.4.2
       tailwindcss:
-        specifier: ^4.0.3
-        version: 4.0.3
+        specifier: ^4.0.5
+        version: 4.0.5
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -3458,6 +3458,9 @@ packages:
   tailwindcss@4.0.3:
     resolution: {integrity: sha512-ImmZF0Lon5RrQpsEAKGxRvHwCvMgSC4XVlFRqmbzTEDb/3wvin9zfEZrMwgsa3yqBbPqahYcVI6lulM2S7IZAA==}
 
+  tailwindcss@4.0.5:
+    resolution: {integrity: sha512-DZZIKX3tA23LGTjHdnwlJOTxfICD1cPeykLLsYF1RQBI9QsCR3i0szohJfJDVjr6aNRAIio5WVO7FGB77fRHwg==}
+
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
     engines: {node: '>=6'}
@@ -4621,10 +4624,10 @@ snapshots:
       - vinxi
       - vite
 
-  '@tailwindcss/forms@0.5.10(tailwindcss@4.0.3)':
+  '@tailwindcss/forms@0.5.10(tailwindcss@4.0.5)':
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 4.0.3
+      tailwindcss: 4.0.5
 
   '@tailwindcss/node@4.0.3':
     dependencies:
@@ -7202,6 +7205,8 @@ snapshots:
   system-architecture@0.1.0: {}
 
   tailwindcss@4.0.3: {}
+
+  tailwindcss@4.0.5: {}
 
   tapable@2.2.1: {}
 
