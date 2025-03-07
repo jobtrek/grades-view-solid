@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.1.4](https://github.com/jobtrek/grades-view-solid/compare/v2.1.3...v2.1.4) (2025-03-07)
+
+
+### Build System
+
+* **deps-dev:** bump @eslint/js and @types/eslint__js ([#369](https://github.com/jobtrek/grades-view-solid/issues/369)) ([c5ee2fe](https://github.com/jobtrek/grades-view-solid/commit/c5ee2fed399114143bc2f84be5fa830c258f9763))
+* **deps-dev:** bump eslint-config-prettier from 10.0.1 to 10.0.2 ([#372](https://github.com/jobtrek/grades-view-solid/issues/372)) ([0bfc994](https://github.com/jobtrek/grades-view-solid/commit/0bfc99461228908150363b6b116c3eb5ab22a704))
+* **deps-dev:** bump eslint-plugin-n from 17.15.1 to 17.16.2 ([#374](https://github.com/jobtrek/grades-view-solid/issues/374)) ([e4470eb](https://github.com/jobtrek/grades-view-solid/commit/e4470ebb8368daaa68a268a4f252df061579a334))
+* **deps-dev:** bump prettier from 3.5.2 to 3.5.3 ([#371](https://github.com/jobtrek/grades-view-solid/issues/371)) ([585febd](https://github.com/jobtrek/grades-view-solid/commit/585febda0a5d5f72e09c84d06bc8702c11b9a213))
+* **deps-dev:** bump tailwindcss from 4.0.6 to 4.0.11 ([#375](https://github.com/jobtrek/grades-view-solid/issues/375)) ([6bcdb40](https://github.com/jobtrek/grades-view-solid/commit/6bcdb40467f90d7a2b55232628f94fff4c7ba437))
+
 ## [2.1.3](https://github.com/jobtrek/grades-view-solid/compare/v2.1.2...v2.1.3) (2025-02-27)
 
 
