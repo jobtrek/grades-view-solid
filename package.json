@@ -10,7 +10,7 @@
     "prettier:format": "prettier . --write \"**/*.{ts,tsx,js,jsx,md,mdx,css,yaml}\""
   },
   "dependencies": {
-    "@modular-forms/solid": "^0.25.0",
+    "@modular-forms/solid": "^0.25.1",
     "@solid-primitives/storage": "^4.3.1",
     "@solid-primitives/timer": "^1.4.0",
     "@solidjs/meta": "^0.29.4",
