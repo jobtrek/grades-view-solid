@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.1.6](https://github.com/jobtrek/grades-view-solid/compare/v2.1.5...v2.1.6) (2025-04-04)
+
+
+### Build System
+
+* **deps-dev:** bump eslint-plugin-n from 17.16.2 to 17.17.0 ([#386](https://github.com/jobtrek/grades-view-solid/issues/386)) ([6a2548b](https://github.com/jobtrek/grades-view-solid/commit/6a2548bda58ce92c66fc8d752b4d7ff6d9c640c9))
+* **deps-dev:** bump tailwindcss from 4.0.11 to 4.0.17 ([#389](https://github.com/jobtrek/grades-view-solid/issues/389)) ([9f06fd6](https://github.com/jobtrek/grades-view-solid/commit/9f06fd6a787282d29911226769e09fd36082a92c))
+* **deps-dev:** bump typescript-eslint from 8.25.0 to 8.28.0 ([#387](https://github.com/jobtrek/grades-view-solid/issues/387)) ([f722b7d](https://github.com/jobtrek/grades-view-solid/commit/f722b7d0c811eb4e4595a61e49124ec084b09e50))
+* **deps:** bump @modular-forms/solid from 0.25.0 to 0.25.1 ([#385](https://github.com/jobtrek/grades-view-solid/issues/385)) ([3f4950c](https://github.com/jobtrek/grades-view-solid/commit/3f4950ce340ba4622121177262b2e1260a34a7b5))
+* **deps:** bump valibot from 0.42.1 to 1.0.0 ([#388](https://github.com/jobtrek/grades-view-solid/issues/388)) ([2c896d1](https://github.com/jobtrek/grades-view-solid/commit/2c896d1470528124d916f95bb997872512feab97))
+
 ## [2.1.5](https://github.com/jobtrek/grades-view-solid/compare/v2.1.4...v2.1.5) (2025-03-27)
 
 
