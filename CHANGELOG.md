@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.1.7](https://github.com/jobtrek/grades-view-solid/compare/v2.1.6...v2.1.7) (2025-04-10)
+
+
+### Build System
+
+* **deps-dev:** bump @eslint/js from 9.23.0 to 9.24.0 ([#394](https://github.com/jobtrek/grades-view-solid/issues/394)) ([ebecb9c](https://github.com/jobtrek/grades-view-solid/commit/ebecb9c6c9de096855ae6c7338ffb58d7d32916d))
+* **deps-dev:** bump @tailwindcss/postcss from 4.0.6 to 4.1.3 ([#391](https://github.com/jobtrek/grades-view-solid/issues/391)) ([badcebb](https://github.com/jobtrek/grades-view-solid/commit/badcebbbbc96dea062fc26347df262b457720a0a))
+* **deps-dev:** bump eslint from 9.23.0 to 9.24.0 ([#393](https://github.com/jobtrek/grades-view-solid/issues/393)) ([e9f35c2](https://github.com/jobtrek/grades-view-solid/commit/e9f35c270f31324fbb27fc4c38d339be26d6e172))
+* **deps-dev:** bump tailwindcss from 4.1.2 to 4.1.3 ([#392](https://github.com/jobtrek/grades-view-solid/issues/392)) ([961c6f6](https://github.com/jobtrek/grades-view-solid/commit/961c6f6f27ba217e66d3c16f58ba2937b8133226))
+
 ## [2.1.6](https://github.com/jobtrek/grades-view-solid/compare/v2.1.5...v2.1.6) (2025-04-04)
 
 
