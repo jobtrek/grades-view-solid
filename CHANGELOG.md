@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.1.10](https://github.com/jobtrek/grades-view-solid/compare/v2.1.9...v2.1.10) (2025-05-14)
+
+
+### Build System
+
+* **deps-dev:** bump eslint-config-prettier from 10.1.2 to 10.1.5 ([#411](https://github.com/jobtrek/grades-view-solid/issues/411)) ([1363543](https://github.com/jobtrek/grades-view-solid/commit/1363543b7ae8beadcaacd8110ca6ec0941087896))
+* **deps-dev:** bump eslint-plugin-n from 17.17.0 to 17.18.0 ([#413](https://github.com/jobtrek/grades-view-solid/issues/413)) ([eac6d41](https://github.com/jobtrek/grades-view-solid/commit/eac6d419c212933310ff6f66f4807173bb6f6ab4))
+* **deps-dev:** bump typescript-eslint from 8.31.1 to 8.32.0 ([#414](https://github.com/jobtrek/grades-view-solid/issues/414)) ([3e26b5e](https://github.com/jobtrek/grades-view-solid/commit/3e26b5e36481f4ff08037bd9e8db89a0ba561a60))
+* **deps:** bump @solid-primitives/timer from 1.4.0 to 1.4.1 ([#415](https://github.com/jobtrek/grades-view-solid/issues/415)) ([9bb9e3f](https://github.com/jobtrek/grades-view-solid/commit/9bb9e3f23e103b400f0499eb02168df80fd90a51))
+* **deps:** bump valibot from 1.0.0 to 1.1.0 ([#412](https://github.com/jobtrek/grades-view-solid/issues/412)) ([0253d9e](https://github.com/jobtrek/grades-view-solid/commit/0253d9ebbc5a4431c6a997379464cc95fbb7fe84))
+
 ## [2.1.9](https://github.com/jobtrek/grades-view-solid/compare/v2.1.8...v2.1.9) (2025-05-08)
 
 
