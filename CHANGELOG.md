@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [2.1.12](https://github.com/jobtrek/grades-view-solid/compare/v2.1.11...v2.1.12) (2025-05-28)
+
+
+### Build System
+
+* **deps-dev:** bump tailwindcss from 4.1.5 to 4.1.7 ([#424](https://github.com/jobtrek/grades-view-solid/issues/424)) ([f2a0a7c](https://github.com/jobtrek/grades-view-solid/commit/f2a0a7ca10a3face834ae756f00b16900d857955))
+* **deps:** bump solid-js from 1.9.6 to 1.9.7 ([#425](https://github.com/jobtrek/grades-view-solid/issues/425)) ([4e48738](https://github.com/jobtrek/grades-view-solid/commit/4e4873875b4bd02d49acdb5141282c2b343a91ad))
+
 ## [2.1.11](https://github.com/jobtrek/grades-view-solid/compare/v2.1.10...v2.1.11) (2025-05-21)
 
 
