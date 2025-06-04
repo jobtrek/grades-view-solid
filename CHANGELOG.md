@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.1.13](https://github.com/jobtrek/grades-view-solid/compare/v2.1.12...v2.1.13) (2025-06-04)
+
+
+### Build System
+
+* **deps-dev:** bump tailwindcss from 4.1.7 to 4.1.8 ([#431](https://github.com/jobtrek/grades-view-solid/issues/431)) ([5b6746c](https://github.com/jobtrek/grades-view-solid/commit/5b6746cc727a53ba12e9844f174dfde6d901c158))
+
 ## [2.1.12](https://github.com/jobtrek/grades-view-solid/compare/v2.1.11...v2.1.12) (2025-05-28)
 
 
