@@ -1,6 +1,23 @@
 # Changelog
 
 
+## [2.1.14](https://github.com/jobtrek/grades-view-solid/compare/v2.1.13...v2.1.14) (2025-06-20)
+
+
+### Build System
+
+* **deps-dev:** bump @tailwindcss/postcss from 4.1.8 to 4.1.10 ([#434](https://github.com/jobtrek/grades-view-solid/issues/434)) ([0775ce1](https://github.com/jobtrek/grades-view-solid/commit/0775ce1c8ff2118e0c3bcb47e8dde972f4dae30a))
+* **deps-dev:** bump eslint-plugin-n from 17.19.0 to 17.20.0 ([#437](https://github.com/jobtrek/grades-view-solid/issues/437)) ([c37dac1](https://github.com/jobtrek/grades-view-solid/commit/c37dac1aaa501a5370e385287cc35b876c0af247))
+* **deps-dev:** bump tailwindcss from 4.1.8 to 4.1.10 ([#438](https://github.com/jobtrek/grades-view-solid/issues/438)) ([55781de](https://github.com/jobtrek/grades-view-solid/commit/55781deb99733cad6e6cd0472790f4ebbb819daa))
+* **deps-dev:** bump the development-dependencies group across 1 directory with 3 updates ([#443](https://github.com/jobtrek/grades-view-solid/issues/443)) ([446405c](https://github.com/jobtrek/grades-view-solid/commit/446405cc2f05c32725950e480090d49f52b959c2))
+* **deps-dev:** bump typescript-eslint from 8.33.1 to 8.34.0 ([#435](https://github.com/jobtrek/grades-view-solid/issues/435)) ([f0b986f](https://github.com/jobtrek/grades-view-solid/commit/f0b986f3c64c851d67478b0f5cd09e7d9ee7c171))
+* **deps:** bump the production-dependencies group with 3 updates ([#442](https://github.com/jobtrek/grades-view-solid/issues/442)) ([3c74b12](https://github.com/jobtrek/grades-view-solid/commit/3c74b125837546e9c8bc0a30151240407715a5e7))
+
+
+### Continuous Integration
+
+* **dependabot:** add deps groups ([#440](https://github.com/jobtrek/grades-view-solid/issues/440)) ([3f37a61](https://github.com/jobtrek/grades-view-solid/commit/3f37a61d521d7886254116893f48ef16f5003d79))
+
 ## [2.1.13](https://github.com/jobtrek/grades-view-solid/compare/v2.1.12...v2.1.13) (2025-06-10)
 
 
