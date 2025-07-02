@@ -11,15 +11,15 @@
   },
   "dependencies": {
     "@modular-forms/solid": "^0.25.1",
-    "@solid-primitives/storage": "^4.3.2",
-    "@solid-primitives/timer": "^1.4.1",
+    "@solid-primitives/storage": "^4.3.3",
+    "@solid-primitives/timer": "^1.4.2",
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.3",
     "@solidjs/start": "1.1.5",
     "postcss": "^8.5.6",
     "solid-js": "^1.9.7",
     "valibot": "^1.1.0",
-    "vinxi": "0.5.7"
+    "vinxi": "0.5.8"
   },
   "engines": {
     "node": ">=20"
