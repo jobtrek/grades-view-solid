@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [2.1.17](https://github.com/jobtrek/grades-view-solid/compare/v2.1.16...v2.1.17) (2025-07-08)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group across 1 directory with 2 updates ([#453](https://github.com/jobtrek/grades-view-solid/issues/453)) ([27167ec](https://github.com/jobtrek/grades-view-solid/commit/27167ec97dce1590cf8540314bd6195f9c394690))
+* **deps:** bump @solidjs/start in the production-dependencies group ([#451](https://github.com/jobtrek/grades-view-solid/issues/451)) ([aaac794](https://github.com/jobtrek/grades-view-solid/commit/aaac7944afe2df06f6293ed0250f4e1cff6fa083))
+
 ## [2.1.16](https://github.com/jobtrek/grades-view-solid/compare/v2.1.15...v2.1.16) (2025-07-02)
 
 
