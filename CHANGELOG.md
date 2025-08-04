@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.1.18](https://github.com/jobtrek/grades-view-solid/compare/v2.1.17...v2.1.18) (2025-08-04)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group with 2 updates ([#454](https://github.com/jobtrek/grades-view-solid/issues/454)) ([4b1fcb9](https://github.com/jobtrek/grades-view-solid/commit/4b1fcb93cde3de447d86edb20ff1dcee14f9b522))
+
 ## [2.1.17](https://github.com/jobtrek/grades-view-solid/compare/v2.1.16...v2.1.17) (2025-07-08)
 
 
