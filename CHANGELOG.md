@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [2.1.20](https://github.com/jobtrek/grades-view-solid/compare/v2.1.19...v2.1.20) (2025-08-12)
+
+
+### Build System
+
+* **deps:** bump actions/download-artifact from 4 to 5 ([#460](https://github.com/jobtrek/grades-view-solid/issues/460)) ([5e9ee8c](https://github.com/jobtrek/grades-view-solid/commit/5e9ee8c80203cdd7060aa3a0c017f0132289aace))
+* **deps:** bump solid-js in the production-dependencies group ([#461](https://github.com/jobtrek/grades-view-solid/issues/461)) ([a1dfa61](https://github.com/jobtrek/grades-view-solid/commit/a1dfa6179e48c8988ef2b8892a921562b382eb0b))
+
 ## [2.1.19](https://github.com/jobtrek/grades-view-solid/compare/v2.1.18...v2.1.19) (2025-08-06)
 
 
