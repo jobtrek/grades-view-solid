@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.1.21](https://github.com/jobtrek/grades-view-solid/compare/v2.1.20...v2.1.21) (2025-09-02)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group across 1 directory with 3 updates ([#463](https://github.com/jobtrek/grades-view-solid/issues/463)) ([2ff87f0](https://github.com/jobtrek/grades-view-solid/commit/2ff87f0d210903066190033233910311f8f4e3a8))
+* **deps-dev:** bump the development-dependencies group with 6 updates ([#467](https://github.com/jobtrek/grades-view-solid/issues/467)) ([c89aa61](https://github.com/jobtrek/grades-view-solid/commit/c89aa6107a7cb94ad3467fbf77ccdf0652317f96))
+* **deps:** bump actions/checkout from 4 to 5 ([#468](https://github.com/jobtrek/grades-view-solid/issues/468)) ([52c67f4](https://github.com/jobtrek/grades-view-solid/commit/52c67f4be0f46627fb586772eb13d27efb982e9d))
+* **deps:** bump actions/upload-pages-artifact from 3 to 4 ([#466](https://github.com/jobtrek/grades-view-solid/issues/466)) ([c65df39](https://github.com/jobtrek/grades-view-solid/commit/c65df39e4981ce4f56903b7a2228b86933f7c848))
+* **deps:** bump the production-dependencies group across 1 directory with 2 updates ([#469](https://github.com/jobtrek/grades-view-solid/issues/469)) ([26b8afd](https://github.com/jobtrek/grades-view-solid/commit/26b8afd6d0c06acc7c16e987b4b7e133f65400ba))
+
 ## [2.1.20](https://github.com/jobtrek/grades-view-solid/compare/v2.1.19...v2.1.20) (2025-08-12)
 
 
