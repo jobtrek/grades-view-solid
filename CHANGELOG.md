@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.1.22](https://github.com/jobtrek/grades-view-solid/compare/v2.1.21...v2.1.22) (2025-09-09)
+
+
+### Build System
+
+* **deps:** bump actions/setup-node from 4 to 5 ([#470](https://github.com/jobtrek/grades-view-solid/issues/470)) ([0571a55](https://github.com/jobtrek/grades-view-solid/commit/0571a558a242bc9f1230cff6cb1439d7c1b8093a))
+
 ## [2.1.21](https://github.com/jobtrek/grades-view-solid/compare/v2.1.20...v2.1.21) (2025-09-02)
 
 
