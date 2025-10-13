@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.1.24](https://github.com/jobtrek/grades-view-solid/compare/v2.1.23...v2.1.24) (2025-10-13)
+
+
+### Build System
+
+* **deps-dev:** bump typescript-eslint ([#475](https://github.com/jobtrek/grades-view-solid/issues/475)) ([c5fd1ed](https://github.com/jobtrek/grades-view-solid/commit/c5fd1ed737f70d76eae602a4c3583b2d5372c909))
+
 ## [2.1.23](https://github.com/jobtrek/grades-view-solid/compare/v2.1.22...v2.1.23) (2025-10-06)
 
 
