@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.1.25](https://github.com/jobtrek/grades-view-solid/compare/v2.1.24...v2.1.25) (2025-10-31)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group across 1 directory with 5 updates ([#479](https://github.com/jobtrek/grades-view-solid/issues/479)) ([42f888e](https://github.com/jobtrek/grades-view-solid/commit/42f888e43983a52ab335e70cb34e5a99da561651))
+* **deps:** bump actions/download-artifact from 5 to 6 ([#481](https://github.com/jobtrek/grades-view-solid/issues/481)) ([8be58d6](https://github.com/jobtrek/grades-view-solid/commit/8be58d6401ccdbfdcaa4dde7fdadb61825bbd135))
+* **deps:** bump actions/setup-node from 5 to 6 ([#478](https://github.com/jobtrek/grades-view-solid/issues/478)) ([b14c28f](https://github.com/jobtrek/grades-view-solid/commit/b14c28f0c597f47f57a16535a5cf6ad87c711514))
+* **deps:** bump actions/upload-artifact from 4 to 5 ([#480](https://github.com/jobtrek/grades-view-solid/issues/480)) ([5dfe950](https://github.com/jobtrek/grades-view-solid/commit/5dfe950023bd39be52224b9cba8a7d91c003315d))
+
 ## [2.1.24](https://github.com/jobtrek/grades-view-solid/compare/v2.1.23...v2.1.24) (2025-10-13)
 
 
