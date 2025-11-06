@@ -1,6 +1,19 @@
 # Changelog
 
 
+## [2.1.26](https://github.com/jobtrek/grades-view-solid/compare/v2.1.25...v2.1.26) (2025-11-06)
+
+
+### Miscellaneous Chores
+
+* pin actions to sha ([#487](https://github.com/jobtrek/grades-view-solid/issues/487)) ([7639ba2](https://github.com/jobtrek/grades-view-solid/commit/7639ba242313b78ea86b79947482b41b88617f3e))
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group across 1 directory with 5 updates ([#486](https://github.com/jobtrek/grades-view-solid/issues/486)) ([d34e265](https://github.com/jobtrek/grades-view-solid/commit/d34e2654d8f55b8a996b0dc0545ac72646d81ed1))
+* **deps:** bump solid-js in the production-dependencies group ([#483](https://github.com/jobtrek/grades-view-solid/issues/483)) ([05858d3](https://github.com/jobtrek/grades-view-solid/commit/05858d343d180c27a20ecefbdacc8df240eec7b7))
+
 ## [2.1.25](https://github.com/jobtrek/grades-view-solid/compare/v2.1.24...v2.1.25) (2025-10-31)
 
 
