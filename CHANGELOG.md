@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.1.27](https://github.com/jobtrek/grades-view-solid/compare/v2.1.26...v2.1.27) (2025-11-19)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group with 2 updates ([#488](https://github.com/jobtrek/grades-view-solid/issues/488)) ([066a3f5](https://github.com/jobtrek/grades-view-solid/commit/066a3f5f11febabb1e12b3948ac75fba85c1e9af))
+* **deps-dev:** bump typescript-eslint ([#491](https://github.com/jobtrek/grades-view-solid/issues/491)) ([d5ad2bd](https://github.com/jobtrek/grades-view-solid/commit/d5ad2bd2dba51a7b1ad98bfd0847135f814b1a44))
+* **deps:** bump @solidjs/router in the production-dependencies group ([#490](https://github.com/jobtrek/grades-view-solid/issues/490)) ([7b1a601](https://github.com/jobtrek/grades-view-solid/commit/7b1a601e62eddc0d5dd93601e2fff45713899278))
+
 ## [2.1.26](https://github.com/jobtrek/grades-view-solid/compare/v2.1.25...v2.1.26) (2025-11-06)
 
 
