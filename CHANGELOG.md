@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [2.1.28](https://github.com/jobtrek/grades-view-solid/compare/v2.1.27...v2.1.28) (2025-11-25)
+
+
+### Build System
+
+* **deps-dev:** bump typescript-eslint ([#493](https://github.com/jobtrek/grades-view-solid/issues/493)) ([ae59b0b](https://github.com/jobtrek/grades-view-solid/commit/ae59b0b4a1b0c6ddf299059d16a4ab78177404ca))
+* **deps:** bump actions/checkout from 5.0.0 to 6.0.0 ([#492](https://github.com/jobtrek/grades-view-solid/issues/492)) ([06e95a0](https://github.com/jobtrek/grades-view-solid/commit/06e95a010e68f03c5b048b05005247af5e890788))
+
 ## [2.1.27](https://github.com/jobtrek/grades-view-solid/compare/v2.1.26...v2.1.27) (2025-11-19)
 
 
