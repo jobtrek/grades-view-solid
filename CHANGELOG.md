@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.1.29](https://github.com/jobtrek/grades-view-solid/compare/v2.1.28...v2.1.29) (2025-11-27)
+
+
+### Build System
+
+* **deps:** bump valibot from 1.1.0 to 1.2.0 ([#495](https://github.com/jobtrek/grades-view-solid/issues/495)) ([735ab24](https://github.com/jobtrek/grades-view-solid/commit/735ab249ab7ed9bfcfd970fd6a37a8faede95c75))
+
 ## [2.1.28](https://github.com/jobtrek/grades-view-solid/compare/v2.1.27...v2.1.28) (2025-11-25)
 
 
