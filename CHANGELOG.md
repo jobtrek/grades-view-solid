@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [2.1.30](https://github.com/jobtrek/grades-view-solid/compare/v2.1.29...v2.1.30) (2025-12-02)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group with 3 updates ([#498](https://github.com/jobtrek/grades-view-solid/issues/498)) ([a65d036](https://github.com/jobtrek/grades-view-solid/commit/a65d036b71b5de376ca0583406a74d462ec77c2b))
+* **deps:** bump docker/metadata-action from 5.9.0 to 5.10.0 ([#497](https://github.com/jobtrek/grades-view-solid/issues/497)) ([bfc771c](https://github.com/jobtrek/grades-view-solid/commit/bfc771cdf9259c6423cd529f08e761e98fb9f3d1))
+
 ## [2.1.29](https://github.com/jobtrek/grades-view-solid/compare/v2.1.28...v2.1.29) (2025-11-27)
 
 
