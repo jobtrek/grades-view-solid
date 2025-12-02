@@ -25,7 +25,7 @@
     "node": ">=20"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.1",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/postcss": "^4.1.17",
@@ -39,10 +39,10 @@
     "eslint-plugin-promise": "^7.2.1",
     "eslint-plugin-solid": "^0.14.5",
     "globals": "^16.5.0",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.3",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.47.0"
+    "typescript-eslint": "^8.48.0"
   },
   "version": "2.1.29",
   "config": {
