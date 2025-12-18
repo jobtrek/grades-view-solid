@@ -1,6 +1,17 @@
 # Changelog
 
 
+## [2.1.32](https://github.com/jobtrek/grades-view-solid/compare/v2.1.31...v2.1.32) (2025-12-18)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group across 1 directory with 6 updates ([#510](https://github.com/jobtrek/grades-view-solid/issues/510)) ([a1b5355](https://github.com/jobtrek/grades-view-solid/commit/a1b535560d6528a2153a92f0583ea706b6d39b95))
+* **deps:** bump actions/cache from 4.3.0 to 5.0.1 ([#506](https://github.com/jobtrek/grades-view-solid/issues/506)) ([3c4f996](https://github.com/jobtrek/grades-view-solid/commit/3c4f9965d84b659d6c49892cd7df53195447d8b9))
+* **deps:** bump actions/download-artifact from 6.0.0 to 7.0.0 ([#508](https://github.com/jobtrek/grades-view-solid/issues/508)) ([0708dac](https://github.com/jobtrek/grades-view-solid/commit/0708dac47ef9d455a77639a99e35990132fa78da))
+* **deps:** bump actions/upload-artifact from 5.0.0 to 6.0.0 ([#507](https://github.com/jobtrek/grades-view-solid/issues/507)) ([c4bbd20](https://github.com/jobtrek/grades-view-solid/commit/c4bbd20b2a5729be57b6193e53a7cb0a1b1f9a17))
+* **deps:** bump vinxi in the production-dependencies group ([#504](https://github.com/jobtrek/grades-view-solid/issues/504)) ([aa4bb9f](https://github.com/jobtrek/grades-view-solid/commit/aa4bb9f431cc9392cd898a87f154d162cf988e25))
+
 ## [2.1.31](https://github.com/jobtrek/grades-view-solid/compare/v2.1.30...v2.1.31) (2025-12-12)
 
 
