@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.1.33](https://github.com/jobtrek/grades-view-solid/compare/v2.1.32...v2.1.33) (2026-01-02)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group across 1 directory with 2 updates ([#517](https://github.com/jobtrek/grades-view-solid/issues/517)) ([3acdc84](https://github.com/jobtrek/grades-view-solid/commit/3acdc841dc8e36f6b85fae6f5ff7c52231e7e508))
+* **deps:** bump docker/setup-buildx-action from 3.11.1 to 3.12.0 ([#512](https://github.com/jobtrek/grades-view-solid/issues/512)) ([2be761a](https://github.com/jobtrek/grades-view-solid/commit/2be761af2b9f0e48d961c4266d9331b5b11cb77a))
+* **deps:** bump mdast-util-to-hast from 13.2.0 to 13.2.1 ([#516](https://github.com/jobtrek/grades-view-solid/issues/516)) ([833a5aa](https://github.com/jobtrek/grades-view-solid/commit/833a5aac22275f181ccf898f5451caa6f95bcf39))
+* **deps:** bump the production-dependencies group with 2 updates ([#511](https://github.com/jobtrek/grades-view-solid/issues/511)) ([53e139f](https://github.com/jobtrek/grades-view-solid/commit/53e139f8e0abed313a2978382056a3291865b3aa))
+
 ## [2.1.32](https://github.com/jobtrek/grades-view-solid/compare/v2.1.31...v2.1.32) (2025-12-18)
 
 
