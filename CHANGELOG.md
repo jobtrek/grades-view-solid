@@ -1,6 +1,19 @@
 # Changelog
 
 
+## [2.1.34](https://github.com/jobtrek/grades-view-solid/compare/v2.1.33...v2.1.34) (2026-01-22)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group with 3 updates ([#523](https://github.com/jobtrek/grades-view-solid/issues/523)) ([2c50576](https://github.com/jobtrek/grades-view-solid/commit/2c50576499216897bd5efab151114c184a109655))
+* **deps-dev:** bump typescript-eslint ([#518](https://github.com/jobtrek/grades-view-solid/issues/518)) ([0c365c2](https://github.com/jobtrek/grades-view-solid/commit/0c365c2ec61181572c7a1de21fe89c2ee815bf36))
+* **deps:** bump actions/cache from 5.0.1 to 5.0.2 ([#521](https://github.com/jobtrek/grades-view-solid/issues/521)) ([88302a5](https://github.com/jobtrek/grades-view-solid/commit/88302a533faa7695c68260edf3610a50c6fe89f0))
+* **deps:** bump actions/setup-node from 6.1.0 to 6.2.0 ([#522](https://github.com/jobtrek/grades-view-solid/issues/522)) ([8cd4592](https://github.com/jobtrek/grades-view-solid/commit/8cd45922fbf9a371b890f4dcccd82abc36ada3f7))
+* **deps:** bump diff from 8.0.2 to 8.0.3 ([#520](https://github.com/jobtrek/grades-view-solid/issues/520)) ([73fd671](https://github.com/jobtrek/grades-view-solid/commit/73fd6716479739b7b165010488a7ebda04a31bba))
+* **deps:** bump diff from 8.0.2 to 8.0.3 ([#524](https://github.com/jobtrek/grades-view-solid/issues/524)) ([db03ead](https://github.com/jobtrek/grades-view-solid/commit/db03ead05ac8be125b8f1a88a45568a9d89add6d))
+* **deps:** bump lodash-es from 4.17.22 to 4.17.23 ([#525](https://github.com/jobtrek/grades-view-solid/issues/525)) ([516dbb0](https://github.com/jobtrek/grades-view-solid/commit/516dbb0fb39d8ec6f69adf3ce9239827d0dec121))
+
 ## [2.1.33](https://github.com/jobtrek/grades-view-solid/compare/v2.1.32...v2.1.33) (2026-01-02)
 
 
