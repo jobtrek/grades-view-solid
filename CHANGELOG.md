@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.1.35](https://github.com/jobtrek/grades-view-solid/compare/v2.1.34...v2.1.35) (2026-01-30)
+
+
+### Build System
+
+* **deps-dev:** bump globals in the development-dependencies group ([#528](https://github.com/jobtrek/grades-view-solid/issues/528)) ([4a007bd](https://github.com/jobtrek/grades-view-solid/commit/4a007bdefe73cf96985210e159622bb109ed6eb4))
+* **deps:** bump actions/checkout from 6.0.1 to 6.0.2 ([#527](https://github.com/jobtrek/grades-view-solid/issues/527)) ([143781b](https://github.com/jobtrek/grades-view-solid/commit/143781b3bb179df3730d0d6fdfaf55a93045033d))
+* **deps:** bump the production-dependencies group with 2 updates ([#526](https://github.com/jobtrek/grades-view-solid/issues/526)) ([57cddcf](https://github.com/jobtrek/grades-view-solid/commit/57cddcfa1c5ca1501a9d6c39da541f4f66145f3d))
+
 ## [2.1.34](https://github.com/jobtrek/grades-view-solid/compare/v2.1.33...v2.1.34) (2026-01-22)
 
 
