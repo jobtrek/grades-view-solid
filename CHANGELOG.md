@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.1.36](https://github.com/jobtrek/grades-view-solid/compare/v2.1.35...v2.1.36) (2026-02-02)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group with 2 updates ([#532](https://github.com/jobtrek/grades-view-solid/issues/532)) ([a438745](https://github.com/jobtrek/grades-view-solid/commit/a438745cc3adfa5376a365fbc2023584678f8cdb))
+* **deps:** bump actions/cache from 5.0.2 to 5.0.3 ([#531](https://github.com/jobtrek/grades-view-solid/issues/531)) ([614538e](https://github.com/jobtrek/grades-view-solid/commit/614538e6b2037ab4d7c0d3baa18436aa9c288a16))
+* **deps:** bump docker/login-action from 3.6.0 to 3.7.0 ([#530](https://github.com/jobtrek/grades-view-solid/issues/530)) ([5fdffd9](https://github.com/jobtrek/grades-view-solid/commit/5fdffd9de2302518a5ee870676611fa6749a58aa))
+
 ## [2.1.35](https://github.com/jobtrek/grades-view-solid/compare/v2.1.34...v2.1.35) (2026-01-30)
 
 
