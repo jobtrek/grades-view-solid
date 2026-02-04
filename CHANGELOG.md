@@ -1,6 +1,13 @@
 # Changelog
 
 
+## [2.1.37](https://github.com/jobtrek/grades-view-solid/compare/v2.1.36...v2.1.37) (2026-02-04)
+
+
+### Build System
+
+* **deps:** bump @isaacs/brace-expansion from 5.0.0 to 5.0.1 ([#534](https://github.com/jobtrek/grades-view-solid/issues/534)) ([cdd0cc8](https://github.com/jobtrek/grades-view-solid/commit/cdd0cc875fac0f9184bb34e55290080fc0ca4eae))
+
 ## [2.1.36](https://github.com/jobtrek/grades-view-solid/compare/v2.1.35...v2.1.36) (2026-02-02)
 
 
