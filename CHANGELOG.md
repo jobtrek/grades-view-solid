@@ -1,6 +1,19 @@
 # Changelog
 
 
+## [2.1.37](https://github.com/jobtrek/grades-view-solid/compare/v2.1.36...v2.1.37) (2026-02-11)
+
+
+### Build System
+
+* **deps-dev:** bump typescript-eslint ([#538](https://github.com/jobtrek/grades-view-solid/issues/538)) ([89cb62f](https://github.com/jobtrek/grades-view-solid/commit/89cb62f5a1e9d4674b634608fe3bd78277153a28))
+* **deps:** bump @isaacs/brace-expansion from 5.0.0 to 5.0.1 ([#534](https://github.com/jobtrek/grades-view-solid/issues/534)) ([cdd0cc8](https://github.com/jobtrek/grades-view-solid/commit/cdd0cc875fac0f9184bb34e55290080fc0ca4eae))
+
+
+### Continuous Integration
+
+* refine dependabot ([#537](https://github.com/jobtrek/grades-view-solid/issues/537)) ([8cfaa66](https://github.com/jobtrek/grades-view-solid/commit/8cfaa662c3ce403566d0d7405ddd00bd258b52de))
+
 ## [2.1.36](https://github.com/jobtrek/grades-view-solid/compare/v2.1.35...v2.1.36) (2026-02-02)
 
 
