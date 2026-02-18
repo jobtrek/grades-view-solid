@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.1.38](https://github.com/jobtrek/grades-view-solid/compare/v2.1.37...v2.1.38) (2026-02-18)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group across 1 directory with 2 updates ([#544](https://github.com/jobtrek/grades-view-solid/issues/544)) ([0bcc000](https://github.com/jobtrek/grades-view-solid/commit/0bcc000c699222d227b4074f1e0eda3ef04cd858))
+* **deps:** bump docker/build-push-action from 6.18.0 to 6.19.2 ([#541](https://github.com/jobtrek/grades-view-solid/issues/541)) ([65fb935](https://github.com/jobtrek/grades-view-solid/commit/65fb935553dc0abd516a82d165eeefa769eaab1c))
+* **deps:** bump tar from 7.5.7 to 7.5.9 ([#543](https://github.com/jobtrek/grades-view-solid/issues/543)) ([19c4408](https://github.com/jobtrek/grades-view-solid/commit/19c44080abf110cf83b2e7ffe10e5725359d11eb))
+
 ## [2.1.37](https://github.com/jobtrek/grades-view-solid/compare/v2.1.36...v2.1.37) (2026-02-11)
 
 
