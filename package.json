@@ -28,7 +28,7 @@
     "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.2",
     "@tailwindcss/forms": "^0.5.11",
-    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/postcss": "^4.2.0",
     "@types/eslint__js": "^9.14.0",
     "commitizen": "^4.3.1",
     "cssnano": "^7.1.2",
@@ -40,7 +40,7 @@
     "eslint-plugin-solid": "^0.14.5",
     "globals": "^17.3.0",
     "prettier": "^3.8.1",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^4.2.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.0"
   },
