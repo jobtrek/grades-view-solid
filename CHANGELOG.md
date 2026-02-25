@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.1.39](https://github.com/jobtrek/grades-view-solid/compare/v2.1.38...v2.1.39) (2026-02-25)
+
+
+### Build System
+
+* **deps-dev:** bump @eslint/js from 9.39.2 to 9.39.3 ([#547](https://github.com/jobtrek/grades-view-solid/issues/547)) ([3281c49](https://github.com/jobtrek/grades-view-solid/commit/3281c490c255e7d0eac9d120a363027d8173a584))
+* **deps-dev:** bump the development-dependencies group across 1 directory with 4 updates ([#551](https://github.com/jobtrek/grades-view-solid/issues/551)) ([c6f4343](https://github.com/jobtrek/grades-view-solid/commit/c6f4343afa17c69bf53b839652603bfebb724b07))
+* **deps:** bump minimatch from 3.1.2 to 3.1.4 ([#548](https://github.com/jobtrek/grades-view-solid/issues/548)) ([8a19d32](https://github.com/jobtrek/grades-view-solid/commit/8a19d32bec6ce815afd7297b3297a8c79a8eb1ad))
+
 ## [2.1.38](https://github.com/jobtrek/grades-view-solid/compare/v2.1.37...v2.1.38) (2026-02-18)
 
 
