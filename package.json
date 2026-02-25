@@ -44,7 +44,7 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.56.1"
   },
-  "version": "2.1.38",
+  "version": "2.1.39",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
