@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.1.40](https://github.com/jobtrek/grades-view-solid/compare/v2.1.39...v2.1.40) (2026-03-04)
+
+
+### Build System
+
+* **deps:** bump actions/download-artifact from 7.0.0 to 8.0.0 ([#553](https://github.com/jobtrek/grades-view-solid/issues/553)) ([98e0d26](https://github.com/jobtrek/grades-view-solid/commit/98e0d26907f42a8a5e59162cf32fc5d46235cabe))
+* **deps:** bump actions/upload-artifact from 6.0.0 to 7.0.0 ([#552](https://github.com/jobtrek/grades-view-solid/issues/552)) ([48abf8b](https://github.com/jobtrek/grades-view-solid/commit/48abf8bb8bef11470d8abd81573f99b5413050ff))
+* **deps:** bump minimatch from 3.1.2 to 3.1.5 ([#555](https://github.com/jobtrek/grades-view-solid/issues/555)) ([674d93e](https://github.com/jobtrek/grades-view-solid/commit/674d93e9d39d3ea90e15f75a98ca83b55eda4afa))
+* **deps:** bump rollup from 4.57.0 to 4.59.0 ([#556](https://github.com/jobtrek/grades-view-solid/issues/556)) ([527ab68](https://github.com/jobtrek/grades-view-solid/commit/527ab68e149fcbc402dddb0c8c9d60eb68bf2e0a))
+
 ## [2.1.39](https://github.com/jobtrek/grades-view-solid/compare/v2.1.38...v2.1.39) (2026-02-25)
 
 
