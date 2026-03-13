@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [2.1.41](https://github.com/jobtrek/grades-view-solid/compare/v2.1.40...v2.1.41) (2026-03-13)
+
+
+### Build System
+
+* **deps-dev:** bump @eslint/js from 9.39.3 to 9.39.4 ([#564](https://github.com/jobtrek/grades-view-solid/issues/564)) ([772cc8a](https://github.com/jobtrek/grades-view-solid/commit/772cc8ac381ceaf82ba9aa97fc72eea18b753d0a))
+* **deps-dev:** bump the development-dependencies group across 1 directory with 4 updates ([#568](https://github.com/jobtrek/grades-view-solid/issues/568)) ([96dd124](https://github.com/jobtrek/grades-view-solid/commit/96dd1249a318c472561753c0d568ff6b28edf7ac))
+* **deps:** bump actions/setup-node from 6.2.0 to 6.3.0 ([#561](https://github.com/jobtrek/grades-view-solid/issues/561)) ([6cbccbd](https://github.com/jobtrek/grades-view-solid/commit/6cbccbda5bc1ec95a03799297238a4d02d0d0d89))
+* **deps:** bump docker/build-push-action from 6.19.2 to 7.0.0 ([#557](https://github.com/jobtrek/grades-view-solid/issues/557)) ([f94b3f8](https://github.com/jobtrek/grades-view-solid/commit/f94b3f81bc312d00f02748e111a07e640245fc01))
+* **deps:** bump docker/metadata-action from 5.10.0 to 6.0.0 ([#560](https://github.com/jobtrek/grades-view-solid/issues/560)) ([0e6855b](https://github.com/jobtrek/grades-view-solid/commit/0e6855ba90eec1d3d845343b7e758b278ecb8c29))
+* **deps:** bump docker/setup-buildx-action from 3.12.0 to 4.0.0 ([#558](https://github.com/jobtrek/grades-view-solid/issues/558)) ([9fe891b](https://github.com/jobtrek/grades-view-solid/commit/9fe891b6257e237e92da728d5f8985d002aa6e92))
+* **deps:** bump docker/setup-qemu-action from 3.7.0 to 4.0.0 ([#559](https://github.com/jobtrek/grades-view-solid/issues/559)) ([01cb9ab](https://github.com/jobtrek/grades-view-solid/commit/01cb9abd6ce400d43b3d811d2e1d402a3645d217))
+* **deps:** bump tar from 7.5.7 to 7.5.11 ([#566](https://github.com/jobtrek/grades-view-solid/issues/566)) ([b111d16](https://github.com/jobtrek/grades-view-solid/commit/b111d16239f498ee711db13211333c7f376dad1e))
+* **deps:** bump the production-dependencies group with 4 updates ([#562](https://github.com/jobtrek/grades-view-solid/issues/562)) ([17baeae](https://github.com/jobtrek/grades-view-solid/commit/17baeae82c520d5e7a878b35286d61f6878cfa4e))
+
 ## [2.1.40](https://github.com/jobtrek/grades-view-solid/compare/v2.1.39...v2.1.40) (2026-03-04)
 
 
