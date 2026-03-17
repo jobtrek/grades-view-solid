@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.1.42](https://github.com/jobtrek/grades-view-solid/compare/v2.1.41...v2.1.42) (2026-03-17)
+
+
+### Build System
+
+* **deps:** bump actions/download-artifact from 8.0.0 to 8.0.1 ([#571](https://github.com/jobtrek/grades-view-solid/issues/571)) ([3a2250a](https://github.com/jobtrek/grades-view-solid/commit/3a2250a772b56a88f65c5a3f73d6b7e6e4fbef4c))
+* **deps:** bump docker/login-action from 3.7.0 to 4.0.0 ([#570](https://github.com/jobtrek/grades-view-solid/issues/570)) ([b0bb001](https://github.com/jobtrek/grades-view-solid/commit/b0bb001aba31668d6065591ce9e9e66928ea9be2))
+* **deps:** bump flatted from 3.3.3 to 3.4.1 ([#573](https://github.com/jobtrek/grades-view-solid/issues/573)) ([166c629](https://github.com/jobtrek/grades-view-solid/commit/166c629be0349c83d00822bc2b090c4eb14ee569))
+* **deps:** bump pnpm/action-setup from 4.2.0 to 4.4.0 ([#569](https://github.com/jobtrek/grades-view-solid/issues/569)) ([a62c2bb](https://github.com/jobtrek/grades-view-solid/commit/a62c2bba8e2bec08a948c4b7951f71b5b7f0d42d))
+
 ## [2.1.41](https://github.com/jobtrek/grades-view-solid/compare/v2.1.40...v2.1.41) (2026-03-13)
 
 
