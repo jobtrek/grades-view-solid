@@ -1,6 +1,15 @@
 # Changelog
 
 
+## [2.1.43](https://github.com/jobtrek/grades-view-solid/compare/v2.1.42...v2.1.43) (2026-03-26)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group with 3 updates ([#576](https://github.com/jobtrek/grades-view-solid/issues/576)) ([466103b](https://github.com/jobtrek/grades-view-solid/commit/466103b68488545ccc03300c36f9d4570bfccb2f))
+* **deps:** bump actions/cache from 5.0.3 to 5.0.4 ([#574](https://github.com/jobtrek/grades-view-solid/issues/574)) ([4ca385a](https://github.com/jobtrek/grades-view-solid/commit/4ca385adbacdb034ac023f337369d614ec88d6a7))
+* **deps:** bump the production-dependencies group across 1 directory with 3 updates ([#578](https://github.com/jobtrek/grades-view-solid/issues/578)) ([1321fe4](https://github.com/jobtrek/grades-view-solid/commit/1321fe477abddc20637d6c40d9b78ace36781ab3))
+
 ## [2.1.42](https://github.com/jobtrek/grades-view-solid/compare/v2.1.41...v2.1.42) (2026-03-17)
 
 
