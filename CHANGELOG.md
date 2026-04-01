@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [2.1.44](https://github.com/jobtrek/grades-view-solid/compare/v2.1.43...v2.1.44) (2026-04-01)
+
+
+### Build System
+
+* **deps-dev:** bump typescript-eslint ([#580](https://github.com/jobtrek/grades-view-solid/issues/580)) ([63822b3](https://github.com/jobtrek/grades-view-solid/commit/63822b32f856ae4c23291380b1828ca332e9de84))
+* **deps:** bump actions/deploy-pages from 4.0.5 to 5.0.0 ([#579](https://github.com/jobtrek/grades-view-solid/issues/579)) ([a87528b](https://github.com/jobtrek/grades-view-solid/commit/a87528b3e4bfeeccb824499205413f988af1d8c0))
+
 ## [2.1.43](https://github.com/jobtrek/grades-view-solid/compare/v2.1.42...v2.1.43) (2026-03-26)
 
 
