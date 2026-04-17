@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [2.1.45](https://github.com/jobtrek/grades-view-solid/compare/v2.1.44...v2.1.45) (2026-04-17)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group across 1 directory with 4 updates ([#592](https://github.com/jobtrek/grades-view-solid/issues/592)) ([943f93d](https://github.com/jobtrek/grades-view-solid/commit/943f93db000c4f705ce631b9aa6de9891aa54ce9))
+* **deps:** bump actions/upload-artifact from 7.0.0 to 7.0.1 ([#587](https://github.com/jobtrek/grades-view-solid/issues/587)) ([9d779e2](https://github.com/jobtrek/grades-view-solid/commit/9d779e231975bc1ac4d7583417d7b80d18a10e14))
+* **deps:** bump actions/upload-pages-artifact from 4.0.0 to 5.0.0 ([#590](https://github.com/jobtrek/grades-view-solid/issues/590)) ([fefe54d](https://github.com/jobtrek/grades-view-solid/commit/fefe54d4c5da4acb4828fb8e07a9123bbd42ef81))
+* **deps:** bump defu from 6.1.4 to 6.1.6 ([#583](https://github.com/jobtrek/grades-view-solid/issues/583)) ([ce763bf](https://github.com/jobtrek/grades-view-solid/commit/ce763bf15fd5d4ee229c3de91c45ac2ab84c0767))
+* **deps:** bump docker/build-push-action from 7.0.0 to 7.1.0 ([#591](https://github.com/jobtrek/grades-view-solid/issues/591)) ([48ddf70](https://github.com/jobtrek/grades-view-solid/commit/48ddf700bfa8b4a35cb2d3ca6adce5001f3d8008))
+* **deps:** bump docker/login-action from 4.0.0 to 4.1.0 ([#584](https://github.com/jobtrek/grades-view-solid/issues/584)) ([e86864b](https://github.com/jobtrek/grades-view-solid/commit/e86864bafc46d4cf4a7632fd57a8cea102534e8d))
+* **deps:** bump follow-redirects from 1.15.11 to 1.16.0 ([#593](https://github.com/jobtrek/grades-view-solid/issues/593)) ([c3cdc5f](https://github.com/jobtrek/grades-view-solid/commit/c3cdc5f7eddac7342b6fca2ccb386d4e28d8ac8b))
+* **deps:** bump postcss in the production-dependencies group ([#589](https://github.com/jobtrek/grades-view-solid/issues/589)) ([9d6d3d2](https://github.com/jobtrek/grades-view-solid/commit/9d6d3d2d875a9623acfea7d6c45042a8e101198d))
+* **deps:** bump vite from 6.4.1 to 6.4.2 ([#586](https://github.com/jobtrek/grades-view-solid/issues/586)) ([5de0618](https://github.com/jobtrek/grades-view-solid/commit/5de06182e0a8dac26eccc9c17946953db9e362cb))
+
 ## [2.1.44](https://github.com/jobtrek/grades-view-solid/compare/v2.1.43...v2.1.44) (2026-04-01)
 
 
