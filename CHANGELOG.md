@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.1.46](https://github.com/jobtrek/grades-view-solid/compare/v2.1.45...v2.1.46) (2026-04-22)
+
+
+### Build System
+
+* **deps:** bump actions/cache from 5.0.4 to 5.0.5 ([#597](https://github.com/jobtrek/grades-view-solid/issues/597)) ([0500df3](https://github.com/jobtrek/grades-view-solid/commit/0500df3d287cee096e5c51a6a37f5f6e5e1a78fd))
+* **deps:** bump actions/setup-node from 6.3.0 to 6.4.0 ([#596](https://github.com/jobtrek/grades-view-solid/issues/596)) ([a740115](https://github.com/jobtrek/grades-view-solid/commit/a74011548248eb095e17afa3b873ec360f6eabc7))
+* **deps:** bump googleapis/release-please-action from 4.4.0 to 4.4.1 ([#598](https://github.com/jobtrek/grades-view-solid/issues/598)) ([4be1271](https://github.com/jobtrek/grades-view-solid/commit/4be127199e074850599b8dc1c1a7a8c77ec22e4a))
+* **deps:** bump postcss in the production-dependencies group ([#595](https://github.com/jobtrek/grades-view-solid/issues/595)) ([c14241c](https://github.com/jobtrek/grades-view-solid/commit/c14241c3d723e97796a9b59c524911331c9e2d0f))
+
 ## [2.1.45](https://github.com/jobtrek/grades-view-solid/compare/v2.1.44...v2.1.45) (2026-04-17)
 
 
