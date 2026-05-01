@@ -1,6 +1,19 @@
 # Changelog
 
 
+## [2.1.47](https://github.com/jobtrek/grades-view-solid/compare/v2.1.46...v2.1.47) (2026-05-01)
+
+
+### Miscellaneous Chores
+
+* release please include author ([#606](https://github.com/jobtrek/grades-view-solid/issues/606)) ([7339bc9](https://github.com/jobtrek/grades-view-solid/commit/7339bc97fc901c97954c2e854f572a868c2d47a3))
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group with 5 updates ([#604](https://github.com/jobtrek/grades-view-solid/issues/604)) ([74610ca](https://github.com/jobtrek/grades-view-solid/commit/74610ca7055627dd7873fef5739a76ef98df9b57))
+* **deps:** bump googleapis/release-please-action from 4.4.1 to 5.0.0 ([#602](https://github.com/jobtrek/grades-view-solid/issues/602)) ([a657a8f](https://github.com/jobtrek/grades-view-solid/commit/a657a8f35347b945d39e69ece6e38491c97d2b24))
+
 ## [2.1.46](https://github.com/jobtrek/grades-view-solid/compare/v2.1.45...v2.1.46) (2026-04-22)
 
 
