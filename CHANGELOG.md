@@ -1,6 +1,33 @@
 # Changelog
 
 
+## [2.1.48](https://github.com/jobtrek/grades-view-solid/compare/v2.1.47...v2.1.48) (2026-06-18)
+
+
+### Miscellaneous Chores
+
+* updates ([bc7c8e9](https://github.com/jobtrek/grades-view-solid/commit/bc7c8e90ce17e1fdbc6a7ea50df0a2bd33f416a6))
+
+
+### Build System
+
+* **deps-dev:** bump cssnano from 7.1.9 to 8.0.2 ([#630](https://github.com/jobtrek/grades-view-solid/issues/630)) ([7bf681d](https://github.com/jobtrek/grades-view-solid/commit/7bf681d1e0ab0f3fb016249e990694bb6226006a))
+* **deps-dev:** bump eslint-plugin-n from 17.24.0 to 18.1.0 ([#629](https://github.com/jobtrek/grades-view-solid/issues/629)) ([2ca4ce6](https://github.com/jobtrek/grades-view-solid/commit/2ca4ce69b9d1f9da5f7e61401babf9c4831b4936))
+* **deps-dev:** bump the development-dependencies group across 1 directory with 5 updates ([#628](https://github.com/jobtrek/grades-view-solid/issues/628)) ([f3e2ab8](https://github.com/jobtrek/grades-view-solid/commit/f3e2ab8b84cd7c29257d19239fab4b383715ea68))
+* **deps-dev:** bump the development-dependencies group with 3 updates ([#608](https://github.com/jobtrek/grades-view-solid/issues/608)) ([a19717a](https://github.com/jobtrek/grades-view-solid/commit/a19717a42e1ae61636b7b0e68acff84b4ad8624a))
+* **deps-dev:** bump the development-dependencies group with 3 updates ([#614](https://github.com/jobtrek/grades-view-solid/issues/614)) ([08d3db4](https://github.com/jobtrek/grades-view-solid/commit/08d3db4fc540a5d09ff15999ce248b0f8111dfc4))
+* **deps:** bump actions/checkout from 6.0.2 to 6.0.3 ([#627](https://github.com/jobtrek/grades-view-solid/issues/627)) ([c00220e](https://github.com/jobtrek/grades-view-solid/commit/c00220e5197cfb44a0e787eb902b6751b7f4a9bb))
+* **deps:** bump docker/build-push-action from 7.1.0 to 7.2.0 ([#624](https://github.com/jobtrek/grades-view-solid/issues/624)) ([1954b06](https://github.com/jobtrek/grades-view-solid/commit/1954b0638f991c11ceab7eb925bc5961f34fbae4))
+* **deps:** bump docker/login-action from 4.1.0 to 4.2.0 ([#623](https://github.com/jobtrek/grades-view-solid/issues/623)) ([a96be75](https://github.com/jobtrek/grades-view-solid/commit/a96be75b0e79d9ba551c6628f2667bc7b2f70b99))
+* **deps:** bump docker/metadata-action from 6.0.0 to 6.1.0 ([#622](https://github.com/jobtrek/grades-view-solid/issues/622)) ([1a2cae5](https://github.com/jobtrek/grades-view-solid/commit/1a2cae5979ef02942dff56cc037fd5ad2972b99c))
+* **deps:** bump docker/setup-buildx-action from 4.0.0 to 4.1.0 ([#621](https://github.com/jobtrek/grades-view-solid/issues/621)) ([944dd9f](https://github.com/jobtrek/grades-view-solid/commit/944dd9f0b391a90402de9b6d0362974777ed1108))
+* **deps:** bump docker/setup-qemu-action from 4.0.0 to 4.1.0 ([#626](https://github.com/jobtrek/grades-view-solid/issues/626)) ([3244c6d](https://github.com/jobtrek/grades-view-solid/commit/3244c6d8fdb665b29e538e71719e1ca2198622fb))
+* **deps:** bump fast-uri from 3.1.0 to 3.1.2 ([#611](https://github.com/jobtrek/grades-view-solid/issues/611)) ([cebff25](https://github.com/jobtrek/grades-view-solid/commit/cebff25ec89b4f6c004ad400586247ac468a2df0))
+* **deps:** bump nitropack from 2.13.1 to 2.13.4 ([#610](https://github.com/jobtrek/grades-view-solid/issues/610)) ([c6434a0](https://github.com/jobtrek/grades-view-solid/commit/c6434a06d810aad375dc664b2a885adf6146fa89))
+* **deps:** bump pnpm/action-setup from 5.0.0 to 6.0.7 ([#613](https://github.com/jobtrek/grades-view-solid/issues/613)) ([3c79dcb](https://github.com/jobtrek/grades-view-solid/commit/3c79dcbc4b788e200b17813229ba4b5f7e27271c))
+* **deps:** bump pnpm/action-setup from 6.0.7 to 6.0.8 ([#617](https://github.com/jobtrek/grades-view-solid/issues/617)) ([91385ad](https://github.com/jobtrek/grades-view-solid/commit/91385ad3aef566209a9e15870dc3cc80a5762984))
+* **deps:** bump the production-dependencies group across 1 directory with 2 updates ([#612](https://github.com/jobtrek/grades-view-solid/issues/612)) ([f30e1a4](https://github.com/jobtrek/grades-view-solid/commit/f30e1a4d2c59b935612b4ff99098ff2cd1a1da4e))
+
 ## [2.1.47](https://github.com/jobtrek/grades-view-solid/compare/v2.1.46...v2.1.47) (2026-05-01)
 
 
