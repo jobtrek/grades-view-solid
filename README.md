@@ -2,7 +2,7 @@
 
 > Implemented with [SolidJS](https://www.solidjs.com/)
 >
-> **v2.1.48** <!-- x-release-please-version -->
+> **v2.1.49** <!-- x-release-please-version -->
 >
 > [See changelog](./CHANGELOG.md)
 
