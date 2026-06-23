@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [2.1.49](https://github.com/jobtrek/grades-view-solid/compare/v2.1.48...v2.1.49) (2026-06-23)
+
+
+### Build System
+
+* **deps:** bump actions/checkout from 6.0.3 to 7.0.0 ([#632](https://github.com/jobtrek/grades-view-solid/issues/632)) ([ebb68ff](https://github.com/jobtrek/grades-view-solid/commit/ebb68ffb7c5b40ebba5d029a7a66e2e0e2739a08))
+* **deps:** bump pnpm/action-setup from 6.0.8 to 6.0.9 ([#631](https://github.com/jobtrek/grades-view-solid/issues/631)) ([931933e](https://github.com/jobtrek/grades-view-solid/commit/931933ef62dc4a470b57c98aefdc2b1df12c8daa))
+
 ## [2.1.48](https://github.com/jobtrek/grades-view-solid/compare/v2.1.47...v2.1.48) (2026-06-18)
 
 
