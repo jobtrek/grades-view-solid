@@ -1,6 +1,19 @@
 # Changelog
 
 
+## [2.1.50](https://github.com/jobtrek/grades-view-solid/compare/v2.1.49...v2.1.50) (2026-08-12)
+
+
+### Build System
+
+* **deps-dev:** bump the development-dependencies group across 1 directory with 8 updates ([#648](https://github.com/jobtrek/grades-view-solid/issues/648)) ([72557d9](https://github.com/jobtrek/grades-view-solid/commit/72557d910185026ae6d99a9a4c334411fefe394b))
+* **deps:** bump actions/cache from 5.0.5 to 6.1.0 ([#634](https://github.com/jobtrek/grades-view-solid/issues/634)) ([027344f](https://github.com/jobtrek/grades-view-solid/commit/027344f404aa91fac391cc7355322ec3b55054a1))
+* **deps:** bump docker/build-push-action from 7.2.0 to 7.3.0 ([#639](https://github.com/jobtrek/grades-view-solid/issues/639)) ([1c88d76](https://github.com/jobtrek/grades-view-solid/commit/1c88d76aa6c6ef1e0747dc7eeeb20bc11d42076b))
+* **deps:** bump docker/login-action from 4.2.0 to 4.4.0 ([#640](https://github.com/jobtrek/grades-view-solid/issues/640)) ([03a0404](https://github.com/jobtrek/grades-view-solid/commit/03a04048a8672af91f770d815fd6f0d9668b6d64))
+* **deps:** bump docker/metadata-action from 6.1.0 to 6.2.0 ([#638](https://github.com/jobtrek/grades-view-solid/issues/638)) ([e2df22a](https://github.com/jobtrek/grades-view-solid/commit/e2df22a895b1acbcb78e772399afa508e93eda48))
+* **deps:** bump docker/setup-qemu-action from 4.1.0 to 4.2.0 ([#637](https://github.com/jobtrek/grades-view-solid/issues/637)) ([e7f64bd](https://github.com/jobtrek/grades-view-solid/commit/e7f64bd3a1a4fd1526713b76ab55cc1f90221839))
+* **deps:** bump the production-dependencies group across 1 directory with 4 updates ([#647](https://github.com/jobtrek/grades-view-solid/issues/647)) ([48fccaf](https://github.com/jobtrek/grades-view-solid/commit/48fccafcd6ce7c04d76b6a507937944afdff277b))
+
 ## [2.1.49](https://github.com/jobtrek/grades-view-solid/compare/v2.1.48...v2.1.49) (2026-06-23)
 
 
