@@ -1,6 +1,21 @@
 # Changelog
 
 
+## [2.1.51](https://github.com/jobtrek/grades-view-solid/compare/v2.1.50...v2.1.51) (2026-08-29)
+
+
+### Build System
+
+* **deps-dev:** bump @eslint/js from 9.39.4 to 9.39.5 ([#658](https://github.com/jobtrek/grades-view-solid/issues/658)) ([458506a](https://github.com/jobtrek/grades-view-solid/commit/458506a87c65833826e69ee57e1bcf6c177c1b1d))
+* **deps-dev:** bump the development-dependencies group across 1 directory with 5 updates ([#656](https://github.com/jobtrek/grades-view-solid/issues/656)) ([922fdd0](https://github.com/jobtrek/grades-view-solid/commit/922fdd04434efef7dc1643069203b89d67edbfd9))
+* **deps:** bump @solidjs/router from 0.16.1 to 1.0.0 ([#657](https://github.com/jobtrek/grades-view-solid/issues/657)) ([d91e88c](https://github.com/jobtrek/grades-view-solid/commit/d91e88c2aa2b916fecb1ce67d4260aaf6866c3b7))
+* **deps:** bump actions/checkout from 7.0.0 to 7.0.1 ([#651](https://github.com/jobtrek/grades-view-solid/issues/651)) ([c898d85](https://github.com/jobtrek/grades-view-solid/commit/c898d85ef713199370c8ae06b0a23128bb6b4071))
+* **deps:** bump actions/setup-node from 6.4.0 to 7.0.0 ([#655](https://github.com/jobtrek/grades-view-solid/issues/655)) ([ef69e2e](https://github.com/jobtrek/grades-view-solid/commit/ef69e2e90cf3d2671beaa3180c9c471ba04c8bea))
+* **deps:** bump docker/login-action from 4.4.0 to 4.6.0 ([#652](https://github.com/jobtrek/grades-view-solid/issues/652)) ([a6b194e](https://github.com/jobtrek/grades-view-solid/commit/a6b194ef040485db4ebf34e2085cbda73db8eab1))
+* **deps:** bump docker/setup-buildx-action from 4.1.0 to 4.2.0 ([#654](https://github.com/jobtrek/grades-view-solid/issues/654)) ([fb41a14](https://github.com/jobtrek/grades-view-solid/commit/fb41a14fe113b8315a5d979943ba711202b2c85e))
+* **deps:** bump pnpm/action-setup from 6.0.9 to 6.0.10 ([#653](https://github.com/jobtrek/grades-view-solid/issues/653)) ([9ad2b8e](https://github.com/jobtrek/grades-view-solid/commit/9ad2b8e4d777a9d3008c08ffa78023d03f05288d))
+* **deps:** bump solid-js in the production-dependencies group ([#659](https://github.com/jobtrek/grades-view-solid/issues/659)) ([d9301e9](https://github.com/jobtrek/grades-view-solid/commit/d9301e934467692533948484dbe877257a5a69cc))
+
 ## [2.1.50](https://github.com/jobtrek/grades-view-solid/compare/v2.1.49...v2.1.50) (2026-08-12)
 
 
