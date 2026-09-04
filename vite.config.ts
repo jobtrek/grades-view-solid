@@ -1,7 +1,12 @@
-import { defineConfig } from "@solidjs/start/config"
+import { defineConfig } from "vite"
+import { nitro } from "nitro/vite"
+import { solidStart } from "@solidjs/start/config"
+import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
-  server: {
+  base: "/grades-view-solid/",
+  plugins: [tailwindcss(), solidStart(), nitro()],
+  nitro: {
     preset: "github-pages",
     baseURL: "/grades-view-solid/",
     compatibilityDate: "2024-11-01",
