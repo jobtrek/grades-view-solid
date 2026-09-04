@@ -115,7 +115,7 @@ export const FileButton: Component = () => {
           ref={fileInput}
           type="file"
           accept=".json"
-          onChange={() => handleFileChange}
+          onChange={() => void handleFileChange()}
         />
       </div>
       <NavButton name="Import" actionOnClick={handleClick}>

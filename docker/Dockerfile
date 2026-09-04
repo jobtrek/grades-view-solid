@@ -1,4 +1,4 @@
-FROM node:21-alpine AS base
+FROM node:24-alpine AS base
 ENV PNPM_HOME="/pnpm"
 ENV PATH="$PNPM_HOME:$PATH"
 RUN corepack enable
@@ -13,7 +13,6 @@ WORKDIR /app
 FROM base AS build
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
 RUN pnpm run build
-RUN sh ./rename.bash
 
 # Create a simple nginx image to serve the static files
 FROM nginx:stable-alpine

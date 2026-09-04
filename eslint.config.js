@@ -14,11 +14,8 @@ export default [
       "bin/**",
       "build/**",
       ".output/**",
-      ".vinxi/**",
       "src/global.d.ts",
-      "eslint.config.mjs",
       "postcss.config.cjs",
-      "tailwind.config.cjs",
     ],
   },
   js.configs.recommended,
@@ -43,6 +40,14 @@ export default [
       globals: {
         ...globals.browser,
       },
+    },
+  },
+  {
+    files: ["**/*.{ts,tsx}"],
+    rules: {
+      /* Solid compiles `ref={variable}` into an assignment, which ESLint's
+         static analysis cannot see, so the rule reports every element ref. */
+      "no-unassigned-vars": "off",
     },
   },
   eslintConfigPrettier,
