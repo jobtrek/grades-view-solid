@@ -33,7 +33,7 @@
     "commitizen": "^4.3.2",
     "cssnano": "^9.0.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^9.39.4",
+    "eslint": "^10.9.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-n": "^18.3.0",
     "eslint-plugin-promise": "^7.3.0",
