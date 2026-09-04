@@ -22,14 +22,12 @@
     "vinxi": "0.5.11"
   },
   "engines": {
-    "node": ">=20"
+    "node": "^20.19.0 || ^22.13.0 || >=24"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.6",
-    "@eslint/js": "^9.39.5",
+    "@eslint/js": "^10.0.1",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/postcss": "^4.3.3",
-    "@types/eslint__js": "^9.14.0",
     "commitizen": "^4.3.2",
     "cssnano": "^9.0.0",
     "cz-conventional-changelog": "^3.3.0",

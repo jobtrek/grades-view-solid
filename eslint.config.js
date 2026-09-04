@@ -45,5 +45,13 @@ export default [
       },
     },
   },
+  {
+    files: ["**/*.{ts,tsx}"],
+    rules: {
+      /* Solid compiles `ref={variable}` into an assignment, which ESLint's
+         static analysis cannot see, so the rule reports every element ref. */
+      "no-unassigned-vars": "off",
+    },
+  },
   eslintConfigPrettier,
 ]
