@@ -1,6 +1,18 @@
 # Changelog
 
 
+## [2.1.52](https://github.com/jobtrek/grades-view-solid/compare/v2.1.51...v2.1.52) (2026-09-04)
+
+
+### Build System
+
+* **deps-dev:** bump cssnano from 8.0.8 to 9.0.0 ([#666](https://github.com/jobtrek/grades-view-solid/issues/666)) ([da4e98b](https://github.com/jobtrek/grades-view-solid/commit/da4e98bd07025324b50b2fc92e66dd600252a3ac))
+* **deps-dev:** bump eslint from 9.39.4 to 10.9.1 ([#665](https://github.com/jobtrek/grades-view-solid/issues/665)) ([f6ab9f5](https://github.com/jobtrek/grades-view-solid/commit/f6ab9f5a8b25797b26eedf0c58caef6d144b1201))
+* **deps-dev:** bump the development-dependencies group across 1 directory with 3 updates ([#668](https://github.com/jobtrek/grades-view-solid/issues/668)) ([d65e7eb](https://github.com/jobtrek/grades-view-solid/commit/d65e7eb5b578028b8bcff40f9b7c02f662f1ae96))
+* **deps-dev:** bump typescript from 5.9.3 to 6.0.3 ([#664](https://github.com/jobtrek/grades-view-solid/issues/664)) ([aaa6f79](https://github.com/jobtrek/grades-view-solid/commit/aaa6f79d6f02edb48ce01f8c080f8c4749882551))
+* **deps:** bump @solidjs/start from 1.3.2 to 2.0.4 ([#663](https://github.com/jobtrek/grades-view-solid/issues/663)) ([c9ab2de](https://github.com/jobtrek/grades-view-solid/commit/c9ab2dece497ab3e5832186096df6e2512e0fdf5))
+* **deps:** bump docker/setup-buildx-action from 4.2.0 to 4.3.0 ([#661](https://github.com/jobtrek/grades-view-solid/issues/661)) ([b86be45](https://github.com/jobtrek/grades-view-solid/commit/b86be451cefb80969e74c455c61440c46e1fa7e4))
+
 ## [2.1.51](https://github.com/jobtrek/grades-view-solid/compare/v2.1.50...v2.1.51) (2026-08-29)
 
 
