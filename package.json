@@ -15,10 +15,10 @@
     "@solid-primitives/timer": "^1.4.4",
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^1.0.0",
-    "@solidjs/start": "2.0.4",
-    "postcss": "^8.5.26",
+    "@solidjs/start": "2.0.5",
+    "postcss": "^8.5.28",
     "solid-js": "^1.9.15",
-    "valibot": "^1.4.2"
+    "valibot": "^1.5.0"
   },
   "engines": {
     "node": ">=24"
